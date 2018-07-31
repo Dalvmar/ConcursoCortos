@@ -44,8 +44,8 @@ export class SessionService {
     return e;
   }
 
-  signup(username:string, password:string): Observable<object>{
-    return this.http.post(`${BASEURL}/api/auth/signup`,{username,password},this.options).pipe(
+  signup(username:string,name:string,lastname:string,email:string, password:string,category:string): Observable<object>{
+    return this.http.post(`${BASEURL}/api/auth/signup`,{username,name,lastname,email,password,category},this.options).pipe(
       map( (res:Response) => {
         let data = res.json();
         this.user = data.user;

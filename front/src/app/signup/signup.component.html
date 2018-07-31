@@ -1,7 +1,10 @@
 <form>
     <h2> Signup </h2>
-    <label> Nombre </label>
+    <label> Usuario </label>
     <input type="text" [(ngModel)]="username" name="username"/>
+    <br>
+    <label> Nombre </label>
+    <input type="text" [(ngModel)]="name" name="name"/>
     <br>
     <label> Apellidos</label>
     <input type="text" [(ngModel)]="lastname" name="lastname"/>
@@ -19,6 +22,6 @@
       <option value="11-22España">11y 22 años nacidos en España</option>
     
     </select>
-    <button (click)="signup(username,lastname,password,email,category)"> SIGNUP </button>
+    <button (click)="signup(username,name,lastname,password,email,category)"> SIGNUP </button>
   </form>
   <p class="error"> {{ error }} </p>

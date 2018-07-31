@@ -21,7 +21,7 @@ const login = (req, user) => {
 // SIGNUP
 router.post('/signup', (req, res, next) => {
 
-  const {username, password,name,lastname,email,category} = req.body;
+  const {username,password,name,lastname,email,category} = req.body;
 
   // Check for non empty user or password
   if (!username || !password){
