@@ -1,11 +1,24 @@
 <form>
     <h2> Signup </h2>
-    <label> Username </label>
+    <label> Nombre </label>
     <input type="text" [(ngModel)]="username" name="username"/>
+    <br>
+    <label> Apellidos</label>
+    <input type="text" [(ngModel)]="lastname" name="lastname"/>
     <br>
     <label> Password </label>
     <input type="password" [(ngModel)]="password" name="password"/>
-
-    <button (click)="signup(username, password)"> SIGNUP </button>
+    <br>
+    <label> Email </label>
+    <input type="text" [(ngModel)]="email" name="email"/>
+    <br>
+    <label>Categoria:</label>
+    <select name="category" id="category"> 
+      <option value="11-15Portugal">11 y 15 años nacidos en Portugal</option>
+      <option value="16-22Portugal">16 y 22 años nacidos en Portugal</option>
+      <option value="11-22España">11y 22 años nacidos en España</option>
+    
+    </select>
+    <button (click)="signup(username,lastname,password,email,category)"> SIGNUP </button>
   </form>
   <p class="error"> {{ error }} </p>

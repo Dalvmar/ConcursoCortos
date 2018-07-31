@@ -13,11 +13,11 @@ const MongoStore = require('connect-mongo')(session);
 const cors = require('cors');
 
 const { DBURL } = process.env;
+const {DBURL_ANG}=process.env;
+
 mongoose.Promise = Promise;
 mongoose
-  .connect(DBURL, {
-    useMongoClient: true
-  })
+  .connect(DBURL)
   .then(() => {
     console.log(`Connected to Mongo on ${DBURL}`)
   }).catch(err => {
@@ -31,7 +31,7 @@ const app = express();
 
 // Middleware Setup
 var whitelist = [
-  'http://localhost:4200',
+  DBURL_ANG
 ];
 var corsOptions = {
   origin: function(origin, callback){

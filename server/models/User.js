@@ -2,8 +2,12 @@ const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
 const userSchema = new Schema({
-  username: String,
-  password: String
+  username: {type: String ,require:true},
+  name: {type: String ,require:true},
+  lastname: {type: String ,require:true},
+  password: {type: String ,require:true},
+  email: {type: String ,require:true},
+  category: {type:String ,enum: [ "11 y 15 años nacidos en Portugal","16 y 22 años nacidos en Portugal","11 y 22 años nacidos en España" ]}
 }, {
   timestamps: {
     createdAt: 'created_at',

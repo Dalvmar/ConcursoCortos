@@ -38,7 +38,11 @@ router.post('/signup', (req, res, next) => {
 
     return new User({
       username,
-      password: hashPass
+      name,
+      lastname,
+      password: hashPass,
+      email,
+      category
     }).save();
   })
   .then( savedUser => login(req, savedUser)) // Login the user using passport
