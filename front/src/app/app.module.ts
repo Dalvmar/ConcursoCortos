@@ -11,6 +11,8 @@ import { SessionService } from '../services/session';
 import { ProfileComponent } from './profile/profile.component';
 import { ListVideosComponent } from './list-videos/list-videos.component';
 import { VideoComponent } from './video/video.component';
+import { UserComponent } from './user/user.component';
+import { ProfileUserComponent } from './profileUser/profileUser.component';
 import { HttpModule } from '@angular/http';
 
 @NgModule({
@@ -20,7 +22,9 @@ import { HttpModule } from '@angular/http';
       SignupComponent,
       ProfileComponent,
       ListVideosComponent,
-      VideoComponent
+      VideoComponent,
+      UserComponent,
+      ProfileUserComponent
    ],
    imports: [
       BrowserModule,

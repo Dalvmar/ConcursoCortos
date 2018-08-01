@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+const apiUrl='https://api.microlink.io?url='
 @Component({
   selector: 'app-list-videos',
   templateUrl: './list-videos.component.html',
