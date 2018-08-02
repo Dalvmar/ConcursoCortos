@@ -30,6 +30,7 @@ export class ProfileComponent implements OnInit {
       this.user = user;
       this.router.navigate(["/profile"]);
     });
+
 }
 
 }

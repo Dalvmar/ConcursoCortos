@@ -8,6 +8,7 @@ import { routes } from './routes';
 import { FormsModule } from '@angular/forms';
 import { SessionService } from '../services/session';
 import { ProfileComponent } from './profile/profile.component';
+import { VideoComponent } from './video/video.component';
 import { HttpModule } from '@angular/http';
 
 
@@ -18,7 +19,7 @@ import { HttpModule } from '@angular/http';
       SignupComponent,
       ProfileComponent,
       //UserEditComponent,
-      
+      VideoComponent
    ],
    imports: [
       BrowserModule,
