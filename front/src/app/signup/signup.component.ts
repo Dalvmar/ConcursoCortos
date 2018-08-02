@@ -19,7 +19,7 @@ export class SignupComponent implements OnInit {
     this.sessionService.signup(username,name,lastname,email,password,category).subscribe( (user:any) =>{
       console.log(`WELCOME USER ${user.username}, register OK`);
       console.log(user);
-      this.router.navigate(['/profile']);
+      this.router.navigate(['/api/profile']);
     });
   }
 }

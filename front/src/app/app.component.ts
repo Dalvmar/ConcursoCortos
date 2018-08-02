@@ -7,8 +7,11 @@ import { SessionService } from '../services/session';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  user;
   title = 'app';
-  constructor(private sessionService:SessionService) { }
+  constructor(private sessionService:SessionService) { 
+    this.sessionService.isLogged().subscribe(user=>this.user=user)
+  }
 
   logout(){
     this.sessionService.logout().subscribe();

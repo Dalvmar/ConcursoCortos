@@ -1,4 +1,45 @@
 
-<div class="profile">
+<div *ngIf="user" class="profile">
+
 <input type="text"><button>your video</button>
+
+<div class="containerUser">
+
+    
+        <a [routerLink]="['/profile/edit', user._id]" (click)="toggleHidden()">Edit</a>
+    
+        <form *ngIf="isHidden">
+              
+           
+            <label> Username </label>
+            <input type="text" [(ngModel)]="user.username" name="username"  required />
+        
+            <label> Nombre </label>
+            <input type="text" [(ngModel)]="user.name" name="name"  required />
+        
+            <label> Apellidos </label>
+            <input type="text" [(ngModel)]="user.lastname" name="lastname"   />
+        
+            <label> Email </label>
+            <input type="text" [(ngModel)]="user.email" name="email"/>
+    
+            <label>Password</label>
+            <input type="text" [(ngModel)]="user.password" name="pasword"  />
+        
+            <label>Categoria:</label>
+            <select name="category" id="category"> 
+                <option value="11-15Portugal">11 y 15 años nacidos en Portugal</option>
+                <option value="16-22Portugal">16 y 22 años nacidos en Portugal</option>
+                <option value="11-22España">11y 22 años nacidos en España</option>
+              
+              </select>
+          <button (click)="editUser(user._id)"> Editar </button>
+        </form>
+    </div>
+   <br>
+    <a [routerLink]="['/profile']"> Vuelve a la lista</a>
+<div class="listVideos">
+lista dd videos
+</div>
+
 </div>

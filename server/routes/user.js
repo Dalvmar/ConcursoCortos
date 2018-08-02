@@ -13,14 +13,17 @@ router.get('/:id', (req, res, next) => {
 });
 
 // Edit User
-router.put('/:id', (req, res, next) => {
-	const { username, name, lastname, email, paswword, category } = req.body;
+router.put('/edit/:id', (req, res, next) => {
+	
+	User.findById(req.params.id).then(user => {
+		const { username, name, lastname, email, paswword, category } = req.body;
 
 	const updates = { username, name, lastname, email, paswword, category };
-
+	
 	User.findByIdAndUpdate(req.params.id, updates, { new: true })
 		.then((object) => res.json(object))
 		.catch((e) => next(e));
+})
 });
 
 // Delete user

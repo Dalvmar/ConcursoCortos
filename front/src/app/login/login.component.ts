@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SessionService } from '../../services/session';
+import { Router } from '../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +8,7 @@ import { SessionService } from '../../services/session';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  constructor(private sessionService:SessionService) { }
+  constructor(private sessionService:SessionService, private router:Router) { }
 
   ngOnInit() {
   }
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
   login(username:string, password:string){
     console.log("login....");
     this.sessionService.login(username,password).subscribe( user => {
-      console.log(user);
+      console.log(user)
+      this.router.navigate(['profile'])
     });
   }
 
