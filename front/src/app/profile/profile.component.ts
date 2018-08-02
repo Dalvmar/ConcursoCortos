@@ -10,7 +10,7 @@ import { SessionService } from '../../services/session';
 })
 export class ProfileComponent implements OnInit {
   user;
-  isHidden:Boolean=false;
+  isVisible:Boolean=false;
 
   constructor(private sessionService:SessionService , 
     private route:ActivatedRoute,
@@ -23,7 +23,7 @@ export class ProfileComponent implements OnInit {
     })
   }
   toggleHidden(e){
-    this.isHidden=!this.isHidden;
+    this.isVisible=!this.isVisible;
   }
   edit(user) {
     this.userService.editUser(this.user).subscribe(user => {

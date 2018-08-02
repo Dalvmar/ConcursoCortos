@@ -6,9 +6,9 @@
 <div class="containerUser">
 
     
-        <a [routerLink]="['/profile/edit', user._id]" (click)="toggleHidden()">Edit</a>
+        <span (click)="toggleHidden()">Edit</span>
     
-        <form *ngIf="isHidden">
+        <form *ngIf="isVisible">
               
            
             <label> Username </label>
@@ -37,7 +37,9 @@
         </form>
     </div>
    <br>
+
     <a [routerLink]="['/profile']"> Vuelve a la lista</a>
+    <br>
 <div class="listVideos">
 lista dd videos
 </div>

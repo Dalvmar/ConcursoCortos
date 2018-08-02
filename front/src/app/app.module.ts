@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SessionService } from '../services/session';
 import { ProfileComponent } from './profile/profile.component';
 import { HttpModule } from '@angular/http';
-import { UserEditComponent } from './user-edit/user-edit.component';
+
 
 @NgModule({
    declarations: [
@@ -17,7 +17,7 @@ import { UserEditComponent } from './user-edit/user-edit.component';
       LoginComponent,
       SignupComponent,
       ProfileComponent,
-      UserEditComponent,
+      //UserEditComponent,
       
    ],
    imports: [
