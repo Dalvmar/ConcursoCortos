@@ -15,8 +15,17 @@ router.post('/sendVideo',(req, res, next)=>{
        if(foundVideo) throw new Error('Video already exits');
        else {
            axios.get(apiUrl+url).then(data => {
-               console.log(data.data)
-
+              console.log(data.data)
+          
+            const newVideo = {
+                video: data.data.data.url,
+                creator: data.data.data.author,
+                description: data.data.data.description,
+                cover: data.data.data.image.url
+            };
+            Video.create(newVideo)
+            .then( object => res.json(object))
+            .catch( e=>next (e))
 
             })
        }
