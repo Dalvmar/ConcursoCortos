@@ -16,15 +16,22 @@ getVideo(id){
       .pipe(map(res => res.json()));
   }
 
-  newVideo(url) {
+
+  getUserVideos(userId) {
     return this.http
-      .post(`${this.BASE_URL}/api/video`, {url})
+      .get(`${this.BASE_URL}/api/video/user/${userId}`)
+      .pipe(map(res => res.json()));
+  }
+
+  newVideo(url,userId) {
+    return this.http
+      .post(`${this.BASE_URL}/api/video/new`, { url,userId })
       .pipe(map(res => res.json()));
   }
 
   remove(id) {
     return this.http
-      .delete(`${this.BASE_URL}/api/video/${id}`)
+      .delete(`${this.BASE_URL}/api/video/delete/${id}`)
       .pipe(map(res => res.json()));
   } 
 

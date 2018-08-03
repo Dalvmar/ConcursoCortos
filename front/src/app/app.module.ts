@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { SessionService } from '../services/session';
 import { ProfileComponent } from './profile/profile.component';
 import { VideoComponent } from './video/video.component';
+import { ListVideosComponent } from './list-videos/list-videos.component';
+import { SafePipe } from './safe.pipe';
 import { HttpModule } from '@angular/http';
 
 
@@ -19,7 +21,9 @@ import { HttpModule } from '@angular/http';
       SignupComponent,
       ProfileComponent,
       //UserEditComponent,
-      VideoComponent
+      VideoComponent,
+      ListVideosComponent,
+      SafePipe
    ],
    imports: [
       BrowserModule,

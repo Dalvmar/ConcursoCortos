@@ -1,11 +1,12 @@
 
 <div *ngIf="user" class="profile">
 
-<input type="text" [(ngModel)]="videoUrl" name="url"> <button (click)="saveVideo()">your video</button>
+<input required minlength="3" type="text" [(ngModel)]="videoUrl" name="url"> 
+<button (click)="saveVideo()">your video</button>
+
+<app-video></app-video>
 
 <div class="containerUser">
-
-    
         <span (click)="toggleHidden()">Edit</span>
     
         <form *ngIf="isVisible">
@@ -40,8 +41,9 @@
 
     <a [routerLink]="['/profile']"> Vuelve a la lista</a>
     <br>
+
 <div class="listVideos">
-lista dd videos
+     <app-list-videos></app-list-videos>
 </div>
 
 </div>

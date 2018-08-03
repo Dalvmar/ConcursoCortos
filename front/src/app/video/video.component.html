@@ -1,7 +1,11 @@
 <div class="video">
+
   <div *ngIf="video">
-    hola video
+  hola video
+ <iframe [src]='video.video'></iframe> 
 
   </div>
+ 
+<a (click)="deleteVideo()"> Delete</a>
 
 </div>
