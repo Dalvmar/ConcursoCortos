@@ -89,7 +89,7 @@ app.use('/api/auth', authRouter);
 const userProfile = require('./routes/user');
 app.use('/api/profile', userProfile);
 const userVideo = require('./routes/video');
-app.use('/api/video', userVideo);
+app.use('/api/video/', userVideo);
 
 
 module.exports = app;

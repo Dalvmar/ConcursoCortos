@@ -1,7 +1,7 @@
 
 <div *ngIf="user" class="profile">
 
-<input type="text" <button (click)="savevideo()">your video</button>
+<input type="text" [(ngModel)]="videoUrl" name="url"> <button (click)="saveVideo()">your video</button>
 
 <div class="containerUser">
 
@@ -27,13 +27,13 @@
             <input type="text" [(ngModel)]="user.password" name="pasword"  />
         
             <label>Categoria:</label>
-            <select name="category" id="category"> 
+            <select name="category" id="category" [(ngModel)]="user.category"> 
                 <option value="11-15Portugal">11 y 15 años nacidos en Portugal</option>
                 <option value="16-22Portugal">16 y 22 años nacidos en Portugal</option>
                 <option value="11-22España">11y 22 años nacidos en España</option>
               
               </select>
-          <button (click)="editUser(user._id)"> Editar </button>
+          <button (click)="edit(user._id)"> Editar </button>
         </form>
     </div>
    <br>

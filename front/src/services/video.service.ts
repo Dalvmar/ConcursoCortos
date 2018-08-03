@@ -2,22 +2,30 @@ import { Injectable } from '@angular/core';
 import {Http} from "@angular/http";
 import {map} from 'rxjs/operators';
 
-
-const apiUrl='https://api.microlink.io?url='
 @Injectable({
   providedIn: 'root'
 })
 export class VideoService {
- apiUrl: string= 'https://api.microlink.io?url=';
 
+ BASE_URL: string = "http://localhost:3000";
 constructor( private http:Http) { }
 
 getVideo(id){
-  
-return this.http
-.get(`${this.apiUrl}${id}`)
-.pipe(map(res=>res.json()))
-console.log(`${id}`)
-}
+    return this.http
+      .get(`${this.BASE_URL}/api/video/${id}`)
+      .pipe(map(res => res.json()));
+  }
+
+  newVideo(url) {
+    return this.http
+      .post(`${this.BASE_URL}/api/video`, {url})
+      .pipe(map(res => res.json()));
+  }
+
+  remove(id) {
+    return this.http
+      .delete(`${this.BASE_URL}/api/video/${id}`)
+      .pipe(map(res => res.json()));
+  } 
 
 }

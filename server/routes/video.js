@@ -6,23 +6,25 @@ const axios = require('axios');
 const apiUrl = 'https://api.microlink.io?url='
 
 
-router.post('/sendVideo',(req, res, next)=>{
+router.post('/',(req, res, next)=>{
     const { url } = req.body;
-    console.log(apiUrl)
+    console.log(req.body.url)
+
     if (!url) next(new Error('You must enter a URL'))
 
-    Video.findOne({url}).then(foundVideo=>{
+    Video.findOne({ url }).then(foundVideo=>{
        if(foundVideo) throw new Error('Video already exits');
        else {
-           axios.get(apiUrl+url).then(data => {
-              console.log(data.data)
+           axios.get(apiUrl+url).then(resp => {
+              console.log(resp.data)
           
             const newVideo = {
-                video: data.data.data.url,
-                creator: data.data.data.author,
-                description: data.data.data.description,
-                cover: data.data.data.image.url
+                video: resp.data.data.url,
+                creator: resp.data.data.author,
+                description: resp.data.data.description,
+                cover: resp.data.data.image.url
             };
+            
             Video.create(newVideo)
             .then( object => res.json(object))
             .catch( e=>next (e))
@@ -32,5 +34,17 @@ router.post('/sendVideo',(req, res, next)=>{
     })
     .catch(error=>console.log(error))
 })
-
+// Retrive DETAIL
+router.get("/:id", (req, res, next) => {
+    Video.findById(req.params.id)
+      .then(object => res.json(object))
+      .catch(e => next(e));
+  });
+// Delete video
+router.delete("/:id", (req, res, next) => {
+    Video.findByIdAndRemove(req.params.id)
+      .then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
+      .catch(e => next(e));
+  });
+  
 module.exports = router;
