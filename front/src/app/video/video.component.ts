@@ -9,25 +9,26 @@ import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
 })
 export class VideoComponent implements OnInit {
   video;
-  constructor(private videoService:VideoService,
+
+  constructor(
+  private videoService:VideoService,
   private router: Router,
   private route: ActivatedRoute
-  ){}
+  ) {
 
-  ngOnInit() {
-
-
-    /* this.route.params.subscribe(params =>{
+    this.route.params.subscribe(params =>{
       this.videoService.getVideo(params.id).subscribe(video => {
         this.video = video;
       })
-    }); */
-
+    }); 
   }
+
+  ngOnInit() {}
 
   deleteVideo() {
     this.videoService
-      .remove(this.video._id)
-      .subscribe(() => this.router.navigate([""]));
+       .remove(this.video._id)
+       .subscribe(() => this.router.navigate(["profile"]));
+    }
   }
-}
+

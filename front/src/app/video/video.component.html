@@ -1,11 +1,8 @@
-<div class="video">
-
-  <div *ngIf="video">
-  hola video
- <iframe [src]='video.video'></iframe> 
-
-  </div>
- 
-<a (click)="deleteVideo()"> Delete</a>
-
-</div>
+<a [routerLink]="['/profile']"> Volver a home </a>
+<div *ngIf="video">
+        <div class="phone-thumbnail">
+          <img height="300" [src]="video.cover" />
+        </div>
+      
+        <a (click)="deleteVideo()"> Borrar teléfono </a>
+        </div>
