@@ -23,6 +23,11 @@ getVideo(id){
       .pipe(map(res => res.json()));
   }
 
+  getVideos() {
+    return this.http
+      .get(`${this.BASE_URL}/api/video/list`)
+      .pipe(map(res => res.json()));
+  }
   newVideo(url,userId) {
     return this.http
       .post(`${this.BASE_URL}/api/video/new`, { url,userId })

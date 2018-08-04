@@ -1,8 +1,15 @@
 <a [routerLink]="['/profile']"> Volver a home </a>
 <div *ngIf="video">
-        <div class="phone-thumbnail">
-          <img height="300" [src]="video.cover" />
+    <div class="gallery">
+        <figure class="imghvr-flip-diag-1">
+          <img [src]="video.cover" alt='img' height="300">
+          <figcaption class="cf">
+            <h4>{{video.description}}</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, accusantium libero. Optio impedit est tempora enim facere minima saepe sapiente.</p>
+          </figcaption>
+        </figure>
+      </div>
+        <a (click)="deleteVideo()"> Borrar Video </a>
         </div>
+
       
-        <a (click)="deleteVideo()"> Borrar teléfono </a>
-        </div>

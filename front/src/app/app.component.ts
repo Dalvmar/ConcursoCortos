@@ -9,6 +9,7 @@ import { SessionService } from '../services/session';
 export class AppComponent {
   user;
   title = 'app';
+  
   constructor(private sessionService:SessionService) { 
     this.sessionService.isLogged().subscribe(user=>this.user=user)
   }

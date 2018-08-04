@@ -1,6 +1,17 @@
 
 <div *ngIf="user" class="profile">
 
+        <figure class="snip0057 red">
+                <figcaption>
+                  <h2>{{user.name}} <span>{{user.lastname}}</span></h2>
+                   <p>{{user.email}}</p>
+                  <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone">8888</i></a></div> 
+                </figcaption>
+                <div class="image"><img src="https://www.topmanzana.com/Imagenes/10-mejores-aplicaciones-video-iphone-y-ipad.jpg" height="300" alt="sample4"/></div>
+                <div class="position">{{user.category}}</div>
+              </figure>
+              
+
 <input required minlength="3" type="text" [(ngModel)]="videoUrl" name="url"> 
 <button (click)="saveVideo()">your video</button>
 
