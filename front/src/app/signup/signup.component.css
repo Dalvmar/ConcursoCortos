@@ -49,7 +49,7 @@ div.login {
 }
 .login .form {
   position:absolute;
-  top:210px;
+  top:208px;
   background:#f6f6f6;
   width:100%;
   height:calc(100% - 180px);
@@ -61,7 +61,7 @@ div.login {
   width:85%;
 }
 .login .form .row {
-  margin:18px 0px;
+  margin:16px 0px;
 }
 .login .form .row .label {
   font-size:12px;
@@ -97,7 +97,7 @@ div.login {
   text-align:center;
   width:100%;
   font-size:13px;
-  bottom:65px
+  bottom:75px
   ;
   color:#333;
 }

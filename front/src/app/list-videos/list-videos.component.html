@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
  lista de videos
 </p>
 <div>
@@ -7,4 +7,12 @@
         <iframe width="420" height="315" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         <a [routerLink]="['/video',video._id]">Detalles</a>
     </div>
-</div>
+</div> -->
+
+<div class="row">
+        <div class="col-3 col-md-3 videosList" *ngFor="let video of videos">
+                <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <a [routerLink]="['/video',video._id]">Detalles</a>
+        </div>
+        
+ </div>

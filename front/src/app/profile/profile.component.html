@@ -1,59 +1,92 @@
 
 <div *ngIf="user" class="profile">
-
-        <figure class="snip0057 red">
-                <figcaption>
-                  <h2>{{user.name}} <span>{{user.lastname}}</span></h2>
-                   <p>{{user.email}}</p>
-                  <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone">8888</i></a></div> 
-                </figcaption>
-                <div class="image"><img src="https://www.topmanzana.com/Imagenes/10-mejores-aplicaciones-video-iphone-y-ipad.jpg" height="300" alt="sample4"/></div>
-                <div class="position">{{user.category}}</div>
-              </figure>
-              
-
-<input required minlength="3" type="text" [(ngModel)]="videoUrl" name="url"> 
-<button (click)="saveVideo()">your video</button>
-
-<app-video></app-video>
-
-<div class="containerUser">
-        <span (click)="toggleHidden()">Edit</span>
-    
-        <form *ngIf="isVisible">
-              
-           
-            <label> Username </label>
-            <input type="text" [(ngModel)]="user.username" name="username"  required />
-        
-            <label> Nombre </label>
-            <input type="text" [(ngModel)]="user.name" name="name"  required />
-        
-            <label> Apellidos </label>
-            <input type="text" [(ngModel)]="user.lastname" name="lastname"   />
-        
-            <label> Email </label>
-            <input type="text" [(ngModel)]="user.email" name="email"/>
-    
-            <label>Password</label>
-            <input type="text" [(ngModel)]="user.password" name="pasword"  />
-        
-            <label>Categoria:</label>
-            <select name="category" id="category" [(ngModel)]="user.category"> 
-                <option value="11-15Portugal">11 y 15 años nacidos en Portugal</option>
-                <option value="16-22Portugal">16 y 22 años nacidos en Portugal</option>
-                <option value="11-22España">11y 22 años nacidos en España</option>
-              
-              </select>
-          <button (click)="edit(user._id)"> Editar </button>
-        </form>
+<div class="row">
+    <div class="col-md-6">
+            <figure class="snip0057 red">
+                    <figcaption>
+                      <h2>{{user.name}} <span>{{user.lastname}}</span></h2>
+                       <p>{{user.email}}</p>
+                      <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone">8888</i></a></div> 
+                    </figcaption>
+                    <div class="image"><img src="https://www.topmanzana.com/Imagenes/10-mejores-aplicaciones-video-iphone-y-ipad.jpg" height="300" alt="sample4"/></div>
+                    <div class="position">{{user.category}}</div>
+                  </figure>
     </div>
-   <br>
+    <div class="col-md-6">
+            <input required minlength="3" type="text" [(ngModel)]="videoUrl" name="url"> 
+            <button (click)="saveVideo()">your video</button>
+            <div class="containerUser">
+                    <span (click)="toggleHidden()">Edit</span>
+                    
+                <form *ngIf="isVisible">
+                    <h2>Edita tu perfil</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" [(ngModel)]="user.username" name="username" required id="username">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" [(ngModel)]="user.name" name="name" required id="name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastname">Apellidos</label>
+                                <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastname" required id="lastname">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" [(ngModel)]="user.email" name="email" required id="email">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="lastname">Password</label>
+                                <input type="password" class="form-control" [(ngModel)]="user.password" name="pasword" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="lastname">Categoria</label>
+                                <select name="category" id="category" [(ngModel)]="user.category">
+                                    <option value="11-15 Portugal">11-15 años Portugal</option>
+                                    <option value="16-22 Portugal">16-22 años Portugal</option>
+                                    <option value="11-22 España">11-22 años España</option>
+                
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" (click)="edit(user._id)">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </form>
+                
+        </div>
 
-    <a [routerLink]="['/profile']"> Vuelve a la lista</a>
-    <br>
+</div>
+<div class="row">
+        
+</div>
 
-<div class="listVideos">
+
+
+
+<div class="listVideos row">
      <app-list-videos></app-list-videos>
 </div>
 
