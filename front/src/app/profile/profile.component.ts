@@ -48,4 +48,5 @@ export class ProfileComponent implements OnInit {
 			this.router.navigate([ '/profile' ]);
 		});
 	}
+
 }

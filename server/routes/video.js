@@ -58,4 +58,12 @@ router.get("/:id", (req, res, next) => {
     .catch(e => next(e));
 });
 
+
+// Retrive ALL
+router.get("/videos", (req, res, next) => {
+	Video.find()
+	  .then(objects => res.json(objects))
+	  .catch(e => next(e));
+  });
+
 module.exports = router;

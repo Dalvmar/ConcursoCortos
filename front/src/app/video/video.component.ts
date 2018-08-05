@@ -30,5 +30,5 @@ export class VideoComponent implements OnInit {
        .remove(this.video._id)
        .subscribe(() => this.router.navigate(["profile"]));
     }
-  }
+}
 

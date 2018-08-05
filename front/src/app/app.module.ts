@@ -12,6 +12,12 @@ import { VideoComponent } from './video/video.component';
 import { ListVideosComponent } from './list-videos/list-videos.component';
 import { SafePipe } from './safe.pipe';
 import { HttpModule } from '@angular/http';
+import { UserService } from '../services/user.service';
+import { VideoService } from '../services/video.service';
+import { NegateUserLoggedInGuard } from './Guards/negateuserloggenin.guard';
+import { isLoggedInGuardService } from './Guards/isloggedin.guard';
+import { HomeComponent } from './home/home.component';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
@@ -23,7 +29,9 @@ import { HttpModule } from '@angular/http';
       //UserEditComponent,
       VideoComponent,
       ListVideosComponent,
-      SafePipe
+      SafePipe,
+      HomeComponent,
+      ListComponent
    ],
    imports: [
       BrowserModule,
@@ -31,7 +39,13 @@ import { HttpModule } from '@angular/http';
       FormsModule,
       HttpModule
   ],
-  providers: [SessionService],
+  providers: [
+    SessionService,
+    isLoggedInGuardService, 
+    NegateUserLoggedInGuard, 
+    UserService,
+    VideoService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

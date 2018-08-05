@@ -38,19 +38,7 @@ export class ListVideosComponent implements OnInit {
 
   
   ngOnInit() {
-    // this.route.params.subscribe(params =>{
-    //   this.videoService.getVideo(params.id).subscribe(video => {
-        
-    //     console.log(params.id,"hola")
-    //     this.video = video;
-  //})
-//})
   }
-//   deletedVideo() {
-//     this.videoService
-//       .remove(this.video._id)
-//       .subscribe(() => this.router.navigate(["profile"]));
-//  }
 
 
 }

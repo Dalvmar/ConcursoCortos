@@ -36,7 +36,6 @@ export class SessionService {
     );
   }
 
-
   errorHandler(e){
     console.log('SessionServiceError')
     console.log(e.message);
@@ -65,7 +64,14 @@ export class SessionService {
       catchError( e => of(this.errorHandler(e)))
     )
   }
-
+  
+  getPrivateData() {
+    return this.http.get(`${BASEURL}/api/private`).pipe(
+      map(res => res.json()),
+      catchError(e => of(this.errorHandler(e)))
+    )
+  }
+  
   logout(){
     return this.http.get(`${BASEURL}/api/auth/logout`,this.options).pipe(
       map( (res:Response) => {

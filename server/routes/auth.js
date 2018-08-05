@@ -24,14 +24,15 @@ router.post('/signup', (req, res, next) => {
   const {username,password,name,lastname,email,category} = req.body;
 
   // Check for non empty user or password
-  if (!username || !password){
+  if (!username || !password || !email){
     next(new Error('You must provide valid credentials'));
+    return;
   }
 
   // Check if user exists in DB
-  User.findOne({ username })
-  .then( foundUser => {
-    if (foundUser) throw new Error('Username already exists');
+  User.findOne({ email })
+  .then( foundEmail => {
+    if (foundEmail) throw new Error('Email already exists');
 
     const salt     = bcrypt.genSaltSync(10);
     const hashPass = bcrypt.hashSync(password, salt);
@@ -42,6 +43,7 @@ router.post('/signup', (req, res, next) => {
       lastname,
       password: hashPass,
       email,
+      role:'user',
       category
     }).save();
   })
@@ -67,12 +69,13 @@ router.post('/login', (req, res, next) => {
 
 router.get('/currentuser', (req,res,next) => {
   if(req.user){
+    
     res.status(200).json(req.user);
   }else{
+   
     next(new Error('Not logged in'))
   }
 })
-
 
 router.get('/logout', (req,res) => {
   req.logout();

@@ -1,5 +1,6 @@
 
 <div *ngIf="user" class="profile">
+    
 <div class="row">
     <div class="col-md-6">
             <figure class="snip0057 red">
@@ -13,11 +14,13 @@
                   </figure>
     </div>
     <div class="col-md-6">
-            <input required minlength="3" type="text" [(ngModel)]="videoUrl" name="url"> 
+        <div class="col-md-7">
+            <input  type="text" class="form-control" [(ngModel)]="videoUrl" name="url" required minlength="3"> 
             <button (click)="saveVideo()">your video</button>
+        </div>
             <div class="containerUser">
-                    <span (click)="toggleHidden()">Edit</span>
-                    
+             <span (click)="toggleHidden()">Edit tu perfil</span>
+
                 <form *ngIf="isVisible">
                     <h2>Edita tu perfil</h2>
                     <div class="row">
@@ -63,7 +66,6 @@
                                     <option value="11-15 Portugal">11-15 años Portugal</option>
                                     <option value="16-22 Portugal">16-22 años Portugal</option>
                                     <option value="11-22 España">11-22 años España</option>
-                
                                 </select>
                             </div>
                         </div>
@@ -79,9 +81,6 @@
         </div>
 
 </div>
-<div class="row">
-        
-</div>
 
 
 
@@ -91,3 +90,5 @@
 </div>
 
 </div>
+</div>
+
