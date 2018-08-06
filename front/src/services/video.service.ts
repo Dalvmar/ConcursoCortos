@@ -34,6 +34,7 @@ getVideo(id){
       .pipe(map(res => res.json()));
   }
 
+  //Delete videos when your role is admin
   remove(id) {
     console.log(id)
     return this.http

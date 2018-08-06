@@ -1,6 +1,6 @@
 
   <div *ngFor="let user of users">
-    <div> {{user.username}}----- <a (click)="deleteUser()"> Borrar </a></div>
+    <div> {{user.username}}----- <a (click)="deleteUser(user._id)"> Borrar </a></div>
 
   </div>
 

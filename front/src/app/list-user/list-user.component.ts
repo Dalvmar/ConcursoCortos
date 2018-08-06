@@ -12,23 +12,25 @@ export class ListUserComponent implements OnInit {
 users;
   constructor( private  userService:UserService,private sessionService:SessionService, 
     private route: ActivatedRoute,
-    private router: Router) {
+    private router: Router) {}
 
-      this.sessionService.isLogged().subscribe(user=>{
-        this.userService.getListUsers()
-        .subscribe((data)=>{
-        console.log(data)
-        this.users=data
-      })
-     })
-    }
-
+getUsers(){
+  this.sessionService.isLogged().subscribe(user=>{
+    this.userService.getListUsers()
+    .subscribe((data)=>{
+    console.log(data)
+    this.users=data
+  })
+ })
+}
+    
   ngOnInit() {
+    this.getUsers()
   }
 
-  deleteUser() {
+  deleteUser(id) {
     this.userService
-       .removeUser(this.users._id)
-       .subscribe(() => this.router.navigate(["profile"]));
+       .removeUser(id)
+       .subscribe(() => this.getUsers());
     }
 }

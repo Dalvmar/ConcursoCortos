@@ -37,8 +37,9 @@ editUser(user) {
 
 //Delete user when your role is admin
 removeUser(id) {
+  console.log(id)
   return this.http
-    .delete(`${this.BASE_URL}/api/profile/${id}`)
+    .delete(`${this.BASE_URL}/api/profile/delete/${id}`)
     .pipe(map(res => res.json()));
 } 
 
