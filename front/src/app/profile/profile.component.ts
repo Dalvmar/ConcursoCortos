@@ -25,6 +25,7 @@ export class ProfileComponent implements OnInit {
 	ngOnInit() {
 		this.sessionService.isLogged().subscribe((user) => {
 			this.user = user;
+			if(this.user.role==='user'){
 			this.videoService.getUserVideos(this.user._id).subscribe(data => {
 				data.forEach(obj => {
 					console.log(obj.video)
@@ -32,8 +33,19 @@ export class ProfileComponent implements OnInit {
 				})
 				this.videoList = data
 				console.log(this.videoList)
-
+			
 			});
+		}else {
+			console.log("admin")
+			this.videoService.getlistVideos().subscribe(data => {
+				data.forEach(obj => {
+					console.log(obj.video)
+					obj.video = obj.video.replace('watch?v=', 'embed/')
+				})
+				this.videoList = data
+				console.log(this.videoList)
+		})
+	     }
 		});
 	}
 	toggleHidden(e) {

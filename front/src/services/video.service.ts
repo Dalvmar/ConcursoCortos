@@ -23,9 +23,9 @@ getVideo(id){
       .pipe(map(res => res.json()));
   }
 
-  getVideos() {
+  getlistVideos() {
      return this.http
-      .get(`${this.BASE_URL}/api/video/list`)
+      .get(`${this.BASE_URL}/api/video`)
       .pipe(map(res => res.json()));
   }
   newVideo(url,userId) {
@@ -35,6 +35,7 @@ getVideo(id){
   }
 
   remove(id) {
+    console.log(id)
     return this.http
       .delete(`${this.BASE_URL}/api/video/delete/${id}`)
       .pipe(map(res => res.json()));

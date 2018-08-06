@@ -9,15 +9,20 @@ import { Router } from '../../../node_modules/@angular/router';
 })
 export class LoginComponent implements OnInit {
   constructor(private sessionService:SessionService, private router:Router) { }
-
+  message
   ngOnInit() {
   }
 
   login(username:string, password:string){
     console.log("login....");
     this.sessionService.login(username,password).subscribe( user => {
-      console.log(user)
-      this.router.navigate(['profile'])
+      console.log(user['status'])
+      if(user['status']>=500) {
+        this.message = 'Invalid data'
+      } 
+      else {
+        this.router.navigate(['profile'])
+      }; 
     });
   }
 

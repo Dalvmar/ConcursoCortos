@@ -1,25 +1,39 @@
-
 <div *ngIf="user" class="profile">
-    
-<div class="row">
-    <div class="col-md-6">
+
+    <div class="row">
+        <div class="col-md-6">
             <figure class="snip0057 red">
-                    <figcaption>
-                      <h2>{{user.name}} <span>{{user.lastname}}</span></h2>
-                       <p>{{user.email}}</p>
-                      <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone">8888</i></a></div> 
-                    </figcaption>
-                    <div class="image"><img src="https://www.topmanzana.com/Imagenes/10-mejores-aplicaciones-video-iphone-y-ipad.jpg" height="300" alt="sample4"/></div>
-                    <div class="position">{{user.category}}</div>
-                  </figure>
-    </div>
-    <div class="col-md-6">
-        <div class="col-md-7">
-            <input  type="text" class="form-control" [(ngModel)]="videoUrl" name="url" required minlength="3"> 
-            <button (click)="saveVideo()">your video</button>
+                <figcaption>
+                    <h2>{{user.name}}
+                        <span>{{user.lastname}}</span>
+                    </h2>
+                    <p>{{user.email}}</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="ion-ios-home"></i>
+                        </a>
+                        <a href="#">
+                            <i class="ion-ios-email"></i>
+                        </a>
+                        <a href="#">
+                            <i class="ion-ios-telephone">8888</i>
+                        </a>
+                    </div>
+                </figcaption>
+                <div class="image">
+                    <img src="https://www.topmanzana.com/Imagenes/10-mejores-aplicaciones-video-iphone-y-ipad.jpg" height="300"
+                        alt="sample4" />
+                </div>
+                <div class="position">{{user.category}}</div>
+            </figure>
         </div>
+        <div class="col-md-6">
+            <div class="col-md-7" *ngIf="user.role==='user'">
+                <input type="text" class="form-control" [(ngModel)]="videoUrl" name="url" required minlength="3">
+                <button (click)="saveVideo()">your video</button>
+            </div>
             <div class="containerUser">
-             <span (click)="toggleHidden()">Edit tu perfil</span>
+                <span (click)="toggleHidden()">Edit tu perfil</span>
 
                 <form *ngIf="isVisible">
                     <h2>Edita tu perfil</h2>
@@ -51,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                
+
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
@@ -75,29 +89,36 @@
                             </div>
                         </div>
                     </div>
-                
+
                 </form>
-                
+
+            </div>
+
         </div>
 
-</div>
+        <div *ngIf="user.role==='user'">
+            <div class="row">
+                <div class="col-3 col-md-3 videosList" *ngFor="let video of videoList">
+                    <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    <a [routerLink]="['/video',video._id]">Detalles</a>
+                </div>
 
-
-
-
-
-<!-- <div *ngFor='let video of videoList'>
-    hola
-     <app-list-videos></app-list-videos>
-</div> -->
-<div class="row">
-        <div class="col-3 col-md-3 videosList" *ngFor="let video of videoList">
-                <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                <a [routerLink]="['/video',video._id]">Detalles</a>
+            </div>
         </div>
-        
- </div>
+        <div *ngIf="user.role==='admin'">
+            <div class="row">
+                <div class="col">
+                   <h3> Lista  de videos</h3>
+                        <app-list-videos></app-list-videos>
+                </div>
+                <div class="col">
+                   <h3>Lista de Usuarios</h3>
+                <app-list-user></app-list-user>
+                </div>  
+            </div>
+        </div>
+    </div>
 
-</div>
+
 </div>
 

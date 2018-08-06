@@ -60,10 +60,9 @@ router.get("/:id", (req, res, next) => {
 
 
 // Retrive ALL
-router.get("/list", (req, res, next) => {
-	Video.find()
-	  .then(objects => res.json(objects))
-	  .catch(e => next(e));
+router.get("/", (req, res, next) => {
+	Video.find().then(objects => res.json(objects))
+	.catch(e => next(e));
   });
 
 module.exports = router;

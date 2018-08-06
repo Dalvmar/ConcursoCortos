@@ -17,7 +17,7 @@ import { VideoService } from '../services/video.service';
 import { NegateUserLoggedInGuard } from './Guards/negateuserloggenin.guard';
 import { isLoggedInGuardService } from './Guards/isloggedin.guard';
 import { HomeComponent } from './home/home.component';
-import { ListComponent } from './list/list.component';
+import { ListUserComponent } from './list-user/list-user.component';
 
 
 @NgModule({
@@ -31,7 +31,7 @@ import { ListComponent } from './list/list.component';
       ListVideosComponent,
       SafePipe,
       HomeComponent,
-      ListComponent
+      ListUserComponent
    ],
    imports: [
       BrowserModule,

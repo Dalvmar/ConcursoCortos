@@ -27,6 +27,9 @@
             <button (click)="login(username,password)"> login </button>
         </div>  
       </div>
+      <div *ngIf="message" class="message">
+        {{message}}
+      </div>
       <div class="signup">
         Don't have an account? <a [routerLink]="['/signup']">Signup</a>
       </div>    
