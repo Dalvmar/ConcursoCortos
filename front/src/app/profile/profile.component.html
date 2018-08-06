@@ -85,9 +85,18 @@
 
 
 
-<div class="listVideos row">
+
+<!-- <div *ngFor='let video of videoList'>
+    hola
      <app-list-videos></app-list-videos>
-</div>
+</div> -->
+<div class="row">
+        <div class="col-3 col-md-3 videosList" *ngFor="let video of videoList">
+                <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <a [routerLink]="['/video',video._id]">Detalles</a>
+        </div>
+        
+ </div>
 
 </div>
 </div>

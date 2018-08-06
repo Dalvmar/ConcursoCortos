@@ -21,18 +21,18 @@ export class ListVideosComponent implements OnInit {
     private router: Router,
   ) {
 
-    this.sessionService.isLogged().subscribe((user) => {
-      this.videoService.getUserVideos(user._id)
-        .subscribe(data => { 
-          data.forEach(obj=>{
-            console.log(obj.video)
-            obj.video = obj.video.replace('watch?v=','embed/')
-          })
-          this.videos = data
-          console.log(this.videos)
-        })
-    })
-
+    // this.sessionService.isLogged().subscribe((user) => {
+    //   this.videoService.getUserVideos(user._id)
+    //     .subscribe(data => { 
+    //       data.forEach(obj=>{
+    //         console.log(obj.video)
+    //         obj.video = obj.video.replace('watch?v=','embed/')
+    //       })
+    //       this.videos = data
+    //       console.log(this.videos)
+    //     })
+    // })
+  
   }
 
 

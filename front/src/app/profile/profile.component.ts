@@ -13,7 +13,7 @@ export class ProfileComponent implements OnInit {
 	user;
 	videoUrl: String;
 	isVisible: Boolean = false;
-  videoList:any;
+  videoList;
 	constructor(
 		private sessionService: SessionService,
 		private route: ActivatedRoute,
@@ -24,11 +24,16 @@ export class ProfileComponent implements OnInit {
 
 	ngOnInit() {
 		this.sessionService.isLogged().subscribe((user) => {
-      		this.user = user;
-      		this.videoService.getUserVideos(this.user._id).subscribe(data => {
-        		this.videoList = data
-        		console.log(this.user, this.videoList);
-      		});
+			this.user = user;
+			this.videoService.getUserVideos(this.user._id).subscribe(data => {
+				data.forEach(obj => {
+					console.log(obj.video)
+					obj.video = obj.video.replace('watch?v=', 'embed/')
+				})
+				this.videoList = data
+				console.log(this.videoList)
+
+			});
 		});
 	}
 	toggleHidden(e) {
@@ -45,8 +50,20 @@ export class ProfileComponent implements OnInit {
 		this.videoService.newVideo(this.videoUrl,this.user._id).subscribe(() => {
 			console.log(this.videoUrl);
 			this.videoUrl = '';
+			this.refreshVideo()
 			this.router.navigate([ '/profile' ]);
 		});
 	}
-
+	refreshVideo() {
+		this.videoService.getUserVideos(this.user._id)
+        .subscribe(data => { 
+          data.forEach(obj=>{
+            console.log(obj.video)
+            obj.video = obj.video.replace('watch?v=','embed/')
+          })
+          this.videoList = data
+          console.log(this.videoList)
+	  })
+	}
+	
 }

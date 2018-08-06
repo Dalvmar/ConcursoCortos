@@ -25,7 +25,7 @@ getVideo(id){
 
   getVideos() {
      return this.http
-      .get(`${this.BASE_URL}/api/list`)
+      .get(`${this.BASE_URL}/api/video/list`)
       .pipe(map(res => res.json()));
   }
   newVideo(url,userId) {

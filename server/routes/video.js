@@ -60,7 +60,7 @@ router.get("/:id", (req, res, next) => {
 
 
 // Retrive ALL
-router.get("/videos", (req, res, next) => {
+router.get("/list", (req, res, next) => {
 	Video.find()
 	  .then(objects => res.json(objects))
 	  .catch(e => next(e));
