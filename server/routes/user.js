@@ -17,7 +17,7 @@ router.put('/edit/:id', (req, res, next) => {
 	
 	User.findById(req.params.id).then(user => {
 		const { username, name, lastname, email, paswword, category } = req.body;
-
+	
 	const updates = { username, name, lastname, email, paswword, category };
 	
 	User.findByIdAndUpdate(req.params.id, updates, { new: true })

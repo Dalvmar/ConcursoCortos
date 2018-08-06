@@ -95,30 +95,29 @@
             </div>
 
         </div>
-
         <div *ngIf="user.role==='user'">
-            <div class="row">
-                <div class="col-3 col-md-3 videosList" *ngFor="let video of videoList">
-                    <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                    <a [routerLink]="['/video',video._id]">Detalles</a>
+                <div class="row">
+                    <div class="col-3 col-md-3 videosList" *ngFor="let video of videoList">
+                        <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        <a [routerLink]="['/video',video._id]">Detalles</a>
+                    </div>
+        
                 </div>
-
             </div>
+           
         </div>
+        
         <div *ngIf="user.role==='admin'">
-            <div class="row">
-                <div class="col">
-                   <h3> Lista  de videos</h3>
-                        <app-list-videos></app-list-videos>
+                <div class="row">
+                    <div class="col">
+                       <h3> Lista  de videos</h3>
+                            <app-list-videos></app-list-videos>
+                    </div>
+              
+                    <div class="col">
+                       <h3>Lista de Usuarios</h3>
+                    <app-list-user></app-list-user>
+                    </div>  
                 </div>
-                <div class="col">
-                   <h3>Lista de Usuarios</h3>
-                <app-list-user></app-list-user>
-                </div>  
             </div>
-        </div>
-    </div>
-
-
 </div>
-

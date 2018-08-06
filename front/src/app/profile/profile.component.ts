@@ -66,6 +66,7 @@ export class ProfileComponent implements OnInit {
 			this.router.navigate([ '/profile' ]);
 		});
 	}
+
 	refreshVideo() {
 		this.videoService.getUserVideos(this.user._id)
         .subscribe(data => { 
