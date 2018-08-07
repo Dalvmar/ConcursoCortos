@@ -1,5 +1,5 @@
-import { isLoggedInGuardService } from './Guards/isloggedin.guard';
-import { NegateUserLoggedInGuard } from './Guards/negateuserloggenin.guard';
+import { isLoggedInGuardService } from './guards/isloggedin.guard';
+import { NegateUserLoggedInGuard } from './guards/negateuserloggenin.guard';
 
 
 import { Routes } from '@angular/router';
