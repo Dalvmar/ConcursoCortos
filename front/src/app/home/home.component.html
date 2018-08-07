@@ -9,10 +9,10 @@
 <div *ngIf="videoList">
 
 
-<div id="badge" *ngFor="let video of videoList">
+<div id="badge" *ngFor="let video of videoList; let i = index">
 
     <div id="badge">
-        <p>{{video._id}}</p>
+       
         <header>
             <iframe width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
@@ -24,9 +24,9 @@
                 <div class="total">
                 2Comments
                 </div>
-                <button (click)="toggleHidden()">Comentario</button>
-                <input *ngIf="isVisible" type="text" [(ngModel)]="textComment" name="textCommnet">
-                <button (click)="saveComment(video._id, textComment)">OK</button>
+                <button (click)="toggleHidden($event,i)">Comentario</button>
+                <input class="comment-input" type="text" [(ngModel)]="video.comment" name="video-comment">
+                <button (click)="saveComment(video._id, video.comment, i)">OK</button>
                 <div style="clear: both;"></div>
             </div>
 

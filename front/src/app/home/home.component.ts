@@ -11,10 +11,8 @@ import { UserService } from '../../services/user.service';
 })
 export class HomeComponent implements OnInit {
 	videoList: Array<any>;
-	isVisible: Boolean = false;
 	video;
 	comments;
-	textComment;
 	user;
 	constructor(
 		private videoService: VideoService,
@@ -34,13 +32,16 @@ export class HomeComponent implements OnInit {
 		this.videoService.getlistVideos().subscribe((data) => {
 			data.forEach((obj) => {
 				obj.video = obj.video.replace('watch?v=', 'embed/');
+				
 			});
 			this.videoList = data;
 			console.log(this.videoList)
 		});
 	}
-	toggleHidden(e) {
-		this.isVisible = !this.isVisible;
+	toggleHidden(e,i) {
+		[].slice.call(e.currentTarget.closest('.info').childNodes).forEach(e=>{
+			if(e.classList.contains('comment-input')) e.classList.toggle('active')
+		})
 	}
 
 	// refreshComments(videoId) {
@@ -51,19 +52,11 @@ export class HomeComponent implements OnInit {
 	// 	});
 	// }
 
-	saveComment(videoId, comment) {
+	saveComment(videoId, comment, i) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)
 		.subscribe(video => {
-			 this.videoService.getVideo(video._id).subscribe((video)=>{
-					
-					this.ngOnInit()
-	
-				
-			})
-		
-			
-			this.textComment = '';
-    	});
+			this.videoList[i].commment = video.commment
+		})
 	}
 
 	addAdmin(username: string, name: string, lastname: string, email: string, password: string) {

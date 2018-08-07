@@ -14,12 +14,13 @@ router.post('/',(req,res,next)=>{
     .then(comment =>{
         Cortos.findByIdAndUpdate(videoId, {$push: { commment :  comment._id}}, {new: true})
         .then(corto => {
-            // Cortos.find().then(cortos=>{
-            //     return res.status(200).json(cortos)
-            // })
-            return res.status(200).json(corto)
+            Cortos.populate(corto, { path:'commment', populate: { path: 'author' }})
+            .then(cortoObj=>{
+                return res.status(200).json(cortoObj)
+            })
         })
     })
+
     .catch(err =>{
         console.log(err)
         next(err)

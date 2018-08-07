@@ -81,8 +81,8 @@ router.post('/newAdmin', (req, res, next) => {
 	const {username,password,name,lastname,email} = req.body;
   	console.log(req.body)
 	// Check for non empty user or password
-	if (!username || !password || !email){
-	  next(new Error('You must provide valid credentials'));
+	if (!username || !password || !email || !name || !lastname){
+	  next(new Error('You must provide credentials'));
 	  return;
 	}
   
@@ -103,7 +103,7 @@ router.post('/newAdmin', (req, res, next) => {
 		role:'admin',
 		category:'11-22 años España'
 	};
-	  User.create(newAdmin).then( (object) => res.json(object)).catch((e) => next(e));
+	  User.create(newAdmin, {new:true}).then( (object) => res.json(object)).catch((e) => next(e));
 	}
 	
   })

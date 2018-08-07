@@ -11,7 +11,7 @@
                     <div class="icons">
                         <i class="ion-ios-home"><p>{{user.username}}</p></i>
                         <i class="ion-ios-email"><p>{{user.email}}</p></i>
-                        <i class="ion-ios-telephone">8888</i>
+                        <i class="ion-ios-telephone"></i>
                     </div>
                 </figcaption>
                 <div class="image">
@@ -95,7 +95,7 @@
 
         </div>
 
-        <div class="newUser">
+        <div class="newUser" *ngIf="user.role==='admin'">
               <div class="containerUser">
                 <span (click)="toggleHiddenAdmin()">Añadir admin</span>
 

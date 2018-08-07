@@ -83,10 +83,15 @@ export class ProfileComponent implements OnInit {
 	  })
 	}
 	addAdmin(usernameAdmin:string,nameAdmin:string,lastnameAdmin:string,passwordAdmin:string,emailAdmin:string){
+		if(!usernameAdmin|| !nameAdmin || !lastnameAdmin || !passwordAdmin ||!emailAdmin)
+		this.router.navigate(['/profile']);
+		else{
 		this.userService.signupAdmin(usernameAdmin,nameAdmin,lastnameAdmin,emailAdmin,passwordAdmin)
 		.subscribe( (user:any) =>{
 			console.log(user);
+			this.router.navigate(['/profile']);
 		})
+	}
 	}
 	
 }

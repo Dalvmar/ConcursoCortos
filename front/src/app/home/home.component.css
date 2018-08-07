@@ -19,6 +19,12 @@ header {
     padding:0;
     border-bottom:1px solid silver;
 }
+.comment-input {
+    display: none
+}
+.active {
+    display: initial;
+}
 /* .heart {
     border:3px solid white;
     border-radius:50px;

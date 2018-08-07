@@ -15,7 +15,9 @@ constructor( private http:Http) { }
 getVideo(id){
     return this.http
       .get(`${environment.BASEURL}/api/video/${id}`)
-      .pipe(map(res => res.json()));
+      .pipe(map(res => {
+        return res.json()
+      }));
   }
 
 
