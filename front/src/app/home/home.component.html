@@ -26,7 +26,7 @@
                 </div>
                 <button (click)="toggleHidden()">Comentario</button>
                 <input *ngIf="isVisible" type="text" [(ngModel)]="textComment" name="textCommnet">
-                <button (click)="saveComment(video._id,textComment)">OK</button>
+                <button (click)="saveComment(video._id, textComment)">OK</button>
                 <div style="clear: both;"></div>
             </div>
 

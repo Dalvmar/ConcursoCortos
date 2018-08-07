@@ -43,15 +43,24 @@ export class HomeComponent implements OnInit {
 		this.isVisible = !this.isVisible;
 	}
 
-	refreshComments(videoId) {
-		this.commentsService.getComments(videoId).subscribe((comments) => (this.comments = comments));
-	}
+	// refreshComments(videoId) {
+	// 	console.log(videoId)
+	// 	this.commentsService.getComments(videoId).subscribe((comment) => {
+	// 		this.comments = comment
+		
+	// 	});
+	// }
 
 	saveComment(videoId, comment) {
-		
 		this.commentsService.saveComment(videoId, comment, this.user._id)
-		.subscribe(videos => {
-			
+		.subscribe(video => {
+			 this.videoService.getVideo(video._id).subscribe((video)=>{
+					
+					this.ngOnInit()
+	
+				
+			})
+		
 			
 			this.textComment = '';
     	});

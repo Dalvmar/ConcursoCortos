@@ -12,11 +12,12 @@ router.post('/',(req,res,next)=>{
     const{videoId,comment,author}=req.body;
     Comment.create({videoId,comment,author})
     .then(comment =>{
-        Cortos.findByIdAndUpdate(videoId, {$push: { commment :  comment._id}})
+        Cortos.findByIdAndUpdate(videoId, {$push: { commment :  comment._id}}, {new: true})
         .then(corto => {
-            Cortos.find().then(cortos=>{
-                return res.status(200).json(cortos)
-            })
+            // Cortos.find().then(cortos=>{
+            //     return res.status(200).json(cortos)
+            // })
+            return res.status(200).json(corto)
         })
     })
     .catch(err =>{
