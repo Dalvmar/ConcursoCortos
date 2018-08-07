@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Http } from "@angular/http"
 import { map } from "rxjs/operators";
+import { Observable } from "../../node_modules/rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
+  options:object = {withCredentials:true};
   BASE_URL: string = "http://localhost:3000";
  
 constructor( private http:Http ) { }
@@ -33,6 +35,15 @@ editUser(user) {
     .put(`${this.BASE_URL}/api/profile/edit/${user._id}`, user)
     .pipe(map(res => {console.log(user)
       res.json()}))
+}
+signupAdmin(username:string,name:string,lastname:string,email:string, password:string): Observable<object>{
+  return this.http.post(`${this.BASE_URL}/api/profile/newAdmin`,{username,name,lastname,email,password},this.options).pipe(
+    map( (res:Response) => {
+      let data = res.json();
+      return data;
+    }),
+  
+  )
 }
 
 //Delete user when your role is admin

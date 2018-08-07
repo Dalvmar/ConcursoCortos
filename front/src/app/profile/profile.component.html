@@ -7,17 +7,11 @@
                     <h2>{{user.name}}
                         <span>{{user.lastname}}</span>
                     </h2>
-                    <p>{{user.email}}</p>
+                    
                     <div class="icons">
-                        <a href="#">
-                            <i class="ion-ios-home"></i>
-                        </a>
-                        <a href="#">
-                            <i class="ion-ios-email"></i>
-                        </a>
-                        <a href="#">
-                            <i class="ion-ios-telephone">8888</i>
-                        </a>
+                        <i class="ion-ios-home"><p>{{user.username}}</p></i>
+                        <i class="ion-ios-email"><p>{{user.email}}</p></i>
+                        <i class="ion-ios-telephone">8888</i>
                     </div>
                 </figcaption>
                 <div class="image">
@@ -99,6 +93,62 @@
 
             </div>
 
+        </div>
+
+        <div class="newUser">
+              <div class="containerUser">
+                <span (click)="toggleHiddenAdmin()">Añadir admin</span>
+
+                <form *ngIf="isVisibleAdmin">
+                    <h2>Nuevo Admin</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" [(ngModel)]="username" name="username" required id="usernameAdmin">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" [(ngModel)]="name" name="name" required id="nameAdmin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastname">Apellidos</label>
+                                <input type="text" class="form-control" [(ngModel)]="lastname" name="lastname" required id="lastnameAdmin">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" [(ngModel)]="email" name="email" required id="emailAdmin">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            <div class="form-group">
+                                    <label for="newpassword">Password</label>
+                                    <input type="text" class="form-control" [(ngModel)]="password" name="passwordAdmin" />
+                                </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" (click)="addAdmin(username,name,lastname,password,email)">Añadir admin</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
         </div>
         <div *ngIf="user.role==='user'">
                 <div class="row">

@@ -1,8 +1,49 @@
 
-<div *ngFor="let videos of videoList">
+<!-- <div *ngFor="let video of videoList">
     <div class="row">
     
-        <iframe width="320" height="215" [src]="videos.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
       
     </div>
+</div> -->
+<div *ngIf="videoList">
+
+
+<div id="badge" *ngFor="let video of videoList">
+
+    <div id="badge">
+        <p>{{video._id}}</p>
+        <header>
+            <iframe width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+        </header>
+
+        <section class="all">
+
+            <div class="info">
+                <div class="total">
+                2Comments
+                </div>
+                <button (click)="toggleHidden()">Comentario</button>
+                <input *ngIf="isVisible" type="text" [(ngModel)]="textComment" name="textCommnet">
+                <button (click)="saveComment(video._id,textComment)">OK</button>
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="list">
+                <div class="mask"></div>
+                <section>
+                    <div class="comments">
+                        <ul *ngFor="let comment of video.commment"> 
+                        <p>{{comment.author.name}}:{{comment.comment}}</p>
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+
+        </section>
+
+    </div>
+</div>
 </div>

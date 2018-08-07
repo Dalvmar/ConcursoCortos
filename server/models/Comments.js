@@ -3,8 +3,9 @@ const Schema   = mongoose.Schema;
 
 const CommentSchema = new Schema({
 
-  cortoId: {type:Schema.Types.ObjectId, ref:'Cortos'},
-  text: {type: String},
+  videoId: {type:Schema.Types.ObjectId, ref:'Cortos'},
+  author: {type:Schema.Types.ObjectId, ref:'User'},
+  comment: {type: String},
   }, {
   timestamps: {
     createdAt: 'created_at',
@@ -12,5 +13,5 @@ const CommentSchema = new Schema({
   }
 });
 
-const Commnent = mongoose.model('Comment', commentSchema);
+const Comment = mongoose.model('Comment', CommentSchema);
 module.exports = Comment;

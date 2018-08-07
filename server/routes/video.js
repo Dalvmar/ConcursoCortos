@@ -2,6 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 const Video = require('../models/Cortos');
+const Comment = require('../models/Comments');
 const axios = require('axios');
 const apiUrl = 'https://api.microlink.io?url=';
 
@@ -61,8 +62,16 @@ router.get("/:id", (req, res, next) => {
 
 // Retrive ALL
 router.get("/", (req, res, next) => {
-	Video.find().then(objects => res.json(objects))
-	.catch(e => next(e));
+	Video.find()
+	.populate('commment')
+	.populate({ path:'commment', populate: { path: 'author' }})
+	.then(videos => {
+		return res.json(videos)
+	})
+	.catch(e => {
+		console.log(e)
+		next(e)
+	});
   });
 
 module.exports = router;

@@ -4,7 +4,7 @@ const Schema   = mongoose.Schema;
 const CortoSchema = new Schema({
   video: {type: String},
   author: {type:Schema.Types.ObjectId, ref:'User'},
-  commment: [{type:Schema.Types.ObjectId, ref:'Commnet'}],
+  commment: [{type:Schema.Types.ObjectId, ref:'Comment'}],
   creator: {type: String},
   desription:{type:String},
   cover:{type:String}

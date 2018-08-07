@@ -52,7 +52,6 @@ router.post('/signup', (req, res, next) => {
   .catch(e => next(e));
 });
 
-
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', (err, theUser, failureDetails) => {
     

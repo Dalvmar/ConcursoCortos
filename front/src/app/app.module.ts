@@ -18,6 +18,7 @@ import { NegateUserLoggedInGuard } from './Guards/negateuserloggenin.guard';
 import { isLoggedInGuardService } from './Guards/isloggedin.guard';
 import { HomeComponent } from './home/home.component';
 import { ListUserComponent } from './list-user/list-user.component';
+import { CommentsService } from '../services/comments.service';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { ListUserComponent } from './list-user/list-user.component';
     isLoggedInGuardService, 
     NegateUserLoggedInGuard, 
     UserService,
+    CommentsService,
     VideoService,
   ],
   bootstrap: [AppComponent]

@@ -54,6 +54,17 @@ export class SessionService {
     )
   }
 
+  // signupAdmin(usernameAdmin:string,nameAdmin:string,lastnameAdmin:string,emailAdmin:string, passwordAdmin:string): Observable<object>{
+  //   return this.http.post(`${BASEURL}/api/auth/signupAdmin`,{usernameAdmin,nameAdmin,lastnameAdmin,emailAdmin,passwordAdmin},this.options).pipe(
+  //     map( (res:Response) => {
+  //       let data = res.json();
+  //       // this.user = data.user;
+  //       // return this.user;
+  //     }),
+  //     catchError( e => of(this.errorHandler(e)))
+  //   )
+  // }
+
   login(username:string, password:string): Observable<object>{
     return this.http.post(`${BASEURL}/api/auth/login`,{username,password},this.options).pipe(
       map( (res:Response) => {
@@ -66,12 +77,6 @@ export class SessionService {
     )
   }
   
-  getPrivateData() {
-    return this.http.get(`${BASEURL}/api/private`).pipe(
-      map(res => res.json()),
-      catchError(e => of(this.errorHandler(e)))
-    )
-  }
   
   logout(){
     return this.http.get(`${BASEURL}/api/auth/logout`,this.options).pipe(

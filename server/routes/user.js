@@ -75,4 +75,40 @@ router.delete('/delete/:id', (req, res, next) => {
 		.catch((e) => next(e));
 });
 
+// ADD ADMIN
+router.post('/newAdmin', (req, res, next) => {
+
+	const {username,password,name,lastname,email} = req.body;
+  	console.log(req.body)
+	// Check for non empty user or password
+	if (!username || !password || !email){
+	  next(new Error('You must provide valid credentials'));
+	  return;
+	}
+  
+	// Check if user exists in DB
+	User.findOne({ email })
+	.then( foundEmail => {
+	  if (foundEmail) throw new Error('Email already exists');
+  		else{
+	  const salt     = bcrypt.genSaltSync(10);
+	  const hashPass = bcrypt.hashSync(password, salt);
+  
+	const newAdmin={
+		username,
+		name,
+		lastname,
+		password: hashPass,
+		email,
+		role:'admin',
+		category:'11-22 años España'
+	};
+	  User.create(newAdmin).then( (object) => res.json(object)).catch((e) => next(e));
+	}
+	
+  })
+  .catch((error) => console.log(error))
+
+});
+
 module.exports = router;

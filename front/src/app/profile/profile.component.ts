@@ -13,6 +13,7 @@ export class ProfileComponent implements OnInit {
 	user;
 	videoUrl: String;
 	isVisible: Boolean = false;
+	isVisibleAdmin: Boolean = false;
   videoList;
 	constructor(
 		private sessionService: SessionService,
@@ -51,6 +52,9 @@ export class ProfileComponent implements OnInit {
 	toggleHidden(e) {
 		this.isVisible = !this.isVisible;
 	}
+	toggleHiddenAdmin(e) {
+		this.isVisibleAdmin = !this.isVisibleAdmin;
+	}
 	edit(user) {
 		this.userService.editUser(this.user).subscribe((user) => {
 			this.user = user;
@@ -77,6 +81,12 @@ export class ProfileComponent implements OnInit {
           this.videoList = data
           console.log(this.videoList)
 	  })
+	}
+	addAdmin(usernameAdmin:string,nameAdmin:string,lastnameAdmin:string,passwordAdmin:string,emailAdmin:string){
+		this.userService.signupAdmin(usernameAdmin,nameAdmin,lastnameAdmin,emailAdmin,passwordAdmin)
+		.subscribe( (user:any) =>{
+			console.log(user);
+		})
 	}
 	
 }

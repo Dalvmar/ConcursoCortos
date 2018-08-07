@@ -90,8 +90,8 @@ const userProfile = require('./routes/user');
 app.use('/api/profile', userProfile);
 const userVideo = require('./routes/video');
 app.use('/api/video/', userVideo);
-//  const videoList = require('./routes/video/list');
-// app.use('/api/video/list/', videoList);
+const comments = require('./routes/comments');
+ app.use('/api/comments', comments);
 
 
 module.exports = app;
