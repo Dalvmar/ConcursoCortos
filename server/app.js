@@ -93,5 +93,9 @@ app.use('/api/video/', userVideo);
 const comments = require('./routes/comments');
  app.use('/api/comments', comments);
 
+ app.use(function(req, res) {
+  res.sendfile(__dirname + '/public/index.html');
+ });
+
 
 module.exports = app;
