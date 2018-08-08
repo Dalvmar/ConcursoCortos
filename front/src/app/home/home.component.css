@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 body {
     background:#525667;
@@ -55,16 +56,17 @@ section.all {
     font-weight:bold;
 }
 button {
-    float:right;
-    background:#1bd5a7;
-    border:none;
-    padding:3px;
-    color:white;
-    border-radius:5px;
-    transition:0.3s;
+    float: right;
+    background: #de8b87;
+    border: none;
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 2px;
 }
 button:hover {
-    background:#63f2cf;
+    background:#f7655d;
 }
 
 .list ul{
@@ -120,8 +122,89 @@ a:hover {
     font-size: 15px; 
 }
 
+/******efecto letas******/
+/* .textEfect {
+  background: hsla(0, 0%, 0%, .9); 
+}
 
+.textEfect h5 {
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 140px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: -80px 0 0 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+}
 
+@keyframes move {
+  0% {
+    text-shadow:
+
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+} */
 
 /*****footer***/
 a:hover{
@@ -233,9 +316,10 @@ h1 {
   }
   
   .master-container {
-      display:flex;
+    display:flex;
     justify-content:center;
-    align-items:center
+    align-items:center;
+    padding-bottom: 10px;
     
   }
   
@@ -248,7 +332,7 @@ h1 {
   }
   
   
-  .card {
+  .cardfecha {
     height:100%;
     width:100%;
      position: absolute;
@@ -256,11 +340,11 @@ h1 {
     transition:transform .7s cubic-bezier(.54,-0.58,.5,.58);
   }
   
-  .card:hover { 
+  .cardfecha:hover { 
      transform:rotateY(180deg);
   }
   
-  .card .side-1 {
+  .cardfecha .side-1 {
     
     position:absolute;
     height:100%;
@@ -270,31 +354,41 @@ h1 {
     
   }
   
-  .card .side-2{
+  .cardfecha .side-2{
     transform: rotateY(180deg);
     height:100%;
     width:100%;
-     backface-visibility: hidden;
-      overflow:hidden;
+    backface-visibility: hidden;
+    overflow:hidden;
   }
   
-  h2  {
-    position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-family:calibri;
+  .cardfecha h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+    font-size: 12px;
+ 
+  }
+  .cardfecha p{
+    font-size: 12px;
+  }
+  .chief{
+      border-radius: 6px;
+  }
+  .iconofecha{
+    padding-left: 3px;
+    font-size: 30px;
+    padding-left: 65px;
+    padding-top:5px;
+    padding-bottom: 5px;
   }
   
-  /* p {
+  /* .cardfecha p {
     
     position:absolute;
-    color:white;
-    padding:40px;
+   
+    padding:20px;
     
     
   } */
