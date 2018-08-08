@@ -375,4 +375,9 @@ body {
 } */
 
 /*****************/
-
+.navclass{
+	background-color: #e65b60 !important;
+}
+.navclass .welcome {
+	color: #fff;
+}

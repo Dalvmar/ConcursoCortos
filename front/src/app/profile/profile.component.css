@@ -14,6 +14,7 @@
   flex: 0 0 48%;
 }
 .selectEdit{
+ 
   border: 1px solid #ccc;
   width: 162px;
   overflow: hidden;
@@ -29,7 +30,12 @@
       background-image: none;
       appearance: none;
     }
-
+.selectButton{
+  display: inline-block;
+}
+.btnEdit{
+  display: inline-block;
+}
 
 figure.snip0057 {
   font-family: 'Raleway', Arial, sans-serif;
