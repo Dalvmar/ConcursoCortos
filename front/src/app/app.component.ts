@@ -6,6 +6,8 @@ import { SessionService } from '../services/session';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
   user;
   title = 'Concurso de Cortos';
@@ -19,3 +21,4 @@ export class AppComponent {
     this.sessionService.logout().subscribe();
   }
 }
+

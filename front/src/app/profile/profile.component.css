@@ -1,5 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.profile{
+  margin:60px auto;
+  padding: 10px;
+}
+.inputVideo
+{
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+.listAdmin{
+  flex: 0 0 48%;
+}
+.selectEdit{
+  border: 1px solid #ccc;
+  width: 162px;
+  overflow: hidden;
+  height: 36px;
+
+  }
+    .selectedit select {
+      padding: 5px 8px;
+      width: 130%;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      appearance: none;
+    }
+
+
 figure.snip0057 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
@@ -7,12 +38,13 @@ figure.snip0057 {
   overflow: hidden;
   margin: 10px 1%;
   min-width: 380px;
-  max-width: 480px;
+  max-width: 530px;
   width: 100%;
   background: #ffffff;
   color: #000000;
 }
 figure.snip0057 * {
+  text-align: right;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease-in-out;
@@ -68,7 +100,7 @@ figure.snip0057 figcaption h2 span {
   font-weight: 800;
 }
 figure.snip0057 figcaption p {
-  font-size: 0.9em;
+  font-size: 0.6em;
   opacity: 0.8;
 }
 figure.snip0057 figcaption .icons {
@@ -104,7 +136,7 @@ figure.snip0057.blue .position {
   background: #20638f;
 }
 figure.snip0057.red .position {
-  background: #962d22;
+  background: #e65b60;
 }
 figure.snip0057.yellow .position {
   background: #bf6516;

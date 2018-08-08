@@ -1,12 +1,10 @@
 <div *ngIf="user" class="profile">
 
     <div class="row">
-        <div class="col-md-6">
-            <figure class="snip0057 red">
+        <div class="col-md-7">
+            <figure class="snip0057 red inputVideo">
                 <figcaption>
-                    <h2>{{user.name}}
-                        <span>{{user.lastname}}</span>
-                    </h2>
+                    <h3>{{user.name}} {{user.lastname}}</h3>
                     
                     <div class="icons">
                         <i class="ion-ios-home"><p>{{user.username}}</p></i>
@@ -21,24 +19,33 @@
                 <div class="position">{{user.category}}</div>
             </figure>
         </div>
-        <div class="col-md-6">
-            <div class="col-md-7" *ngIf="user.role==='user'">
+
+        <div class="col-md-5" >
+            <!-- <div class="col-md-7" *ngIf="user.role==='user'">
                 <input type="text" class="form-control" [(ngModel)]="videoUrl" name="url" required minlength="3">
                 <button (click)="saveVideo()">your video</button>
-            </div>
+            </div> -->
+            <div class="input-group mb-3" *ngIf="user.role==='user'">
+                <input type="text" class="form-control" placeholder="Introduce la url" [(ngModel)]="videoUrl" name="url" required minlength="3" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="saveVideo()">OK</button>
+                </div>
+              </div>
             <div class="containerUser">
-                <span (click)="toggleHidden()">Edit tu perfil</span>
+
+                
+                <span (click)="toggleHidden()" class="btn btn-default dropdown-toggle">Edita tu perfil</span>
 
                 <form *ngIf="isVisible">
-                    <h2>Edita tu perfil</h2>
+                  
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label for="username">Username</label>
                                 <input type="text" class="form-control" [(ngModel)]="user.username" name="username" required id="username">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label for="name">Nombre</label>
                                 <input type="text" class="form-control" [(ngModel)]="user.name" name="name" required id="name">
@@ -46,13 +53,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label for="lastname">Apellidos</label>
                                 <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastname" required id="lastname">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" [(ngModel)]="user.email" name="email" required id="email">
@@ -64,18 +71,22 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="oldpassword">Password antigua</label>
-                                <input type="password" class="form-control"  name="oldpassword" />
+                                <input type="password" class="form-control" name="oldpassword" />
                             </div>
-
-                            <div class="form-group">
-                                    <label for="newpassword">Password nueva</label>
-                                    <input type="text" class="form-control" name="newpassword" />
-                                </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label for="newpassword">Password nueva</label>
+                                <input type="text" class="form-control" name="newpassword" />
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
                                 <label for="lastname">Categoria</label>
-                                <select name="category" id="category" [(ngModel)]="user.category">
+                                <select name="category" id="category" class="selectEdit" [(ngModel)]="user.category">
                                     <option value="11-15 Portugal">11-15 años Portugal</option>
                                     <option value="16-22 Portugal">16-22 años Portugal</option>
                                     <option value="11-22 España">11-22 años España</option>
@@ -94,45 +105,44 @@
             </div>
 
         </div>
-
+        </div>
         <div class="newUser" *ngIf="user.role==='admin'">
+            <div class="row">
+              <div class="col-md-10">
               <div class="containerUser">
                 <span (click)="toggleHiddenAdmin()">Añadir admin</span>
 
                 <form *ngIf="isVisibleAdmin">
                     <h2>Nuevo Admin</h2>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for="username">Username</label>
                                 <input type="text" class="form-control" [(ngModel)]="username" name="username" required id="usernameAdmin">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for="name">Nombre</label>
                                 <input type="text" class="form-control" [(ngModel)]="name" name="name" required id="nameAdmin">
                             </div>
                         </div>
+                        <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lastname">Apellidos</label>
+                                    <input type="text" class="form-control" [(ngModel)]="lastname" name="lastname" required id="lastnameAdmin">
+                                </div>
+                            </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="lastname">Apellidos</label>
-                                <input type="text" class="form-control" [(ngModel)]="lastname" name="lastname" required id="lastnameAdmin">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+                      
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" [(ngModel)]="email" name="email" required id="emailAdmin">
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col-md-4">
-
                             <div class="form-group">
                                     <label for="newpassword">Password</label>
                                     <input type="text" class="form-control" [(ngModel)]="password" name="passwordAdmin" />
@@ -144,10 +154,11 @@
                                 <button type="submit" class="btn btn-primary" (click)="addAdmin(username,name,lastname,password,email)">Añadir admin</button>
                             </div>
                         </div>
+                   
                     </div>
-
                 </form>
 
+            </div>
             </div>
         </div>
         <div *ngIf="user.role==='user'">
@@ -162,14 +173,14 @@
            
         </div>
         
-        <div *ngIf="user.role==='admin'">
-                <div class="row">
-                    <div class="col">
+        <div *ngIf="user.role==='admin'" class="ListAdmin">
+                <div class="row align-items-center">
+                    <div class="col-6">
                        <h3> Lista  de videos</h3>
                             <app-list-videos></app-list-videos>
                     </div>
-              
-                    <div class="col">
+                    
+                    <div class="col-6">
                        <h3>Lista de Usuarios</h3>
                     <app-list-user></app-list-user>
                     </div>  
