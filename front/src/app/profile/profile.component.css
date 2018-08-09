@@ -196,7 +196,11 @@ figure.snip0057.hover:before {
     left: 0px;
   }
 }
-
+/******admin*****/
+.buttAdmin{
+  margin: 0 auto;
+  margin-top: 32px;
+}
 
 /****/
 .cardProfile{
