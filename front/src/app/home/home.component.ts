@@ -33,7 +33,15 @@ export class HomeComponent implements OnInit {
 	getlistVideo() {
 		this.videoService.getlistVideos().subscribe((data) => {
 			data.forEach((obj) => {
+				if(obj.video.includes('instagram')){
+				obj.video = obj.video + "embed";
+				}else if(obj.video.includes('youtube'))
+				{
 				obj.video = obj.video.replace('watch?v=', 'embed/');
+				}else if (obj.video.includes('vimeo')){
+				obj.video = obj.video.replace('https://vimeo.com', 'https://player.vimeo.com/video')
+				}
+				
 				console.log(obj)
 			});
 			this.videoList = data;
@@ -46,13 +54,6 @@ export class HomeComponent implements OnInit {
 		})
 	}
 
-	// refreshComments(videoId) {
-	// 	console.log(videoId)
-	// 	this.commentsService.getComments(videoId).subscribe((comment) => {
-	// 		this.comments = comment
-		
-	// 	});
-	// }
 
 	saveComment(videoId, comment, i) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)

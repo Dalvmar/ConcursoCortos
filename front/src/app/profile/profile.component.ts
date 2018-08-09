@@ -50,14 +50,17 @@ export class ProfileComponent implements OnInit {
 		});
 	}
 	toggleHidden(e) {
+		if(this.isVisibleAdmin!=true)
 		this.isVisible = !this.isVisible;
 	}
 	toggleHiddenAdmin(e) {
+		if(this.isVisible!=true)
 		this.isVisibleAdmin = !this.isVisibleAdmin;
 	}
 	edit(user) {
 		this.userService.editUser(this.user).subscribe((user) => {
 			this.user = user;
+			this.refreshAdmin() 
 			this.router.navigate([ '/profile' ]);
 		});
 	}
@@ -80,6 +83,14 @@ export class ProfileComponent implements OnInit {
           })
           this.videoList = data
           console.log(this.videoList)
+	  })
+	}
+	refreshAdmin() {
+		this.userService.get(this.user._id)
+        .subscribe(data => { 
+			console.log(data)
+          this.user = data
+          console.log(this.user)
 	  })
 	}
 	addAdmin(usernameAdmin:string,nameAdmin:string,lastnameAdmin:string,passwordAdmin:string,emailAdmin:string){

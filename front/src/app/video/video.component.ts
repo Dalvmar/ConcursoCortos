@@ -22,11 +22,20 @@ export class VideoComponent implements OnInit {
       this.videoService.getVideo(params.id).subscribe(video => {
         this.video= video;
         // console.log(this.video)
-        this.replacevideourl=this.video.video.replace('watch?v=', 'embed/')
-        console.log(this.replacevideourl)
+        if(this.video.video.includes('instagram')){
+          this.replacevideourl=this.video.video + "embed"
         this.video.video=this.replacevideourl
-        // this.replacevideourl=this.videoUrl.replace('watch?v=', 'embed/')
-        // console.log(this.replacevideourl)
+        }else if (this.video.video.includes('youtube'))
+        {
+          this.replacevideourl=this.video.video.replace('watch?v=', 'embed/')
+        this.video.video=this.replacevideourl
+       
+        } else if(this.video.video.includes('vimeo')) {
+          this.replacevideourl=this.video.video.replace('https://vimeo.com', 'https://player.vimeo.com/video')
+          this.video.video=this.replacevideourl
+
+        }
+         //console.log(this.video.video)
         
       })
     }); 
@@ -41,4 +50,3 @@ export class VideoComponent implements OnInit {
        .subscribe(() => this.router.navigate(["profile"]));
     }
 }
-

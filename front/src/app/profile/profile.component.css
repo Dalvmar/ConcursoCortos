@@ -47,6 +47,7 @@
 	display: inline-block;
 }
 
+
 figure.snip0057 {
 	font-family: 'Raleway', Arial, sans-serif;
 	position: relative;
@@ -93,11 +94,12 @@ figure.snip0057:before {
 	box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 }
 figure.snip0057 figcaption {
-	padding: 20px 30px 20px 20px;
-	position: absolute;
-	right: 0;
-	bottom: 10px;
-	width: 50%;
+    padding: 20px 30px 8px 20px;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 50%;
+	
 }
 figure.snip0057 figcaption h2,
 figure.snip0057 figcaption p {
@@ -222,7 +224,6 @@ figure.snip0057.hover:before {
 }
 .card-body {
 	width: 400px;
-
 	display: flex;
 	justify-content: center;
 }
@@ -233,12 +234,15 @@ figure.snip0057.hover:before {
     border: 1px solid;
     border-radius: 50%;
     display: block;
-    margin: 8px auto;
+	margin: 2px auto;
     color: white;
     line-height: 24px;
     text-align: center;
 }
-
+.edit-user form{
+    background: lightgray;
+    padding: 5px;
+}
 .containerEditUser {
   position: fixed;
   right: 10px;
@@ -251,8 +255,9 @@ figure.snip0057.hover:before {
   right: -10px;
   top: 54px;
   width: 400px;
-  background: white;
+  background: rgb(241, 239, 239) top;
   box-shadow: #000000;
+  padding-left: 15px;
 }
 .adminAdd{
 	height: 36px;
@@ -260,15 +265,22 @@ figure.snip0057.hover:before {
     border: 1px solid;
     border-radius: 50%;
     display: block;
-    margin: 8px auto;
+    margin: 2px auto;
     color: white;
     line-height: 34px;
-    text-align: center;
+	text-align: center;
+	margin-right: 10px;
+	
+}
+.formAdm{
+	background:rgb(241, 239, 239) top;
+    margin-top: 16px;
+    padding-left: 9px;
 }
 .containerUser{
 	position: fixed;
-    right: 64px;
-    top: 2px;
+    right: 54px;
+    top: 3px;
 	z-index: 9999;
 	
 }

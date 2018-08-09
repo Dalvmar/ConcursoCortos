@@ -28,7 +28,6 @@ import { SearchFilterPipe } from './search.pipe';
       LoginComponent,
       SignupComponent,
       ProfileComponent,
-      //UserEditComponent,
       VideoComponent,
       ListVideosComponent,
       SafePipe,
