@@ -36,7 +36,9 @@ router.post('/new', (req, res, next) => {
 });
 // Retrive DETAIL
 router.get('/:id', (req, res, next) => {
-	Video.findById(req.params.id).then((object) => res.json(object)).catch((e) => next(e));
+	Video.findById(req.params.id)
+	.populate('user')
+	.then((object) => res.json(object)).catch((e) => next(e));
 });
 // Delete video
 router.delete('/delete/:id', (req, res, next) => {

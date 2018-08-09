@@ -1,0 +1,43 @@
+.containerVideo {
+    
+    /* border: 1px solid #ccc; */
+    padding: 0 1rem;
+    margin-top: 4rem;
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btnBorrar{
+    padding: 0 1rem;
+    margin: 1rem;
+  }
+  .borraVideo{
+     /* IMPORTANTE */
+     margin-left: 50%;
+    margin-right: 50%;
+}
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+}
+.fa-undo{
+font-size: 30px;
+color:black;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}

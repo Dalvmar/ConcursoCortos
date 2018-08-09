@@ -1,15 +1,32 @@
-<a [routerLink]="['/profile']"> Volver a home </a>
-<div *ngIf="video">
-    <div class="gallery">
-        <figure class="imghvr-flip-diag-1">
-          <img [src]="video.cover" alt='img' height="300">
-          <figcaption class="cf">
-            <h4>{{video.description}}</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, accusantium libero. Optio impedit est tempora enim facere minima saepe sapiente.</p>
-          </figcaption>
-        </figure>
+<div class="container-fluid">
+
+  <a [routerLink]="['/profile']"> Volver a home </a>
+
+  <div class="containerVideo justify-content-center">
+     
+    <div *ngIf="video row">
+      <div class="gallery col-7 col-md-5">
+      
+          <iframe  width="480" height="375" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    
+          <div class="cf">
+            <p>Autor: {{video.creator}}</p>
+          </div>
+        
       </div>
-        <a (click)="deleteVideo()"> Borrar Video </a>
+      <div class="detailsBotons">
+        <div class="row">
+          <div classs="col">
+            <div class="profileUser"><a [routerLink]="['/profile']"><i class="fas fa-undo"></i></a></div> 
+          </div>
+          <div class="col">
+            <div class="borraVideo"><a (click)="deleteVideo()"><i class="far fa-trash-alt"></i></a></div> 
+          </div>
         </div>
+     
+    </div>
+    </div>
+  </div>
+</div>
 
       

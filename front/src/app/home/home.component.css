@@ -9,6 +9,9 @@ body {
   margin:65px 10px;
 
 }
+.side-2 i{
+text-align: center;
+}
 .videolist{
   margin: 40px auto;
 }
@@ -16,7 +19,11 @@ body {
 height: 400px;
 object-fit: cover;
 }
+.photoCarrusel img{
+  object-fit: cover;
+}
 .badge {
+    width: 100%;
     background-size: 100% 0px;
     background-position: top;
     background-repeat: no-repeat;
@@ -24,6 +31,7 @@ object-fit: cover;
     box-shadow: 0px 1px 3px black, inset 0px 0px 2px white;
     border-radius: 4px;
     background-color: white;
+    margin-top: 15px;
 }
 .badge .video{
   width: 100%;
@@ -121,90 +129,9 @@ a:hover {
 .side-2 h5{
     font-size: 15px; 
 }
-
-/******efecto letas******/
-/* .textEfect {
-  background: hsla(0, 0%, 0%, .9); 
-}
-
-.textEfect h5 {
-  color: hsla(0, 0%, 0%, .9);
-  font: normal 140px Varela Round, sans-serif;
-  height: 140px;
-  left: 0;
-  letter-spacing: 5px;
-  margin: -80px 0 0 0;
-  position: absolute;
+.iconofecha{
   text-align: center;
-  text-transform: uppercase;
-  top: 50%;
-  width: 100%;
-  animation: move linear 2000ms infinite;  
 }
-
-@keyframes move {
-  0% {
-    text-shadow:
-
-      4px -4px 0 hsla(0, 100%, 50%, 1), 
-      3px -3px 0 hsla(0, 100%, 50%, 1), 
-      2px -2px 0 hsla(0, 100%, 50%, 1), 
-      1px -1px 0 hsla(0, 100%, 50%, 1),
-      -4px 4px 0 hsla(180, 100%, 50%, 1), 
-      -3px 3px 0 hsla(180, 100%, 50%, 1), 
-      -2px 2px 0 hsla(180, 100%, 50%, 1), 
-      -1px 1px 0 hsla(180, 100%, 50%, 1)
-    ;
-  }
-  25% {    
-    text-shadow:      
-      -4px -4px 0 hsla(180, 100%, 50%, 1), 
-      -3px -3px 0 hsla(180, 100%, 50%, 1), 
-      -2px -2px 0 hsla(180, 100%, 50%, 1), 
-      -1px -1px 0 hsla(180, 100%, 50%, 1),
-      4px 4px 0 hsla(0, 100%, 50%, 1), 
-      3px 3px 0 hsla(0, 100%, 50%, 1), 
-      2px 2px 0 hsla(0, 100%, 50%, 1), 
-      1px 1px 0 hsla(0, 100%, 50%, 1)      
-    ;
-  }
-  50% {
-    text-shadow:
-      -4px 4px 0 hsla(0, 100%, 50%, 1), 
-      -3px 3px 0 hsla(0, 100%, 50%, 1), 
-      -2px 2px 0 hsla(0, 100%, 50%, 1), 
-      -1px 1px 0 hsla(0, 100%, 50%, 1),
-      4px -4px 0 hsla(180, 100%, 50%, 1), 
-      3px -3px 0 hsla(180, 100%, 50%, 1), 
-      2px -2px 0 hsla(180, 100%, 50%, 1), 
-      1px -1px 0 hsla(180, 100%, 50%, 1)
-    ;
-  }
-  75% {
-    text-shadow:
-      4px 4px 0 hsla(180, 100%, 50%, 1), 
-      3px 3px 0 hsla(180, 100%, 50%, 1), 
-      2px 2px 0 hsla(180, 100%, 50%, 1), 
-      1px 1px 0 hsla(180, 100%, 50%, 1),
-      -4px -4px 0 hsla(0, 100%, 50%, 1), 
-      -3px -3px 0 hsla(0, 100%, 50%, 1), 
-      -2px -2px 0 hsla(0, 100%, 50%, 1), 
-      -1px -1px 0 hsla(0, 100%, 50%, 1)      
-    ;
-  }
-  100% {
-    text-shadow:
-      4px -4px 0 hsla(0, 100%, 50%, 1), 
-      3px -3px 0 hsla(0, 100%, 50%, 1), 
-      2px -2px 0 hsla(0, 100%, 50%, 1), 
-      1px -1px 0 hsla(0, 100%, 50%, 1),
-      -4px 4px 0 hsla(180, 100%, 50%, 1), 
-      -3px 3px 0 hsla(180, 100%, 50%, 1), 
-      -2px 2px 0 hsla(180, 100%, 50%, 1), 
-      -1px 1px 0 hsla(180, 100%, 50%, 1)
-    ;
-  }  
-} */
 
 /*****footer***/
 a:hover{
@@ -351,6 +278,7 @@ h1 {
     width:100%;
      backface-visibility: hidden;
     overflow:hidden;
+    margin-top: 45px;
     
   }
   
@@ -360,6 +288,7 @@ h1 {
     width:100%;
     backface-visibility: hidden;
     overflow:hidden;
+    margin-top: 45px;
   }
   
   .cardfecha h5 {
@@ -379,9 +308,9 @@ h1 {
   .iconofecha{
     padding-left: 3px;
     font-size: 30px;
-    padding-left: 65px;
     padding-top:5px;
     padding-bottom: 5px;
+    text-align: center;
   }
   
   /* .cardfecha p {
@@ -392,3 +321,8 @@ h1 {
     
     
   } */
+
+  .textEfect h5{
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    font-size: 2rem;
+  }

@@ -1,15 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
+
+.cardProfile{
+  padding: 0 1rem;
+  margin: 1rem;
+}
+.inputVideo{
+  margin-top: 30px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .profile{
   margin:60px auto;
   padding: 10px;
 }
-.inputVideo
+/* .inputVideo
 {
   flex: 0 0 48%;
   max-width: 48%;
-}
+} */
 .listAdmin{
   flex: 0 0 48%;
 }
@@ -40,9 +52,9 @@
 figure.snip0057 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
-  float: left;
+  
   overflow: hidden;
-  margin: 10px 1%;
+  margin: 10px auto;
   min-width: 380px;
   max-width: 530px;
   width: 100%;
@@ -149,7 +161,7 @@ figure.snip0057.yellow .position {
 }
 figure.snip0057:hover figcaption,
 figure.snip0057.hover figcaption {
-  bottom: 40px;
+  bottom: 20px;
 }
 figure.snip0057:hover .icons i,
 figure.snip0057.hover .icons i {
@@ -183,5 +195,33 @@ figure.snip0057.hover:before {
   100% {
     left: 0px;
   }
+}
+
+
+/****/
+.cardProfile{
+  margin:0px auto;
+}
+.containerList{
+  margin:0px auto;
+}
+.card-title a{
+  margin:0px auto;
+}
+.card-title button{
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-60%);
+  margin: 0px auto;
+  margin-left: -40px;
+}
+.card-body{
+  width: 400px;
+  
+  display: flex;
+  justify-content: center;
+
 }
 

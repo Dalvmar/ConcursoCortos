@@ -1,40 +1,53 @@
 <div *ngIf="user" class="profile">
+    <div class="container-fluid">
+
+    <div class="container-fluid cardProfile">
 
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-12">
             <figure class="snip0057 red inputVideo">
                 <figcaption>
                     <h3>{{user.name}} {{user.lastname}}</h3>
-                    
+    
                     <div class="icons">
-                        <i class="ion-ios-home"><p>{{user.username}}</p></i>
-                        <i class="ion-ios-email"><p>{{user.email}}</p></i>
+                        <i class="ion-ios-home">
+                            <p>{{user.username}}</p>
+                        </i>
+                        <i class="ion-ios-email">
+                            <p>{{user.email}}</p>
+                        </i>
                         <i class="ion-ios-telephone"></i>
                     </div>
                 </figcaption>
                 <div class="image">
-                    <img src="https://www.topmanzana.com/Imagenes/10-mejores-aplicaciones-video-iphone-y-ipad.jpg" height="300"
-                        alt="sample4" />
+                    <img src="https://www.topmanzana.com/Imagenes/10-mejores-aplicaciones-video-iphone-y-ipad.jpg" height="300" alt="sample4"
+                    />
                 </div>
                 <div class="position">{{user.category}}</div>
             </figure>
         </div>
-
-        <div class="col-md-5" >
-            <!-- <div class="col-md-7" *ngIf="user.role==='user'">
-                <input type="text" class="form-control" [(ngModel)]="videoUrl" name="url" required minlength="3">
-                <button (click)="saveVideo()">your video</button>
-            </div> -->
-            <div class="input-group mb-3" *ngIf="user.role==='user'">
-                <input type="text" class="form-control" placeholder="Introduce la url" [(ngModel)]="videoUrl" name="url" required minlength="3" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="saveVideo()">OK</button>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+    
+                <div class="input-group mb-3" *ngIf="user.role==='user'">
+                    
+                    <input type="text" class="form-control" placeholder="Introduce tu video (URL)" [(ngModel)]="videoUrl" name="url" required minlength="3"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="saveVideo()">OK</button>
+                    </div>
                 </div>
-              </div>
-            <div class="containerUser">
+            </div>
+        </div>
+    </div>
 
-                
-                <span (click)="toggleHidden()" class="btn btn-default dropdown-toggle">Edita tu perfil</span>
+
+        <div class="containerEditUser" *ngIf="user">
+
+                <div (click)="toggleHidden()" class="btn btn-default"><i class="fas fa-user-edit"></i></div>
 
                 <form *ngIf="isVisible">
                   
@@ -105,85 +118,111 @@
 
             </div>
 
-        </div>
-        </div>
-        <div class="newUser" *ngIf="user.role==='admin'">
-            <div class="row">
-              <div class="col-md-12">
-              <div class="containerUser">
-                <span (click)="toggleHiddenAdmin()">Añadir admin</span>
+        <div class="container-fluid">
+            <div class="newUser" *ngIf="user.role==='admin'">
+                <div class="row">
+                <div class="col-md-12">
+                <div class="containerUser">
+                    <span (click)="toggleHiddenAdmin()"><i class="fas fa-user-plus"></i>
 
-                <form *ngIf="isVisibleAdmin">
-                    <h2>Nuevo Admin</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" [(ngModel)]="username" name="username" required id="usernameAdmin">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="name">Nombre</label>
-                                <input type="text" class="form-control" [(ngModel)]="name" name="name" required id="nameAdmin">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
+                    </span>
+
+                    <form *ngIf="isVisibleAdmin">
+                        
+                        <div class="row">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="lastname">Apellidos</label>
-                                    <input type="text" class="form-control" [(ngModel)]="lastname" name="lastname" required id="lastnameAdmin">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" [(ngModel)]="username" name="username" required id="usernameAdmin">
                                 </div>
                             </div>
-                    </div>
-                    <div class="row">
-                      
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" [(ngModel)]="email" name="email" required id="emailAdmin">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                    <label for="newpassword">Password</label>
-                                    <input type="text" class="form-control" [(ngModel)]="password" name="passwordAdmin" />
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" [(ngModel)]="name" name="name" required id="nameAdmin">
                                 </div>
-
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary" (click)="addAdmin(username,name,lastname,password,email)">Añadir admin</button>
                             </div>
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="lastname">Apellidos</label>
+                                        <input type="text" class="form-control" [(ngModel)]="lastname" name="lastname" required id="lastnameAdmin">
+                                    </div>
+                                </div>
                         </div>
-                   
-                    </div>
-                </form>
+                        <div class="row">
+                        
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" [(ngModel)]="email" name="email" required id="emailAdmin">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                        <label for="newpassword">Password</label>
+                                        <input type="text" class="form-control" [(ngModel)]="password" name="passwordAdmin" />
+                                    </div>
 
-            </div>
-            </div>
-        </div>
-        
-    </div>
-    <div *ngIf="user.role==='user'">
-            <div class="row">
-                <div class="col-3 col-md-3 videosList" *ngFor="let video of videoList">
-                    <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                    <a [routerLink]="['/video',video._id]">Detalles</a>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary" (click)="addAdmin(username,name,lastname,password,email)">Añadir admin</button>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </form>
+
+                </div>
                 </div>
             </div>
-        </div>    
+            
+        </div>
+    </div>
 
-    <div *ngIf="user.role==='admin'" class="ListAdmin">
-        <div class="row align-items-center">
-            <div class="col-6">
-                <h3>Lista de videos</h3>
-                <app-list-videos></app-list-videos>
+    
+        <!-- <div class="container-fluid">
+            <div *ngIf="user.role==='user'">
+                <div class="row">
+                    <div class="col-3 col-md-3 videosList" *ngFor="let video of videoList">
+                        <iframe width="320" height="215" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        <a [routerLink]="['/video',video._id]">Detalles</a>
+                    </div>
+                </div>
             </div>
-        
-            <div class="col-6">
-                <h3>Lista de Usuarios</h3>
-                <app-list-user></app-list-user>
+        </div> -->
+
+<div *ngIf="user.role==='user'">
+    <div class="card-group">
+        <div class="card" *ngFor="let video of videoList">
+            <img width="200" height="215" class="card-img-top" [src]="video.cover | safe" frameborder="0" allowfullscreen="allowfullscreen">
+
+            <div class="card-body">
+                <h5 class="card-title">
+                    <p>{{video.descrition}}</p>
+                    <button [routerLink]="['/video',video._id]" class="btn btn-outline-danger btn-responsive">Detalles</button>
+                </h5>
+            
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+        <div class="container containerList">
+            <div *ngIf="user.role==='admin'" class="ListAdmin col-md-12">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3>Lista de videos</h3>
+                        <app-list-videos></app-list-videos> 
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Lista de Usuarios</h3>
+                         <app-list-user></app-list-user>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    </div>

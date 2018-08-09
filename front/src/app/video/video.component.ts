@@ -9,6 +9,8 @@ import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
 })
 export class VideoComponent implements OnInit {
   video;
+  videoUrl;
+  replacevideourl;
 
   constructor(
   private videoService:VideoService,
@@ -18,10 +20,18 @@ export class VideoComponent implements OnInit {
 
     this.route.params.subscribe(params =>{
       this.videoService.getVideo(params.id).subscribe(video => {
-        this.video = video;
+        this.video= video;
+        // console.log(this.video)
+        this.replacevideourl=this.video.video.replace('watch?v=', 'embed/')
+        console.log(this.replacevideourl)
+        this.video.video=this.replacevideourl
+        // this.replacevideourl=this.videoUrl.replace('watch?v=', 'embed/')
+        // console.log(this.replacevideourl)
+        
       })
     }); 
   }
+  
 
   ngOnInit() {}
 

@@ -1,5 +1,16 @@
-
- <div *ngFor="let video of videos">
-        <div> {{video.creator}}--- <a (click)="deleteVideo(video._id)"> Borrar </a></div>
-    
+<div *ngFor="let video of videos">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div> {{video.creator}}</div>
       </div>
+      <div class="col">
+        <div>
+          <a (click)="deleteVideo(video._id)">
+            <i class="fas fa-trash-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

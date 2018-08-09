@@ -42,11 +42,11 @@
                     <div class="master-container">
                         <div class="containercard">
                             <div class="cardfecha">
-                                <div class="side-1">
-        
-                                    <img class="chief" src="../../assets/pictures/jakob-owens-768775-unsplash.jpg" height="200" width="160">
+                                <div class="side-1 text-center">
+                                        <i class="fas fa-bullhorn iconofecha"></i>
+                                    <!-- <img class="chief" src="../../assets/pictures/jakob-owens-768775-unsplash.jpg" height="200" width="160"> -->
                                 </div>
-                                <div class="side-2">
+                                <div class="side-2 text-center">
                                     <h5>3 SEPTIEMBRE</h5>
                                     <i class="fas fa-bullhorn iconofecha"></i>
                                     <p>Publicación de la actividad a través de Cámaras Municipais,INJUVE, organismos "amigos" y redes</p>
@@ -60,11 +60,11 @@
                     <div class="master-container">
                         <div class="containercard">
                             <div class="cardfecha">
-                                <div class="side-1">
-                
-                                    <img class="chief" src="../../assets/pictures/francisco-moreno-367972-unsplash.jpg" height="200" width="160">
-                                </div>
-                                <div class="side-2">
+                                <div class="side-1 text-center">
+                                        <i class="fas fa-globe iconofecha"></i>
+                                    <!-- <img class="chief" src="../../assets/pictures/francisco-moreno-367972-unsplash.jpg" height="200" width="160">-->
+                                </div> 
+                                <div class="side-2 text-center">
                                     <h5>15 SEPTIEMBRE</h5>
                                     <i class="fas fa-globe iconofecha"></i>
                                     <p>Inaguración de la web y nuevos perfiles en RSS</p>
@@ -78,10 +78,10 @@
                     <div class="master-container">
                         <div class="containercard">
                             <div class="cardfecha">
-                                <div class="side-1">
-                                    <img class="chief" src="../../assets/pictures/francisco-moreno-367972-unsplash.jpg" height="200" width="160">
-                                </div>
-                                <div class="side-2">
+                                <div class="side-1 text-center">
+                                     <i class="fas fa-share-square iconofecha"></i>
+                                    </div> 
+                                <div class="side-2 text-center">
                                     <h5>1 OCTUBRE</h5>
                                     <i class="fas fa-share-square iconofecha"></i>
                                     <p>Se abre al plazo para el envío de proyectos</p>
@@ -94,10 +94,10 @@
                     <div class="master-container">
                         <div class="containercard">
                             <div class="cardfecha">
-                                <div class="side-1">
-                                    <img class="chief" src="../../assets/pictures/francisco-moreno-367972-unsplash.jpg" height="200" width="160">
+                                <div class="side-1 text-center">
+                                        <i class="fas fa-video iconofecha"></i>
                                 </div>
-                                <div class="side-2">
+                                <div class="side-2 text-center">
                                     <h5>2 DICIEMBRE</h5>
                                     <i class="fas fa-video iconofecha"></i>
                                     <p>Finaliza el período de inscripción de clips a concurso</p>
@@ -110,10 +110,10 @@
                     <div class="master-container">
                         <div class="containercard">
                             <div class="cardfecha">
-                                <div class="side-1">
-                                    <img class="chief" src="../../assets/pictures/aunnop-suthumno-711132-unsplash.jpg" height="200" width="160">
+                                <div class="side-1 text-center">
+                                        <i class="fas fa-award iconofecha"></i>
                                 </div>
-                                <div class="side-2">
+                                <div class="side-2 text-center">
                                     <h5>21 DICIEMBRE</h5>
                                     <i class="fas fa-award iconofecha"></i>
                                     <p>Galas finales en las tres ciudades y entrega de premios y diplomas</p>
@@ -129,17 +129,17 @@
     <section class="videoList container">
     <div *ngIf="videoList" class="row">
     
-        <div class="col-12 col-sm-4" *ngFor="let video of videoList; let i = index">
+        <div class="col-12 col-sm-4 " *ngFor="let video of videoList; let i = index">
     
             <div class="badge">
     
                 <header>
-                    <iframe class="video" width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    <iframe class="video flex-wrap" width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
     
                 </header>
     
                 <section class="all">
-    
+
                     <div class="info">
                         <div class="total">
                             <!--contador de comentarios-->
@@ -191,7 +191,7 @@
                <div class="row">
 			
                 <div class="col-lg-3 col-xs-12">
-                   <span class="logo">LOGO</span>
+                   <span class="logo"><img src="../../assets/pictures/iconoVideo.png" height="80" width="80"></span>
                 </div>
                 <div class="col-lg-3 col-xs-12">
                    <h3>MENU</h3>
