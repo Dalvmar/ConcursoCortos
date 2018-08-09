@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
 	video;
 	comments;
 	user;
+	search:String;
 	constructor(
 		private videoService: VideoService,
 		private commentsService: CommentsService,
@@ -32,7 +33,7 @@ export class HomeComponent implements OnInit {
 		this.videoService.getlistVideos().subscribe((data) => {
 			data.forEach((obj) => {
 				obj.video = obj.video.replace('watch?v=', 'embed/');
-				
+				console.log(obj)
 			});
 			this.videoList = data;
 			console.log(this.videoList)

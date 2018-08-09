@@ -19,6 +19,7 @@ import { isLoggedInGuardService } from './guards/isloggedin.guard';
 import { HomeComponent } from './home/home.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { CommentsService } from '../services/comments.service';
+import { SearchFilterPipe } from './search.pipe';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { CommentsService } from '../services/comments.service';
       VideoComponent,
       ListVideosComponent,
       SafePipe,
+      SearchFilterPipe,
       HomeComponent,
       ListUserComponent
    ],
