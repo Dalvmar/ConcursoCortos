@@ -125,55 +125,50 @@
     </section>
 
     <section class="videoList container">
-    <div *ngIf="videoList" class="row">
-
-            <!-- <input  class="search" [(ngModel)]="query">
-            <div *ngFor="let item of items | search:',text':query">{{item.text}}</div>
-     -->
+        <div *ngIf="videoList" class="row">
     
-     <div class="col-12 col-sm-12" >
-            <input type="text" [(ngModel)]="search" class="form-control" placeholder="Search By Category" />
-     </div>
+            <div class="col-12 col-sm-12 search">
+                <input type="text" [(ngModel)]="search" class="form-control" placeholder="Búsqueda por autor" />
+            </div>
     
-        <div class="col-12 col-sm-4 " *ngFor="let video of videoList | searchFilter:search ;  let i = index">
-  
-            <div class="badge">
+            <div class="col-12 col-sm-4 " *ngFor="let video of videoList | searchFilter:search ;  let i = index">
     
-                <header>
-                    <iframe class="video flex-wrap" width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <div class="badge">
     
-                </header>
+                    <header>
+                        <iframe class="video flex-wrap" width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
     
-                <section class="all">
-
-                    <div class="info">
-                        <div class="total">
-                            <!--contador de comentarios-->
+                    </header>
+    
+                    <section class="all">
+    
+                        <div class="info">
+    
+                            <button (click)="toggleHidden($event,i)">Comentario</button>
+    
+                            <button (click)="saveComment(video._id, video.comment, i)" class="hide">OK</button>
+                            <input class="comment-input" type="text" [(ngModel)]="video.comment" name="video-comment">
+                            <div style="clear: both;"></div>
                         </div>
-                        <button (click)="toggleHidden($event,i)">Comentario</button>
-                        
-                        <button (click)="saveComment(video._id, video.comment, i)" class="hide">OK</button>
-                        <input class="comment-input" type="text" [(ngModel)]="video.comment" name="video-comment">
-                        <div style="clear: both;"></div>
-                    </div>
     
-                    <div class="list">
-
-                        <section>
-                            <div class="comments">
-                                <ul *ngFor="let comment of video.commment">
-                                    <p>{{comment.author.name}}: {{comment.comment}}</p>
-                                </ul>
-                            </div>
+                        <div class="list">
     
-                        </section>
-                    </div>
+                            <section>
+                                <div class="comments">
+                                    <ul *ngFor="let comment of video.commment">
+                                        <p>
+                                            <b>{{comment.author.name}}:</b>{{comment.comment}}</p>
+                                    </ul>
+                                </div>
     
-                </section>
+                            </section>
+                        </div>
     
+                    </section>
+    
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
 

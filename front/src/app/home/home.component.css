@@ -9,12 +9,13 @@ body {
   margin:65px 10px;
 
 }
+.search{
+margin-top: 20px;
+}
 .side-2 i{
 text-align: center;
 }
-.videolist{
-  margin: 40px auto;
-}
+
 .photoCarrusel{
 height: 400px;
 object-fit: cover;
@@ -325,4 +326,7 @@ h1 {
   .textEfect h5{
     text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
     font-size: 2rem;
+  }
+  .comments b{
+color:crimson;
   }
