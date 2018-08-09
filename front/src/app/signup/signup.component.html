@@ -1,51 +1,25 @@
-<!-- <form>
-    <h2> Signup </h2>
-    <label> Usuario </label>
-    <input type="text" [(ngModel)]="username" name="username"/>
-    <br>
-    <label> Nombre </label>
-    <input type="text" [(ngModel)]="name" name="name"/>
-    <br>
-    <label> Apellidos</label>
-    <input type="text" [(ngModel)]="lastname" name="lastname"/>
-    <br>
-    <label> Password </label>
-    <input type="password" [(ngModel)]="password" name="password"/>
-    <br>
-    <label> Email </label>
-    <input type="text" [(ngModel)]="email" name="email"/>
-    <br>
-    <label>Categoria:</label>
-    <select name="category" id="category" [(ngModel)]="category"> 
-      <option value="11-15Portugal">11 y 15 años nacidos en Portugal</option>
-      <option value="16-22Portugal">16 y 22 años nacidos en Portugal</option>
-      <option value="11-22España">11y 22 años nacidos en España</option>
-    
-    </select>
-    <button (click)="signup(username,name,lastname,password,email,category)"> SIGNUP </button>
-  </form>
-  <p class="error"> {{ error }} </p> -->
+
   <div class="login">
   <div class="banner"></div>
   <div class="form">
     <div class="wrapper">
       <div class="row">
-          <input type="text" [(ngModel)]="username" name="username" placeholder="Usuario"/>
+          <input type="text" [(ngModel)]="username" name="username" placeholder="Usuario" required/>
     
       </div>
       <div class="row">
-        <input type="text" [(ngModel)]="name" name="name" placeholder="Nombre"/>
+        <input type="text" [(ngModel)]="name" name="name" placeholder="Nombre" required/>
       </div>
       <div class="row">
           
-          <input type="text" [(ngModel)]="lastname" name="lastname" placeholder="Apellidos"/>
+          <input type="text" [(ngModel)]="lastname" name="lastname" placeholder="Apellidos" required/>
         </div>
         <div class="row">
    
-            <input type="password" [(ngModel)]="password" name="password" placeholder="Password"/>
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required/>
           </div>
           <div class="row">
-              <input type="text" [(ngModel)]="email" name="email" placeholder="Email"/>
+              <input type="text" [(ngModel)]="email" name="email" placeholder="Email" required/>
             </div>
             <div class="row">
              
@@ -54,8 +28,9 @@
                         <div class="input-group-prepend">
                           <label class="input-group-text" for="inputGroupSelect01">Categoria</label>
                         </div>
-                        <select class="custom-select selcat" name="category" [(ngModel)]="category">
-                            <option value="11-22 años España" default>11-22 años España</option>
+                        <select class="custom-select selcat" name="category" [(ngModel)]="category" required>
+                            <option selected>Choose...</option>  
+                          <option value="11-22 años España" default>11-22 años España</option>
                             <option value="11-15 años Portugal">11-15 años Portugal</option>
                             <option value="16-22 años Portugal">16-22 años Portugal</option>
                         </select>
@@ -66,6 +41,9 @@
   
       </div>  
     </div>
+    <div *ngIf="message" class="message">
+        {{message}}
+      </div>
     <div class="signup">
       Do have an account? <a [routerLink]="['/login']">Login</a>
     </div>  

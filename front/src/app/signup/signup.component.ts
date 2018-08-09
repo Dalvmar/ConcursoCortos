@@ -8,7 +8,7 @@ import { Router } from '../../../node_modules/@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
+  message;
   constructor(private sessionService:SessionService, private router:Router) { }
 
   ngOnInit() {
@@ -17,9 +17,15 @@ export class SignupComponent implements OnInit {
   signup(username:string,name:string,lastname:string,email:string,password:string,category:string ){
     console.log("signup....");
     this.sessionService.signup(username,name,lastname,password,email,category).subscribe( (user:any) =>{
+      console.log(user['status'])
+      if(user['status']>=500) {
+        this.message = 'Invalid data'
+      }
+      else{
       console.log(`WELCOME USER ${user.username}, register OK`);
       console.log(user);
       this.router.navigate(['/profile']);
+    }
     });
   }
 }

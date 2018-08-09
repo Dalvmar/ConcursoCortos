@@ -365,14 +365,14 @@ body {
         position: absolute;
         width: 750px;
         height: 417px;
-
+		
         margin-top: -208.5px; /* HALF OF THE HEIGHT */
         margin-left: -375px; /* HALF OF THE WIDTH */
     }
 }
- /* .welcome {
-	text-align: center; 
-} */
+ .navclass .welcome {
+	padding-right: 130px;
+} 
 
 /*****************/
 .navclass{

@@ -47,7 +47,9 @@ export class SessionService {
     return this.http.post(`${BASEURL}/api/auth/signup`,{username,name,lastname,email,password,category},this.options).pipe(
       map( (res:Response) => {
         let data = res.json();
+        let status=res.json().status
         this.user = data.user;
+        console.log(this.user)
         return this.user;
       }),
       catchError( e => of(this.errorHandler(e)))
