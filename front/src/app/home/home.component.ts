@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
 	videoList: Array<any>;
 	video;
 	comments;
+	comment;
 	countComments:number=0;
 	user;
 	search:String;
@@ -58,6 +59,7 @@ export class HomeComponent implements OnInit {
 	saveComment(videoId, comment, i) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)
 		.subscribe(video => {
+			this.comment=''
 			this.videoList[i].commment = video.commment;
 		})
 	}

@@ -17,7 +17,6 @@ router.get('/:id', (req, res, next) => {
 // Edit User
 router.put('/edit/:id', (req, res, next) => {
 	User.findById(req.params.id).then(user => {
-
 		const { username, name, lastname, email, oldpassword, newpassword, category } = req.body;
 
 		const changeFields = new Promise((resolve, reject) => {

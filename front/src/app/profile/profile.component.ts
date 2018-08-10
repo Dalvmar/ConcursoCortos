@@ -60,8 +60,8 @@ export class ProfileComponent implements OnInit {
 	edit(user) {
 		this.userService.editUser(this.user).subscribe((user) => {
 			this.user = user;
-			this.refreshAdmin() 
-			this.router.navigate([ '/profile' ]);
+			// console.log(user)
+			// this.router.navigate([ '/profile']);
 		});
 	}
 
@@ -78,15 +78,15 @@ export class ProfileComponent implements OnInit {
 		this.videoService.getUserVideos(this.user._id)
         .subscribe(data => { 
           data.forEach(obj=>{
-            console.log(obj.video)
+            // console.log(obj.video)
             obj.video = obj.video.replace('watch?v=','embed/')
           })
           this.videoList = data
-          console.log(this.videoList)
+        //   console.log(this.videoList)
 	  })
 	}
 	refreshAdmin() {
-		this.userService.get(this.user._id)
+		this.userService.getUserNewDetails(this.user._id)
         .subscribe(data => { 
 			console.log(data)
           this.user = data
@@ -100,7 +100,7 @@ export class ProfileComponent implements OnInit {
 		this.userService.signupAdmin(usernameAdmin,nameAdmin,lastnameAdmin,emailAdmin,passwordAdmin)
 		.subscribe( (user:any) =>{
 			console.log(user);
-			this.router.navigate(['/profile']);
+			//this.router.navigate(['/profile']);
 		})
 	}
 	}

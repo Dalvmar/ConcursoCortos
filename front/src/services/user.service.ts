@@ -29,12 +29,18 @@ get(id) {
     .get(`${environment.BASEURL}/api/profile/${id}`)
     .pipe(map(res => res.json()));
 }
+getUserNewDetails(userId) {
+  return this.http
+    .get(`${environment.BASEURL}/api/profile/${userId}`)
+    .pipe(map(res => res.json()));
+}
+
 // Edit user
 editUser(user) {
   return this.http
     .put(`${environment.BASEURL}/api/profile/edit/${user._id}`, user)
     .pipe(map(res => {console.log(user)
-      res.json()}))
+      return res.json()}))
 }
 signupAdmin(username:string,name:string,lastname:string,email:string, password:string): Observable<object>{
   return this.http.post(`${environment.BASEURL}/api/profile/newAdmin`,{username,name,lastname,email,password},this.options).pipe(
@@ -48,7 +54,7 @@ signupAdmin(username:string,name:string,lastname:string,email:string, password:s
 
 //Delete user when your role is admin
 removeUser(id) {
-  console.log(id)
+  //console.log(id)
   return this.http
     .delete(`${environment.BASEURL}/api/profile/delete/${id}`)
     .pipe(map(res => res.json()));
