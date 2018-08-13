@@ -10,16 +10,17 @@
                     <h3>{{user.name}} {{user.lastname}}</h3>
     
                     <div class="icons">
-                        <i class="ion-ios-home">
+                        <i class="name">
                             <p>{{user.username}}</p>
                         </i>
                         <i class="ion-ios-email">
                             <p>{{user.email}}</p>
                         </i>
-                        <i class="ion-ios-telephone"></i>
+                        
                     </div>
                 </figcaption>
                 <div class="image">
+                    <!-- <img src="../../assets/pictures/profile.jpg" height="300" alt="sample4"/> -->
                     <img src="../../assets/pictures/profile.jpg" height="300" alt="sample4"/>
                 </div>
                 <div class="position">{{user.category}}</div>
@@ -96,7 +97,7 @@
                     </div>
                     <div class="row selectButton">
                         
-                        <div class="col-lg-6 btnEdit">
+                        <!-- <div class="col-lg-6 btnEdit">
                             <div class="form-group">
                                 <label for="lastname">Categoria</label>
                                 <select name="category custom-select" id="category" class="selectEdit" [(ngModel)]="user.category">
@@ -106,9 +107,21 @@
                                     <option value="11-22 España">11-22 años España</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
+
+                        <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <label class="input-group-text selCat" for="inputGroupSelect01">Categoria</label>
+                                </div>
+                                <select class="custom-select selectEdit" [(ngModel)]="user.category">
+                                  <option selected>Choose...</option>
+                                    <option value="11-15 Portugal">11-15 años Portugal</option>
+                                    <option value="16-22 Portugal">16-22 años Portugal</option>
+                                    <option value="11-22 España">11-22 años España</option>
+                                </select>
+                              </div>
                         <div class="col-md-2">
-                            <div class="form-group ">
+                            <div class="form-group btnselcat">
                                 <button type="submit" class="btn btn-danger" (click)="edit(user._id)">Editar</button>
                             </div>
                         </div>
@@ -185,8 +198,9 @@
 <div *ngIf="user.role==='user'">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3" *ngFor="let video of videoList">
-            <img width="200" height="215" class="card-img-top" [src]="video.cover | safe" frameborder="0" allowfullscreen="allowfullscreen">
+            <div class="col-3"> 
+                <div class="embed-responsive embed-responsive-16by9" *ngFor="let video of videoList">
+                     <iframe class="card-img-top embed-responsive-item" [src]="video.cover | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
             <div class="card-body">
                 <h5 class="card-title">
@@ -196,19 +210,20 @@
             
             </div>
         </div>
+        </div>
     </div>
     </div>
 </div>
 
 
         <div class="container containerList">
-            <div *ngIf="user.role==='admin'" class="ListAdmin col-md-12">
+            <div *ngIf="user.role==='admin'" class="ListAdmin col-sm-12">
                 <div class="row align-items-top">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <h3>Lista de videos</h3>
                         <app-list-videos></app-list-videos> 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <h3>Lista de Usuarios</h3>
                          <app-list-user></app-list-user>
                     </div>

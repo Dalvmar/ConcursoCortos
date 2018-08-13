@@ -1,6 +1,14 @@
-.fas{
+
+.fas .fa-trash-alt {
     font-size: 25px;
+    margin-left: 90px;
 }
-fa-trash-alt{
-    font-size: 25px;
+deleteVideo a{
+    margin-left: 73px;
+
+}
+.containervideos{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 480px;
 }

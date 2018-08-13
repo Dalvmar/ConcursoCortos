@@ -1,16 +1,12 @@
 <div *ngFor="let user of users">
-      <div class="container">
+      <div class="containeruser">
         <div class="row">
           <div class="col">
             <div>{{user.username}}</div>
           </div>
           <div class="col">
-            <div>
-              <a (click)="deleteUser(user._id)">
-                <i class="fas fa-trash-alt"></i>
-              </a>
-            </div>
+            <div class="deleteVideo"><a (click)="deleteUser(user._id)"><i class="fas fa-trash-alt"></i> </a></div>
           </div>
         </div>
       </div>
-    </div>
+    </div> 

@@ -1,6 +1,14 @@
-.fas{
+
+.fas .fa-trash-alt{
     font-size: 25px;
+    margin-left: 90px;
 }
-.fa-trash-alt{
-    font-size: 25px;
+.deletUser a{
+  margin-left: 73px;
+    
+}
+.containeruser{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 480px;
 }
