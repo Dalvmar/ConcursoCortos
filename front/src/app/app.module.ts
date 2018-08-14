@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { CommentsService } from '../services/comments.service';
 import { SearchFilterPipe } from './search.pipe';
+import { CardProfileComponent } from './Card-Profile/Card-Profile.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { SearchFilterPipe } from './search.pipe';
       SafePipe,
       SearchFilterPipe,
       HomeComponent,
-      ListUserComponent
+      ListUserComponent,
+      CardProfileComponent
    ],
    imports: [
       BrowserModule,

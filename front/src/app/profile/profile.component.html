@@ -1,7 +1,19 @@
 <div *ngIf="user" class="profile">
-    <div class="container-fluid">
 
-    <div class="container-fluid cardProfile">
+        <ul class="nav justify-content-center fixed-bottom bg-dark navbar-dark">
+                <li class="nav-item">
+                 <a class="nav-link footerMovil" [routerLink]="['profile/details']"><i class="far fa-play-circle"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link footerMovil" [routerLink]="['details']"><i class="fas fa-user-circle"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link footerMovil" [routerLink]="['/']"><i class="fas fa-home"></i></a>
+                </li>
+              </ul>
+    <!-- <div class="container-fluid"> -->
+<!--Card Profile-->
+    <!-- <div class="container-fluid cardProfile">
 
     <div class="row">
         <div class="col-12">
@@ -20,14 +32,16 @@
                     </div>
                 </figcaption>
                 <div class="image">
-                    <!-- <img src="../../assets/pictures/profile.jpg" height="300" alt="sample4"/> -->
+                    
                     <img src="../../assets/pictures/profile.jpg" height="300" alt="sample4"/>
                 </div>
                 <div class="position">{{user.category}}</div>
             </figure>
         </div>
     </div>
-    </div>
+    </div> -->
+<!-- END Card Profile-->
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -44,7 +58,7 @@
         </div>
     </div>
 
-
+<!-- 
         <div class="containerEditUser" *ngIf="user">
 
                 <div (click)="toggleHidden()" class="btn btn-default edit-user"><i class="fas fa-user-edit"></i></div>
@@ -94,8 +108,7 @@
                             </div>
                         </div>
                        
-                    </div>
-                    <div class="row selectButton">
+                    </div> -->
                         
                         <!-- <div class="col-lg-6 btnEdit">
                             <div class="form-group">
@@ -107,7 +120,7 @@
                                     <option value="11-22 España">11-22 años España</option>
                                 </select>
                             </div>
-                        </div> -->
+                        </div> 
 
                         <div class="input-group mb-3">
                                 <div class="input-group-prepend">
@@ -125,13 +138,13 @@
                                 <button type="submit" class="btn btn-danger" (click)="edit(user._id)">Editar</button>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
-                </form>
+                <!-- </form>
 
-            </div>
+            </div> -->
 
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
             <div class="newUser" *ngIf="user.role==='admin'">
                 <div class="row">
                 <div class="col-md-12">
@@ -192,15 +205,15 @@
             </div>
             
         </div>
-    </div>
+    </div> -->
 
 
 <div *ngIf="user.role==='user'">
-    <div class="container-fluid">
+    <div class="container-fluid videoContainer col-sm-12">
         <div class="row">
-            <div class="col-3"> 
+            <div class="col-sm-6"> 
                 <div class="embed-responsive embed-responsive-16by9" *ngFor="let video of videoList">
-                     <iframe class="card-img-top embed-responsive-item" [src]="video.cover | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                     <iframe class="card-img-top embed-responsive-item" [src]="video.cover | safe" frameborder="0" ></iframe>
 
             <div class="card-body">
                 <h5 class="card-title">
@@ -230,5 +243,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    
+    <!-- </div> -->

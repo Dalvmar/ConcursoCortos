@@ -52,7 +52,6 @@
 figure.snip0057 {
 	font-family: 'Raleway', Arial, sans-serif;
 	position: relative;
-
 	overflow: hidden;
 	margin: 10px auto;
 	min-width: 380px;
@@ -114,9 +113,6 @@ figure.snip0057 figcaption h2 {
 	font-weight: 300;
 	text-transform: uppercase;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-figure.snip0057 figcaption h2 span {
-	font-weight: 800;
 }
 figure.snip0057 figcaption p {
 	font-size: 0.6em;
@@ -208,7 +204,7 @@ figure.snip0057.hover:before {
 	margin: 0px auto;
 }
 .containerList {
-	margin: 0px auto;
+	margin-top: 32px;
 	margin-left: 160px;
 }
 .card-title a {
@@ -293,7 +289,7 @@ figure.snip0057.hover:before {
 	}
 	.inputVideo {
 		margin-top: 30px;
-		width: 535px;
+		width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -333,6 +329,9 @@ figure.snip0057.hover:before {
 		border: 1px solid #ced4da;
 		border-radius: .3rem;
 	}
+	.videoContainer{
+height: 200px;
+	}
 	.btnselcat{
 
 		margin-bottom: 10px;
@@ -350,12 +349,12 @@ figure.snip0057.hover:before {
 		background-image: none;
 		appearance: none;
 	}
-	.selectButton {
+	/* .selectButton {
 		display: inline-block;
 		margin-right: 19px;
 		margin-left: 3px;
 		font-size: 12px;
-	}
+	} */
 	.btnEdit {
 		display: inline-block;
 	}
@@ -607,6 +606,23 @@ figure.snip0057.hover:before {
 		z-index: 9999;
 		
 	}
+	/***footer movil***/
+	.nav-link{
+		color:white;
+	padding: 12px 50px;
+	}
+
+	.footerMovil .fa-play-circle{
+		font-size: 20px;
+	}
+	.footerMovil .fa-user-circle {
+		font-size: 20px;
+	}
+	.footerMovil .fa-home {
+		font-size: 20px;
+	}
+	
+
  }
 /* 
  Small devices (landscape phones, 576px and up) */

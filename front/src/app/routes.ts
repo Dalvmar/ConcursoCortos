@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { VideoComponent } from './video/video.component';
 import { HomeComponent } from './home/home.component';
+import { CardProfileComponent } from './Card-Profile/Card-Profile.component';
 
 
 export const routes: Routes = [
@@ -17,6 +18,7 @@ export const routes: Routes = [
   { path:'profile',component:ProfileComponent, canActivate: [ isLoggedInGuardService]},
   { path:'profile/delete',component:ProfileComponent, canActivate: [ isLoggedInGuardService]},
   { path:'profile/edit/:id',component:ProfileComponent,canActivate: [ isLoggedInGuardService]},
+  { path:'profile/details', component:CardProfileComponent},
   { path:'video/:id', component: VideoComponent },
   { path:'video/delete/:id', component: VideoComponent },
  
