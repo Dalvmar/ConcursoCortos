@@ -159,29 +159,11 @@
 		margin: 0 auto;
 		margin-top: 32px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
-	
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
   
 	.edit-user-form {
     position: absolute;
@@ -195,20 +177,7 @@
     margin-left: -182px;
     line-height: 10px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 62px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
+
 	.formAdm {
         background: rgb(241, 239, 239) top;
         padding: 6px;
@@ -218,50 +187,6 @@
         margin-top: 38px;
     
 	}
-
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 40px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    }
-    .fas.fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-    margin-right: 10px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
  
   }
   
@@ -431,26 +356,12 @@
 		margin: 0 auto;
 		margin-top: 32px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
 
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
     .editForm{
     height: 200px;
     }
@@ -467,20 +378,7 @@
     margin-left: -182px;
     line-height: 10px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
+
 	.formAdm {
         background: rgb(241, 239, 239) top;
         padding: 6px;
@@ -490,52 +388,6 @@
         margin-top: 38px;
     
 	}
-
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    
-    }
-    .fas
-    .fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-    margin-right: 10px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
    
   }
   
@@ -706,26 +558,11 @@
 		margin: 0 auto;
 		margin-top: 32px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
-
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
     .editForm{
     height: 200px;
     }
@@ -742,20 +579,7 @@
     margin-left: -182px;
     line-height: 10px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
+
 	.formAdm {
         background: rgb(241, 239, 239) top;
         padding: 6px;
@@ -765,50 +589,6 @@
         margin-top: 38px;
     
 	}
-
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    }
-    .fas.fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-    margin-right: 10px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
   
   }
   
@@ -826,8 +606,10 @@
     	margin-top: 50px;
 	}
 	figure.snip0057 figcaption .name{
-		margin-left: 15px;
+		margin-left: 32px;
+		margin-right: -32px;
 		margin-top: 48px;
+	
 	}
 	
 	.selCat {
@@ -890,7 +672,7 @@
     -webkit-transform: skewX(-15deg);
     transform: skewX(-17deg);
     height: 209px;
-    width: 140px;
+	width: 145px;
 	}
 	figure.snip0057 .image img {
 		position: relative;
@@ -904,11 +686,10 @@
 		position: absolute;
 		content: '';
 		height: 100%;
-		width: 33%;
+		width: 19%;
 		background: rgba(0, 0, 0, 0.2);
 		-webkit-transform: skewX(-17deg);
 		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 	}
 	figure.snip0057 figcaption {
@@ -923,11 +704,11 @@
 	}
 
 	figure.snip0057 figcaption h3 {
-		font-size: 10px;
-		margin-left: 90px;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
+		font-size: 13px;
+		margin-left: 117px;
+		text-transform: uppercase;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	
 	}
 
 	figure.snip0057 .position {
@@ -982,26 +763,11 @@
 		margin: 0 auto;
 		margin-top: 32px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
-
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
     .editForm{
     height: 200px;
     }
@@ -1018,20 +784,7 @@
     margin-left: -182px;
     line-height: 10px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 62px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px
-	}
+
 	.formAdm {
         background: rgb(241, 239, 239) top;
         padding: 6px;
@@ -1041,52 +794,7 @@
         margin-top: 38px;
     
 	}
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: -1px 40px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
 
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-        font-size: 20px;
-    border-radius: 2px solid;
-    color: white;
-    height: 29px;
-    width: 30px;
-    border: 2px solid;
-    border-radius: 50%;
-    line-height: 22px;
-    margin-top: -3px;
-    }
-    .fas
-    .fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-        margin-right: 1px;
-    margin-left: 1px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
- 
 }
   
   
@@ -1258,17 +966,6 @@
 		margin-top: 32px;
 	}
 	
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
@@ -1294,20 +991,7 @@
     margin-left: -182px;
     line-height: 10px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
+
 	.formAdm {
         background: rgb(241, 239, 239) top;
         padding: 6px;
@@ -1317,51 +1001,6 @@
         margin-top: 38px;
     
 	}
-
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    }
-    .fas
-    .fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-    margin-right: 2px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
     
   }
   
@@ -1528,26 +1167,12 @@
 		margin: 0 auto;
 		margin-top: 32px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
-	
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
+
     .editForm{
     height: 200px;
     }
@@ -1564,20 +1189,7 @@
     margin-left: -182px;
     line-height: 10px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 222px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
+
 	.formAdm {
         background: rgb(241, 239, 239) top;
         padding: 6px;
@@ -1587,55 +1199,6 @@
         margin-top: 38px;
     
 	}
-
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-        font-size: 20px;
-    border-radius: 2px solid;
-    color: white;
-    height: 29px;
-    width: 30px;
-    border: 2px solid;
-    border-radius: 50%;
-    line-height: 22px;
-    margin-top: -3px;
-    }
-    .fas
-    .fa-user-plus {
-    margin-right: 10px;
-	}
-	.fa-home:before {
-		content: "\f015";
-		margin-left: 2px;
-	}
-    .adminItem{
-    margin-right: 10px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
    
   }
   
@@ -1818,27 +1381,17 @@
 		margin: 0 auto;
 		margin-top: 32px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
 
  
-	.fa-user-edit {
+	/* .fa-user-edit {
 		margin-left: -7px;
 		margin-top: -3px;
-    }
+    } */
     .editForm{
     height: 200px;
     }
@@ -1855,20 +1408,7 @@
     margin-left: -182px;
     line-height: 10px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
+
 	.formAdm {
         background: rgb(241, 239, 239) top;
         padding: 6px;
@@ -1880,21 +1420,21 @@
 	}
 
 	/***footer movil***/
-	.navAdmin .nav-link {
+	/* .navAdmin .nav-link {
 	    color: white;
     display: block;
     padding: 9px 32px;
-    }
-    .navUser .nav-link {
+    }*/
+    /* .navUser .nav-link {
 		color: white;
 		padding: 12px 10px;
 	}
 
 	.footerMovil .fa-play-circle {
         font-size: 28px;
-	}
+	} */
     
-    .fa-home{
+    /* .fa-home{
         border-radius: 1px solid;
     }
 	.footerMovil .fa-home {
@@ -1922,7 +1462,7 @@
     .userItem .footerMovil{
         margin-right: 10px;
         color:white;
-    }
+    } */
    
 }
  
@@ -2106,56 +1646,12 @@
 		margin: 0 auto;
 		margin-top: 32px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
 
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-  
-	.edit-user-form {
-		position: absolute;
-		bottom: 36px;
-		width: 560px;
-		height: 394px;
-		background: rgb(241, 239, 239) top;
-		box-shadow: #000000;
-		padding: 16px 6px;
-		margin-right: -21px;
-		margin-left: -249px;
-		line-height: 10px;
-	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top:-2px;
-	}
 	.formAdm {
 		background: rgb(241, 239, 239) top;
 		padding: 27px;
@@ -2166,7 +1662,7 @@
 	}
 
 	/***footer movil***/
-	.navAdmin .nav-link {
+	/* .navAdmin .nav-link {
 	    color: white;
     display: block;
     padding: 9px 32px;
@@ -2179,8 +1675,8 @@
 	.footerMovil .fa-play-circle {
         font-size: 28px;
 	}
-    
-    .fa-home{
+     */
+    /* .fa-home{
         border-radius: 1px solid;
     }
 	.footerMovil .fa-home {
@@ -2197,8 +1693,8 @@
     }
     .fas.fa-user-plus {
     margin-right: 10px;
-    }
-    .adminItem{
+    } */
+    /* .adminItem{
 	margin-right: 90px;
     margin-left: 90px;
     }
@@ -2209,317 +1705,78 @@
     .userItem .footerMovil{
         margin-right: 10px;
         color:white;
-    }
+    } */
   
 } 
-  
-	.containerCard {
-		margin-top: 110px;
-	}
-	.cardProfile {
-		margin-top: 56px;
-	}
+.fa-user-edit::before{
+content: "\f4ff";
+margin-right: -3px;
+}
+.adminItem{
+	margin-left: -3px;
+	margin-right: -3px;
+}
+.fa-home:before {
+content: "\f015";
+margin-left: 2px;
+}
+.fa-user-plus:before {
+	content: "\f234";
+	margin-right: -3px;
+}
+.footerMovil .fa-home {
+	font-size: 20px;
+border-radius: 2px solid;
+color: white;
+height: 29px;
+width: 30px;
+border: 2px solid;
+border-radius: 50%;
+line-height: 23px;
+
+
+}
+.footerMovil .fa-play-circle {
+	font-size: 30px;
+	color: white;
+}
+.userItem{
+	margin-right: 35px;
+	margin-left: 32px;
+}
+.navUser .nav-link {
+	color: white;
+	padding: 12px 10px;
+}
+.navAdmin .nav-link {
+	color: white;
+display: block;
+padding: 9px 32px;
+}
+.edit-user {
+	height: 29px;
+	width: 30px;
+	border: 2px solid;
+	border-radius: 50%;
+	display: block;
+	margin: 2px auto;
+	color: white;
+	line-height: 22px;
+	text-align: center;
+}
+.adminAdd {
+	height: 29px;
+	width: 30px;
+	border: 2px solid;
+	border-radius: 50%;
+	display: block;
+	margin: 2px auto;
+	color: white;
+	line-height: 22px;
+	text-align: center;
+
 	
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-	    margin-left: 310px;
-    margin-top: -80px;
-    margin-right: -108px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 12px;
-	}
-	
-	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-    position: relative;
-    height: 480px;
-    overflow: hidden;
-    margin: 6px auto;
-    max-width: 640px;
-    width: 100%;
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-	
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
-	}
-	figure.snip0057 .image {
-	    width: 45%;
-    overflow: hidden;
-    z-index: 3;
-    -webkit-transform: skewX(-15deg);
-    transform: skewX(-17deg);
-    height: 514px;
-	}
-	figure.snip0057 .image img {
-		position: relative;
-    display: block;
-    left: -68%;
-    z-index: 1;
-    -webkit-transform: skew(15deg);
-    transform: skew(20deg);
-    height: 448px;
-	}
-	figure.snip0057:before {
-		position: absolute;
-		content: '';
-		height: 108%;
-		width: 39%;
-		background: rgba(0, 0, 0, 0.2);
-		-webkit-transform: skewX(-17deg);
-		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-	}
-	figure.snip0057 figcaption {
-		padding: 0px 2px 4px 0px;
-		position: absolute;
-	}
-	figure.snip0057 figcaption h3 {
-		margin-top: 60px;
-		text-align: right;
-		padding: 2px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption .email{
-	    margin-left: 173px;
-    margin-top: 60px;
-	}
-	figure.snip0057 figcaption .name{
-		margin-left: 22px;
-		margin-top: 49px;
-	
-	}
-	figure.snip0057 figcaption p {
-		margin-left: 93px;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption h3 {
-		font-size: 24px;
-    margin-left: 192px;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	}
-
-	figure.snip0057 figcaption p {
-		font-size: 20px;
-		opacity: 0.8;
-	}
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
-
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
-
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.3s ease-in-out;
-		animation: shadow 0.3s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	/******admin*****/
-	.buttAdmin {
-		margin: 0 auto;
-		margin-top: 32px;
-	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 22px;
-		text-align: center;
-		margin-top: -1px;
-	}
-	.edit-user form {
-		background: lightgray;
-		padding: 5px;
-	}
-
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-   
-	.edit-user-form {
-		position: absolute;
-		bottom: 36px;
-		width: 560px;
-		height: 394px;
-		background: rgb(241, 239, 239) top;
-		box-shadow: #000000;
-		padding: 16px 6px;
-		margin-right: -21px;
-		margin-left: -249px;
-		line-height: 10px;
-	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-	    margin-top: -3px;
-	}
-	.formAdm {
-		background: rgb(241, 239, 239) top;
-    padding: 27px;
-    margin-right: -566px;
-    margin-left: -263px;
-    margin-top: -245px;
-    
-	}
-	
-	/***footer movil***/
-	.navUser{
-		display: flex;
-		flex-wrap: nowrap;
-		padding: 1px 13px;
-	}
-	.navAdmin{
-		display: flex;
-		flex-wrap: nowrap;
-	}
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-	padding: 9px 32px;
-	
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 1px 13px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-            font-size: 20px;
-    border-radius: 2px solid;
-    color: white;
-    height: 29px;
-    width: 30px;
-    border: 2px solid;
-    border-radius: 50%;
-    line-height: 22px;
-    margin-top: -3px;
-    
-    }
-    .fas.fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-		margin-right: 3px;
-		margin-left: 3px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-	}
-
-	.footerUser{
-		display: flex;
-		flex-wrap: nowrap;
-	}
-   .footerAdmin{
-	display: flex;
-	flex-wrap: nowrap;
-   }
-   .fa-home:before {
-    content: "\f015";
-	margin-left: 1px;
-   }
-
+}
 
 /* Large Devices, Wide Screens */
 @media (max-width : 1200px) {
