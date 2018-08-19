@@ -1,81 +1,28 @@
-
 /* #### Mobile Phones Portrait #### */
-@media (max-device-width: 480px) and (orientation: portrait){
+@media (max-device-width: 480px) and (orientation: portrait) {
 	.containerCard {
 		margin-top: 60px;
 	}
 	.cardProfile {
 		margin-top: 56px;
 	}
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-		margin-left: 87px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        /* margin-right: 30px; */
-        margin-left: 20px;
-        font-size: 12px;
-	}
-	
+
 	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-		position: relative;
 		height: 256px;
-		overflow: hidden;
-		margin: 6px auto;
-		min-width: 280px;
-		/* max-width: 446px; */
-		width: 100%;
-		background: #ffffff;
-		color: #000000;
-		font-size: 14px;
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
 	}
 	figure.snip0057 .image {
-		width: 50%;
-		overflow: hidden;
-		z-index: 3;
+		height: 209px;
+		width: 45%;
 		-webkit-transform: skewX(-15deg);
 		transform: skewX(-17deg);
-		height: 209px;
-		width: 169px;
 	}
 	figure.snip0057 .image img {
 		position: relative;
 		display: block;
-		left: -55%;
+		left: -66%;
 		z-index: 1;
 		-webkit-transform: skew(15deg);
-		transform: skew(20deg);
+		transform: skew(15deg);
 	}
 	figure.snip0057:before {
 		position: absolute;
@@ -85,7 +32,6 @@
 		background: rgba(0, 0, 0, 0.2);
 		-webkit-transform: skewX(-17deg);
 		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 	}
 	figure.snip0057 figcaption {
@@ -97,1074 +43,60 @@
 		text-align: right;
 		padding: 5px 0;
 		width: 100%;
-	}
-
-	figure.snip0057 figcaption h3 {
-		font-size: 12px;
-    margin-left: 100px;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-	}
-
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
-
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.6s ease-in-out;
-		animation: shadow 0.6s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	/******admin*****/
-	.buttAdmin {
-		margin: 0 auto;
-		margin-top: 32px;
-	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
-	.edit-user form {
-		background: lightgray;
-		padding: 5px;
-	}
-	
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-  
-	.edit-user-form {
-    position: absolute;
-    bottom: 36px;
-    width: 306px;
-    height: 563px;
-    background: rgb(241, 239, 239) top;
-    box-shadow: #000000;
-    padding: 16px 6px;
-    margin-right: -21px;
-    margin-left: -182px;
-    line-height: 10px;
-	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 62px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
-	.formAdm {
-        background: rgb(241, 239, 239) top;
-        padding: 6px;
-        /* margin-bottom: 43px; */
-        margin-right: -127px;
-        margin-left: 53px;
-        margin-top: 38px;
-    
-	}
-
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 40px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    }
-    .fas.fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-    margin-right: 10px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
- 
-  }
-  
-  /* #### Mobile Phones Landscape #### */
-  @media screen and (max-device-width: 640px) and (orientation: landscape){
-	.containerCard {
-		margin-top: 60px;
-	}
-	.cardProfile {
-		margin-top: 56px;
-	}
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-		margin-left: 87px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 12px;
-	}
-
-	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-		position: relative;
-		height: 256px;
-		overflow: hidden;
-		margin: 6px auto;
-		min-width: 280px;
-		width: 100%;
-		background: #ffffff;
-		color: #000000;
-		font-size: 14px;
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
-	}
-	figure.snip0057 .image {
-		width: 50%;
-		overflow: hidden;
-		z-index: 3;
-		-webkit-transform: skewX(-15deg);
-		transform: skewX(-20deg);
-		height: 208px;
-	}
-	figure.snip0057 .image img {
-		position: relative;
-		display: block;
-		left: -55%;
-		z-index: 1;
-		-webkit-transform: skew(15deg);
-		transform: skew(20deg);
-	}
-	figure.snip0057:before {
-		position: absolute;
-		content: '';
-		height: 100%;
-		width: 45%;
-		background: rgba(0, 0, 0, 0.2);
-		-webkit-transform: skewX(-17deg);
-		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-	}
-	figure.snip0057 figcaption {
-		padding: 0px 2px 4px 0px;
-		position: absolute;
-	}
-	figure.snip0057 figcaption h3 {
-		margin: 0;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption p {
-		margin-left: 93px;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption h3 {
-		font-size: 12px;
-        margin-left: 87px;
+		font-size: 13px;
+		margin-left: -70px;
 		text-transform: uppercase;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
-
-	figure.snip0057 figcaption p {
+	figure.snip0057 figcaption .name {
+		margin-left: -33px;
+		margin-top: 10px;
+	}
+	figure.snip0057 figcaption .email {
+		margin-left: -46px;
 		font-size: 11px;
-		opacity: 0.8;
-	}
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
-
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
-
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.6s ease-in-out;
-		animation: shadow 0.6s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
+		margin-top: 10px;
 	}
 	/******admin*****/
 	.buttAdmin {
 		margin: 0 auto;
-		margin-top: 32px;
-	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
-	.edit-user form {
-		background: lightgray;
-		padding: 5px;
-	}
-
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-  
-	.edit-user-form {
-    position: absolute;
-    bottom: 36px;
-    width: 306px;
-    height: 563px;
-    background: rgb(241, 239, 239) top;
-    box-shadow: #000000;
-    padding: 16px 6px;
-    margin-right: -21px;
-    margin-left: -182px;
-    line-height: 10px;
-	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
+		margin-top: 10px;
 	}
 	.formAdm {
-        background: rgb(241, 239, 239) top;
-        padding: 6px;
-        /* margin-bottom: 43px; */
-        margin-right: -127px;
-        margin-left: 53px;
-        margin-top: 38px;
-    
+		background: rgb(241, 239, 239) top;
+		padding: 6px;
+		/* margin-bottom: 43px; */
+		margin-right: -127px;
+		margin-left: 53px;
+		margin-top: 38px;
 	}
-
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    
-    }
-    .fas
-    .fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-    margin-right: 10px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
-   
-  }
-  
-  /* #### Mobile Phones Portrait or Landscape #### */
-  @media screen and (max-device-width: 640px){
-	.containerCard {
-		margin-top: 60px;
-	}
-	.cardProfile {
-		margin-top: 56px;
-	}
-
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-		margin-left: 87px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 12px;
-	}
-
-	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-		position: relative;
-		height: 256px;
-		overflow: hidden;
-		margin: 6px auto;
-		min-width: 280px;
-		width: 100%;
-		background: #ffffff;
-		color: #000000;
-		font-size: 14px;
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
-	}
-	figure.snip0057 .image {
-		width: 50%;
-		overflow: hidden;
-		z-index: 3;
-		-webkit-transform: skewX(-15deg);
-		transform: skewX(-20deg);
-		height: 208px;
-	}
-	figure.snip0057 .image img {
-		position: relative;
-		display: block;
-		left: -55%;
-		z-index: 1;
-		-webkit-transform: skew(15deg);
-		transform: skew(20deg);
-	}
-	figure.snip0057:before {
-		position: absolute;
-		content: '';
-		height: 100%;
-		width: 45%;
-		background: rgba(0, 0, 0, 0.2);
-		-webkit-transform: skewX(-17deg);
-		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-	}
-	figure.snip0057 figcaption {
-		padding: 0px 2px 4px 0px;
-		position: absolute;
-	}
-	figure.snip0057 figcaption h3 {
-		margin: 0;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption p {
-		margin-left: 93px;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption h3 {
-		font-size: 12px;
-        margin-left: 87px;
-		text-transform: uppercase;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	}
-
-	figure.snip0057 figcaption p {
-		font-size: 11px;
-		opacity: 0.8;
-	}
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
-
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
-
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.6s ease-in-out;
-		animation: shadow 0.6s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	/******admin*****/
-	.buttAdmin {
-		margin: 0 auto;
-		margin-top: 32px;
-	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
-	.edit-user form {
-		background: lightgray;
-		padding: 5px;
-	}
-
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-  
-	.edit-user-form {
-    position: absolute;
-    bottom: 36px;
-    width: 306px;
-    height: 563px;
-    background: rgb(241, 239, 239) top;
-    box-shadow: #000000;
-    padding: 16px 6px;
-    margin-right: -21px;
-    margin-left: -182px;
-    line-height: 10px;
-	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
-	.formAdm {
-        background: rgb(241, 239, 239) top;
-        padding: 6px;
-        /* margin-bottom: 43px; */
-        margin-right: -127px;
-        margin-left: 53px;
-        margin-top: 38px;
-    
-	}
-
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    }
-    .fas.fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-    margin-right: 10px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
-  
-  }
-  
-  /* #### iPhone 4+ Portrait or Landscape #### */
-  @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
-	.containerCard {
-		margin-top: 90px;
-	}
-	.cardProfile {
-		margin-top: 56px;
-	}
-
-	figure.snip0057 figcaption .email{
-	    margin-right: -125px;
-    	margin-top: 50px;
-	}
-	figure.snip0057 figcaption .name{
-		margin-left: 15px;
-		margin-top: 48px;
-	}
-	
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-		margin-left: 87px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        /* margin-right: 30px; */
-        margin-left: 20px;
-        font-size: 12px;
-	}
-
-	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-		position: relative;
-		height: 256px;
-		overflow: hidden;
-		margin: 6px auto;
-		min-width: 280px;
-		/* max-width: 446px; */
-		width: 100%;
-		background: #ffffff;
-		color: #000000;
-		font-size: 14px;
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
-	}
-	figure.snip0057 .image {
-	    width: 50%;
-    overflow: hidden;
-    z-index: 3;
-    -webkit-transform: skewX(-15deg);
-    transform: skewX(-17deg);
-    height: 209px;
-    width: 140px;
-	}
-	figure.snip0057 .image img {
-		position: relative;
-		display: block;
-		left: -55%;
-		z-index: 1;
-		-webkit-transform: skew(15deg);
-		transform: skew(20deg);
-	}
-	figure.snip0057:before {
-		position: absolute;
-		content: '';
-		height: 100%;
-		width: 33%;
-		background: rgba(0, 0, 0, 0.2);
-		-webkit-transform: skewX(-17deg);
-		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-	}
-	figure.snip0057 figcaption {
-		padding: 0px 2px 4px 0px;
-		position: absolute;
-	}
-	figure.snip0057 figcaption h3 {
-		margin: 0;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-
-	figure.snip0057 figcaption h3 {
-		font-size: 10px;
-		margin-left: 90px;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-	}
-
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
-
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.6s ease-in-out;
-		animation: shadow 0.6s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	/******admin*****/
-	.buttAdmin {
-		margin: 0 auto;
-		margin-top: 32px;
-	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
-	.edit-user form {
-		background: lightgray;
-		padding: 5px;
-	}
-
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-  
-	.edit-user-form {
-    position: absolute;
-    bottom: 36px;
-    width: 306px;
-    height: 563px;
-    background: rgb(241, 239, 239) top;
-    box-shadow: #000000;
-    padding: 16px 6px;
-    margin-right: -21px;
-    margin-left: -182px;
-    line-height: 10px;
-	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 62px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px
-	}
-	.formAdm {
-        background: rgb(241, 239, 239) top;
-        padding: 6px;
-        /* margin-bottom: 43px; */
-        margin-right: -127px;
-        margin-left: 53px;
-        margin-top: 38px;
-    
-	}
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: -1px 40px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-        font-size: 20px;
-    border-radius: 2px solid;
-    color: white;
-    height: 29px;
-    width: 30px;
-    border: 2px solid;
-    border-radius: 50%;
-    line-height: 22px;
-    margin-top: -3px;
-    }
-    .fas
-    .fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-        margin-right: 1px;
-    margin-left: 1px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
- 
 }
-  
-  
-  /* #### iPhone 5 Portrait or Landscape #### */
-  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
 	.containerCard {
 		margin-top: 60px;
 	}
 	.cardProfile {
 		margin-top: 56px;
 	}
-	
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-		margin-left: 87px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 12px;
-	}
 
 	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-		position: relative;
 		height: 256px;
-		overflow: hidden;
-		margin: 6px auto;
-		min-width: 280px;
-		width: 100%;
-		background: #ffffff;
-		color: #000000;
-		font-size: 14px;
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
 	}
 	figure.snip0057 .image {
-	    width: 40%;
-    overflow: hidden;
-    z-index: 3;
-    -webkit-transform: skewX(-15deg);
-    transform: skewX(-18deg);
-    height: 209px;
+		height: 209px;
+		width: 35%;
+		-webkit-transform: skewX(-15deg);
+		transform: skewX(-17deg);
 	}
 	figure.snip0057 .image img {
 		position: relative;
 		display: block;
-		left: -80%;
+		left: -55%;
 		z-index: 1;
 		-webkit-transform: skew(15deg);
-		transform: skew(20deg);
+		transform: skew(15deg);
 	}
 	figure.snip0057:before {
 		position: absolute;
@@ -1174,7 +106,6 @@
 		background: rgba(0, 0, 0, 0.2);
 		-webkit-transform: skewX(-17deg);
 		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 	}
 	figure.snip0057 figcaption {
@@ -1186,271 +117,70 @@
 		text-align: right;
 		padding: 5px 0;
 		width: 100%;
-	}
-	figure.snip0057 figcaption p {
-		margin-left: 93px;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption h3 {
-		font-size: 10px;
-        margin-left: 77px;
+		font-size: 14px;
+		margin-left: -286px;
 		text-transform: uppercase;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
-
-	figure.snip0057 figcaption p {
+	figure.snip0057 figcaption .name {
+		margin-left: -94px;
+		margin-top: 10px;
+	}
+	figure.snip0057 figcaption .email {
+		margin-left: -109px;
 		font-size: 11px;
-		opacity: 0.8;
-	}
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
-	
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
+		margin-top: 10px;
 	}
 
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.6s ease-in-out;
-		animation: shadow 0.6s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	/******admin*****/
 	.buttAdmin {
 		margin: 0 auto;
-		margin-top: 32px;
-	}
-	
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
-	.edit-user form {
-		background: lightgray;
-		padding: 5px;
+		margin-top: 2px;
 	}
 
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-  
-	.edit-user-form {
-    position: absolute;
-    bottom: 36px;
-    width: 306px;
-    height: 563px;
-    background: rgb(241, 239, 239) top;
-    box-shadow: #000000;
-    padding: 16px 6px;
-    margin-right: -21px;
-    margin-left: -182px;
-    line-height: 10px;
-	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
 	.formAdm {
-        background: rgb(241, 239, 239) top;
-        padding: 6px;
-        /* margin-bottom: 43px; */
-        margin-right: -127px;
-        margin-left: 53px;
-        margin-top: 38px;
-    
+		background: rgb(241, 239, 239) top;
+		padding: 6px;
+		/* margin-bottom: 43px; */
+		margin-right: -127px;
+		margin-left: 53px;
+		margin-top: 38px;
 	}
+}
 
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    }
-    .fas
-    .fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-    margin-right: 2px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
-    
-  }
-  
-  /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
-  @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px) {
 	.containerCard {
-		margin-top: 90px;
+		margin-top: 60px;
 	}
 	.cardProfile {
 		margin-top: 56px;
 	}
-
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-		margin-left: 87px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 12px;
-	}
-	
 	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-		position: relative;
-		height: 290px;
-		overflow: hidden;
-		margin: 6px auto;
-		max-width: 355px;
-		width: 100%;
-		background: #ffffff;
-		color: #000000;
-		font-size: 14px;
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
+		height: 256px;
 	}
 	figure.snip0057 .image {
-	    width: 40%;
-    overflow: hidden;
-    z-index: 3;
-    -webkit-transform: skewX(-15deg);
-    transform: skewX(-18deg);
-    height: 243px;
+		height: 209px;
+		width: 45%;
+		-webkit-transform: skewX(-15deg);
+		transform: skewX(-17deg);
 	}
 	figure.snip0057 .image img {
 		position: relative;
 		display: block;
-		left: -90%;
+		left: -66%;
 		z-index: 1;
 		-webkit-transform: skew(15deg);
-		transform: skew(20deg);
+		transform: skew(15deg);
 	}
 	figure.snip0057:before {
 		position: absolute;
-    content: '';
-    height: 100%;
-    width: 37%;
-    background: rgba(0, 0, 0, 0.2);
-    -webkit-transform: skewX(-17deg);
-    transform: skewX(-16deg);
-    box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-
+		content: '';
+		height: 100%;
+		width: 41%;
+		background: rgba(0, 0, 0, 0.2);
+		-webkit-transform: skewX(-17deg);
+		transform: skewX(-17deg);
+		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 	}
 	figure.snip0057 figcaption {
 		padding: 0px 2px 4px 0px;
@@ -1461,272 +191,347 @@
 		text-align: right;
 		padding: 5px 0;
 		width: 100%;
-	}
-	figure.snip0057 figcaption p {
-		margin-left: 97px;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption h3 {
-		font-size: 10px;
-        margin-left: 97px;
+		font-size: 13px;
+		margin-left: -70px;
 		text-transform: uppercase;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
-
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
+	figure.snip0057 figcaption .name {
+		margin-left: -33px;
+		margin-top: 10px;
 	}
-	figure.snip0057.red .position {
-		background: #e65b60;
+	figure.snip0057 figcaption .email {
+		margin-left: -46px;
+		font-size: 11px;
+		margin-top: 10px;
 	}
 
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
-	
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.6s ease-in-out;
-		animation: shadow 0.6s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
 	/******admin*****/
 	.buttAdmin {
 		margin: 0 auto;
-		margin-top: 32px;
+		margin-top: 2px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
+
+	.formAdm {
+		background: rgb(241, 239, 239) top;
+		padding: 6px;
+		/* margin-bottom: 43px; */
+		margin-right: -127px;
+		margin-left: 53px;
+		margin-top: 38px;
+	}
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+	.containerCard {
+		margin-top: 62px;
+	}
+	.cardProfile {
+		margin-top: 56px;
+	}
+
+	figure.snip0057 {
+		height: 220px;
+	}
+	figure.snip0057 .image {
+		height: 209px;
+		width: 41%;
+	}
+	figure.snip0057 .image img {
+		left: -27%;
+		bottom: 20%;
+		-webkit-transform: skew(15deg);
+		transform: skew(15deg);
+	}
+	figure.snip0057:before {
+		height: 80%;
+		width: 36%;
+
+		-webkit-transform: skewX(-17deg);
+		transform: skewX(-17deg);
+	}
+	figure.snip0057 figcaption {
+		padding: 0px 2px 4px 0px;
+		position: absolute;
+	}
+	figure.snip0057 figcaption h3 {
+		margin: 0;
+		text-align: right;
+		padding: 5px 0;
+		width: 100%;
+		font-size: 13px;
+		margin-left: -70px;
+		text-transform: uppercase;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	figure.snip0057 figcaption .name {
+		margin-left: -33px;
+		margin-top: 10px;
+	}
+	figure.snip0057 figcaption .email {
+		margin-left: -46px;
+		font-size: 11px;
+		margin-top: 10px;
+	}
+
+	.edit-user-form {
+		bottom: 47px;
+		width: 280px;
+		height: 314px;
+		padding: 12px 12px;
+		margin-left: -56px;
+		margin-right: 56px;
+	}
+
+	.formAdm {
+		background: rgb(241, 239, 239) top;
+		padding: 14px 12px;
+		margin-left: -140px;
+		margin-right: 140px;
+		margin-top: -320px;
+		width: 279px;
+	}
+	.selectButton{
+		margin-left: 1px;
+	}
+	.btnselcat .btn{
+		margin-top: -14px;
+	}
+
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+	.containerCard {
+		margin-top: 60px;
+	}
+	.cardProfile {
+		margin-top: 56px;
+	}
+	figure.snip0057 {
+		height: 256px;
+	}
+	figure.snip0057 .image {
+		height: 209px;
+		width: 45%;
+		-webkit-transform: skewX(-15deg);
+		transform: skewX(-17deg);
+	}
+	figure.snip0057 .image img {
+		position: relative;
 		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
+		left: -66%;
+		z-index: 1;
+		-webkit-transform: skew(15deg);
+		transform: skew(15deg);
 	}
+	figure.snip0057:before {
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 41%;
+		background: rgba(0, 0, 0, 0.2);
+		-webkit-transform: skewX(-17deg);
+		transform: skewX(-17deg);
+		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+	}
+	figure.snip0057 figcaption {
+		padding: 0px 2px 4px 0px;
+		position: absolute;
+	}
+	figure.snip0057 figcaption h3 {
+		margin: 0;
+		text-align: right;
+		padding: 5px 0;
+		width: 100%;
+		font-size: 13px;
+		margin-left: -70px;
+		text-transform: uppercase;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	figure.snip0057 figcaption .name {
+		margin-left: -33px;
+		margin-top: 10px;
+	}
+	figure.snip0057 figcaption .email {
+		margin-left: -46px;
+		font-size: 11px;
+		margin-top: 10px;
+	}
+
+	/******admin*****/
+	.buttAdmin {
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
-	
+
 	.fa-user-edit {
 		margin-left: -7px;
 		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
- 
+	}
+
 	.edit-user-form {
-    position: absolute;
-    bottom: 36px;
-    width: 306px;
-    height: 563px;
-    background: rgb(241, 239, 239) top;
-    box-shadow: #000000;
-    padding: 16px 6px;
-    margin-right: -21px;
-    margin-left: -182px;
-    line-height: 10px;
+		position: absolute;
+		bottom: 47px;
+		width: 276px;
+		height: 290x;
+		background: rgb(241, 239, 239) top;
+		box-shadow: #000000;
+		padding: 5px 5px;
+		margin-right: -62px;
+		margin-left: -62px;
+		line-height: 4px;
+		font-size: 13px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 222px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
+
 	.formAdm {
-        background: rgb(241, 239, 239) top;
-        padding: 6px;
-        /* margin-bottom: 43px; */
-        margin-right: -127px;
-        margin-left: 53px;
-        margin-top: 38px;
-    
+		background: rgb(241, 239, 239) top;
+		padding: 12px 12px;
+		margin-left: -140px;
+		margin-right: 140px;
+		margin-top: -349px;
+		width: 279px;
 	}
 
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
+	.form-control {
+		font-size: 12px;
+	}
+	/* .buttAdmin .btn {
+		margin-left: 78px;
+	} */
+	.buttAdmin .btn {
+	margin-top: 10px;
+	}
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+	.containerCard {
+		margin-top: 90px;
+	}
+	.cardProfile {
+		margin-top: 56px;
+	}
+	figure.snip0057 {
+		height: 256px;
+	}
+	figure.snip0057 .image {
+		height: 209px;
+		width: 45%;
+		-webkit-transform: skewX(-15deg);
+		transform: skewX(-17deg);
+	}
+	figure.snip0057 .image img {
+		left: -66%;
+		-webkit-transform: skew(15deg);
+		transform: skew(15deg);
+	}
+	figure.snip0057:before {
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 41%;
+		background: rgba(0, 0, 0, 0.2);
+		-webkit-transform: skewX(-17deg);
+		transform: skewX(-17deg);
+		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+	}
+	figure.snip0057 figcaption {
+		padding: 0px 2px 4px 0px;
+		position: absolute;
+	}
+	figure.snip0057 figcaption h3 {
+		margin: 0;
+		text-align: right;
+		padding: 5px 0;
+		width: 100%;
+		font-size: 13px;
+		margin-left: -70px;
+		text-transform: uppercase;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	figure.snip0057 figcaption .name {
+		margin-left: -33px;
+		margin-top: 10px;
+	}
+	figure.snip0057 figcaption .email {
+		margin-left: -46px;
+		font-size: 11px;
+		margin-top: 10px;
+	}
+	/******admin*****/
+	.buttAdmin {
+		margin: 0 auto;
+		margin-top: 10px;
 	}
 
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
+	.edit-user form {
+		background: lightgray;
+		padding: 5px;
 	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-        font-size: 20px;
-    border-radius: 2px solid;
-    color: white;
-    height: 29px;
-    width: 30px;
-    border: 2px solid;
-    border-radius: 50%;
-    line-height: 22px;
-    margin-top: -3px;
-    }
-    .fas
-    .fa-user-plus {
-    margin-right: 10px;
+
+	.edit-user-form {
+		bottom: 48px;
+		width: 270px;
+		height: 320px;
+		background: rgb(241, 239, 239) top;
+		box-shadow: #000000;
+		padding: 10px 6px;
+		margin-right: 58px;
+		margin-left: -58px;
+		line-height: 10px;
 	}
-	.fa-home:before {
-		content: "\f015";
-		margin-left: 2px;
+
+	.formAdm {
+		background: rgb(241, 239, 239) top;
+		padding: 15px 7px;
+		margin-right: 148px;
+		margin-left: -134px;
+		margin-top: -406px;
 	}
-    .adminItem{
-    margin-right: 10px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
-   
-  }
-  
-  /* #### Tablets Portrait or Landscape #### */
-  @media (min-device-width: 768px) and (max-device-width: 1024px){
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media (min-width: 768px) and (max-width: 1024px) {
 	.containerCard {
 		margin-top: 95px;
 	}
 	.cardProfile {
 		margin-top: 56px;
 	}
-	
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-		margin-left: 87px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 12px;
-	}
-	
+
 	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-    position: relative;
-    height: 460px;
-    overflow: hidden;
-    margin: 6px auto;
-    max-width: 680px;
-    width: 100%;
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-	
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
+		height: 276px;
 	}
 	figure.snip0057 .image {
-	 
-		width: 40%;
-		overflow: hidden;
-		z-index: 3;
+		height: 320px;
+		width: 43%;
 		-webkit-transform: skewX(-15deg);
 		transform: skewX(-17deg);
-		height: 416px;
 	}
 	figure.snip0057 .image img {
 		position: relative;
-    display: block;
-    left: -38%;
-    z-index: 1;
-    -webkit-transform: skew(15deg);
-    transform: skew(20deg);
-    height: 514px;
+		display: block;
+		left: -36%;
+		z-index: 1;
+		-webkit-transform: skew(15deg);
+		transform: skew(15deg);
+		height: 400px;
 	}
 	figure.snip0057:before {
 		position: absolute;
 		content: '';
 		height: 100%;
-		width: 39%;
+		width: 41%;
 		background: rgba(0, 0, 0, 0.2);
 		-webkit-transform: skewX(-17deg);
 		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 	}
 	figure.snip0057 figcaption {
@@ -1734,805 +539,472 @@
 		position: absolute;
 	}
 	figure.snip0057 figcaption h3 {
-		margin-top: 60px;
-		text-align: right;
-		padding: 2px 0;
-		width: 100%;
+		font-size: 13px;
+		margin-left: -140px;
 	}
-	figure.snip0057 figcaption .email{
-	    margin-left: 173px;
-    margin-top: 60px;
+	figure.snip0057 figcaption .name {
+		margin-left: -33px;
+		margin-top: 10px;
 	}
-	figure.snip0057 figcaption .name{
-		margin-left: 22px;
-		margin-top: 49px;
-	
-	}
-	figure.snip0057 figcaption p {
-		margin-left: 93px;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption h3 {
-		font-size: 24px;
-    margin-left: 192px;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	}
-
-	figure.snip0057 figcaption p {
-		font-size: 20px;
-		opacity: 0.8;
-	}
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
-
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
-
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.6s ease-in-out;
-		animation: shadow 0.6s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
+	figure.snip0057 figcaption .email {
+		margin-left: -46px;
+		font-size: 11px;
+		margin-top: 10px;
 	}
 	/******admin*****/
 	.buttAdmin {
+		/* margin-left: -12px;
+		margin-right: 12px; */
 		margin: 0 auto;
-		margin-top: 32px;
+	    margin-top: 2px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
+
 	.edit-user form {
 		background: lightgray;
 		padding: 5px;
 	}
-
- 
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-   
 	.edit-user-form {
-    position: absolute;
-    bottom: 36px;
-    width: 306px;
-    height: 563px;
-    background: rgb(241, 239, 239) top;
-    box-shadow: #000000;
-    padding: 16px 6px;
-    margin-right: -21px;
-    margin-left: -182px;
-    line-height: 10px;
+		bottom: 47px;
+		width: 293px;
+		height: 320px;
+		background: rgb(241, 239, 239) top;
+		box-shadow: #000000;
+		margin-right: 58px;
+		margin-left: -58px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top: -2px;
-	}
+
 	.formAdm {
-        background: rgb(241, 239, 239) top;
-        padding: 6px;
-        /* margin-bottom: 43px; */
-        margin-right: -127px;
-        margin-left: 53px;
-        margin-top: 38px;
-    
+	    margin-right: 148px;
+    font-size: 12px;
+    margin-bottom: 140px;
 	}
 
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-		font-size: 20px;
-		border-radius: 2px solid;
-		color: white;
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		line-height: 22px;
-		margin-top: -3px;
-    }
-    .fas.fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-		margin-right: 57px;
-		margin-left: 57px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
-   
+	
 }
- 
+
 /* #### Desktops #### */
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 	.containerCard {
 		margin-top: 110px;
 	}
 	.cardProfile {
 		margin-top: 56px;
 	}
-	
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-	    margin-left: 310px;
-    margin-top: -80px;
-    margin-right: -108px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 12px;
-	}
-	
+
 	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-    position: relative;
-    height: 480px;
-    overflow: hidden;
-    margin: 6px auto;
-    max-width: 640px;
-    width: 100%;
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-	
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
+		height: 460px;
 	}
 	figure.snip0057 .image {
-	    width: 45%;
-    overflow: hidden;
-    z-index: 3;
-    -webkit-transform: skewX(-15deg);
-    transform: skewX(-17deg);
-    height: 514px;
+		height: 412px;
+		width: 32%;
+		-webkit-transform: skewX(-15deg);
+		transform: skewX(-17deg);
 	}
 	figure.snip0057 .image img {
-		position: relative;
-    display: block;
-    left: -68%;
-    z-index: 1;
-    -webkit-transform: skew(15deg);
-    transform: skew(20deg);
-    height: 448px;
+		height: 520px;
+		left: -22%;
+		-webkit-transform: skew(15deg);
+		transform: skew(15deg);
 	}
 	figure.snip0057:before {
-		position: absolute;
-		content: '';
-		height: 108%;
-		width: 39%;
-		background: rgba(0, 0, 0, 0.2);
+		height: 99%;
+		width: 31%;
 		-webkit-transform: skewX(-17deg);
 		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 	}
 	figure.snip0057 figcaption {
 		padding: 0px 2px 4px 0px;
 		position: absolute;
 	}
 	figure.snip0057 figcaption h3 {
-		margin-top: 60px;
-		text-align: right;
-		padding: 2px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption .email{
-	    margin-left: 173px;
-    margin-top: 60px;
-	}
-	figure.snip0057 figcaption .name{
-		margin-left: 22px;
-		margin-top: 49px;
-	
-	}
-	figure.snip0057 figcaption p {
-		margin-left: 93px;
-		text-align: right;
 		padding: 5px 0;
 		width: 100%;
+		font-size: 28px;
+		margin-left: -222px;
+		margin-right: 128px;
 	}
-	figure.snip0057 figcaption h3 {
-		font-size: 24px;
-    margin-left: 192px;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	figure.snip0057 figcaption .name {
+		margin-left: -33px;
+		margin-top: 10px;
+		font-size: 26px;
 	}
-
-	figure.snip0057 figcaption p {
-		font-size: 20px;
-		opacity: 0.8;
-	}
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
-
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
-
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.3s ease-in-out;
-		animation: shadow 0.3s ease-in-out;
-	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
-	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
+	figure.snip0057 figcaption .email {
+		margin-left: -99px;
+		font-size: 11px;
+		margin-top: 10px;
+		font-size: 26px;
 	}
 	/******admin*****/
 	.buttAdmin {
+		/* margin: 0 auto;
+		margin-top: 32px; */
 		margin: 0 auto;
-		margin-top: 32px;
-	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 13px;
-		text-align: center;
-	}
-	.edit-user form {
-		background: lightgray;
-		padding: 5px;
+		margin-top: 2px;
 	}
 
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-  
 	.edit-user-form {
-		position: absolute;
-		bottom: 36px;
-		width: 560px;
-		height: 394px;
+		bottom: 47px;
+    width: 308px;
+    height: 320px;
 		background: rgb(241, 239, 239) top;
 		box-shadow: #000000;
-		padding: 16px 6px;
-		margin-right: -21px;
-		margin-left: -249px;
-		line-height: 10px;
+		margin-right: 70px;
+		margin-left: -70px;
 	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-		margin-top:-2px;
-	}
+
 	.formAdm {
+		bottom: 70px;
+		width: 310px;
+		height: 325px;
 		background: rgb(241, 239, 239) top;
-		padding: 27px;
-		margin-right: -566px;
-		margin-left: -263px;
-		margin-top: 324px;
-    
+		box-shadow: #000000;
+		margin-right: 160px;
+		margin-left: -160px;
 	}
+	/* .formAdm .form-control{
+		margin-left: -3px;
+		margin-right: 84px;
+	} */
+	/* .formAdm label{
+		margin-left: -94px;
+	} */
+	.edit-user-form .form-group {
+		margin-left: 14px;
+		margin-right: -14px;
+	}
+	.edit-user-form .col-lg-6 {
+		max-width: 55%;
+	}
+	.formAdm .form-group {
+		margin-left: 14px;
+		margin-right: -14px;
+	}
+	.formAdm .col-lg-6 {
+		max-width: 55%;
+	}
+	.selectButton{
+		margin-left: 14px;
+	}
+}
 
-	/***footer movil***/
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-    padding: 9px 32px;
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 12px 10px;
-	}
+/***Por defecto****/
 
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-        font-size: 20px;
-    border-radius: 2px solid;
-    color: white;
-    height: 29px;
-    width: 30px;
-    border: 2px solid;
-    border-radius: 50%;
-    line-height: 22px;
-    margin-top: -3px;
-    
-    }
-    .fas.fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-	margin-right: 90px;
-    margin-left: 90px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-    }
-  
+.fa-user-edit::before {
+	content: "\f4ff";
+	margin-right: -3px;
+}
+.adminItem {
+	margin-left: -3px;
+	margin-right: -3px;
+}
+.fa-home:before {
+	content: "\f015";
+	margin-left: 2px;
+}
+.fa-user-plus:before {
+	content: "\f234";
+	margin-right: -3px;
+}
+.footerMovil .fa-home {
+	font-size: 20px;
+	border-radius: 2px solid;
+	color: white;
+	height: 29px;
+	width: 30px;
+	border: 2px solid;
+	border-radius: 50%;
+	line-height: 23px;
+}
+.footerMovil .fa-play-circle {
+	font-size: 30px;
+	color: white;
+}
+.userItem {
+	margin-right: 35px;
+	margin-left: 32px;
+}
+.navUser .nav-link {
+	color: white;
+	padding: 12px 10px;
+}
+.navAdmin .nav-link {
+	color: white;
+	display: block;
+	padding: 7px 25px;
+}
+.edit-user {
+	height: 29px;
+	width: 30px;
+	border: 2px solid;
+	border-radius: 50%;
+	display: block;
+	margin: 2px auto;
+	color: white;
+	line-height: 22px;
+	text-align: center;
+}
+.adminAdd {
+	height: 29px;
+	width: 30px;
+	border: 2px solid;
+	border-radius: 50%;
+	display: block;
+	margin: 2px auto;
+	color: white;
+	line-height: 22px;
+	text-align: center;
+}
+/********formularios*********/
+.containerForm {
+	margin: 0 auto;
+	
+}
+.edit-user-form {
+	position: absolute;
+	line-height: 0px;
+	background: rgb(241, 239, 239) top;
+	box-shadow: #000000;
+}
+
+.edit-user-form input,
+
+label button {
+	width: 255px;
+	height: 20px;
+	margin: 0;
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+	-moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+	box-sizing: border-box;
+	line-height: 9px;
+	font-size: 13px;
+}
+
+.btn {
+	padding: 4px 10px;
+	font-size: 12px;
+	line-height: 1;
+}
+
+.formAdm {
+	 position: absolute;
+	line-height: 0px; 
+	
+}
+.formAdm input,
+
+label button {
+	width: 255px;
+	height: 20px;
+	margin: 0;
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+	-moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+	box-sizing: border-box;
+	line-height: 9px;
+}
+.selCat {
+	/* display: flex;
+	-ms-flex-align: center;
+	margin-bottom: 0;
+	margin-bottom: 1px;
+	margin-top: 2px;
+	color: #495057;
+	border: 1px solid #ced4da;
+	border-radius: .3rem;
+	font-size: 11px;
+	padding: 2px; */
+}
+.btnselcat {
+	margin-bottom: 10px;
+}
+.selectButton .input-group {
+	/* width: 72%;
+	margin-left: 30px;
+	margin-right: -16px; */
+}
+.selectButton {
+	position: absolute;
+	width: 254px;
+    display: flex;
+}
+.selectedit select {
+	/* padding: 5px 8px;
+	width: 130%;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	background-image: none;
+	appearance: none; */
+}
+/* .edit-user-form .input-group-prepend {
+	margin-right: -2px;
+	margin-top: 2px;
+	padding: 0px;
+}
+.edit-user-form .input-group-prepend {
+	margin-right: -2px;
+	margin-top: 2px;
+	padding: 0px;
+} */
+.edit-user-form label {
+	font-size: 11px;
+}
+ .custom-select{
+	height: 27px;
+    font-size: 10px;
+}
+.input-group-text{
+	height: 27px;
+    font-size: 10px;
+
+}
+.form-group {
+    margin: 5px auto;
+}
+/* .formAdm label {
+	font-size: 111px;
 } 
-  
-	.containerCard {
-		margin-top: 110px;
-	}
-	.cardProfile {
-		margin-top: 56px;
-	}
+.form-control {
+	font-size: 12px;
+}
+.form-group {
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+.btnselcat .btn {
+	padding: 4px 5px;
+	font-size: 11px;
+	line-height: 1;
+}
+.selectEdit {
+	padding: 0px 20px;
+	font-size: 8px;
+}
+/**********card***********/
+.containerCard {
+	margin-top: 20px;
+	position: relative;
+}
+figure.snip0057 {
+	font-family: 'Raleway', Arial, sans-serif;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	width: 100%;
+	background: #ffffff;
+	color: #000000;
+}
+figure.snip0057 * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+figure.snip0057 .image {
+	/* width: 50%; */
+	overflow: hidden;
+	z-index: 1;
+	-webkit-transform: skewX(-15deg);
+	transform: skewX(-15deg);
+}
+figure.snip0057 .image img {
+	position: relative;
+	display: block;
+	/* left: -15%; */
+	z-index: 1;
+	-webkit-transform: skew(15deg);
+	transform: skew(15deg);
+}
+figure.snip0057:before {
+	position: absolute;
+	content: '';
+	/* height: 100%;
+	width: 45%; */
+	background: rgba(0, 0, 0, 0.2);
+	-webkit-transform: skewX(-17deg);
+	transform: skewX(-17deg);
+	-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+	box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+}
+figure.snip0057 figcaption {
+	padding: 20px 30px 20px 20px;
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	width: 50%;
+}
+figure.snip0057 figcaption h3 {
 	
-	.selCat {
-		display: flex;
-		-ms-flex-align: center;
-		padding: 10px 14px;
-		margin-bottom: 0;
-		font-size: 15px;
-		line-height: 0.9;
-		color: #495057;
-		border: 1px solid #ced4da;
-		border-radius: .3rem;
-	}
-	.btnselcat {
-		margin-bottom: 10px;
-	}
-	.btnselcat button {
-	    margin-left: 310px;
-    margin-top: -80px;
-    margin-right: -108px;
-	}
-	.selectedit select {
-		padding: 5px 8px;
-		width: 130%;
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		background-image: none;
-		appearance: none;
-	}
-	.selectButton {
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 12px;
-	}
-	
-	figure.snip0057 {
-		font-family: 'Raleway', Arial, sans-serif;
-    position: relative;
-    height: 480px;
-    overflow: hidden;
-    margin: 6px auto;
-    max-width: 640px;
-    width: 100%;
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-	
-	}
-	figure.snip0057 * {
-		text-align: right;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-webkit-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
-	}
-	figure.snip0057 .image {
-	    width: 45%;
-    overflow: hidden;
-    z-index: 3;
-    -webkit-transform: skewX(-15deg);
-    transform: skewX(-17deg);
-    height: 514px;
-	}
-	figure.snip0057 .image img {
-		position: relative;
-    display: block;
-    left: -68%;
-    z-index: 1;
-    -webkit-transform: skew(15deg);
-    transform: skew(20deg);
-    height: 448px;
-	}
-	figure.snip0057:before {
-		position: absolute;
-		content: '';
-		height: 108%;
-		width: 39%;
-		background: rgba(0, 0, 0, 0.2);
-		-webkit-transform: skewX(-17deg);
-		transform: skewX(-17deg);
-		-webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
-	}
-	figure.snip0057 figcaption {
-		padding: 0px 2px 4px 0px;
-		position: absolute;
-	}
-	figure.snip0057 figcaption h3 {
-		margin-top: 60px;
-		text-align: right;
-		padding: 2px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption .email{
-	    margin-left: 173px;
-    margin-top: 60px;
-	}
-	figure.snip0057 figcaption .name{
-		margin-left: 22px;
-		margin-top: 49px;
-	
-	}
-	figure.snip0057 figcaption p {
-		margin-left: 93px;
-		text-align: right;
-		padding: 5px 0;
-		width: 100%;
-	}
-	figure.snip0057 figcaption h3 {
-		font-size: 24px;
-    margin-left: 192px;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	}
+	text-align: right;
+	padding: 10px 0;
+	width: 100%;
+}
+figure.snip0057 figcaption h3 {
+	font-size: 1.3em;
+	font-weight: 300;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 
-	figure.snip0057 figcaption p {
-		font-size: 20px;
-		opacity: 0.8;
-	}
-	figure.snip0057 .position {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: right;
-		padding: 15px 30px;
-		font-size: 0.9em;
-		opacity: 1;
-		font-style: italic;
-		color: #ffffff;
-		background: #000000;
-	}
-	figure.snip0057.red .position {
-		background: #e65b60;
-	}
+figure.snip0057 .position {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	padding: 15px 30px;
+	font-size: 0.9em;
+	opacity: 1;
+	font-style: italic;
+	color: #ffffff;
+	background: #000000;
+}
 
-	figure.snip0057:hover figcaption,
-	figure.snip0057.hover figcaption {
-		bottom: 1px;
-	}
+figure.snip0057.red .position {
+	background: #e65b60;
+}
 
-	figure.snip0057:hover:before,
-	figure.snip0057.hover:before {
-		-webkit-animation: shadow 0.3s ease-in-out;
-		animation: shadow 0.3s ease-in-out;
+figure.snip0057:hover figcaption,
+figure.snip0057.hover figcaption {
+	bottom: 40px;
+}
+figure.snip0057:hover:before,
+figure.snip0057.hover:before {
+	-webkit-animation: shadow 0.4s ease-in-out;
+	animation: shadow 0.4s ease-in-out;
+}
+@-webkit-keyframes shadow {
+	0% {
+		left: 0px;
 	}
-	@-webkit-keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
+	50% {
+		left: -5px;
 	}
-	@keyframes shadow {
-		0% {
-			left: 0px;
-		}
-		50% {
-			left: -5px;
-		}
-		100% {
-			left: 0px;
-		}
+	100% {
+		left: 0px;
 	}
-	/******admin*****/
-	.buttAdmin {
-		margin: 0 auto;
-		margin-top: 32px;
+}
+@keyframes shadow {
+	0% {
+		left: 0px;
 	}
-	.edit-user {
-		height: 29px;
-		width: 30px;
-		border: 2px solid;
-		border-radius: 50%;
-		display: block;
-		margin: 2px auto;
-		color: white;
-		line-height: 22px;
-		text-align: center;
-		margin-top: -1px;
+	50% {
+		left: -5px;
 	}
-	.edit-user form {
-		background: lightgray;
-		padding: 5px;
+	100% {
+		left: 0px;
 	}
-
-	.fa-user-edit {
-		margin-left: -7px;
-		margin-top: -3px;
-    }
-    .editForm{
-    height: 200px;
-    }
-   
-	.edit-user-form {
-		position: absolute;
-		bottom: 36px;
-		width: 560px;
-		height: 394px;
-		background: rgb(241, 239, 239) top;
-		box-shadow: #000000;
-		padding: 16px 6px;
-		margin-right: -21px;
-		margin-left: -249px;
-		line-height: 10px;
-	}
-	.adminAdd {
-        height: 29px;
-        width: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: block;
-        margin: 2px auto;
-        color: white;
-        line-height: 22px;
-        text-align: center;
-        margin-right: 34px;
-		/* margin-bottom: -586px; */
-	    margin-top: -3px;
-	}
-	.formAdm {
-		background: rgb(241, 239, 239) top;
-    padding: 27px;
-    margin-right: -566px;
-    margin-left: -263px;
-    margin-top: -245px;
-    
-	}
-	
-	/***footer movil***/
-	.navUser{
-		display: flex;
-		flex-wrap: nowrap;
-		padding: 1px 13px;
-	}
-	.navAdmin{
-		display: flex;
-		flex-wrap: nowrap;
-	}
-	.navAdmin .nav-link {
-	    color: white;
-    display: block;
-	padding: 9px 32px;
-	
-    }
-    .navUser .nav-link {
-		color: white;
-		padding: 1px 13px;
-	}
-
-	.footerMovil .fa-play-circle {
-        font-size: 28px;
-	}
-    
-    .fa-home{
-        border-radius: 1px solid;
-    }
-	.footerMovil .fa-home {
-            font-size: 20px;
-    border-radius: 2px solid;
-    color: white;
-    height: 29px;
-    width: 30px;
-    border: 2px solid;
-    border-radius: 50%;
-    line-height: 22px;
-    margin-top: -3px;
-    
-    }
-    .fas.fa-user-plus {
-    margin-right: 10px;
-    }
-    .adminItem{
-		margin-right: 3px;
-		margin-left: 3px;
-    }
-    .userItem{
-        margin-right: 35px;
-        margin-left: 32px;
-    }
-    .userItem .footerMovil{
-        margin-right: 10px;
-        color:white;
-	}
-
-	.footerUser{
-		display: flex;
-		flex-wrap: nowrap;
-	}
-   .footerAdmin{
-	display: flex;
-	flex-wrap: nowrap;
-   }
-   .fa-home:before {
-    content: "\f015";
-	margin-left: 1px;
-   }
-
+}
 
 /* Large Devices, Wide Screens */
-@media (max-width : 1200px) {
+@media (max-width: 1200px) {
 }
 /* Medium Devices, Desktops */
-@media (max-width : 992px) {
-	
+@media (max-width: 992px) {
 }
 
 @media (min-width: 1200px) {
-	
 }
 
-/* Custom, iPhone Retina */ 
-@media  (min-width : 320px) {
+/* Custom, iPhone Retina */
+@media (min-width: 320px) {
 }

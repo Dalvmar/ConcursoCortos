@@ -5,13 +5,10 @@
         <div class="col-12">
             <figure class="snip0057 red">
                 <figcaption>
-                    <h3>{{user.name}} {{user.lastname}}</h3>
-    
-                  
-                        
-                            <p class="name">{{user.username}}</p>
+                    <h3>{{user.username}}</h3> 
+                            <div class="name">{{user.name}} {{user.lastname}}</div>
                        
-                            <p class="email">{{user.email}}</p>
+                            <div class="email"><i>{{user.email}}</i></div>
                     
                 </figcaption>
                 <div class="image">
@@ -67,7 +64,8 @@
        <a class="nav-link footerMovil" [routerLink]="['profile/details']"><i class="far fa-play-circle"></i></a>
       </li>
       <li class="nav-item adminItem">
-        <div class="nav-link footerMovil" (click)="toggleHidden()"><i class="fas fa-user-edit edit-user"></i></div>
+        <div class="nav-link footerMovil editForm" (click)="toggleHidden()"><i class="fas fa-user-edit edit-user"></i></div>
+        <div class="containerForm">
         <form *ngIf="isVisible" class="edit-user-form">
           
                 <div class="row">
@@ -135,55 +133,62 @@
                 </div>
     
             </form>
+        </div>
       </li>
+
       <li class="nav-item adminItem">
           <div class="nav-link footerMovil" (click)="toggleHiddenAdmin()"><i class="fas fa-user-plus adminAdd"></i></div>
+          <div clas="containerForm ">
           <form *ngIf="isVisibleAdmin" class="formAdm">
       
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-lg-6 ">
                     <div class="form-group">
                       <label for="username">Username</label>
                       <input type="text" class="form-control" [(ngModel)]="username" name="username" required id="usernameAdmin">
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-lg-6 ">
                     <div class="form-group">
                       <label for="name">Nombre</label>
                       <input type="text" class="form-control" [(ngModel)]="name" name="name" required id="nameAdmin">
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="lastname">Apellidos</label>
-                      <input type="text" class="form-control" [(ngModel)]="lastname" name="lastname" required id="lastnameAdmin">
-                    </div>
-                  </div>
+                 
                 </div>
                 <div class="row">
-            
-                  <div class="col-md-4">
+                        <div class="col-lg-6 ">
+                                <div class="form-group">
+                                  <label for="lastname">Apellidos</label>
+                                  <input type="text" class="form-control" [(ngModel)]="lastname" name="lastname" required id="lastnameAdmin">
+                                </div>
+                              </div>
+                  <div class="col-lg-6 ">
                     <div class="form-group">
                       <label for="email">Email</label>
                       <input type="email" class="form-control" [(ngModel)]="email" name="email" required id="emailAdmin">
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="newpassword">Password</label>
-                      <input type="text" class="form-control" [(ngModel)]="password" name="passwordAdmin" />
-                    </div>
-            
-                  </div>
-                  <div class="col-md-4">
-                    <div class="buttAdmin">
-                      <label> </label>
-                      <button type="submit" class="btn btn-danger" (click)="addAdmin(username,name,lastname,password,email)">Añadir admin</button>
-                    </div>
-                  </div>
+                 
+              </div>
+              <div class="row">
+                    <div class="col-lg-6">
+                            <div class="form-group">
+                              <label for="newpassword">Password</label>
+                              <input type="text" class="form-control" [(ngModel)]="password" name="passwordAdmin" />
+                            </div>
+                    
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="buttAdmin">
+                              <label> </label>
+                              <button type="submit" class="btn btn-danger" (click)="addAdmin(username,name,lastname,password,email)">Añadir admin</button>
+                            </div>
+                          </div>
               </div>
               
               </form>
+            </div>
         </li>
       <li class="nav-item adminItem">
         <a class="nav-link footerMovil" [routerLink]="['/']"><i class="fas fa-home"></i></a>
@@ -197,6 +202,7 @@
           </li>
           <li class="nav-item userItem">
             <div class="nav-link footerMovil edit-user" (click)="toggleHidden()" ><i class="fas fa-user-edit"></i></div>
+           <div class="containerForm">
             <form *ngIf="isVisible" class="edit-user-form">
             
                     <div class="row">
@@ -264,7 +270,7 @@
                           </div>
                       </div>
                 </form>
-        
+            </div>
           </li>
           <li class="nav-item userItem">
             <a class="nav-link footerMovil" [routerLink]="['/']"><i class="fas fa-home"></i></a>
