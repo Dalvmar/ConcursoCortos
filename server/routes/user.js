@@ -21,6 +21,7 @@ router.put('/edit/:id', (req, res, next) => {
 
 		const changeFields = new Promise((resolve, reject) => {
 			if (!username || !email || !name || !lastname || !category) {
+				console.log("aqui")
 				reject(new Error("Username ,name ,lastname and email are required."));
 			} else {
 				resolve();
@@ -69,6 +70,7 @@ router.put('/edit/:id', (req, res, next) => {
 	
 // Delete user
 router.delete('/delete/:id', (req, res, next) => {
+	
 	User.findByIdAndRemove(req.params.id)
 		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
 		.catch((e) => next(e));
@@ -78,7 +80,7 @@ router.delete('/delete/:id', (req, res, next) => {
 router.post('/newAdmin', (req, res, next) => {
 
 	const {username,password,name,lastname,email} = req.body;
-  	console.log(req.body)
+  
 	// Check for non empty user or password
 	if (!username || !password || !email || !name || !lastname){
 	  next(new Error('You must provide credentials'));
@@ -99,8 +101,8 @@ router.post('/newAdmin', (req, res, next) => {
 		lastname,
 		password: hashPass,
 		email,
-		role:'admin',
-		category:'11-22 años España'
+		role: 'admin',
+		category: '11-22 años España'
 	};
 	  User.create(newAdmin, {new:true}).then( (object) => res.json(object)).catch((e) => next(e));
 	}

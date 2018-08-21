@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
-const CortoSchema = new Schema({
+const VideoSchema = new Schema({
   video: {type: String},
   author: {type:Schema.Types.ObjectId, ref:'User'},
   commment: [{type:Schema.Types.ObjectId, ref:'Comment'}],
@@ -15,5 +15,5 @@ const CortoSchema = new Schema({
   }
 });
 
-const Corto = mongoose.model('Corto', CortoSchema);
-module.exports = Corto;
+const Video = mongoose.model('Video', VideoSchema);
+module.exports = Video;

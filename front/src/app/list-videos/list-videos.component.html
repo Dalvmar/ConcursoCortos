@@ -1,4 +1,4 @@
-<div *ngFor="let video of videos">
+<!-- <div *ngFor="let video of videos">
   <div class="containervideos">
     <div class="row">
       <div class="col">
@@ -9,4 +9,31 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<div class="table-responsive-sm">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Video</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let video of videos">
+          <tr>
+            <th scope="row"></th>
+            <td>{{video.creator}}</td>
+            <td>{{video.description}}</td>
+            <td><a><i class="far fa-play-circle"></i></a></td>
+            <td></td>
+            <td></td>
+            <td><a class="deleteVideo" (click)="deleteVideo(video._id)"><i class="fas fa-trash-alt"></i> </a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>

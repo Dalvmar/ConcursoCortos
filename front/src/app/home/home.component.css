@@ -16,13 +16,11 @@ margin-top: 20px;
 text-align: center;
 }
 
-.photoCarrusel{
+.carrusel{
 height: 400px;
 object-fit: cover;
 }
-.photoCarrusel img{
-  object-fit: cover;
-}
+
 .badge {
     width: 100%;
     background-size: 100% 0px;
@@ -100,9 +98,7 @@ button:hover {
 .list section {
   margin-bottom: 2px;
 }
-.carousel-item img {
-  height: 400px;
-}
+
 .comments h3 {
     font-size:18px;
     margin-bottom:-10px;
@@ -135,7 +131,7 @@ a:hover {
 }
 
 /*****footer***/
-a:hover{
+/* a:hover{
     text-decoration:none;
 }
 
@@ -191,6 +187,12 @@ a:hover{
     font-size: 13px;
 }
 
+
+.logo{
+   color:#FFF;
+   font-size:30px;
+   font-weight:600;
+} */
 .footer ul li a:hover{
 	color:#1e76a8;
 }
@@ -209,124 +211,7 @@ a:hover{
 	color: #FFF;
 }
 
-.footer-top{
-	background-color: #f7f7f7;
-    text-align: center;
-}
 
-.footer-top .social-icons{
-   padding:50px 0px;
-}
-
-.footer-top .social-icons i{
-	padding:0px 20px;
-	font-size:20px;
-	color: #aaa;
-}
-
-.footer-top .social-icons i:hover{
-	color:#1e76a8;
-}
-
-.logo{
-   color:#FFF;
-   font-size:30px;
-   font-weight:600;
-}
-
-
-/******CARD******/
-h1 {
-  
-    text-align:center;
-    font-size:60px;
-    font-family:calibri;
-  }
-  
-  .master-container {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding-bottom: 10px;
-    
-  }
-  
-  .containercard {
-    height:200px;
-    width:160px;
-    perspective:1000px;
-    position:relative;
-    font-family:'Open Sans';
-  }
-  
-  
-  .cardfecha {
-    height:100%;
-    width:100%;
-     position: absolute;
-    transform-style: preserve-3d;
-    transition:transform .7s cubic-bezier(.54,-0.58,.5,.58);
-  }
-  
-  .cardfecha:hover { 
-     transform:rotateY(180deg);
-  }
-  
-  .cardfecha .side-1 {
-    
-    position:absolute;
-    height:100%;
-    width:100%;
-     backface-visibility: hidden;
-    overflow:hidden;
-    margin-top: 45px;
-    
-  }
-  
-  .cardfecha .side-2{
-    transform: rotateY(180deg);
-    height:100%;
-    width:100%;
-    backface-visibility: hidden;
-    overflow:hidden;
-    margin-top: 45px;
-  }
-  
-  .cardfecha h5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2px;
-    font-size: 12px;
- 
-  }
-  .cardfecha p{
-    font-size: 12px;
-  }
-  .chief{
-      border-radius: 6px;
-  }
-  .iconofecha{
-    padding-left: 3px;
-    font-size: 30px;
-    padding-top:5px;
-    padding-bottom: 5px;
-    text-align: center;
-  }
-  
-  /* .cardfecha p {
-    
-    position:absolute;
-   
-    padding:20px;
-    
-    
-  } */
-
-  .textEfect h5{
-    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
-    font-size: 2rem;
-  }
   .comments b{
 color:crimson;
   }

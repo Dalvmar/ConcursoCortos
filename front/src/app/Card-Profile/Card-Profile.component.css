@@ -17,9 +17,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -34,13 +32,10 @@
 	}
 	figure.snip0057 figcaption h3 {
 		margin: 0;
-		text-align: right;
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
 		margin-left: -70px;
-		text-transform: uppercase;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -168,9 +163,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -244,9 +237,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -55%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -312,9 +303,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -55%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -380,9 +369,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -36%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 		height: 400px;
@@ -462,9 +449,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -36%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 		height: 400px;
@@ -960,21 +945,15 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
 	figure.snip0057:before {
-		position: absolute;
-		content: '';
 		height: 100%;
 		width: 41%;
-		background: rgba(0, 0, 0, 0.2);
 		-webkit-transform: skewX(-17deg);
 		transform: skewX(-17deg);
-		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 	}
 	figure.snip0057 figcaption {
 		padding: 0px 2px 4px 0px;
@@ -1055,21 +1034,15 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
 	figure.snip0057:before {
-		position: absolute;
-		content: '';
 		height: 100%;
 		width: 41%;
-		background: rgba(0, 0, 0, 0.2);
 		-webkit-transform: skewX(-17deg);
 		transform: skewX(-17deg);
-		box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
 	}
 	figure.snip0057 figcaption {
 		padding: 0px 2px 4px 0px;
@@ -1153,8 +1126,6 @@
 		transform: skew(15deg);
 	}
 	figure.snip0057:before {
-		position: absolute;
-		content: '';
 		height: 100%;
 		width: 41%;
 		-webkit-transform: skewX(-17deg);
@@ -1313,7 +1284,6 @@
 	}
 	figure.snip0057:before {
 		width: 41%;
-		background: rgba(0, 0, 0, 0.2);
 		-webkit-transform: skewX(-17deg);
 		transform: skewX(-17deg);
 	}
@@ -1468,9 +1438,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -1530,9 +1498,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -1547,13 +1513,10 @@
 	}
 	figure.snip0057 figcaption h3 {
 		margin: 0;
-		text-align: right;
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
 		margin-left: -70px;
-		text-transform: uppercase;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1593,9 +1556,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -1610,13 +1571,10 @@
 	}
 	figure.snip0057 figcaption h3 {
 		margin: 0;
-		text-align: right;
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
 		margin-left: -70px;
-		text-transform: uppercase;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1655,9 +1613,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -1673,13 +1629,10 @@
 	}
 	figure.snip0057 figcaption h3 {
 		margin: 0;
-		text-align: right;
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
 		margin-left: -70px;
-		text-transform: uppercase;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1719,9 +1672,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -1736,13 +1687,10 @@
 	}
 	figure.snip0057 figcaption h3 {
 		margin: 0;
-		text-align: right;
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
 		margin-left: -70px;
-		text-transform: uppercase;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1781,9 +1729,7 @@
 	}
 	figure.snip0057 .image img {
 		position: relative;
-		display: block;
 		left: -66%;
-		z-index: 1;
 		-webkit-transform: skew(15deg);
 		transform: skew(15deg);
 	}
@@ -1798,14 +1744,10 @@
 		position: absolute;
 	}
 	figure.snip0057 figcaption h3 {
-		margin: 0;
-		text-align: right;
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
 		margin-left: -70px;
-		text-transform: uppercase;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1830,7 +1772,7 @@
 /***Por defecto****/
 .fa-user-edit::before {
 	content: "\f4ff";
-	margin-right: -3px;
+    margin-left: -1px;
 }
 .adminItem {
 	margin-left: -3px;
@@ -1844,6 +1786,10 @@
 	content: "\f234";
 	margin-right: -3px;
 }
+.fa-arrow-left:before {
+	content: "\f060";
+	margin-left: 4px;
+}
 .footerMovil .fa-home {
 	font-size: 20px;
 	border-radius: 2px solid;
@@ -1853,10 +1799,22 @@
 	border: 2px solid;
 	border-radius: 50%;
 	line-height: 23px;
+	margin-top: 2px;
 }
-.footerMovil .fa-play-circle {
-	font-size: 30px;
+.footerMovil .fa-arrow-left {
+	font-size: 20px;
+	border-radius: 2px solid;
 	color: white;
+	height: 29px;
+	width: 30px;
+	border: 2px solid;
+	border-radius: 50%;
+	line-height: 23px;
+	margin-top: 2px;
+}
+.footerUser ul{
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 .userItem {
 	margin-right: 35px;
@@ -1864,7 +1822,7 @@
 }
 .navUser .nav-link {
 	color: white;
-	padding: 12px 10px;
+	padding: 0px 6px;
 }
 .navAdmin .nav-link {
 	color: white;
@@ -2034,7 +1992,6 @@ figure.snip0057 .position {
 	opacity: 1;
 	font-style: italic;
 	color: #ffffff;
-	background: #000000;
 }
 figure.snip0057.red .position {
 	background: #e65b60;

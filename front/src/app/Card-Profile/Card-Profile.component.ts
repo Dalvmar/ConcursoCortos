@@ -5,9 +5,9 @@ import { UserService } from '../../services/user.service';
 import { VideoService } from '../../services/video.service';
 
 @Component({
-  selector: 'app-Card-Profile',
-  templateUrl: './Card-Profile.component.html',
-  styleUrls: ['./Card-Profile.component.css']
+  selector: 'app-card-profile',
+  templateUrl: './card-profile.component.html',
+  styleUrls: ['./card-profile.component.css']
 })
 export class CardProfileComponent implements OnInit {
 
@@ -22,11 +22,12 @@ export class CardProfileComponent implements OnInit {
 		private userService: UserService,
 		private videoService: VideoService) { }
 
-  
-    ngOnInit() {
-      this.sessionService.isLogged().subscribe((user) => {
-        this.user = user;
-        if(this.user.role==='user'){
+
+  ngOnInit() {
+
+    this.sessionService.isLogged().subscribe((user) => {
+      this.user = user;
+      if (this.user.role === 'user') {
         this.videoService.getUserVideos(this.user._id).subscribe(data => {
           data.forEach(obj => {
             console.log(obj.video)
@@ -34,9 +35,9 @@ export class CardProfileComponent implements OnInit {
           })
           this.videoList = data
           console.log(this.videoList)
-        
+
         });
-      }else {
+      } else {
         console.log("admin")
         this.videoService.getlistVideos().subscribe(data => {
           data.forEach(obj => {
@@ -45,9 +46,9 @@ export class CardProfileComponent implements OnInit {
           })
           this.videoList = data
           console.log(this.videoList)
-      })
-         }
-      });
+        })
+      }
+    });
   }
   toggleHidden(e) {
 		if(this.isVisibleAdmin!=true)
@@ -60,10 +61,24 @@ export class CardProfileComponent implements OnInit {
   
 	edit(user) {
 		this.userService.editUser(this.user).subscribe((user) => {
-			this.user = user;
+      this.user = user;
+      this.toggleHidden(this)
 			// console.log(user)
 			// this.router.navigate([ '/profile']);
 		});
 	}
 
+  addAdmin(usernameAdmin:string,nameAdmin:string,lastnameAdmin:string,passwordAdmin:string,emailAdmin:string){
+		console.log(usernameAdmin)
+		if(!usernameAdmin|| !nameAdmin || !lastnameAdmin || !passwordAdmin ||!emailAdmin)
+		this.router.navigate(['/profile']);
+		else{
+		this.userService.signupAdmin(usernameAdmin,nameAdmin,lastnameAdmin,emailAdmin,passwordAdmin)
+		.subscribe( (user:any) =>{
+      console.log(user);
+      this.toggleHiddenAdmin(this)
+			//this.router.navigate(['/profile']);
+		})
+	}
+	}
 }

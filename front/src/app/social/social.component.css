@@ -1,0 +1,17 @@
+.footer-top{
+	background-color: #f7f7f7;
+    text-align: center;
+}
+.footer-top .social-icons{
+    padding:50px 0px;
+ }
+ 
+ .footer-top .social-icons i{
+     padding:0px 20px;
+     font-size:20px;
+     color: #aaa;
+ }
+ 
+ .footer-top .social-icons i:hover{
+     color:#1e76a8;
+ }

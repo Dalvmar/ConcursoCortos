@@ -57,13 +57,13 @@ export class ProfileComponent implements OnInit {
 		if(this.isVisible!=true)
 		this.isVisibleAdmin = !this.isVisibleAdmin;
 	}
-	edit(user) {
-		this.userService.editUser(this.user).subscribe((user) => {
-			this.user = user;
-			// console.log(user)
-			// this.router.navigate([ '/profile']);
-		});
-	}
+	// edit(user) {
+	// 	this.userService.editUser(this.user).subscribe((user) => {
+	// 		this.user = user;
+	// 		// console.log(user)
+	// 		// this.router.navigate([ '/profile']);
+	// 	});
+	// }
 
 	saveVideo() {
 		this.videoService.newVideo(this.videoUrl,this.user._id).subscribe(() => {
@@ -93,16 +93,6 @@ export class ProfileComponent implements OnInit {
           console.log(this.user)
 	  })
 	}
-	addAdmin(usernameAdmin:string,nameAdmin:string,lastnameAdmin:string,passwordAdmin:string,emailAdmin:string){
-		if(!usernameAdmin|| !nameAdmin || !lastnameAdmin || !passwordAdmin ||!emailAdmin)
-		this.router.navigate(['/profile']);
-		else{
-		this.userService.signupAdmin(usernameAdmin,nameAdmin,lastnameAdmin,emailAdmin,passwordAdmin)
-		.subscribe( (user:any) =>{
-			console.log(user);
-			//this.router.navigate(['/profile']);
-		})
-	}
-	}
+	
 	
 }

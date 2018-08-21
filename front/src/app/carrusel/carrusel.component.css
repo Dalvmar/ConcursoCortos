@@ -1,0 +1,10 @@
+.photoCarrusel{
+    height: 400px;
+    object-fit: cover;
+    }
+    .photoCarrusel img{
+      object-fit: cover;
+    }
+    .carousel-item img {
+      height: 400px;
+    }

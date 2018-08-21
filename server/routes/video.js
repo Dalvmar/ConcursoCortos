@@ -1,7 +1,6 @@
 const express = require('express');
-
 const router = express.Router();
-const Video = require('../models/Cortos');
+const Video = require('../models/Videos');
 const Comment = require('../models/Comments');
 const axios = require('axios');
 const apiUrl = 'https://api.microlink.io?url=';

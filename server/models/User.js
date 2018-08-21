@@ -9,7 +9,7 @@ const userSchema = new Schema({
   password: {type: String ,require:true},
   email: {type: String ,require:true},
   role: {type: String, enum: ["user", "admin"],default: "user"},
-  category: {type:String ,enum: ["11-15 años Portugal", "16-22 años Portugal", "11-22 años España"]}
+  category: {type:String ,enum: ["11-15 años Portugal", "16-22 años Portugal", "11-22 años España"], default:"11-22 años España"}
 
 }, {
   timestamps: {

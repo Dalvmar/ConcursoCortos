@@ -34,21 +34,21 @@ export class HomeComponent implements OnInit {
 	getlistVideo() {
 		this.videoService.getlistVideos().subscribe((data) => {
 			data.forEach((obj) => {
-				if(obj.video.includes('instagram')){
-				obj.video = obj.video + "embed";
-				}else if(obj.video.includes('youtube'))
-				{
-				obj.video = obj.video.replace('watch?v=', 'embed/');
-				}else if (obj.video.includes('vimeo')){
-				obj.video = obj.video.replace('https://vimeo.com', 'https://player.vimeo.com/video')
+				if (obj.video.includes('instagram')) {
+					obj.video = obj.video + "embed";
+				} else if (obj.video.includes('youtube')) {
+					obj.video = obj.video.replace('watch?v=', 'embed/');
+				} else if (obj.video.includes('vimeo')) {
+					obj.video = obj.video.replace('https://vimeo.com', 'https://player.vimeo.com/video')
 				}
-				
+
 				console.log(obj)
 			});
 			this.videoList = data;
 			console.log(this.videoList)
 		});
 	}
+	
 	toggleHidden(e,i) {
 		[].slice.call(e.currentTarget.closest('.info').childNodes).forEach(e=>{
 			if(e.classList.contains('comment-input')) e.classList.toggle('active')
