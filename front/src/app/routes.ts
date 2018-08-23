@@ -1,5 +1,5 @@
-import { isLoggedInGuardService } from './guards/isloggedin.guard';
-import { NegateUserLoggedInGuard } from './guards/negateuserloggenin.guard';
+import { IsLoggedInGuardService } from './guards/isLoggedIn.guard';
+import {IsLoggedOutGuardService} from './guards/isLoggedOut.guard';
 
 
 import { Routes } from '@angular/router';
@@ -13,16 +13,18 @@ import { AboutComponent } from './about/about.component';
 
 
 export const routes: Routes = [
-  { path:'', component:HomeComponent},
-  { path:'signup', component:SignupComponent, canActivate: [ NegateUserLoggedInGuard]},
-  { path:'login', component:LoginComponent, canActivate: [ NegateUserLoggedInGuard]},
+  { path:'', component:HomeComponent },
+  { path:'signup', component:SignupComponent ,canActivate: [IsLoggedOutGuardService]},
+  { path:'login', component:LoginComponent ,canActivate: [IsLoggedOutGuardService]},
   { path:'about', component:AboutComponent},
-  { path:'profile',component:ProfileComponent, canActivate: [ isLoggedInGuardService]},
-  { path:'profile/delete',component:ProfileComponent, canActivate: [ isLoggedInGuardService]},
-  { path:'profile/edit/:id',component:ProfileComponent,canActivate: [ isLoggedInGuardService]},
-  { path:'profile/details', component:CardProfileComponent},
-  { path:'video/:id', component: VideoComponent },
-  { path:'video/delete/:id', component: VideoComponent },
+  { path:'profile',component:ProfileComponent, canActivate:[IsLoggedInGuardService]},
+  { path:'profile/delete',component:ProfileComponent,canActivate:[IsLoggedInGuardService] },
+  { path:'profile/edit/:id',component:ProfileComponent,canActivate:[IsLoggedInGuardService] },
+  { path:'profile/details', component:CardProfileComponent,canActivate:[IsLoggedInGuardService]},
+  { path:'video/:id', component: VideoComponent,canActivate:[IsLoggedInGuardService] },
+  { path:'video/delete/:id', component: VideoComponent,canActivate:[IsLoggedInGuardService] },
+  // { path: 'error', component:NotfoundComponent }
+  // { path: '**',redirectTo: "/error"}
  
   
   

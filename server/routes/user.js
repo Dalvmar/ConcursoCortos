@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require('../models/User');
 const bcryptSalt = 10;
 const bcrypt = require("bcrypt");
+const Videos =require('../models/Videos')
 
 // All Users
 router.get('/', (req, res, next) => {
@@ -74,6 +75,7 @@ router.delete('/delete/:id', (req, res, next) => {
 	User.findByIdAndRemove(req.params.id)
 		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
 		.catch((e) => next(e));
+		
 });
 
 // ADD ADMIN

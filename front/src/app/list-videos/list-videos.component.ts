@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoService } from '../../services/video.service';
-import { SessionService } from '../../services/session';
+import { SessionService } from '../../services/session.service';
 import { DomSanitizer } from '../../../node_modules/@angular/platform-browser';
 import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
 import { PARAMETERS } from '../../../node_modules/@angular/core/src/util/decorators';

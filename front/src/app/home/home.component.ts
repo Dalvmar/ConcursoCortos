@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoService } from '../../services/video.service';
 import { CommentsService } from '../../services/comments.service';
-import { SessionService } from '../../services/session';
+import { SessionService } from '../../services/session.service';
 import { UserService } from '../../services/user.service';
 
 @Component({
@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
 	countComments:number=0;
 	user;
 	search:String;
+	loadingvVideos:boolean;
 	constructor(
 		private videoService: VideoService,
 		private commentsService: CommentsService,
@@ -26,13 +27,17 @@ export class HomeComponent implements OnInit {
 
 	ngOnInit() {
 		this.getlistVideo();
+		
 		this.sessionService.isLogged().subscribe(user=>{
 			this.user=user
+
 		})
 	}
 
 	getlistVideo() {
+		
 		this.videoService.getlistVideos().subscribe((data) => {
+				this.loadingvVideos= true;
 			data.forEach((obj) => {
 				if (obj.video.includes('instagram')) {
 					obj.video = obj.video + "embed";
@@ -45,6 +50,7 @@ export class HomeComponent implements OnInit {
 				console.log(obj)
 			});
 			this.videoList = data;
+			this.loadingvVideos= false;
 			console.log(this.videoList)
 		});
 	}

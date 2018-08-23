@@ -1,6 +1,6 @@
 import { Component, OnInit ,Input,Output,EventEmitter} from '@angular/core';
 import { Router } from '@angular/router';
-import { SessionService } from '../../services/session';
+import { SessionService } from '../../services/session.service';
 import { UserService } from '../../services/user.service';
 import { VideoService } from '../../services/video.service';
 

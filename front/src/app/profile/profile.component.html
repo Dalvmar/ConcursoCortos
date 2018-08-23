@@ -19,10 +19,10 @@
     
                 <div class="input-group mb-3 inputVideo" *ngIf="user.role==='user'">
                     
-                    <input type="text" class="form-control" placeholder="Introduce tu video (URL)" [(ngModel)]="videoUrl" name="url" required minlength="3"
+                    <input type="text" class="form-control"  (keyup.enter)="saveVideo()" placeholder="Introduce tu video (URL)" [(ngModel)]="videoUrl" name="url" required minlength="3"
                         aria-describedby="button-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="saveVideo()">OK</button>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="saveVideo()" (on)="saveVideo()" >OK</button>
                     </div>
                 </div>
             </div>
@@ -32,6 +32,7 @@
 
 
 <div *ngIf="user.role==='user'">
+    <app-loading *ngIf="loading"></app-loading>
     <div class="container-fluid videoContainer col-sm-12">
         <div class="row">
             <div class="col-sm-4" *ngFor="let video of videoList">

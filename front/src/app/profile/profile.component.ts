@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { ActivatedRoute, Router } from '../../../node_modules/@angular/router';
-import { SessionService } from '../../services/session';
+import { SessionService } from '../../services/session.service';
 import { VideoService } from '../../services/video.service';
 
 @Component({
@@ -14,7 +14,9 @@ export class ProfileComponent implements OnInit {
 	videoUrl: String;
 	isVisible: Boolean = false;
 	isVisibleAdmin: Boolean = false;
-  videoList;
+  	videoList;
+	  loading:boolean;
+	  
 	constructor(
 		private sessionService: SessionService,
 		private route: ActivatedRoute,
@@ -25,6 +27,7 @@ export class ProfileComponent implements OnInit {
 
 	ngOnInit() {
 		this.sessionService.isLogged().subscribe((user) => {
+			this.loading=true;
 			this.user = user;
 			if(this.user.role==='user'){
 			this.videoService.getUserVideos(this.user._id).subscribe(data => {
@@ -33,6 +36,7 @@ export class ProfileComponent implements OnInit {
 					obj.video = obj.video.replace('watch?v=', 'embed/')
 				})
 				this.videoList = data
+				this.loading=false
 				console.log(this.videoList)
 			
 			});

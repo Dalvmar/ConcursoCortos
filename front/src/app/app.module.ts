@@ -23,7 +23,7 @@ import { SocialComponent } from './social/social.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 
 //Service
-import { SessionService } from '../services/session';
+import { SessionService } from '../services/session.service';
 import { UserService } from '../services/user.service';
 import { VideoService } from '../services/video.service';
 import { CommentsService } from '../services/comments.service';
@@ -32,9 +32,10 @@ import { CommentsService } from '../services/comments.service';
 import { SafePipe } from './safe.pipe';
 import { SearchFilterPipe } from './search.pipe';
 //Guard
-import { NegateUserLoggedInGuard } from './guards/negateuserloggenin.guard';
-import { isLoggedInGuardService } from './guards/isloggedin.guard';
+import { IsLoggedOutGuardService } from './guards/isLoggedOut.guard';
+import { IsLoggedInGuardService } from './guards/isLoggedIn.guard';
 import { NewVideoComponent } from './new-video/new-video.component';
+import { LoadingComponent } from './loading/loading.component';
 
 
 
@@ -57,7 +58,8 @@ import { NewVideoComponent } from './new-video/new-video.component';
       FechasPasosComponent,
       SocialComponent,
       CarruselComponent,
-      NewVideoComponent
+      NewVideoComponent,
+      LoadingComponent
    ],
    imports: [
       BrowserModule,
@@ -67,8 +69,8 @@ import { NewVideoComponent } from './new-video/new-video.component';
   ],
   providers: [
     SessionService,
-    isLoggedInGuardService, 
-    NegateUserLoggedInGuard, 
+    IsLoggedInGuardService, 
+    IsLoggedOutGuardService, 
     UserService,
     CommentsService,
     VideoService,
