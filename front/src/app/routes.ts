@@ -23,7 +23,7 @@ export const routes: Routes = [
   { path:'profile/details', component:CardProfileComponent,canActivate:[IsLoggedInGuardService]},
   { path:'video/:id', component: VideoComponent,canActivate:[IsLoggedInGuardService] },
   { path:'video/delete/:id', component: VideoComponent,canActivate:[IsLoggedInGuardService] },
-  // { path: 'error', component:NotfoundComponent }
+   // { path: 'error', component:NotfoundComponent }
   // { path: '**',redirectTo: "/error"}
  
   

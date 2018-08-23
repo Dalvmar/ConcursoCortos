@@ -1,6 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
+
+.like > div{
+    display:inline-block;
+    padding-right: 34px;
+    padding-left: 34px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fa-thumbs-up,.fa-thumbs-down{
+    font-size:18px;
+}
 body {
     background:#525667;
     font-family:'Open Sans';
@@ -130,69 +141,6 @@ a:hover {
   text-align: center;
 }
 
-/*****footer***/
-/* a:hover{
-    text-decoration:none;
-}
-
-.email {
-    background: url("https://images.pexels.com/photos/7070/space-desk-workspace-coworking.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
-    min-height: 200px;
-    padding: 70px 0px;
-    width:100%;
-}
-
-.email h2, .email p {
-    color: #FFF;
-    font-weight: 600;
-}
-
-#email-adresi {
-    margin-top: 20px;
-    border: none;
-    width:50%;
-    height:40px;
-    padding-left:10px;
-}
-
-.footer {
-    padding-top:30px;
-    padding-bottom: 30px;
-	color: #ccc;
-    background-color: #222;
-}
-
-.footer h3 {
-	color: #FFF;
-	font-size:15px;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin-bottom:20px;
-}
-
-.footer ul {
-	font-size: 13px;
-	list-style-type: none;
-	margin-left: 0;
-	padding-left: 0;
-	margin-top: 15px;
-	color: #7F8C8D;
-}
-
-.footer ul li a {
-	padding: 10px 0px;
-    display: block;
-    color: #ccc;
-    font-weight: 600;
-    font-size: 13px;
-}
-
-
-.logo{
-   color:#FFF;
-   font-size:30px;
-   font-weight:600;
-} */
 .footer ul li a:hover{
 	color:#1e76a8;
 }
@@ -215,3 +163,104 @@ a:hover {
   .comments b{
 color:crimson;
   }
+
+  /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .fechas{
+    background-color: rgb(233, 227, 227);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+	
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+	
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	
+}
+/**********
+	iPad 3
+	**********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+	
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+	
+}
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+	
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+	
+}
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+	
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+	
+}
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+
+}
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+	
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+
+}
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+	
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+
+}
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+
+}

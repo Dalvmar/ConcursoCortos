@@ -38,6 +38,13 @@ getVideo(id){
       .pipe(map(res => res.json()));
   }
 
+  // saveLikes(videoId,like) {
+  //   return this.http.post(`${environment.BASEURL}/api/video/${videoId}`,{ videoId ,like} )
+  //     .pipe(map((res) => res.json()
+  //     ));
+  //   } 
+
+   
   //Delete videos when your role is admin
   remove(id) {
     console.log(id)

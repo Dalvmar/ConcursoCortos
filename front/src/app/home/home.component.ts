@@ -17,7 +17,12 @@ export class HomeComponent implements OnInit {
 	countComments:number=0;
 	user;
 	search:String;
-	loadingvVideos:boolean;
+
+	hidden:boolean=false;
+	status;
+	likes:number=0;
+	unlikes:number=0;
+
 	constructor(
 		private videoService: VideoService,
 		private commentsService: CommentsService,
@@ -27,20 +32,30 @@ export class HomeComponent implements OnInit {
 
 	ngOnInit() {
 		this.getlistVideo();
-		
+	
+
 		this.sessionService.isLogged().subscribe(user=>{
 			this.user=user
-
+			console.log(this.user.status)
+			if(this.user.status===500){
+				this.hidden=false
+		
+			}else
+			this.hidden=true;
+			;
+		
 		})
+		this.hidden=false;
 	}
 
 	getlistVideo() {
 		
 		this.videoService.getlistVideos().subscribe((data) => {
-				this.loadingvVideos= true;
+		
 			data.forEach((obj) => {
 				if (obj.video.includes('instagram')) {
 					obj.video = obj.video + "embed";
+					
 				} else if (obj.video.includes('youtube')) {
 					obj.video = obj.video.replace('watch?v=', 'embed/');
 				} else if (obj.video.includes('vimeo')) {
@@ -50,7 +65,7 @@ export class HomeComponent implements OnInit {
 				console.log(obj)
 			});
 			this.videoList = data;
-			this.loadingvVideos= false;
+		
 			console.log(this.videoList)
 		});
 	}
@@ -70,7 +85,22 @@ export class HomeComponent implements OnInit {
 		})
 	}
 
-	addAdmin(username: string, name: string, lastname: string, email: string, password: string) {
-		this.userService.signupAdmin(username, name, lastname, email, password).subscribe()
-	}
+	
+	
+	like(){
+		this.likes+=1;
+		console.log(this.likes)
+		}
+	unlike(){
+		this.unlikes+=1;
+		console.log(this.unlikes)
+		}
+
+		// like(videodId,newlike,i){
+
+		// 	this.videoService.saveLikes(videodId,newlike).subscribe(video=>{
+		// 		console.log(video + 'hola')
+		// 		this.video.likes[i]=1
+		// 	});
+		// }
 }

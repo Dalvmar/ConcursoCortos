@@ -75,4 +75,22 @@ router.get("/", (req, res, next) => {
 	});
   });
 
+
+//LIKES
+//   router.post('/',(req,res,next)=>{
+// 	const{videoId,like,unlike}=req.body;
+// 	console.log(videoId + hola)
+// 	Video.like({videoId})
+
+//     .then(like =>{
+//         Videos.findByIdAndUpdate(videoId, {$push: { like : like}}, {new: true})
+//         .then(video => {
+//             Videos.populate(video, { path:'video', populate: { path: 'author' }})
+//             .then(cortoObj=>{
+//                 return res.status(200).json(cortoObj)
+//             })
+//         })
+// 	});
+// });
+
 module.exports = router;

@@ -26,3 +26,6 @@
   .fadeIn {
     animation-name: fadeIn;
   }
+  body{
+    background: black;
+  }

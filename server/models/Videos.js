@@ -7,7 +7,10 @@ const VideoSchema = new Schema({
   commment: [{type:Schema.Types.ObjectId, ref:'Comment'}],
   creator: {type: String},
   desription:{type:String},
-  cover:{type:String}
+  cover:{type:String},
+  like:{type:Number},
+  unlike:{type:Number}
+  
 }, {
   timestamps: {
     createdAt: 'created_at',
