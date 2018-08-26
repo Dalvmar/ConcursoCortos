@@ -10,6 +10,7 @@ import { VideoComponent } from './video/video.component';
 import { HomeComponent } from './home/home.component';
 import { CardProfileComponent } from './card-profile/card-profile.component';
 import { AboutComponent } from './about/about.component';
+import { PagenofoundComponent } from './shared/pagenofound/pagenofound.component';
 
 
 export const routes: Routes = [
@@ -23,8 +24,8 @@ export const routes: Routes = [
   { path:'profile/details', component:CardProfileComponent,canActivate:[IsLoggedInGuardService]},
   { path:'video/:id', component: VideoComponent,canActivate:[IsLoggedInGuardService] },
   { path:'video/delete/:id', component: VideoComponent,canActivate:[IsLoggedInGuardService] },
-   // { path: 'error', component:NotfoundComponent }
-  // { path: '**',redirectTo: "/error"}
+   //{ path: 'error', component:PagenofoundComponent },
+   { path: '**',component:PagenofoundComponent}
  
   
   

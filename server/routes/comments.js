@@ -3,10 +3,25 @@ const router  = express.Router();
 const Comment = require('../models/Comments')
 const Videos = require('../models/Videos')
 
+// router.get('/:id',(req,res)=>{
+//    Comment.findById(videoId)
+//    .then(comment=>{
+    
+//     res.json(comment)
+// }) 
+   
+// })
+
 router.get('/:id',(req,res)=>{
-   Comment.findById(videoId)
-   .then(comment=>res.json(comment)) 
-})
+    Comment.findById(videoId)
+    .then(comment=>{
+        console.log(comment)
+     Videos.populate(comment,{ path:'commment', populate: { path: 'author' }} )
+     .then(list=>
+     res.json(list))
+ }) 
+    
+ })
 
 router.post('/',(req,res,next)=>{
     const{videoId,comment,author}=req.body;

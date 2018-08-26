@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoService } from '../../services/video.service';
 import { SessionService } from '../../services/session.service';
+import { CommentsService } from '../../services/comments.service';
 import { DomSanitizer } from '../../../node_modules/@angular/platform-browser';
 import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
 import { PARAMETERS } from '../../../node_modules/@angular/core/src/util/decorators';
+
 
 @Component({
   selector: 'app-list-videos',
@@ -17,7 +19,8 @@ export class ListVideosComponent implements OnInit {
 
   constructor(private videoService: VideoService, private sessionService: SessionService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private commentsService: CommentsService
   ) {}
   
   ngOnInit() {
@@ -33,9 +36,13 @@ export class ListVideosComponent implements OnInit {
     })
    })
   }
+  getComments(idvideo){
+    this.commentsService.getComments(idvideo).subscribe((data)=>{
+      console.log()
+    })
+  }
 
   deleteVideo(id) {
-
     this.videoService
        .remove(id)
        .subscribe(() => this.getVideos());

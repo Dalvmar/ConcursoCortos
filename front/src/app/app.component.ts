@@ -10,15 +10,15 @@ import { SessionService } from '../services/session.service';
 
 export class AppComponent {
   user;
-  title = 'Concurso de Cortos';
+  // title = 'Concurso de Cortos';
   
-  constructor(private sessionService:SessionService) { 
-  this.sessionService.isLogged().subscribe(user=>this.user=user
+  // constructor(private sessionService:SessionService) { 
+  // this.sessionService.isLogged().subscribe(user=>this.user=user
  
-  )};
+  // )};
 
-  logout(){
-    this.sessionService.logout().subscribe();
-  }
+  // logout(){
+  //   this.sessionService.logout().subscribe();
+  // }
 }
 

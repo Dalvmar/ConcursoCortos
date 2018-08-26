@@ -56,10 +56,10 @@ export class SessionService {
         this.user = user;
         return this.user;
       }),
-      catchError( e => {
-        of(this.errorHandler(e));
-        throw new Error(e.json().message);
-      })
+      catchError( e => 
+        of(this.errorHandler(e))
+      
+      )
     )
   }
   
@@ -85,9 +85,10 @@ export class SessionService {
       catchError( e => of(this.errorHandler(e)))
     )
   }
+
   errorHandler(e){
     console.log('SessionServiceError')
-    console.log(e.message);
+    // console.log(e.message);
     console.log(e);
     return e;
   }

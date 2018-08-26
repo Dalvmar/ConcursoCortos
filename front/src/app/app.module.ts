@@ -21,6 +21,12 @@ import { FooterHomeComponent } from './footerHome/footerHome.component';
 import { FechasPasosComponent } from './fechas-pasos/fechas-pasos.component';
 import { SocialComponent } from './social/social.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
+import { NewVideoComponent } from './new-video/new-video.component';
+import { LoadingComponent } from './loading/loading.component';
+import { PagenofoundComponent } from '../app/shared/pagenofound/pagenofound.component';
+import { PagesComponent } from './pages/pages.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 //Service
 import { SessionService } from '../services/session.service';
@@ -34,8 +40,6 @@ import { SearchFilterPipe } from './search.pipe';
 //Guard
 import { IsLoggedOutGuardService } from './guards/isLoggedOut.guard';
 import { IsLoggedInGuardService } from './guards/isLoggedIn.guard';
-import { NewVideoComponent } from './new-video/new-video.component';
-import { LoadingComponent } from './loading/loading.component';
 
 
 
@@ -59,7 +63,10 @@ import { LoadingComponent } from './loading/loading.component';
       SocialComponent,
       CarruselComponent,
       NewVideoComponent,
-      LoadingComponent
+      LoadingComponent,
+      PagenofoundComponent,
+      PagesComponent,
+      NavbarComponent
    ],
    imports: [
       BrowserModule,

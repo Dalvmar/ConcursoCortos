@@ -4,6 +4,7 @@ const User = require('../models/User');
 const bcryptSalt = 10;
 const bcrypt = require("bcrypt");
 const Videos =require('../models/Videos')
+const Comments =require('../models/Comments')
 
 // All Users
 router.get('/', (req, res, next) => {
@@ -72,11 +73,34 @@ router.put('/edit/:id', (req, res, next) => {
 // Delete user
 router.delete('/delete/:id', (req, res, next) => {
 	
+
 	User.findByIdAndRemove(req.params.id)
 		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
 		.catch((e) => next(e));
+// 	Comments.findById(req.params.id,function(err,commnts){
+// 		if(err) return next(err);
+// 		Comments.remove();
+// 		req.flash('success', 'Comments deleted');
 		
+// 	})
+// 	.then(()=>{
+// 	Videos.findById(req.params.id,function(err,commnts){
+// 		if(err) return next(err);
+// 		Videos.remove();
+// 		req.flash('success', 'Videos deleted');
+		
+// 	})	
+// })
+// .then(()=>{
+// 	User.findByIdAndRemove(req.params.id)
+// 		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
+// 		.catch((e) => next(e));
+// })
+
 });
+
+//delete user with video anda comments 
+
 
 // ADD ADMIN
 router.post('/newAdmin', (req, res, next) => {

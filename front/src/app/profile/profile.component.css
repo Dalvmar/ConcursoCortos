@@ -1,7 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 
+.listUsers{
+margin-top:30px;
+color:#f7655d
+}
+.listVideos{
+	margin-top:30px;
+	color:#f7655d;
+}
 .inputVideo {
-	margin-top: 30px;
+    margin-top: 60px;
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
@@ -69,7 +77,7 @@
  }
 		
 		.inputVideo {
-			margin-top: 30px;
+		    margin-top: 60px;
 			width: 535px;
 			margin-left: auto;
 			margin-right: auto;

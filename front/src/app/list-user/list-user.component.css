@@ -11,4 +11,297 @@
     padding-right: 0px;
     padding-left: 0px;
     width: 480px;
+    background:rgb(233, 227, 227)
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227);
+        margin-left: 27px;
+        margin-right: -98px;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }	
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+/**********
+	iPad 3
+	**********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }	
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        margin-left: -45px;
+        margin-right: -158px;
+    }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        margin-right: -155px;
+    }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        margin-right: -155px;
+    }
+}
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }	
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }	
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    .containeruser{
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 480px;
+     
+    }
+    .tableListStyle{
+        background: rgb(233, 227, 227)
+    }
 }

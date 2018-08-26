@@ -1,13 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-
+.like{
+    background:rgb(233, 227, 227)
+}
 .like > div{
     display:inline-block;
     padding-right: 34px;
     padding-left: 34px;
     margin-top: 5px;
     margin-bottom: 5px;
+    background:rgb(233, 227, 227)
 }
 .fa-thumbs-up,.fa-thumbs-down{
     font-size:18px;

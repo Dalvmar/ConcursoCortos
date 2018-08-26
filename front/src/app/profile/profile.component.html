@@ -1,6 +1,6 @@
 <div *ngIf="user" class="profile">
 
-        <ul class="nav justify-content-center fixed-bottom bg-dark navbar-dark">
+        <ul class="nav justify-content-center fixed-bottom bg-dark navbar-dark ">
                 <li class="nav-item">
                  <a class="nav-link footerMovil" [routerLink]="['details']"><i class="fas fa-user"></i></a>
                 </li>
@@ -51,11 +51,11 @@
 
         <div class="container containerList">
                 <div *ngIf="user.role==='admin'" class="ListAdmin col-sm-12">
-                    <div class="row align-items-top">
+                    <div class="row align-items-top md-5">
                         <div class="col-sm-10">
-                            <h3>Lista de Usuarios</h3>
+                            <h3 class="listUsers">Lista de Usuarios</h3>
                             <app-list-user></app-list-user>
-                            <h3>Lista de videos</h3>
+                            <h3 class="listVideos">Lista de videos</h3>
                             <app-list-videos></app-list-videos> 
                            
                         </div>

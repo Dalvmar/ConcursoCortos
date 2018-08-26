@@ -27,6 +27,7 @@ getVideo(id){
       .pipe(map(res => res.json()));
   }
 
+  //Todos los videos de todos los usurios
   getlistVideos() {
      return this.http
       .get(`${environment.BASEURL}/api/video`)
@@ -45,7 +46,7 @@ getVideo(id){
   //   } 
 
    
-  //Delete videos when your role is admin
+  //Delete 
   remove(id) {
     console.log(id)
     return this.http

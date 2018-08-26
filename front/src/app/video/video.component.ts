@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoService } from '../../services/video.service';
+// import { CommentService, CommentsService } from '../../services/comments.service';
+
 import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
 
 @Component({
@@ -15,7 +17,8 @@ export class VideoComponent implements OnInit {
   constructor(
   private videoService:VideoService,
   private router: Router,
-  private route: ActivatedRoute
+  private route: ActivatedRoute,
+  // private CommentService:CommentsService
   ) {
 
     this.route.params.subscribe(params =>{
@@ -35,6 +38,7 @@ export class VideoComponent implements OnInit {
           this.video.video=this.replacevideourl
 
         }
+        // this.videoService.getUserVideos()
          //console.log(this.video.video)
         
       })
@@ -47,6 +51,10 @@ export class VideoComponent implements OnInit {
   deleteVideo() {
     this.videoService
        .remove(this.video._id)
-       .subscribe(() => this.router.navigate(["profile"]));
+       .subscribe((params) => {
+      // console.log(params)
+         this.router.navigate(["profile"])
+      });
+       
     }
 }
