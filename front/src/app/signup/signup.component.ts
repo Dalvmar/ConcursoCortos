@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
     this.sessionService.signup(username,name,lastname,password,email,category).subscribe( (user:any) =>{
       console.log(user['status'])
       if(user['status']>=500) {
-        this.message = '**Hay campos sin rellenar o campos erroneos**'
+        this.message = 'Campos sin rellenar o campos erroneos'
       }
       else{
       console.log(`WELCOME USER ${user.username}, register OK`);

@@ -32,7 +32,7 @@ div.login {
   z-index:2;
 }
 .banner:before {
-  content:"Signup";
+  content:"Registro";
   position:absolute;
   width:80px;
   height:80px;
@@ -41,7 +41,7 @@ div.login {
   bottom:-35px;
   left:50%;
   line-height:80px;
-  font-size:17px;
+  font-size:14px;
   text-transform:uppercase;
   border-radius:50%;
   text-align:center;

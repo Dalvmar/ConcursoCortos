@@ -37,7 +37,7 @@
                       </div>
             </div>
       <div class="row">
-          <button (click)="signup(username,name,lastname,password,email,category)"> SIGNUP </button>
+          <button (click)="signup(username,name,lastname,password,email,category)"> REGISTRO </button>
   
       </div>  
     </div>
@@ -45,7 +45,7 @@
         {{message}}
       </div>
     <div class="signup">
-      Do have an account? <a [routerLink]="['/login']">Login</a>
+      Ya tienes cuenta? <a [routerLink]="['/login']">Login</a>
     </div>  
     <p class="error"> {{ error }} </p>  
   </div>
