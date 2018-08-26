@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
 
 	hidden:boolean=false;
 	status;
+	contLike:number=1;
 	likes:number=0;
 	unlikes:number=0;
 
@@ -33,10 +34,11 @@ export class HomeComponent implements OnInit {
 	ngOnInit() {
 		this.getlistVideo();
 	
+	
 
 		this.sessionService.isLogged().subscribe(user=>{
 			this.user=user
-			console.log(this.user.status)
+			// console.log(this.user.status)
 			if(this.user.status===500){
 				this.hidden=false
 		
@@ -80,6 +82,7 @@ export class HomeComponent implements OnInit {
 	saveComment(videoId, comment, i) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)
 		.subscribe(video => {
+			console.log(video)
 			this.comment=''
 			this.videoList[i].commment = video.commment;
 		})
@@ -87,14 +90,32 @@ export class HomeComponent implements OnInit {
 
 	
 	
-	like(){
-		this.likes+=1;
-		console.log(this.likes)
+	like (videoId) { 
+		console.log(videoId)
+		
+		this.videoService.saveLikes( videoId)
+		.subscribe(video=>{
+			console.log(video.like);
+			 this.likes=video.like;
+		})
+	
 		}
-	unlike(){
-		this.unlikes+=1;
-		console.log(this.unlikes)
+
+			
+	unlike (videoId) { 
+		console.log(videoId)
+		
+		this.videoService.saveUnLikes(videoId)
+		.subscribe(video=>{
+			console.log(video);
+			 this.unlikes=video.unlike;
+		})
+	
 		}
+	// unlike(videoId){
+	// 	this.unlikes+=1;
+	// 	console.log(this.unlikes)
+	// 	}
 
 		// like(videodId,newlike,i){
 

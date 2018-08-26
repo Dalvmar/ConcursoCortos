@@ -76,21 +76,35 @@ router.get("/", (req, res, next) => {
   });
 
 
-//LIKES
-//   router.post('/',(req,res,next)=>{
-// 	const{videoId,like,unlike}=req.body;
-// 	console.log(videoId + hola)
-// 	Video.like({videoId})
 
-//     .then(like =>{
-//         Videos.findByIdAndUpdate(videoId, {$push: { like : like}}, {new: true})
-//         .then(video => {
-//             Videos.populate(video, { path:'video', populate: { path: 'author' }})
-//             .then(cortoObj=>{
-//                 return res.status(200).json(cortoObj)
-//             })
-//         })
-// 	});
-// });
+//LIKES
+router.post('/:id/like', (req, res, next) => {
+	const newLike= 1;
+	Video.findByIdAndUpdate(req.params.id, { $inc: { like: newLike } })
+	  .then(userVideo => {
+		let currentLike = userVideo.like;
+		currentLike += newLike;
+		return res.status(200).json(userVideo);
+	  })
+	  .catch(e => {
+		res.json(e);
+		next(e);
+	  });
+  });
+  
+  //UNLIKE
+  router.post('/:id/unlike', (req, res, next) => {
+	const newUnlike = 1;
+	Video.findByIdAndUpdate(req.params.id, { $inc: { unlike: newUnlike } })
+	  .then(userVideo => {
+		let currentUnlike = userVideo.unlike;
+		currentUnlike += newUnlike;
+		return res.status(200).json(userVideo);
+	  })
+	  .catch(e => {
+		res.json(e);
+		next(e);
+	  });
+  });
 
 module.exports = router;
