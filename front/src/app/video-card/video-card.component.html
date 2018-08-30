@@ -61,7 +61,7 @@
             <div class="comments">
               <div class="info md-5" *ngIf="hidden">
                 <button (click)="saveComment(video._id, video.comment, i)" class="hide">OK</button>
-                <button (click)="toggleHidden($event,i)">Comentario</button>
+                 <button (click)="toggleHidden($event,i)">Comentario</button>
 
                 <input class="comment-input" type="text" [(ngModel)]="video.comment" name="video-comment">
                 <div style="clear: both;"></div>
@@ -88,7 +88,7 @@
               <a (click)="unlike (video._id)"><i class="far fa-thumbs-down active"></i><span>{{video.unlike}}</span></a>
             </li>
             <li> <a (click)="like (video._id)"><i class="far fa-thumbs-up active"></i><span>{{video.like}}</span></a></li>
-            <li><a href="#" class="far fa-comment"><span></span></a></li>
+            <li><a class="far fa-comment"><span></span></a></li>
           </ul>
         </div>
       </div>

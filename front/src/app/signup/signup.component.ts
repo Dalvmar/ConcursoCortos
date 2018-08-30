@@ -25,7 +25,7 @@ export class SignupComponent implements OnInit {
       else{
       console.log(`WELCOME USER ${user.username}, register OK`);
       console.log(user);
-      this.router.navigate(['/profile']);
+      this.router.navigate(['/login']);
     }
     });
   }

@@ -13,6 +13,14 @@ deleteVideo a{
     width: 480px;
     background: rgb(233, 227, 227)
 }
+table thead th {
+    vertical-align: bottom;
+    /* border-bottom: 2px solid #dee2e6; */
+    /* border-radius: 33px; */
+}
+.tableListStyle{
+    border-radius: 21px;
+}
 @media (min-width: 576px){
 .col-sm-12 {
     -ms-flex: 0 0 100%;
@@ -177,7 +185,7 @@ deleteVideo a{
      
     }
     .tableListStyle{
-        margin-left: -3px;
+        /* margin-left: -3px; */
         margin-right: -154px;  background: rgb(233, 227, 227)
     }
     deleteVideo a{

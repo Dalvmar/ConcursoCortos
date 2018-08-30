@@ -2,13 +2,13 @@
     <div class="banner"></div>
     <div class="form">
       <div class="wrapper">
-        <div class="row">
+        <div   class="row">
       
-            <input type="text" [(ngModel)]="username" name="username" placeholder="Usuario"/>
+            <input type="text" [(ngModel)]="username" name="username" required placeholder="Usuario"/>
         </div>
         <div class="row">
    
-          <input type="password" [(ngModel)]="password" name="password" placeholder="Contraseña"/>
+          <input type="password" [(ngModel)]="password" name="password"  required placeholder="Contraseña"/>
         </div>
         <div class="row">
             <button (click)="login(username,password)"> Login </button>

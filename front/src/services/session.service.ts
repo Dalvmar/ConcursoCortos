@@ -2,9 +2,10 @@
 import { Injectable } from "@angular/core";
 import { Http, Response } from "@angular/http";
 import { environment } from '../environments/environment';
-import {map, catchError} from 'rxjs/operators';
+import {map, catchError, switchAll} from 'rxjs/operators';
 import { Observable } from "rxjs";
 import { of } from 'rxjs';
+import swal from 'sweetalert';
 
 
 const {BASEURL} = environment;
@@ -71,7 +72,8 @@ export class SessionService {
         let data = res.json();
         let status=res.json().status
         this.user = data.user;
-        console.log(this.user)
+        swal('Usuario creado', this.user.email,'success');
+        // console.log(this.user)
         return this.user;
       }),
       catchError( e => of(this.errorHandler(e)))
