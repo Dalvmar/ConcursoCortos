@@ -33,18 +33,10 @@
 
 <div *ngIf="user.role==='user'">
     <app-loading *ngIf="loading"></app-loading>
-    <div class="container-fluid videoContainer col-sm-12">
-        <div class="row">
-            <div class="col-sm-4" *ngFor="let video of videoList">
-                <div class="card" >
-                    <iframe class="card-img-top embed-responsive-item" [src]="video.cover | safe" frameborder="0"></iframe>
-                    <div class="card-body">
-                        <!-- <h5 class="card-title">Card title</h5> -->
-                        <button [routerLink]="['/video',video._id]" class="btn btn-outline-danger btn-responsive">Detalles</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluid videoContainer ">
+       
+            <app-new-video></app-new-video>
+        
     </div>
 </div>
 

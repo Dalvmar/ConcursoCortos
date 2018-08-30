@@ -10,60 +10,21 @@
 
     <section class="videoList container-md-5 ">
          
-        <div *ngIf="videoList" class="row">
+        
               
             <div class="col-12 col-sm-12 search">
                 <input type="text" [(ngModel)]="search" class="form-control" placeholder="Búsqueda por autor" />
                
             </div>
-           <div class="col-12 col-sm-12 md-5">
+           <!-- <div class="col-12 col-sm-12 md-5">
                 <app-loading *ngIf="!videoList"></app-loading>
-           </div>
+           </div> -->
+
+           <app-video-card></app-video-card>
+            
            
-            <div class="col-12 col-sm-4 " *ngFor="let video of videoList | searchFilter:search ;  let i = index">
-                   
-                <div class="badge">
-                      
-                    <div>
-                        <iframe class="video flex-wrap" width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
-                    </div>
-                    
-                    <section class="all">
-                        <div class="like md-5">
-                                
-                                <div><a (click)= "like (video._id)" ><i class="far fa-thumbs-up active"></i></a>{{video.like}}</div>
-                                <div><a (click)= "unlike (video._id)" ><i class="far fa-thumbs-down active"></i></a>{{video.unlike}}</div>
-                            
-                       
-                     
-                        </div>
-                        <div class="info md-5" *ngIf="hidden">
-                        
-                            <button (click)="toggleHidden($event,i)">Comentario</button>
-                            <button (click)="saveComment(video._id, video.comment, i)" class="hide">OK</button>
-                            <input class="comment-input" type="text" [(ngModel)]="video.comment" name="video-comment">
-                            <div style="clear: both;"></div>
-                        </div>
-
-                        <div class="list">
-
-                            <section>
-                                <div class="comments">
-                                    <ul *ngFor="let comment of video.commment">
-                                        <p>
-                                            <b>{{comment.author.name}}:</b>{{comment.comment}}</p>
-                                    </ul>
-                                </div>
-
-                            </section>
-                        </div>
-
-                    </section>
-
-                </div>
-            </div>
-        </div>
+        
+    
     </section>
 
 

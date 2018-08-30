@@ -1,8 +1,50 @@
 
-  <div class="card">
+  <!-- <div class="card">
     <iframe class="card-img-top embed-responsive-item" [src]="video.cover | safe" frameborder="0"></iframe>
     <div class="card-body">
         <button (click)="verVideo()" class="btn btn-outline-danger btn-responsive">Detalles</button>
                  
     </div>
+  </div> -->
+  <!-- <div class="col" *ngFor="let video of videoList">
+  <div id="movie-card-list">
+    <div class="movie-card">
+        <img class="card-img-top embed-responsive-item" [src]="video.cover | safe" frameborder="0">
+      <div class="color-overlay">
+        <div class="movie-content">
+          <div class="movie-header">
+             <h1 class="movie-title">Blade Runner</h1>
+            <h4 class="movie-info">(1982) Sci-Fi, Thriller</h4> 
+          </div>
+          <p class="movie-desc">A blade runner must pursue and try to terminate four replicants who stole a ship in space and
+            have returned to Earth to find their creator.</p>
+          <a class="btn btn-outline" (click)="verVideo()" >Detalles</a>
+  
+        </div>
+      </div>
+    </div>
   </div>
+  </div> -->
+  <div class="container-fluid" *ngFor="let video of videoList">
+    <div id="movie-card-list card">
+      <div class="movie-card">
+        <div class="color-overlay listRow row">
+          <div class="col-6 ">
+            <img class="img-fluid" [src]="video.cover | safe">
+          </div>
+  
+          <div class="movie-content col-6">
+            <div class="movie-header">
+              <h1 class="movie-title">{{video.creator}}</h1>
+              <h4 class="movie-info">like:{{video.like}}  unlike:{{video.unlike}}</h4>
+            </div>
+            <p class="movie-desc">Descripcion: Si no hay descripcion hay que poner algo{{video.description}}</p>
+            <button class="ver" [routerLink]="['/video',video._id]"><i class="fas fa-play-circle"></i></button>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

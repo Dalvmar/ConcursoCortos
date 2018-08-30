@@ -1,0 +1,97 @@
+ <!-- <div *ngIf="videoList" class="row">
+<div class="col-12 col-sm-4 " *ngFor="let video of videoList | searchFilter:search ;  let i = index">
+                   
+  <div class="badge">
+        
+      <div>
+          <iframe class="video flex-wrap" width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+      </div>
+      
+      <section class="all">
+          <div class="container like">
+                  <div class="row">
+                    <div class="col">
+                          <a (click)="like (video._id)"><i class="far fa-thumbs-up active"></i></a>{{video.like}}
+               
+                    </div>
+                    <div class="col">
+                          <a (click)="unlike (video._id)"><i class="far fa-thumbs-down active"></i></a>{{video.unlike}}
+              
+                    </div>
+                  </div>
+                </div>
+
+          <div class="info md-5" *ngIf="hidden">
+                  <button (click)="saveComment(video._id, video.comment, i)" class="hide">OK</button>
+              <button (click)="toggleHidden($event,i)">Comentario</button>
+             
+              <input class="comment-input" type="text" [(ngModel)]="video.comment" name="video-comment">
+              <div style="clear: both;"></div>
+          </div>
+
+          <div class="list">
+
+              <section>
+                  <div class="comments">
+                      <ul *ngFor="let comment of video.commment">
+                          <p>
+                              <b>{{comment.author.name}}:</b>{{comment.comment}}</p>
+                      </ul>
+                  </div>
+
+              </section>
+          </div>            
+      </section>
+  
+  </div>
+  </div>
+</div>  -->
+
+<div class="row" *ngIf="videoList">
+  <div class="example-1 card col-12 col-sm-4" *ngFor="let video of videoList | searchFilter:search ;  let i = index">
+    <div class="wrapper">
+      <iframe class="video flex-wrap" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+      <div class="data">
+        <div class="content">
+
+          <!-- <h1 class="title">Boxing icon has the will for a couple more fights</h1> -->
+          <div class="text">
+            <div class="comments">
+              <div class="info md-5" *ngIf="hidden">
+                <button (click)="saveComment(video._id, video.comment, i)" class="hide">OK</button>
+                <button (click)="toggleHidden($event,i)">Comentario</button>
+
+                <input class="comment-input" type="text" [(ngModel)]="video.comment" name="video-comment">
+                <div style="clear: both;"></div>
+              </div>
+
+              <div class="list">
+
+
+                <div class="comments">
+                  <ul *ngFor="let comment of video.commment">
+                    <p>
+                      <b>{{comment.author.name}}:</b>{{comment.comment}}</p>
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+            <label for="show-menu" class="menu-button"><span></span></label>
+          </div>
+          <input type="checkbox" id="show-menu" />
+          <ul class="menu-content">
+            <li>
+              <a (click)="unlike (video._id)"><i class="far fa-thumbs-down active"></i><span>{{video.unlike}}</span></a>
+            </li>
+            <li> <a (click)="like (video._id)"><i class="far fa-thumbs-up active"></i><span>{{video.like}}</span></a></li>
+            <li><a href="#" class="far fa-comment"><span></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  

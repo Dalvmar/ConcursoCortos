@@ -1,6 +1,9 @@
 /*******************
 Preloader
 ********************/
+html {
+  touch-action: manipulation;
+}
 .preloader{
   width: 100%;
   height: 100%;

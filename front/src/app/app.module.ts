@@ -40,6 +40,7 @@ import { SearchFilterPipe } from './search.pipe';
 //Guard
 import { IsLoggedOutGuardService } from './guards/isLoggedOut.guard';
 import { IsLoggedInGuardService } from './guards/isLoggedIn.guard';
+import { VideoCardComponent } from './video-card/video-card.component';
 
 
 
@@ -66,7 +67,8 @@ import { IsLoggedInGuardService } from './guards/isLoggedIn.guard';
       LoadingComponent,
       PagenofoundComponent,
       PagesComponent,
-      NavbarComponent
+      NavbarComponent,
+      VideoCardComponent
    ],
    imports: [
       BrowserModule,
