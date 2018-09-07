@@ -11,6 +11,10 @@ import { ActivatedRoute, Router } from '../../../node_modules/@angular/router';
 })
 export class ListUserComponent implements OnInit {
 users;
+user;
+since: number= 0;
+totalUsuarios:number= 0;
+cargando:boolean= true;
 data;
 videos;
   constructor( private  userService:UserService,private sessionService:SessionService, 
@@ -18,19 +22,24 @@ videos;
     private router: Router,
   private videoService:VideoService) {}
 
-getUsers(){
-  this.sessionService.isLogged().subscribe(user=>{
-    this.userService.getListUsers()
-    .subscribe((data)=>{
-    console.log(data )
-    this.users=data
-  })
- })
-}
+
 
   ngOnInit() {
     this.getUsers()
     
+  }
+
+  getUsers(){
+    this.cargando = true;
+    this.sessionService.isLogged().subscribe(user=>{
+      this.userService.getListUsers(this.since)
+      .subscribe((data:any)=>{
+      console.log(data )
+       this.totalUsuarios=data.total;
+      this.users=data.users
+      this.cargando = false;
+    })
+   })
   }
 
   deleteUser(id) {
@@ -47,5 +56,43 @@ getUsers(){
        .subscribe(() => this.getUsers());
     }
 
+    searchUser( termino: string ) {
+
+      if ( termino.length <= 0 ) {
+        this.getUsers();
+        return;
+      }
+  
+      this.cargando = true;
+  
+      this.userService.searchUser( termino )
+              .subscribe( (user) => {
+
+                this.user = user;
+                this.cargando = false;
+              });
+  
     }
+
+    cambiarDesde( valor: number ) {
+
+      let since = this.since + valor;
+  
+      if ( since >= this.totalUsuarios) {
+        return;
+      }
+  
+      if ( since < 0 ) {
+        return;
+      }
+  
+      this.since += valor;
+      this.getUsers();
+  
+    }
+   
+
+    }
+
+    
 

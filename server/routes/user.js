@@ -8,7 +8,34 @@ const Comments =require('../models/Comments')
 
 // All Users
 router.get('/', (req, res, next) => {
-	User.find().then((objects) => res.json(objects)).catch((e) => next(e));
+
+	var desde =req.query.desde || 0;
+	desde=Number(desde);
+
+	User.find({})
+	.skip(desde)
+	.limit(5)
+	.exec((err,users) => {
+		if(err){
+			return res.status(500).json({
+				ok:false,
+				mensaje:'Error cargando Usuario',
+				errors:err
+			});
+		}
+		User.count({ },(err,cont)=>{
+			res.status(200).json({
+				ok:true,
+				users:users,
+				total:cont
+			});
+		})
+	
+	});
+ 
+	// router.get('/', (req, res, next) => {
+	// 	User.find().then((objects) => res.json(objects)).catch((e) => next(e));
+	
 });
 
 // Details users

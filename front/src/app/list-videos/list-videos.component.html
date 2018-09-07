@@ -1,27 +1,86 @@
 
-<div class="table-responsive-sm tableListStyle">
-    <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">Usuario</th>
-            <th scope="col">Descripcion</th>
-            <th scope="col">Video</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody *ngFor="let video of videos">
-          <tr>
-            <th scope="row"></th>
-            <td>{{video.creator}}</td>
-            <td>{{video.description}}</td>
-            <td><a><i class="far fa-play-circle"></i></a></td>
-            <td></td>
-            <td></td>
-            <td><a class="deleteVideo" (click)="deleteVideo(video._id)"><i class="fas fa-trash-alt"></i> </a></td>
-          </tr>
-        </tbody>
-      </table>
+    
+       <div class="row animated fadeIn">
+          <div class="col-12">
+              <div class="card">
+                  <div class="card-body">
+      
+                      <input #input (keyup)="searchVideo( input.value )" type="text" class="form-control" placeholder="Buscar video...">
+      
+                  </div>
+              </div>
+          </div>
       </div>
+      
+      <div class="row animated fadeIn" *ngIf="loading">
+      
+          <div class="col-sm-12">
+      
+              <div class="alert alert-warning text-center">
+                  <strong>Cargando</strong>
+                  <br>
+                  <i class="fas fa-sync fa-spin fa-2x"></i>
+                  <br>
+                  <span>Espere por favor</span>
+              </div>
+          </div>
+      </div>
+      
+      
+      <div class="row animated fadeIn" *ngIf="!loading">
+          <div class="col-12">
+              <div class="card">
+                  <div class="card-body table-responsive-md">
+      
+                      <h3 class="card-title">Videos registrados ( <small>{{ totalvideos }}</small> )</h3>
+      
+      
+                      <table class="table table-hover">
+                          <thead>
+                              <tr>
+                                  <th>Usuario</th>
+                                  <th>Descripcion</th>
+                                  <th>Video</th>
+                                  <th></th>
+                            
+                              </tr>
+                          </thead>
+      
+                           <tbody>
+                              <tr *ngFor="let video of videos">
+                                  <td >
+                                      {{video.creator}}   
+                                  </td>
+                                  <td>
+                                      {{video.description}}
+                                  </td>
+                             
+                                  <td>
+                                      <a [routerLink]="['/video',video._id]"><i class="far fa-play-circle"></i></a>
+                                  </td>
+                                 
+                                  <td>                                    
+                                      <button (click)="deleteVideo( video._id )" class="btn btn-danger">
+                                        <i class="fa fa-trash"></i>
+                                      </button>
+                                  </td>
+                              </tr>
+      
+                          </tbody>
+      
+                      </table>
+                   
+                      <button (click)="cambiarDesde(-5)" class="btn btn-secondary">
+                        Anteriores
+                      </button>
+      
+                      <button (click)="cambiarDesde(5)" class="btn btn-secondary">
+                          Siguientes
+                      </button>
+                    
+      
+      
+                  </div>
+              </div>
+          </div>
+      </div> 

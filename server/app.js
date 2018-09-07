@@ -91,6 +91,8 @@ const userVideo = require('./routes/video');
 app.use('/api/video/', userVideo);
 const comments = require('./routes/comments');
  app.use('/api/comments', comments);
+ const search = require('./routes/search');
+ app.use('/api/search', search);
 
  app.use(function(req, res) {
   res.sendFile(__dirname + '/public/index.html');

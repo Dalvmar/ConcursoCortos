@@ -29,22 +29,22 @@ export class CardProfileComponent implements OnInit {
       this.user = user;
       if (this.user.role === 'user') {
         this.videoService.getUserVideos(this.user._id).subscribe(data => {
-          data.forEach(obj => {
+          data.videos.forEach(obj => {
             console.log(obj.video)
             obj.video = obj.video.replace('watch?v=', 'embed/')
           })
-          this.videoList = data
+          this.videoList = data.videos;
           console.log(this.videoList)
 
         });
       } else {
         console.log("admin")
         this.videoService.getlistVideos().subscribe(data => {
-          data.forEach(obj => {
+          data.videos.forEach(obj => {
             console.log(obj.video)
             obj.video = obj.video.replace('watch?v=', 'embed/')
           })
-          this.videoList = data
+          this.videoList = data.videos
           console.log(this.videoList)
         })
       }

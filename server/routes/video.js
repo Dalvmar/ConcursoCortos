@@ -5,6 +5,7 @@ const Comment = require('../models/Comments');
 const axios = require('axios');
 const apiUrl = 'https://api.microlink.io?url=';
 
+
 router.post('/new', (req, res, next) => {
 	const { url,userId } = req.body;
 
@@ -20,7 +21,7 @@ router.post('/new', (req, res, next) => {
 					console.log(resp.data);
 
 					const newVideo = {
-                        author:userId,
+            author:userId,
 						video: resp.data.data.url,
 						creator: resp.data.data.author,
 						description: resp.data.data.description,
@@ -63,16 +64,33 @@ router.get("/:id", (req, res, next) => {
 
 // Retrive ALL
 router.get("/", (req, res, next) => {
-	Video.find()
+
+	var desde =req.query.desde || 0;
+	desde=Number(desde);
+
+	Video.find({})
+	.skip(desde)
+	.limit(5)
 	.populate('commment')
 	.populate({ path:'commment', populate: { path: 'author' }})
-	.then(videos => {
-		return res.json(videos)
-	})
-	.catch(e => {
-		console.log(e)
-		next(e)
+	.exec((err,videos) => {
+		if(err){
+			return res.status(500).json({
+				ok:false,
+				mensaje:'Error cargando Videos',
+				errors:err
+			});
+		}
+		Video.count({ },(err,cont)=>{
+			res.status(200).json({
+				ok:true,
+				videos:videos,
+				total:cont
+			});
+		})
+	
 	});
+
   });
 
 

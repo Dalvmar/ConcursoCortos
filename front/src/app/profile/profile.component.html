@@ -32,7 +32,7 @@
 
 
 <div *ngIf="user.role==='user'">
-    <app-loading *ngIf="loading"></app-loading>
+
     <div class="container-fluid videoContainer ">
        
             <app-new-video></app-new-video>
@@ -41,10 +41,10 @@
 </div>
 
 
-        <div class="container containerList">
+        <div class="containerList">
                 <div *ngIf="user.role==='admin'" class="ListAdmin col-sm-12">
                     <div class="row align-items-top md-5">
-                        <div class="col-sm-10">
+                        <div class="col-sm-12">
                             <h3 class="listUsers">Lista de Usuarios</h3>
                             <app-list-user></app-list-user>
                             <h3 class="listVideos">Lista de videos</h3>

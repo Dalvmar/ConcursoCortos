@@ -7,423 +7,327 @@ deleteVideo a{
     margin-left: 73px;
 
 }
-.containervideos{
-    padding-right: 0px;
-    padding-left: 0px;
-    width: 480px;
-    background: rgb(233, 227, 227)
+.btn{
+    padding: 3px 5px;
+    font-size: 14px;
 }
-table thead th {
-    vertical-align: bottom;
-    /* border-bottom: 2px solid #dee2e6; */
-    /* border-radius: 33px; */
+.buttonList{
+    margin-bottom: 27px;
 }
-.tableListStyle{
-    border-radius: 21px;
+table td, .table th {
+    padding: 4px;
+    font-size: 11px;
+
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 14px;
+    margin-right: -11px;
+    margin-left: 12px;
+}
+.form-control {
+    display: block;
+    /* width: 106%; */
+    height: calc(26px + 3px);
+    padding: 3px 10px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 @media (min-width: 576px){
-.col-sm-12 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 103%;
-    max-width: 106%;
-    margin-left: 57px;
-    margin-right: -57px;
+.card {
+    min-width: 840px;
+
 }
 }
-@media (min-width: 576px){
-.col-sm-10 {
-    flex: 0 0 83.333333%;
-    max-width: 83.333333%;
-    margin-left: 62px;
-}   
-} 
+
  /* Smartphones (portrait and landscape) ----------- */
  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227);
-        margin-left: 27px;
-        margin-right: -98px;
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 885px;
+    }    
+   
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
     }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
-    }
+  
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 978px;
+    }
+   
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 978px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 /**********
 	iPad 3
 	**********/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 978px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 978px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
     }
-    .tableListStyle{
-        margin-left: -45px;
-        margin-right: -160px;
-        margin-bottom: 20px;
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
-    }
+
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-    .containervideos{
-        padding-right: 0px;
-        padding-left: 0px;
-        width: 480px;
-     
+    .card{
+        width: 1214px;
+        margin-right: 51px;
     }
-    .tableListStyle{
-        /* margin-left: -3px; */
-        margin-right: -154px;  background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
     
+    .container{
+        padding-left: 0px;
     }
 }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
     }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
-    }	
 }
 /* iPhone 6+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 536px;
+    }
+   
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
-    }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
     }
 }
 /* Samsung Galaxy S3 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
-        padding-left: 0px;
-        width: 480px;
-     
+    card{
+        width: 565px;
+        margin-right: 20px;
+        margin-left: -20px;
     }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
-    }
+ 
+.container{
+    padding-left: 0px;
 }
+    }
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    .containervideos{
-        padding-right: 0px;
-        padding-left: 0px;
-        width: 480px;
-     
+    card{
+        width: 565px;
+        margin-right: 20px;
+        margin-left: -20px;
     }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
-    }
+ 
+.container{
+    padding-left: 0px;
 }
+    }
 /* Samsung Galaxy S4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-    .containervideos{
-        padding-right: 0px;
-        padding-left: 0px;
-        width: 480px;
-     
+    card{
+        width: 565px;
+        margin-right: 20px;
+        margin-left: -20px;
     }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
-    }	
+ 
+.container{
+    padding-left: 0px;
+}
 }
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-    .containervideos{
-        padding-right: 0px;
-        padding-left: 0px;
-        width: 480px;
-     
+    card{
+        width: 565px;
+        margin-right: 20px;
+        margin-left: -20px;
     }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
-    }
+ 
+.container{
+    padding-left: 0px;
+}
 }
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-    .containervideos{
-        padding-right: 0px;
-        padding-left: 0px;
-        width: 480px;
-     
+    card{
+        width: 565px;
+        margin-right: 20px;
+        margin-left: -20px;
     }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
-    
-    }
+ 
+.container{
+    padding-left: 0px;
+}
 }
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-    .containervideos{
-        padding-right: 0px;
+    .card{
+        width: 475px;
+    }
+        .card-body{
+        width: 100%;
+    }
+    .container{
         padding-left: 0px;
-        width: 480px;
-     
     }
-    .tableListStyle{
-        background: rgb(233, 227, 227)
-    }
-    deleteVideo a{
-        margin-left: 73px;
     
-    }
 }

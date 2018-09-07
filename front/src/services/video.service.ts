@@ -28,11 +28,12 @@ getVideo(id){
   }
 
   //Todos los videos de todos los usuarios
-  getlistVideos() {
+  getlistVideos(since:number=0) {
      return this.http
-      .get(`${environment.BASEURL}/api/video`)
+      .get(`${environment.BASEURL}/api/video?since=`+ since)
       .pipe(map(res => res.json()));
   }
+
   newVideo(url,userId) {
     return this.http
       .post(`${environment.BASEURL}/api/video/new`, { url,userId })
@@ -43,7 +44,7 @@ getVideo(id){
   saveLikes(videoId) {
     
     return this.http.post(`${environment.BASEURL}/api/video/${videoId}/like `,{})
-      .pipe(map((res) => res.json()
+      .pipe(map((res) =>{return res.json()}
      ));
     } 
 
@@ -63,5 +64,13 @@ getVideo(id){
       .pipe(map(res => res.json()));
   } 
 
+  //search videos
+  // searchVideos( termino: string ) {
+
+  //     return this.http.get(`${environment.BASEURL}/api/search/coleccion/videos/`+ termino)
+    
+  //               .pipe(map( (resp: any) => resp.videos ));
+
+  // }
  
 }
