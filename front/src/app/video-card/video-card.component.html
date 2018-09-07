@@ -1,57 +1,31 @@
- <!-- <div *ngIf="videoList" class="row">
-<div class="col-12 col-sm-4 " *ngFor="let video of videoList | searchFilter:search ;  let i = index">
-                   
-  <div class="badge">
-        
-      <div>
-          <iframe class="video flex-wrap" width="280" height="175" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
-      </div>
-      
-      <section class="all">
-          <div class="container like">
-                  <div class="row">
-                    <div class="col">
-                          <a (click)="like (video._id)"><i class="far fa-thumbs-up active"></i></a>{{video.like}}
-               
-                    </div>
-                    <div class="col">
-                          <a (click)="unlike (video._id)"><i class="far fa-thumbs-down active"></i></a>{{video.unlike}}
-              
-                    </div>
-                  </div>
-                </div>
-
-          <div class="info md-5" *ngIf="hidden">
-                  <button (click)="saveComment(video._id, video.comment, i)" class="hide">OK</button>
-              <button (click)="toggleHidden($event,i)">Comentario</button>
-             
-              <input class="comment-input" type="text" [(ngModel)]="video.comment" name="video-comment">
-              <div style="clear: both;"></div>
-          </div>
-
-          <div class="list">
-
-              <section>
-                  <div class="comments">
-                      <ul *ngFor="let comment of video.commment">
-                          <p>
-                              <b>{{comment.author.name}}:</b>{{comment.comment}}</p>
-                      </ul>
-                  </div>
-
-              </section>
-          </div>            
-      </section>
-  
-  </div>
-  </div>
-</div>  -->
 <div class="videolist">
+
+    <div class="row animated fadeIn" *ngIf="loading">
+      
+        <div class="col-sm-12">
+    
+            <div class="alert alert-warning text-center">
+                <strong>Cargando</strong>
+                <br>
+                <i class="fas fa-sync fa-spin fa-2x"></i>
+                <br>
+                <span>Espere por favor</span>
+            </div>
+           
+        </div>
+    </div>
+   
+     <!-- <input #input (keyup)="searchVideo( input.value )" type="text" class="form-control" placeholder="Buscar video...">
+   
+ <input #input  [(ngModel)]="search" type="text" class="form-control" placeholder="Buscar video..."> -->
 <div class="row" *ngIf="videoList">
-  <div class="example-1 card col-lg-4 col-sm-6 col-xs-12" *ngFor="let video of videoList | searchFilter:search ;  let i = index">
-    <div class="wrapper">
-      <iframe class="video flex-wrap" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+    
+  
+    <div class="example-1 card col-lg-4 col-sm-6 col-xs-12" *ngFor="let video of videoList | searchFilter:search ;  let i = index">
+      
+    <div class="wrapper" *ngIf="!loading">
+      <iframe class="video flex-wrap" [src]="video.video | safe" frameborder="0" allowfullscreen></iframe>
 
       <div class="data">
         <div class="content">
@@ -85,7 +59,7 @@
           <div  id="show-menu" >
           <ul class="menu-content">
             <li>
-              <a (click)="unlike (video._id)"><i class="far fa-thumbs-down active"></i><span ng-cloak>{{video.unlike}}</span></a>
+              <a (click)="unlike (video._id)"><i class="far fa-thumbs-down active"></i><span>{{video.unlike}}</span></a>
             </li>
             <li> <a (click)="like (video._id)" ><i class="far fa-thumbs-up "></i><span>{{video.like}}</span></a></li>
             <li><a class="far fa-comment"><span class="commentcount"><b>{{video.commment.length}}</b></span></a></li>
@@ -97,11 +71,11 @@
     </div>
     </div>
     <div class="pagination">
-    <button (click)="cambiarDesde(-5)" class="btn btn-secondary">
+    <button (click)="cambiarDesde(-3)" class="btn btn-secondary">
         Anteriores
       </button>
 
-      <button (click)="cambiarDesde(5)" class="btn btn-secondary">
+      <button (click)="cambiarDesde(3)" class="btn btn-secondary">
           Siguientes
       </button>
     </div>

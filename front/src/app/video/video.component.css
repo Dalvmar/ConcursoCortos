@@ -25,6 +25,7 @@
 .cf p{
   text-align: center;
   margin-top: 10px;
+  color:white;
   
 }
 .detailsBotons{
@@ -32,10 +33,11 @@
 }
 .fa-trash-alt{
 font-size: 30px;
+color:white;
 }
 .fa-undo{
 font-size: 30px;
-color:black;
+color:white;
 }
 .profileUser{
   margin-left: 50%;

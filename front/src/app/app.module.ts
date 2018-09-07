@@ -24,7 +24,7 @@ import { CarruselComponent } from './carrusel/carrusel.component';
 import { NewVideoComponent } from './new-video/new-video.component';
 import { LoadingComponent } from './loading/loading.component';
 import { PagenofoundComponent } from '../app/shared/pagenofound/pagenofound.component';
-import { PagesComponent } from './pages/pages.component';
+
 import { NavbarComponent } from './navbar/navbar.component';
 
 
@@ -41,6 +41,7 @@ import { SearchFilterPipe } from './search.pipe';
 import { IsLoggedOutGuardService } from './guards/isLoggedOut.guard';
 import { IsLoggedInGuardService } from './guards/isLoggedIn.guard';
 import { VideoCardComponent } from './video-card/video-card.component';
+
 
 
 
@@ -66,9 +67,9 @@ import { VideoCardComponent } from './video-card/video-card.component';
       NewVideoComponent,
       LoadingComponent,
       PagenofoundComponent,
-      PagesComponent,
       NavbarComponent,
-      VideoCardComponent
+      VideoCardComponent,
+
    ],
    imports: [
       BrowserModule,

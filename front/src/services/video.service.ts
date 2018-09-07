@@ -28,9 +28,9 @@ getVideo(id){
   }
 
   //Todos los videos de todos los usuarios
-  getlistVideos(since:number=0) {
+  getlistVideos(since) {
      return this.http
-      .get(`${environment.BASEURL}/api/video?since=`+ since)
+      .get(`${environment.BASEURL}/api/video?desde=`+ since)
       .pipe(map(res => res.json()));
   }
 
@@ -65,12 +65,12 @@ getVideo(id){
   } 
 
   //search videos
-  // searchVideos( termino: string ) {
+  searchVideos( termino: string ) {
+      return this.http.get(`${environment.BASEURL}/api/search/coleccion/videos/`+ termino)
+        .pipe(map((resp) => 
+          resp.json()
+        ));
 
-  //     return this.http.get(`${environment.BASEURL}/api/search/coleccion/videos/`+ termino)
-    
-  //               .pipe(map( (resp: any) => resp.videos ));
-
-  // }
+  }
  
 }

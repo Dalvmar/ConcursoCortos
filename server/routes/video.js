@@ -70,7 +70,7 @@ router.get("/", (req, res, next) => {
 
 	Video.find({})
 	.skip(desde)
-	.limit(5)
+	.limit(3)
 	.populate('commment')
 	.populate({ path:'commment', populate: { path: 'author' }})
 	.exec((err,videos) => {

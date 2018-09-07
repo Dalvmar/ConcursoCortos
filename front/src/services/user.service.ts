@@ -13,10 +13,13 @@ export class UserService {
 constructor( private http:Http ) { }
 
 //list all user when your role admin
-getListUsers(since: number= 0){
+getListUsers(since:number){
   return this.http
-  .get(`${environment.BASEURL}/api/profile?since=`+since)
-   .pipe(map(res => res.json()));
+  .get(`${environment.BASEURL}/api/profile?desde=` + since)
+  .pipe(map(resp => 
+    resp.json()
+  ));
+   //.pipe(map(res => res.json()));
 }
 //details of user
 getDetailsUsers() {
@@ -64,12 +67,8 @@ removeUser(id) {
 
 //Search user
  searchUser( termino: string ) {
-
-    return this.http.get(`${environment.BASEURL}/api/search/coleccion/users/` + termino)
-    .pipe(map(resp => {
-      console.log(resp);
-    }));
-
+    return this.http.get(`${environment.BASEURL}/api/search/coleccion/users/`+ termino)
+    .pipe(map(res => res.json()));
   }
 
 }

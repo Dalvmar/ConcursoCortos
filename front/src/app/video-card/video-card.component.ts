@@ -3,7 +3,8 @@ import { Component, OnInit,Input } from '@angular/core';
 import { VideoService } from '../../services/video.service';
 import { CommentsService } from '../../services/comments.service';
 import { SessionService } from '../../services/session.service';
-
+import {Videos} from '../../../../server/models/Videos.js';
+import { DomSanitizer} from '@angular/platform-browser';
 
 
 @Component({
@@ -13,24 +14,29 @@ import { SessionService } from '../../services/session.service';
 })
 export class VideoCardComponent implements OnInit {
   
-  videoList: Array<any>;
+	videoList:Videos[]=[];
+	videos: Videos[]=[];
 	@Input()video;
 	comments;
 	comment;
 	countComments:number=0;
 	user;
 	search:String;
-
+	since: number = 0;
 	hidden:boolean=false;
 	status;
-	
+	totalVideos:number=0;
+	loading: boolean = true;
 	@Input() likes =0;
 	@Input() unlikes =0;
+	totalvideos:number=0;
+	url;
+
   
   constructor(
     private videoService: VideoService,
 		private commentsService: CommentsService,
-		private sessionService: SessionService
+		private sessionService: SessionService,private sanitizer: DomSanitizer
   ) { }
 
   ngOnInit() {
@@ -52,22 +58,32 @@ export class VideoCardComponent implements OnInit {
   }
 
   getlistVideo() {	
-		this.videoService.getlistVideos().subscribe((data) => {
+	this.loading=true;
+	
+		this.videoService.getlistVideos(this.since).subscribe((data) => {
 			data.videos.forEach((obj) => {
 				if (obj.video.includes('instagram')) {
 					obj.video = obj.video + "embed";
 					
 				} else if (obj.video.includes('youtube')) {
 					obj.video = obj.video.replace('watch?v=', 'embed/');
+
+			
+					console.log(obj.video + 'hola')
+					
 				} else if (obj.video.includes('vimeo')) {
 					obj.video = obj.video.replace('https://vimeo.com', 'https://player.vimeo.com/video')
+				
 				}
 
-				console.log(obj)
+				// console.log(obj)
 			});
+			
+			this.totalVideos = data.total;
 			this.videoList = data.videos;
 		
-			console.log(this.videoList)
+			// console.log(this.videoList)
+			this.loading=false;
 		});
 	}
 	
@@ -81,7 +97,7 @@ export class VideoCardComponent implements OnInit {
 	saveComment(videoId, comment, i) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)
 		.subscribe(video => {
-			console.log(video)
+			// console.log(video)
 			this.comment=''
 			this.videoList[i].commment = video.commment;
 		})
@@ -94,10 +110,10 @@ export class VideoCardComponent implements OnInit {
 		
 		this.videoService.saveLikes( videoId)
 		.subscribe(video=>{
-			console.log(video.like);
+			// console.log(video.like);
 			 this.likes=video.like;
 			 swal('LIKE', ':)', 'success');
-			
+		this.getlistVideo()
 			
 		})
 		
@@ -109,28 +125,48 @@ export class VideoCardComponent implements OnInit {
 		
 		this.videoService.saveUnLikes(videoId)
 		.subscribe(video=>{
-			console.log(video);
+			// console.log(video);
 			 this.unlikes=video.unlike;
 			 swal('UNLIKE', ':(', 'error');
+			 this.getlistVideo()
 		})
 	
 		}
 
-// 	cambiarDesde( valor: number ) {
+		cambiarDesde( valor: number ) {
 
-// 		let desde = this.since + valor;
+		let since = this.since + valor;
 	
-// 		if ( desde >= this.totalVideos ) {
-// 		  return;
-// 		}
+		if ( since >= this.totalVideos ) {
+		  return;
+		}
 	
-// 		if ( desde < 0 ) {
-// 		  return;
-// 		}
+		if ( since < 0 ) {
+		  return;
+		}
 	
-// 		this.since += valor;
-// 		this.getlistVideo();
+		this.since += valor;
+		this.getlistVideo();
 	
-// 	  }
+		}
+	
 
+		searchVideo( termino: string ) {
+      if ( termino.length <= 0 ) {
+        this.getlistVideo();
+        return;
+      }
+  
+      	this.loading = true;
+      	this.videoService.searchVideos(termino).subscribe((resp)=>{
+        // console.log(resp)
+        this.videoList = resp.videos;
+         this.totalvideos= resp.videos.length;
+        this.loading = false;
+      })
+    }
+
+		getSafeUrl(url) {
+			return this.sanitizer.bypassSecurityTrustResourceUrl(this.url);     
+}
 }

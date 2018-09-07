@@ -80,10 +80,12 @@ function searchVideos(busqueda, regex) {
 
     return new Promise((resolve, reject) => {
 
-        Video.find({ nombre: regex })
-            .populate('usuario', 'username name lastname email ')
+        Video.find({},'like unlike author creator commment video')
+            .or([{ 'creator': regex }])
+            .populate('commment')
+            .populate({ path:'commment', populate: { path: 'author' }})
             .exec((err, videos) => {
-
+            console.log(videos)
                 if (err) {
                     reject('Error al cargar videos', err);
                 } else {
@@ -104,7 +106,7 @@ function searchUsers(busqueda, regex) {
             .exec((err, usuarios) => {
 
                 if (err) {
-                    reject('Erro al cargar usuarios', err);
+                    reject('Error al cargar usuarios', err);
                 } else {
                     resolve(usuarios);
                 }

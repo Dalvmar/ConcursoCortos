@@ -3,6 +3,9 @@ import { VideoService } from '../../services/video.service';
 import { CommentsService } from '../../services/comments.service';
 import { SessionService } from '../../services/session.service';
 import { UserService } from '../../services/user.service';
+import {Videos} from '../../../../server/models/Videos.js';
+
+
 
 @Component({
 	selector: 'app-home',
@@ -10,7 +13,7 @@ import { UserService } from '../../services/user.service';
 	styleUrls: [ './home.component.css' ]
 })
 export class HomeComponent implements OnInit {
-	videoList: Array<any>;
+
 	@Input()video;
 	comments;
 	comment;
@@ -20,9 +23,7 @@ export class HomeComponent implements OnInit {
 
 	hidden:boolean=false;
 	status;
-	// contLike:number=1;
-	@Input() likes =0;
-	@Input() unlikes =0;
+
 
 	constructor(
 		private videoService: VideoService,
@@ -48,4 +49,7 @@ export class HomeComponent implements OnInit {
 		// 		this.video.likes[i]=1
 		// 	});
 		// }
+			
+
+	
 }

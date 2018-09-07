@@ -16,6 +16,7 @@ export class CardProfileComponent implements OnInit {
 	isVisible: Boolean = false;
 	isVisibleAdmin: Boolean = false;
   videoList;
+  since: number= 0;
   constructor(private sessionService: SessionService,
 		private route: ActivatedRoute,
 		private router: Router,
@@ -29,17 +30,17 @@ export class CardProfileComponent implements OnInit {
       this.user = user;
       if (this.user.role === 'user') {
         this.videoService.getUserVideos(this.user._id).subscribe(data => {
-          data.videos.forEach(obj => {
+          data.forEach(obj => {
             console.log(obj.video)
             obj.video = obj.video.replace('watch?v=', 'embed/')
           })
-          this.videoList = data.videos;
+          this.videoList = data;
           console.log(this.videoList)
 
         });
       } else {
         console.log("admin")
-        this.videoService.getlistVideos().subscribe(data => {
+        this.videoService.getlistVideos(this.since).subscribe(data => {
           data.videos.forEach(obj => {
             console.log(obj.video)
             obj.video = obj.video.replace('watch?v=', 'embed/')

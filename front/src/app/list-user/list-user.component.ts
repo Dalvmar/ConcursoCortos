@@ -31,15 +31,12 @@ videos;
 
   getUsers(){
     this.cargando = true;
-    this.sessionService.isLogged().subscribe(user=>{
-      this.userService.getListUsers(this.since)
-      .subscribe((data:any)=>{
-      console.log(data )
-       this.totalUsuarios=data.total;
-      this.users=data.users
+      this.userService.getListUsers(this.since).subscribe((resp)=>{
+      console.log(resp )
+      this.totalUsuarios=resp.total;
+      this.users=resp.users
       this.cargando = false;
     })
-   })
   }
 
   deleteUser(id) {
@@ -56,22 +53,22 @@ videos;
        .subscribe(() => this.getUsers());
     }
 
+    //busqueda user
     searchUser( termino: string ) {
-
       if ( termino.length <= 0 ) {
         this.getUsers();
         return;
       }
   
       this.cargando = true;
-  
-      this.userService.searchUser( termino )
-              .subscribe( (user) => {
-
-                this.user = user;
+      this.userService.searchUser(termino)
+              .subscribe((resp) => {
+                console.log(resp)
+                this.users= resp.users;
+                this.totalUsuarios=resp.users.length;
                 this.cargando = false;
+
               });
-  
     }
 
     cambiarDesde( valor: number ) {

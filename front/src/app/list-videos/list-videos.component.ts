@@ -4,8 +4,7 @@ import { SessionService } from '../../services/session.service';
 import { CommentsService } from '../../services/comments.service';
 import { DomSanitizer } from '../../../node_modules/@angular/platform-browser';
 import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
-import { PARAMETERS } from '../../../node_modules/@angular/core/src/util/decorators';
-
+import {Videos} from '../../../../server/models/Videos.js';
 
 @Component({
   selector: 'app-list-videos',
@@ -14,7 +13,7 @@ import { PARAMETERS } from '../../../node_modules/@angular/core/src/util/decorat
 })
 export class ListVideosComponent implements OnInit {
 
-  videos;
+  videos: Videos[]=[];
   video;
   totalvideos:number=0;
   since: number = 0;
@@ -75,23 +74,20 @@ export class ListVideosComponent implements OnInit {
     }
 
     
-    // searchVideo( termino: string ) {
+    searchVideo( termino: string ) {
+      if ( termino.length <= 0 ) {
+        this.getVideos();
+        return;
+      }
   
-    //   if ( termino.length <= 0 ) {
-    //     this.getVideos();
-    //     return;
-    //   }
-  
-    //   this.loading = true;
-  
-    //   this.videoService.searchVideos( termino )
-    //           .subscribe( (videos) => {
-  
-    //             this.videos = videos;
-    //             this.loading = false;
-    //           });
-  
-    // }
+      this.loading = true;
+      this.videoService.searchVideos(termino).subscribe((resp)=>{
+        console.log(resp)
+        this.videos = resp.videos;
+        this.totalvideos= resp.videos.length;
+        this.loading = false;
+      })
+    }
 
 
 }
