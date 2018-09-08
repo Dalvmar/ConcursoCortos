@@ -39,8 +39,5 @@ export class NewVideoComponent implements OnInit {
 
 })}
   
-// vervideo(){
-//   this.router.navigate( ['/video',this.index])
-// }
 
 }

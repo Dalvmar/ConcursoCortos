@@ -14,8 +14,8 @@ const VideoSchema = new Schema({
   creator: { type: String },
   desription: { type: String },
   cover: { type: String },
-  like: { type: Number },
-  unlike: { type: Number }
+  like: { type: Number ,default:0},
+  unlike: { type: Number ,default:0}
 
 }, {
     timestamps: {

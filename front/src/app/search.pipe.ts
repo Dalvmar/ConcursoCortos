@@ -11,7 +11,7 @@ export class SearchFilterPipe implements PipeTransform {
 
         return input.filter(videos =>
            
-            videos.creator.toLowerCase().includes(search.toLowerCase().indexOf(search)>-1)
+            videos.creator.toLowerCase().includes(search.toLowerCase())
         
         );
         }

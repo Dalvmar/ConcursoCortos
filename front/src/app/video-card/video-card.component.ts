@@ -105,30 +105,31 @@ export class VideoCardComponent implements OnInit {
 
 	
 	
-	 like (videoId) { 
+	 like (videoId,i) { 
 		console.log(videoId)
 		
 		this.videoService.saveLikes( videoId)
 		.subscribe(video=>{
 			// console.log(video.like);
-			 this.likes=video.like;
+			 this.videoList[i].like=video.like +1;
+
 			 swal('LIKE', ':)', 'success');
-		this.getlistVideo()
+		
 			
 		})
 		
 		}
 
 			
-	unlike (videoId) { 
+	unlike (videoId ,i) { 
 		console.log(videoId)
 		
 		this.videoService.saveUnLikes(videoId)
 		.subscribe(video=>{
 			// console.log(video);
-			 this.unlikes=video.unlike;
+			 this.videoList[i].unlike=video.unlike+1;
 			 swal('UNLIKE', ':(', 'error');
-			 this.getlistVideo()
+			 
 		})
 	
 		}

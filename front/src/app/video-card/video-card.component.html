@@ -38,7 +38,7 @@
 
                 <input class="comment-input fixed" type="text" [(ngModel)]="video.comment" id="commentvideo" name="video-comment" placeholder="Tu comentario...">
                 
-                <!-- <div style="clear: both;"></div> -->
+               <!-- <div style="clear: both;"></div> -->
               </div>
 
               <div class="list">
@@ -59,9 +59,9 @@
           <div  id="show-menu" >
           <ul class="menu-content">
             <li>
-              <a (click)="unlike (video._id)"><i class="far fa-thumbs-down active"></i><span>{{video.unlike}}</span></a>
+              <a (click)="unlike (video._id,i)"><i class="far fa-thumbs-down active"></i><span>{{video.unlike}}</span></a>
             </li>
-            <li> <a (click)="like (video._id)" ><i class="far fa-thumbs-up "></i><span>{{video.like}}</span></a></li>
+            <li> <a (click)="like (video._id,i)" ><i class="far fa-thumbs-up "></i><span>{{video.like}}</span></a></li>
             <li><a class="far fa-comment"><span class="commentcount"><b>{{video.commment.length}}</b></span></a></li>
           </ul>
           </div>
