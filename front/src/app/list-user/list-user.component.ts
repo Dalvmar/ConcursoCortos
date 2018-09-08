@@ -51,6 +51,7 @@ videos;
     this.userService
        .removeUser(id)
        .subscribe(() => this.getUsers());
+       swal('Usuario', 'Borrado', 'error');
     }
 
     //busqueda user
@@ -87,7 +88,15 @@ videos;
       this.getUsers();
   
     }
-   
+
+    guardarUsuario(user){
+    console.log(user);
+        this.userService.editUser(user).subscribe((user) => {
+          swal('Usuario', 'Guardado', 'success');
+
+      })
+
+    }
 
     }
 
