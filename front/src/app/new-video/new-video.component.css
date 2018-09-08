@@ -84,7 +84,7 @@ h1,h2,h3 {
     /* margin-bottom: 20px;
     margin-top: 20px; */
     opacity: .75;
-    font-size: 24px;
+
 }
 
 .movie-content .movie-info {
@@ -99,12 +99,12 @@ h1,h2,h3 {
 }
 
 .movie-content  .movie-header {
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 .movie-content .movie-desc {
     font-weight: 300;
 opacity: .84;
-margin-bottom: 2em;
+margin-bottom: 55px;
 color:white;
 }
 .btn {
@@ -187,6 +187,13 @@ display: block;
 		border-radius: 8px;
 		box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
 	}
+	.movie-title{
+		font-size:25px;
+		margin-top: 8px;
+	}
+	.movie-desc{
+		font-size: 15px;
+	}
 }
 
 /* Smartphones (portrait) ----------- */
@@ -207,16 +214,56 @@ display: block;
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.movie-card{
+		max-width: 800px;
+		height: 300px;
+	}
+	.movie-title{
+    font-size: 14px;
+    margin-top: 32px;
+	}
+	.movie-desc{
+		font-size: 15px;
+	}
+	.ver{
+		color:white;
+	}
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-
+	.movie-card{
+		max-width: 800px;
+		height: 300px;
+	}
+	.movie-title{
+		font-size: 14px;
+    margin-top: 32px;
+	}
+	.movie-desc{
+		font-size: 15px;
+	}
+	.ver{
+		color:white;
+	}
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-
+.movie-card{
+	max-width: 800px;
+	height: 300px;
+}
+.movie-title{
+	font-size: 14px;
+	margin-top: 32px;
+}
+.movie-desc{
+	font-size: 15px;
+}
+.ver{
+	color:white;
+}
 }
 /**********
     iPad 3
@@ -261,14 +308,25 @@ display: block;
 		border-radius: 8px;
 		box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
 	}
+	.ver{
+		margin-left: 93px;
+    display: block;
+    color: white;
+    margin-top: -46px
+	}
+	.movie-title{
+		font-size:10px;
+	}
+	.movie-desc{
+		font-size: 11px;
+	}
 }
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
 	.movie-card {
 		/* //background-image: $background-image; */
 		background-size: contain;
-		background-repeat: no-repeat;
-		width:75%;
+    width: 95%;
 		max-width: 800px;
 		height: 300px;
 		display: block;
@@ -282,7 +340,7 @@ display: block;
 		/* //background-image: $background-image; */
 		background-size: contain;
 		background-repeat: no-repeat;
-		width:75%;
+		width: 95%;
 		max-width: 800px;
 		height: 300px;
 		display: block;
@@ -357,11 +415,18 @@ display: block;
 		background-repeat: no-repeat;
 		width:75%;
 		max-width: 800px;
-		height: 300px;
+		height: 450px;
 		display: block;
 		margin: 8vh auto;
 		border-radius: 8px;
 		box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+	}
+	.ver{
+		color:white;
+		margin-left: 145px;
+	}
+	.movie-title{
+		font-size: 20px;
 	}
 }
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {

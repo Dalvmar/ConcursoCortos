@@ -167,7 +167,5 @@ export class VideoCardComponent implements OnInit {
       })
     }
 
-		getSafeUrl(url) {
-			return this.sanitizer.bypassSecurityTrustResourceUrl(this.url);     
-}
+
 }
