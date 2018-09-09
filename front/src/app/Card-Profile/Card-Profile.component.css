@@ -78,7 +78,8 @@
 	}
 
 	figure.snip0057 {
-		height: 220px;
+		height: 260px;
+		margin-top: 10px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -293,7 +294,7 @@
 	}
 
 	figure.snip0057 {
-		height: 256px;
+		height: 350px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -439,7 +440,8 @@
 	}
 
 	figure.snip0057 {
-		height: 276px;
+		
+		height: 305px
 	}
 	figure.snip0057 .image {
 		height: 320px;
@@ -524,10 +526,11 @@
 
 	figure.snip0057 {
 		height: 460px;
+		margin-top: 25px;
 	}
 	figure.snip0057 .image {
 		height: 412px;
-		width: 32%;
+		width: 34%;
 		-webkit-transform: skewX(-15deg);
 		transform: skewX(-17deg);
 	}
@@ -795,7 +798,7 @@
 		margin-top: 56px;
 	}
 	figure.snip0057 {
-		height: 220px;
+		height: 260px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -863,7 +866,7 @@
 		margin-top: 56px;
 	}
 	figure.snip0057 {
-		height: 220px;
+		height: 260px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -1145,7 +1148,7 @@
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
-		margin-left: -70px;
+		margin-left: -55px;
 		text-transform: uppercase;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
@@ -1223,7 +1226,7 @@
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
-		margin-left: -70px;
+		margin-left: -55px;
 		text-transform: uppercase;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
@@ -1433,6 +1436,7 @@
 	}
 	figure.snip0057 {
 		height: 218px;
+		font-size: 13px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -1461,7 +1465,7 @@
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
-		margin-left: -70px;
+		margin-left: -48px;
 		text-transform: uppercase;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
@@ -1496,6 +1500,7 @@
 	}
 	figure.snip0057 {
 		height: 256px;
+		font-size: 13px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -1523,7 +1528,7 @@
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
-		margin-left: -70px;
+	    margin-left: -48px;
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1554,6 +1559,7 @@
 	}
 	figure.snip0057 {
 		height: 218px;
+		font-size: 13px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -1581,7 +1587,7 @@
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
-		margin-left: -70px;
+		margin-left: -48px;
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1611,6 +1617,7 @@
 	}
 	figure.snip0057 {
 		height: 256px;
+		font-size: 13px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -1639,7 +1646,7 @@
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
-		margin-left: -70px;
+		margin-left: -48px;
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1670,6 +1677,7 @@
 	}
 	figure.snip0057 {
 		height: 256px;
+		font-size: 13px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -1697,7 +1705,7 @@
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
-		margin-left: -70px;
+		margin-left: -48px;
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1724,9 +1732,11 @@
 	}
 	.cardProfile {
 		margin-top: 56px;
+
 	}
 	figure.snip0057 {
 		height: 256px;
+		font-size: 13px;
 	}
 	figure.snip0057 .image {
 		height: 209px;
@@ -1754,7 +1764,7 @@
 		padding: 5px 0;
 		width: 100%;
 		font-size: 13px;
-		margin-left: -70px;
+		margin-left: -48px;
 	}
 	figure.snip0057 figcaption .name {
 		margin-left: -33px;
@@ -1943,7 +1953,7 @@ figure.snip0057 {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 10px 1%;
+	/* margin: 10px 1%; */
 	width: 100%;
 	background: #ffffff;
 	color: #000000;
