@@ -12,7 +12,7 @@
               <h1 class="movie-title">{{video.creator}}</h1>
               <h4 class="movie-info">like:{{video.like}}  unlike:{{video.unlike}}</h4>
             </div>
-            <p class="movie-desc">Descripcion: Si no hay descripcion hay que poner algo{{video.description}}</p>
+            <p class="movie-desc">Descripcion:{{video.description}}</p>
             <button class="ver" [routerLink]="['/video',video._id]"><i class="fas fa-play-circle"></i></button>
   
           </div>

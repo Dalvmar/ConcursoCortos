@@ -66,7 +66,8 @@ export class ProfileComponent implements OnInit {
 	}
 	
 	saveVideo() {
-		this.videoService.newVideo(this.videoUrl,this.user._id).subscribe(() => {
+		this.videoService.newVideo(this.videoUrl,this.user._id).subscribe((res) => {
+			console.log(res)
 			console.log(this.videoUrl);
 			this.videoUrl = '';
 			this.NewVideoChild.ngOnInit();
