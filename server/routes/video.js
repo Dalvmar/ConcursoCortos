@@ -43,11 +43,26 @@ router.get('/:id', (req, res, next) => {
 	.populate('user')
 	.then((object) => res.json(object)).catch((e) => next(e));
 });
+
 // Delete video
 router.delete('/delete/:id', (req, res, next) => {
-	Video.findByIdAndRemove(req.params.id)
-		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
-		.catch((e) => next(e));
+  
+  Video.findById(req.params.id, function(err, video) {
+
+    if (err)
+      return next(new restify.InternalError(err));
+    else if (!video)
+      return next(new restify.ResourceNotFoundError('The resource you requested could not be found.'));
+  
+    
+    Comment.find({VideoId: video._id}).remove().exec();
+    
+    
+    video.remove();
+  
+    res.send({id: req.params.video_id});
+  
+  });
 });
 
 // GET User videos
