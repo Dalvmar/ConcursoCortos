@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SessionService } from '../../services/session.service';
-import { ActivatedRoute, Router } from '../../../node_modules/@angular/router';
+import { ActivatedRoute, Router } from 'node_modules/@angular/router/router';
 import { UserService } from '../../services/user.service';
 import { VideoService } from '../../services/video.service';
 
@@ -24,6 +24,7 @@ export class CardProfileComponent implements OnInit {
 		private videoService: VideoService) { }
 
 
+    
   ngOnInit() {
 
     this.sessionService.isLogged().subscribe((user) => {

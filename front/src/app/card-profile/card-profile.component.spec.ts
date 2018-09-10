@@ -26,3 +26,4 @@ describe('CardProfileComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
