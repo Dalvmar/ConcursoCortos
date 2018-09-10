@@ -11,7 +11,8 @@
       <iframe class="iframe" [src]="video.video | safe" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
     
           <div class="cf">
-            <p>Autor: {{video.creator}}</p>
+            <p *ngIf="video.creator===null">Autor:Desconocido</p> 
+            <p *ngIf="video.creator!==null">Autor: {{video.creator}}</p>
           </div>
         
       </div>

@@ -23,7 +23,7 @@ router.get('/', (req, res, next) => {
 				errors:err
 			});
 		}
-		User.count({ },(err,cont)=>{
+		User.estimatedDocumentCount ({ },(err,cont)=>{
 			res.status(200).json({
 				ok:true,
 				users:users,

@@ -90,6 +90,7 @@ router.get("/", (req, res, next) => {
 	.skip(desde)
 	.limit(3)
 	.populate('commment')
+	.populate('author')
 	.populate({ path:'commment', populate: { path: 'author' }})
 	.exec((err,videos) => {
 		if(err){
@@ -99,7 +100,7 @@ router.get("/", (req, res, next) => {
 				errors:err
 			});
 		}
-		Video.count({ },(err,cont)=>{
+		Video.estimatedDocumentCount({ },(err,cont)=>{
 			res.status(200).json({
 				ok:true,
 				videos:videos,

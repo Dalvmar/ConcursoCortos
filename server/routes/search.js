@@ -81,9 +81,10 @@ function searchVideos(busqueda, regex) {
     return new Promise((resolve, reject) => {
 
         Video.find({},'like unlike author creator commment video')
-            .or([{ 'creator': regex }])
+           
             .populate('commment')
             .populate({ path:'commment', populate: { path: 'author' }})
+            .or({ 'creator': regex }, {'email':regex})
             .exec((err, videos) => {
          
                 if (err) {

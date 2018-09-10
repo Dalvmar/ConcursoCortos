@@ -5,7 +5,7 @@
               <div class="card">
                   <div class="card-body">
       
-                      <input #input (keyup)="searchVideo( input.value )" type="text" class="form-control" placeholder="Buscar video...">
+                      <input #input (keyup)="searchVideo( input.value )" type="text" class="form-control" placeholder="Buscar video por el email del usuario...">
       
                   </div>
               </div>
@@ -39,7 +39,7 @@
                           <thead>
                               <tr>
                                   <th>Usuario</th>
-                                  <th>Descripcion</th>
+                                  <th>Email</th>
                                   <th>Video</th>
                                   <th></th>
                             
@@ -49,10 +49,11 @@
                            <tbody>
                               <tr *ngFor="let video of videos">
                                   <td >
-                                      {{video.creator}}   
+                                      {{video.author.username}}
+
                                   </td>
                                   <td>
-                                      {{video.description}}
+                                      {{video.author.email}}
                                   </td>
                              
                                   <td>
