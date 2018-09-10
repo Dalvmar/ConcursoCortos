@@ -97,7 +97,7 @@ export class VideoCardComponent implements OnInit {
 	saveComment(videoId, comment, i) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)
 		.subscribe(video => {
-			 console.log(video.comment.author.name)
+		
 			this.comment=''
 			this.videoList[i].commment = video.commment;
 		})
