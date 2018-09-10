@@ -10,7 +10,7 @@ import { routes } from './routes';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { CardProfileComponent } from './card-profile/card-profile.component';
+import { UserCardProfileComponent } from './user-card-profile/user-card-profile.component';
 import { ProfileComponent } from './profile/profile.component';
 import { VideoComponent } from './video/video.component';
 import { ListVideosComponent } from './list-videos/list-videos.component';
@@ -46,6 +46,7 @@ import { VideoCardComponent } from './video-card/video-card.component';
 
 
 
+
 @NgModule({
    declarations: [
       AppComponent,
@@ -58,7 +59,6 @@ import { VideoCardComponent } from './video-card/video-card.component';
       SearchFilterPipe,
       HomeComponent,
       ListUserComponent,
-      CardProfileComponent,
       AboutComponent,
       FooterHomeComponent,
       FechasPasosComponent,
@@ -69,7 +69,7 @@ import { VideoCardComponent } from './video-card/video-card.component';
       PagenofoundComponent,
       NavbarComponent,
       VideoCardComponent,
-
+      UserCardProfileComponent
    ],
    imports: [
       BrowserModule,

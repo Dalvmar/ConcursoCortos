@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { CardProfileComponent } from './card-profile.component';
+import { UserCardProfileComponent } from './user-card-profile.component';
 
-describe('CardProfileComponent', () => {
-  let component: CardProfileComponent;
-  let fixture: ComponentFixture<CardProfileComponent>;
+describe('UserCardProfileComponent', () => {
+  let component: UserCardProfileComponent;
+  let fixture: ComponentFixture<UserCardProfileComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardProfileComponent ]
+      declarations: [ UserCardProfileComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CardProfileComponent);
+    fixture = TestBed.createComponent(UserCardProfileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -26,4 +26,3 @@ describe('CardProfileComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-

@@ -1,0 +1,247 @@
+<div *ngIf="user" class="containerCard">
+
+  <div class="container-fluid cardProfile">
+  
+      <div class="row">
+          <div class="col-12">
+              <figure class="snip0057 red">
+                  <figcaption>
+                      <h3>{{user.username}}</h3> 
+                              <div class="name">{{user.name}} {{user.lastname}}</div>
+                         
+                              <div class="email"><i>{{user.email}}</i></div>
+                  </figcaption>
+                  <div class="image">
+                     
+                      <img src="../../assets/pictures/profile.jpg" height="300" alt="sample4"/>
+                  </div>
+                  <div class="position">{{user.category}}</div>
+              </figure>
+          </div>
+      </div>
+      </div>
+      
+    <!---Foooter Admnistrador-->
+  <div class="footerAdmin" *ngIf="user.role==='admin'">
+      <ul class="nav justify-content-center fixed-bottom bg-dark navbar-dark navAdmin">
+          <li class="nav-item adminItem">
+              <a class="nav-link footerMovil" [routerLink]="['/profile']"><i class="fas fa-arrow-left"></i></a>
+          </li>
+          <li class="nav-item adminItem">
+              <div class="nav-link footerMovil editForm" (click)="toggleHidden()"><i class="fas fa-user-edit edit-user"></i></div>
+              <div class="containerForm">
+                  <form *ngIf="isVisible" class="edit-user-form">
+  
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="usernameAdminEdit">Usuario</label>
+                                  <input type="text" class="form-control" [(ngModel)]="user.username" name="usernameAdminEdit" required id="usernameAdminEdit">
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="nameAdminEdit">Nombre</label>
+                                  <input type="text" class="form-control" [(ngModel)]="user.name" name="nameAdminEdit" required id="nameAdminEdit">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="lastnameAdminEdit">Apellidos</label>
+                                  <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastnameAdminEdit" required id="lastnameAdminEdit">
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="emailAdminEdit">Email</label>
+                                  <input type="email" class="form-control" [(ngModel)]="user.email" name="emailAdminEdit" required id="emailAdminEdit">
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="oldpassworAdminEdit">Contraseña antigua</label>
+                                  <input type="password" class="form-control" name="oldpassworAdminEdit" />
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="newpasswordAdminEdit">Contraseña nueva</label>
+                                  <input type="text" class="form-control" name="newpasswordAdminEdit" />
+                              </div>
+                          </div>
+  
+                      </div>
+                      <div class="row selectButton">
+  
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <label class="input-group-text selCat" for="categoriaAdminEdit">Categoria</label>
+                              </div>
+                              <select class="custom-select selectEdit" [(ngModel)]="user.category" id="categoriaUsuarioprofile">
+                                 
+                                  <option value="11-15 años Portugal">11-15 años Portugal</option>
+                                  <option value="16-22 años Portugal">16-22 años Portugal</option>
+                                  <option value="11-22 años España">11-22 años España</option>
+                              </select>
+                          </div>
+                          <div class="col-md-2">
+                              <div class="form-group btnselcat">
+                                  <button type="submit" *ngIf="isVisible" class="btn btn-danger" (click)="edit(user._id)">Editar</button>
+                              </div>
+                          </div>
+                      </div>
+  
+                  </form>
+              </div>
+          </li>
+  
+          <li class="nav-item adminItem">
+              <div class="nav-link footerMovil" (click)="toggleHiddenAdmin()"><i class="fas fa-user-plus adminAdd"></i></div>
+              <div clas="containerForm ">
+                  <form *ngIf="isVisibleAdmin" class="formAdm">
+  
+                      <div class="row">
+                          <div class="col-lg-6 ">
+                              <div class="form-group">
+                                  <label for="usernameAdmin">Usuario</label>
+                                  <input type="text" class="form-control" [(ngModel)]="usernameAdmin" name="usernameAdmin" required id="usernameAdmin">
+                              </div>
+                          </div>
+                          <div class="col-lg-6 ">
+                              <div class="form-group">
+                                  <label for="nameAdmin">Nombre</label>
+                                  <input type="text" class="form-control" [(ngModel)]="nameAdmin" name="nameAdmin" required id="nameAdmin">
+                              </div>
+                          </div>
+  
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6 ">
+                              <div class="form-group">
+                                  <label for="lastnameAdmin">Apellidos</label>
+                                  <input type="text" class="form-control" [(ngModel)]="lastnameAdmin" name="lastnameAdmin" required id="lastnameAdmin">
+                              </div>
+                          </div>
+                          <div class="col-lg-6 ">
+                              <div class="form-group">
+                                  <label for="emailAdmin">Email</label>
+                                  <input type="email" class="form-control" [(ngModel)]="emailAdmin" name="emailAdmin" required id="emailAdmin">
+                              </div>
+                          </div>
+  
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="newpasswordAdmin">Contraseña</label>
+                                  <input type="text" class="form-control" [(ngModel)]="passwordAdmin" name="passwordAdmin" />
+                              </div>
+  
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="buttAdmin">
+                                  <label> </label>
+                                  <button type="submit" *ngIf="isVisibleAdmin" class="btn btn-danger" (click)="addAdmin(usernameAdmin,nameAdmin,lastnameAdmin,passwordAdmin,emailAdmin)">Añadir
+                                      admin</button>
+                              </div>
+                          </div>
+                      </div>
+  
+                  </form>
+              </div>
+          </li>
+          <li class="nav-item adminItem">
+              <a class="nav-link footerMovil" [routerLink]="['/']"><i class="fas fa-home"></i></a>
+          </li>
+      </ul>
+  </div>
+  <!--Footer Usuario-->
+    <div class="footerUser" *ngIf="user.role==='user'">
+        <ul class="nav justify-content-center fixed-bottom bg-dark navbar-dark navUser">
+            <li class="nav-item userItem">
+             <a class="nav-link footerMovil" [routerLink]="['/profile']"><i class="fas fa-arrow-left"></i></a>
+            </li>
+            <li class="nav-item userItem">
+              <div class="nav-link footerMovil edit-user" (click)="toggleHidden()" ><i class="fas fa-user-edit"></i></div>
+             <div class="containerForm">
+              <form *ngIf="isVisible" class="edit-user-form">
+              
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="usernameUser">Username</label>
+                                  <input type="text" class="form-control" [(ngModel)]="user.username" name="username" required id="username">
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="nameUser">Nombre</label>
+                                  <input type="text" class="form-control" [(ngModel)]="user.name" name="name" required id="name">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="lastnameUser">Apellidos</label>
+                                  <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastname" required id="lastname">
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="emailUser">Email</label>
+                                  <input type="email" class="form-control" [(ngModel)]="user.email" name="email" required id="emailuser">
+                              </div>
+                          </div>
+                      </div>
+          
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="oldpasswordUser">Password antigua</label>
+                                  <input type="password" class="form-control" name="oldpassword" />
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="newpasswordUser">Password nueva</label>
+                                  <input type="text" class="form-control" name="newpassword" />
+                              </div>
+                          </div>
+                         
+                      </div>
+                      <div class="row selectButton">
+                    
+                          <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <label class="input-group-text selCat" for="categoriaUser">Categoria</label>
+                                  </div>
+                                  <select class="custom-select selectEdit" [(ngModel)]="user.category">
+                                    <option selected>Choose...</option>
+                                      <option value="11-15 Portugal">11-15 años Portugal</option>
+                                      <option value="16-22 Portugal">16-22 años Portugal</option>
+                                      <option value="11-22 España">11-22 años España</option>
+                                  </select>
+                          </div>
+                          
+                      </div>
+                      <div class="col-md-2">
+                            <div class="form-group btnselcat">
+                                <button type="submit" class="btn btn-danger" (click)="edit(user._id)">Editar</button>
+                            </div>
+                        </div>
+                  </form>
+              </div>
+            </li>
+            <li class="nav-item userItem">
+              <a class="nav-link footerMovil" [routerLink]="['/']"><i class="fas fa-home"></i></a>
+            </li>
+          </ul>
+        </div>
+  </div>
+  

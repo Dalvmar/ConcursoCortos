@@ -1,15 +1,16 @@
+
 import { Component, OnInit } from '@angular/core';
 import { SessionService } from '../../services/session.service';
-import { ActivatedRoute, Router } from 'node_modules/@angular/router/router';
+import { ActivatedRoute, Router } from '../../../node_modules/@angular/router';
 import { UserService } from '../../services/user.service';
 import { VideoService } from '../../services/video.service';
 
 @Component({
-  selector: 'app-card-profile',
-  templateUrl: './card-profile.component.html',
-  styleUrls: ['./card-profile.component.css']
+  selector: 'app-user-card-profile',
+  templateUrl: './user-card-profile.component.html',
+  styleUrls: ['./user-card-profile.component.css']
 })
-export class CardProfileComponent implements OnInit {
+export class UserCardProfileComponent implements OnInit {
 
   user;
 	videoUrl: String;
