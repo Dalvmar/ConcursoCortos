@@ -48,6 +48,17 @@ color:#f7655d
 	border-radius: 50%;
 	line-height: 23px;
 }
+.footerMovil.fa-arrow-left {
+    content: "\f060";
+    font-size: 24px;
+    border-radius: 2px solid;
+    color: white;
+    height: 32px;
+    width: 39px;
+    border: 2px solid;
+    border-radius: 50%;
+	line-height: 29px;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 

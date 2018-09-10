@@ -23,8 +23,6 @@ export class UserCardProfileComponent implements OnInit {
 		private router: Router,
 		private userService: UserService,
 		private videoService: VideoService) { }
-
-
     
   ngOnInit() {
 
