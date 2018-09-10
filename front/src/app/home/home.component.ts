@@ -36,19 +36,6 @@ export class HomeComponent implements OnInit {
 		
 	}
 
-	
-	// unlike(videoId){
-	// 	this.unlikes+=1;
-	// 	console.log(this.unlikes)
-	// 	}
-
-		// like(videodId,newlike,i){
-
-		// 	this.videoService.saveLikes(videodId,newlike).subscribe(video=>{
-		// 		console.log(video + 'hola')
-		// 		this.video.likes[i]=1
-		// 	});
-		// }
 			
 
 	

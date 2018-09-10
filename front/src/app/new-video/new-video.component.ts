@@ -28,11 +28,11 @@ export class NewVideoComponent implements OnInit {
 			if(this.user.role==='user'){
 			this.videoService.getUserVideos(this.user._id).subscribe(data => {
 				data.forEach(obj => {
-					console.log(obj.video)
+				
 					obj.video = obj.video.replace('watch?v=', 'embed/')
 				})
 				this.videoList = data
-				console.log(this.videoList)
+		
 			
 			});
   }

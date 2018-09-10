@@ -32,7 +32,6 @@ videos;
   getUsers(){
     this.cargando = true;
       this.userService.getListUsers(this.since).subscribe((resp)=>{
-      console.log(resp )
       this.totalUsuarios=resp.total;
       this.users=resp.users
       this.cargando = false;
@@ -44,7 +43,7 @@ videos;
     .subscribe((data)=>
   {
     data.forEach(obj => {
-      console.log(obj.video)
+  
       this.videoService.remove(obj.author)
     });
   })
@@ -64,7 +63,7 @@ videos;
       this.cargando = true;
       this.userService.searchUser(termino)
               .subscribe((resp) => {
-                console.log(resp)
+             
                 this.users= resp.users;
                 this.totalUsuarios=resp.users.length;
                 this.cargando = false;
@@ -90,7 +89,7 @@ videos;
     }
 
     guardarUsuario(user){
-    console.log(user);
+  
         this.userService.editUser(user).subscribe((user) => {
           swal('Usuario', 'Guardado', 'success');
 

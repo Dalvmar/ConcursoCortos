@@ -15,7 +15,7 @@ const Videos = require('../models/Videos')
 router.get('/:id',(req,res)=>{
     Comment.findById(videoId)
     .then(comment=>{
-        console.log(comment)
+     
      Videos.populate(comment,{ path:'commment', populate: { path: 'author' }} )
      .then(list=>
      res.json(list))

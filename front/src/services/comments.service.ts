@@ -18,7 +18,7 @@ export class CommentsService {
       .pipe(map((res) => res.json()));
   }
 
-  saveComment(videoId,comment, author) {
+  saveComment(videoId,comment,author) {
     return this.http.post(`${environment.BASEURL}/api/comments`,{ videoId, comment, author})
       .pipe(map((res) => {
         return res.json()

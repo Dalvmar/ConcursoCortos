@@ -23,7 +23,7 @@
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -54,7 +54,7 @@
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+  text-shadow: 1px 1px 0 rgba(0,0,0,.65);
     -webkit-transform: translate3d(-50%,-50%,0);
        -moz-transform: translate3d(-50%,-50%,0);
         -ms-transform: translate3d(-50%,-50%,0);
@@ -71,7 +71,7 @@
 }
 
 .carrusel-item .hero {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: 2s all ease-in-out .1s;
      -moz-transition: 2s all ease-in-out .1s; 
       -ms-transition: 2s all ease-in-out .1s; 
@@ -79,7 +79,7 @@
           transition: 2s all ease-in-out .1s; 
 }
 .fade-carousel .item.active .hero {
-  opacity: 1;
+  opacity: 2;
   -webkit-transition: 2s all ease-in-out .1s;
      -moz-transition: 2s all ease-in-out .1s; 
       -ms-transition: 2s all ease-in-out .1s; 
@@ -96,7 +96,7 @@
   height: 100%;
   z-index: 2;
   background-color: #080d15;
-  opacity: .7;
+  opacity: .4;
 }
 
 
@@ -141,13 +141,13 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 30px;
          }
     .slide3 h5{
- font-size: 82px;
+ font-size: 40px;
     }
     .slide2 h5{
       font-size: 50px;
@@ -205,17 +205,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -257,13 +247,13 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 30px;
          }
     .slide3 h5{
- font-size: 82px;
+ font-size: 40px;
     }
     .slide2 h5{
       font-size: 50px;
@@ -321,17 +311,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -373,16 +353,16 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 30px;
          }
     .slide3 h5{
- font-size: 82px;
+ font-size: 40px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 30px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -437,17 +417,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -489,7 +459,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -553,17 +523,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -605,7 +565,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -669,17 +629,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -721,7 +671,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -785,17 +735,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -838,7 +778,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -902,17 +842,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -953,7 +883,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1017,17 +947,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -1068,7 +987,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1132,17 +1051,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -1183,7 +1091,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1247,17 +1155,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -1298,7 +1196,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1362,17 +1260,7 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
+
 
 
 /********************************/
@@ -1413,7 +1301,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1477,17 +1365,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -1528,7 +1405,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1592,17 +1469,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -1642,7 +1508,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1706,17 +1572,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -1757,7 +1612,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1821,17 +1676,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -1871,7 +1715,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -1936,17 +1780,6 @@ background-repeat: no-repeat;
 }
 
 /********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
-
 
 /********************************/
 /*       Slides backgrounds     */
@@ -1986,7 +1819,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -2048,18 +1881,6 @@ background-repeat: no-repeat;
       -ms-transition: 2s all ease-in-out .1s; 
        -o-transition: 2s all ease-in-out .1s; 
           transition: 2s all ease-in-out .1s;    
-}
-
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
 }
 
 
@@ -2100,7 +1921,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -2164,17 +1985,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -2215,7 +2025,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -2279,17 +2089,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -2329,7 +2128,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -2393,17 +2192,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -2444,7 +2232,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -2558,7 +2346,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -2621,19 +2409,6 @@ background-repeat: no-repeat;
        -o-transition: 2s all ease-in-out .1s; 
           transition: 2s all ease-in-out .1s;    
 }
-
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
-
 
 /********************************/
 /*       Slides backgrounds     */
@@ -2673,7 +2448,7 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
       font-size: 90px;
@@ -2737,17 +2512,6 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
 
 
 /********************************/
@@ -2787,16 +2551,16 @@ background-repeat: no-repeat;
       width: 8%;
       color: #fff;
       text-align: center;
-      opacity: .5;
+      opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 50px;
          }
     .slide3 h5{
- font-size: 82px;
+ font-size: 40px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 30px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -2849,18 +2613,6 @@ background-repeat: no-repeat;
       -ms-transition: 2s all ease-in-out .1s; 
        -o-transition: 2s all ease-in-out .1s; 
           transition: 2s all ease-in-out .1s;    
-}
-
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
 }
 
 

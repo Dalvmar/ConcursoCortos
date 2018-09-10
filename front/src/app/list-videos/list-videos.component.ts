@@ -33,8 +33,8 @@ export class ListVideosComponent implements OnInit {
     // this.sessionService.isLogged().subscribe(user=>{
       this.videoService.getlistVideos(this.since)
       .subscribe((data)=>{
-      console.log(data)
-       this.totalvideos=data.total;
+    
+      this.totalvideos=data.total;
       this.videos=data.videos
       this.loading=false;
     })
@@ -42,7 +42,7 @@ export class ListVideosComponent implements OnInit {
   }
   getComments(idvideo){
     this.commentsService.getComments(idvideo).subscribe((data)=>{
-      console.log()
+    
     })
   }
 
@@ -82,7 +82,6 @@ export class ListVideosComponent implements OnInit {
   
       this.loading = true;
       this.videoService.searchVideos(termino).subscribe((resp)=>{
-        console.log(resp)
         this.videos = resp.videos;
         this.totalvideos= resp.videos.length;
         this.loading = false;

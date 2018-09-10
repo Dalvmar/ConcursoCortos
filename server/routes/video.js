@@ -20,7 +20,7 @@ router.post('/new', (req, res, next) => {
 			if (foundVideo) throw new Error('Video already exits');
 			else {
 				axios.get(apiUrl + url).then((resp) => {
-					console.log(resp.data);
+				
 
 					const newVideo = {
             author:userId,
@@ -52,7 +52,7 @@ router.delete('/delete/:id', (req, res, next) => {
 // GET User videos
 router.get("/user/:id", (req, res, next) => {
 	console.log(req.params.id)
-    Video.find({author:req.params.id})
+    Video.find({'author':req.params.id})
     .then(object => res.json(object))
     .catch(e => next(e));
 });

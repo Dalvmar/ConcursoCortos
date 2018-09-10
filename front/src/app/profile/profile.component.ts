@@ -35,23 +35,23 @@ export class ProfileComponent implements OnInit {
 			if(this.user.role==='user'){
 			this.videoService.getUserVideos(this.user._id).subscribe(data => {
 				data.forEach(obj => {
-					console.log(obj.video)
+				
 					obj.video = obj.video.replace('watch?v=', 'embed/')
 				})
 				this.videoList = data
 				this.loading=false
-				console.log(this.videoList)
+			
 			
 			});
 		}else {
-			console.log("admin")
+		
 			this.videoService.getlistVideos(this.since).subscribe(data => {
 				data.videos.forEach(obj => {
-					console.log(obj.video)
+				
 					obj.video = obj.video.replace('watch?v=', 'embed/')
 				})
 				this.videoList = data.videos
-				console.log(this.videoList)
+	
 		})
 	     }
 		});
@@ -67,8 +67,7 @@ export class ProfileComponent implements OnInit {
 	
 	saveVideo() {
 		this.videoService.newVideo(this.videoUrl,this.user._id).subscribe((res) => {
-			console.log(res)
-			console.log(this.videoUrl);
+		
 			this.videoUrl = '';
 			this.NewVideoChild.ngOnInit();
 		
@@ -78,9 +77,9 @@ export class ProfileComponent implements OnInit {
 	refreshAdmin() {
 		this.userService.getUserNewDetails(this.user._id)
         .subscribe(data => { 
-			console.log(data)
+		
           this.user = data
-          console.log(this.user)
+
 	  })
 	}
 	

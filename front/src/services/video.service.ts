@@ -58,7 +58,7 @@ getVideo(id){
    
   //Delete 
   remove(id) {
-    console.log(id)
+  
     return this.http
       .delete(`${environment.BASEURL}/api/video/delete/${id}`)
       .pipe(map(res => res.json()));
