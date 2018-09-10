@@ -11,7 +11,8 @@ router.post('/new', (req, res, next) => {
 
 	console.log(req.body.url);
 
-	if (!url) {next(new Error('You must enter a URL'));
+	if (!url) {
+		throw new Error('You must enter a URL');
 
 };
 

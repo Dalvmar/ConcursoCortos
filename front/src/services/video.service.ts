@@ -35,7 +35,8 @@ getVideo(id){
   }
 
   newVideo(url,userId) {
-    return this.http
+  
+      return this.http
       .post(`${environment.BASEURL}/api/video/new`, { url,userId })
       .pipe(map(res => res.json()));
   }

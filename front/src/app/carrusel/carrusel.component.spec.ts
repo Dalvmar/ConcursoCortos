@@ -26,3 +26,4 @@ describe('CarruselComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+ 

@@ -85,7 +85,7 @@ function searchVideos(busqueda, regex) {
             .populate('commment')
             .populate({ path:'commment', populate: { path: 'author' }})
             .exec((err, videos) => {
-            console.log(videos)
+         
                 if (err) {
                     reject('Error al cargar videos', err);
                 } else {
