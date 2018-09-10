@@ -32,7 +32,7 @@ div.login {
   z-index:2;
 }
 .banner:before {
-  content:"Signup";
+  content:"Registro";
   position:absolute;
   width:80px;
   height:80px;
@@ -41,7 +41,7 @@ div.login {
   bottom:-35px;
   left:50%;
   line-height:80px;
-  font-size:17px;
+  font-size:14px;
   text-transform:uppercase;
   border-radius:50%;
   text-align:center;
@@ -53,18 +53,20 @@ div.login {
   background:#f6f6f6;
   width:100%;
   height:calc(100% - 180px);
+  font-size: 13px;
 }
 .login .form .wrapper {
   position:absolute;
   left:50%;
   transform:translateX(-50%);
   width:85%;
+  margin-top: 6px;
 }
 .login .form .row {
   margin:16px 0px;
 }
 .login .form .row .label {
-  font-size:12px;
+  font-size:10px;
   font-weight:600;
   color:rgb(100,100,100);
 }
@@ -78,6 +80,10 @@ div.login {
   height:25px;
   background:transparent;
   width:100%;
+
+}
+label{
+  font-size: 13px;
 }
 .login .form .row button {
   margin-top:0px;
@@ -97,8 +103,7 @@ div.login {
   text-align:center;
   width:100%;
   font-size:13px;
-  bottom:75px
-  ;
+  bottom: 96px;
   color:#333;
 }
 .login .form .signup a {
@@ -110,4 +115,11 @@ div.login {
   font-weight: 400;
     height: 35px;
     width: 152px;
+    padding-left: 10px;
+}
+.message{
+  color:red;
+  text-align: center;
+  margin-top: 2px;
+
 }

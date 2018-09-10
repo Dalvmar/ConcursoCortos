@@ -1,248 +1,56 @@
 <div *ngIf="user" class="profile">
 
-        <ul class="nav justify-content-center fixed-bottom bg-dark navbar-dark">
+        <ul class="nav justify-content-center fixed-bottom bg-dark navbar-dark ">
                 <li class="nav-item">
-                 <a class="nav-link footerMovil" [routerLink]="['profile/details']"><i class="far fa-play-circle"></i></a>
+                 <a class="nav-link footerMovil" [routerLink]="['details']"><i class="fas fa-user"></i></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link footerMovil" [routerLink]="['details']"><i class="fas fa-user-circle"></i></a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link footerMovil" [routerLink]="['/']"><i class="fas fa-home"></i></a>
                 </li>
               </ul>
-
-               <!-- <div class="container-fluid"> -->
-<!--Card Profile-->
-    <!-- <div class="container-fluid cardProfile">
-
-    <div class="row">
-        <div class="col-12">
-            <figure class="snip0057 red ">
-                <figcaption>
-                    <h3>{{user.name}} {{user.lastname}}</h3>
-    
-                    <div class="icons">
-                        <i class="name">
-                            <p>{{user.username}}</p>
-                        </i>
-                        <i class="ion-ios-email">
-                            <p>{{user.email}}</p>
-                        </i>
-                        
-                    </div>
-                </figcaption>
-                <div class="image">
-                    
-                    <img src="../../assets/pictures/profile.jpg" height="300" alt="sample4"/>
-                </div>
-                <div class="position">{{user.category}}</div>
-            </figure>
-        </div>
-    </div>
-    </div> -->
-<!-- END Card Profile-->
+              
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
     
                 <div class="input-group mb-3 inputVideo" *ngIf="user.role==='user'">
+                        <input type="text" class="form-control" (keyup.enter)="saveVideo()" placeholder="Introduce tu video (URL)" [(ngModel)]="videoUrl"
+                        name="url" required minlength="3" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="saveVideo()" (on)="saveVideo()">OK</button>
+                      </div>
                     
-                    <input type="text" class="form-control" placeholder="Introduce tu video (URL)" [(ngModel)]="videoUrl" name="url" required minlength="3"
-                        aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="saveVideo()">OK</button>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-<!-- 
-        <div class="containerEditUser" *ngIf="user">
-
-                <div (click)="toggleHidden()" class="btn btn-default edit-user"><i class="fas fa-user-edit"></i></div>
-
-                <form *ngIf="isVisible" class="edit-user-form">
-                  
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" [(ngModel)]="user.username" name="username" required id="username">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="name">Nombre</label>
-                                <input type="text" class="form-control" [(ngModel)]="user.name" name="name" required id="name">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="lastname">Apellidos</label>
-                                <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastname" required id="lastname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" [(ngModel)]="user.email" name="email" required id="email">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="oldpassword">Password antigua</label>
-                                <input type="password" class="form-control" name="oldpassword" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="newpassword">Password nueva</label>
-                                <input type="text" class="form-control" name="newpassword" />
-                            </div>
-                        </div>
-                       
-                    </div> -->
-                        
-                        <!-- <div class="col-lg-6 btnEdit">
-                            <div class="form-group">
-                                <label for="lastname">Categoria</label>
-                                <select name="category custom-select" id="category" class="selectEdit" [(ngModel)]="user.category">
-                                        <option selected>Choose...</option>
-                                    <option value="11-15 Portugal">11-15 años Portugal</option>
-                                    <option value="16-22 Portugal">16-22 años Portugal</option>
-                                    <option value="11-22 España">11-22 años España</option>
-                                </select>
-                            </div>
-                        </div> 
-
-                        <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <label class="input-group-text selCat" for="inputGroupSelect01">Categoria</label>
-                                </div>
-                                <select class="custom-select selectEdit" [(ngModel)]="user.category">
-                                  <option selected>Choose...</option>
-                                    <option value="11-15 Portugal">11-15 años Portugal</option>
-                                    <option value="16-22 Portugal">16-22 años Portugal</option>
-                                    <option value="11-22 España">11-22 años España</option>
-                                </select>
-                              </div>
-                        <div class="col-md-2">
-                            <div class="form-group btnselcat">
-                                <button type="submit" class="btn btn-danger" (click)="edit(user._id)">Editar</button>
-                            </div>
-                        </div>
-                    </div>-->
-
-                <!-- </form>
-
-            </div> -->
-
-        <!-- <div class="container-fluid">
-            <div class="newUser" *ngIf="user.role==='admin'">
-                <div class="row">
-                <div class="col-md-12">
-                <div class="containerUser">
-                    <span (click)="toggleHiddenAdmin()"><i class="fas fa-user-plus adminAdd"></i>
-
-                    </span>
-
-                    <form *ngIf="isVisibleAdmin" class="formAdm">
-                        
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" [(ngModel)]="username" name="username" required id="usernameAdmin">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="name">Nombre</label>
-                                    <input type="text" class="form-control" [(ngModel)]="name" name="name" required id="nameAdmin">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="lastname">Apellidos</label>
-                                        <input type="text" class="form-control" [(ngModel)]="lastname" name="lastname" required id="lastnameAdmin">
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="row">
-                        
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" [(ngModel)]="email" name="email" required id="emailAdmin">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                        <label for="newpassword">Password</label>
-                                        <input type="text" class="form-control" [(ngModel)]="password" name="passwordAdmin" />
-                                    </div>
-
-                            </div>
-                            <div class="col-md-4">
-                                <div class="buttAdmin">
-                                        <label> </label>
-                                    <button type="submit" class="btn btn-danger" (click)="addAdmin(username,name,lastname,password,email)">Añadir admin</button>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </form>
-
-                </div>
-                </div>
-            </div>
-            
-        </div>
-    </div> -->
 
 
 <div *ngIf="user.role==='user'">
-    <div class="container-fluid videoContainer col-sm-12">
-        <div class="row">
-            <div class="col-sm-6"> 
-                <div class="embed-responsive embed-responsive-16by9" *ngFor="let video of videoList">
-                     <iframe class="card-img-top embed-responsive-item" [src]="video.cover | safe" frameborder="0" ></iframe>
 
-            <div class="card-body">
-                <h5 class="card-title">
-                    <p>{{video.descrition}}</p>
-                    <button [routerLink]="['/video',video._id]" class="btn btn-outline-danger btn-responsive">Detalles</button>
-                </h5>
-            
-            </div>
-        </div>
-        </div>
-    </div>
+    <div class="container-fluid videoContainer ">
+       
+            <app-new-video ></app-new-video>
+        
     </div>
 </div>
 
 
-        <div class="container containerList">
-            <div *ngIf="user.role==='admin'" class="ListAdmin col-sm-12">
-                <div class="row align-items-top">
-                    <div class="col-sm-6">
-                        <h3>Lista de videos</h3>
-                        <app-list-videos></app-list-videos> 
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>Lista de Usuarios</h3>
-                         <app-list-user></app-list-user>
+        <div class="containerList">
+                <div *ngIf="user.role==='admin'" class="ListAdmin col-sm-12">
+                    <div class="row align-items-top md-5">
+                        <div class="col-sm-12">
+                            <h3 class="listUsers">Lista de Usuarios</h3>
+                            <app-list-user></app-list-user>
+                            <h3 class="listVideos">Lista de videos</h3>
+                            <app-list-videos></app-list-videos> 
+                           
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    
-    <!-- </div> -->

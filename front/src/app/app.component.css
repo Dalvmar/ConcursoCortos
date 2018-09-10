@@ -357,27 +357,3 @@ body {
 	zoom: 1;
 }
 
-@media (max-width: 480px) {
-    .welcome {
-        top: 50%; /* IMPORTANT */
-        left: 50%; /* IMPORTANT */
-        display: block;
-        position: absolute;
-        width: 750px;
-        height: 417px;
-		
-        margin-top: -208.5px; /* HALF OF THE HEIGHT */
-        margin-left: -375px; /* HALF OF THE WIDTH */
-    }
-}
- .navclass .welcome {
-	padding-right: 130px;
-} 
-
-/*****************/
-.navclass{
-	background-color: #010101 !important;
-}
-.navclass .welcome {
-	color: #fff;
-}

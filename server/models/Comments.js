@@ -3,10 +3,11 @@ const Schema   = mongoose.Schema;
 
 const CommentSchema = new Schema({
 
-  videoId: {type:Schema.Types.ObjectId, ref:'Cortos'},
+  videoId: {type:Schema.Types.ObjectId, ref:'Videos'},
   author: {type:Schema.Types.ObjectId, ref:'User'},
   comment: {type: String},
-  contador:{type:Number}
+ 
+
   }, {
   timestamps: {
     createdAt: 'created_at',

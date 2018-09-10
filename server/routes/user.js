@@ -3,10 +3,39 @@ const router = express.Router();
 const User = require('../models/User');
 const bcryptSalt = 10;
 const bcrypt = require("bcrypt");
+const Videos =require('../models/Videos')
+const Comments =require('../models/Comments')
 
 // All Users
 router.get('/', (req, res, next) => {
-	User.find().then((objects) => res.json(objects)).catch((e) => next(e));
+
+	var desde =req.query.desde || 0;
+	desde=Number(desde);
+
+	User.find({})
+	.skip(desde)
+	.limit(5)
+	.exec((err,users) => {
+		if(err){
+			return res.status(500).json({
+				ok:false,
+				mensaje:'Error cargando Usuario',
+				errors:err
+			});
+		}
+		User.count({ },(err,cont)=>{
+			res.status(200).json({
+				ok:true,
+				users:users,
+				total:cont
+			});
+		})
+	
+	});
+ 
+	// router.get('/', (req, res, next) => {
+	// 	User.find().then((objects) => res.json(objects)).catch((e) => next(e));
+	
 });
 
 // Details users
@@ -21,6 +50,7 @@ router.put('/edit/:id', (req, res, next) => {
 
 		const changeFields = new Promise((resolve, reject) => {
 			if (!username || !email || !name || !lastname || !category) {
+				console.log("aqui")
 				reject(new Error("Username ,name ,lastname and email are required."));
 			} else {
 				resolve();
@@ -69,16 +99,41 @@ router.put('/edit/:id', (req, res, next) => {
 	
 // Delete user
 router.delete('/delete/:id', (req, res, next) => {
+	
+
 	User.findByIdAndRemove(req.params.id)
 		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
 		.catch((e) => next(e));
+// 	Comments.findById(req.params.id,function(err,commnts){
+// 		if(err) return next(err);
+// 		Comments.remove();
+// 		req.flash('success', 'Comments deleted');
+		
+// 	})
+// 	.then(()=>{
+// 	Videos.findById(req.params.id,function(err,commnts){
+// 		if(err) return next(err);
+// 		Videos.remove();
+// 		req.flash('success', 'Videos deleted');
+		
+// 	})	
+// })
+// .then(()=>{
+// 	User.findByIdAndRemove(req.params.id)
+// 		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
+// 		.catch((e) => next(e));
+// })
+
 });
+
+//delete user with video anda comments 
+
 
 // ADD ADMIN
 router.post('/newAdmin', (req, res, next) => {
 
 	const {username,password,name,lastname,email} = req.body;
-  	console.log(req.body)
+  
 	// Check for non empty user or password
 	if (!username || !password || !email || !name || !lastname){
 	  next(new Error('You must provide credentials'));
@@ -99,8 +154,8 @@ router.post('/newAdmin', (req, res, next) => {
 		lastname,
 		password: hashPass,
 		email,
-		role:'admin',
-		category:'11-22 años España'
+		role: 'admin',
+		category: '11-22 años España'
 	};
 	  User.create(newAdmin, {new:true}).then( (object) => res.json(object)).catch((e) => next(e));
 	}

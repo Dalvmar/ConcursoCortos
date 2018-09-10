@@ -4,22 +4,22 @@
   <div class="form">
     <div class="wrapper">
       <div class="row">
-          <input type="text" [(ngModel)]="username" name="username" placeholder="Usuario" required/>
+          <input type="text" [(ngModel)]="username" name="username" placeholder="Usuario" size="35"  required/>
     
       </div>
       <div class="row">
-        <input type="text" [(ngModel)]="name" name="name" placeholder="Nombre" required/>
+        <input type="text" [(ngModel)]="name" name="name" placeholder="Nombre" size="35" required/>
       </div>
       <div class="row">
           
-          <input type="text" [(ngModel)]="lastname" name="lastname" placeholder="Apellidos" required/>
+          <input type="text" [(ngModel)]="lastname" name="lastname" placeholder="Apellidos" size="35" required/>
         </div>
         <div class="row">
    
-            <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required/>
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Password" size="35" required/>
           </div>
           <div class="row">
-              <input type="text" [(ngModel)]="email" name="email" placeholder="Email" required/>
+              <input type="text" [(ngModel)]="email" name="email" placeholder="Email"  size="35" required/>
             </div>
             <div class="row">
              
@@ -37,7 +37,7 @@
                       </div>
             </div>
       <div class="row">
-          <button (click)="signup(username,name,lastname,password,email,category)"> SIGNUP </button>
+          <button (click)="signup(username,name,lastname,password,email,category)"> REGISTRO </button>
   
       </div>  
     </div>
@@ -45,7 +45,7 @@
         {{message}}
       </div>
     <div class="signup">
-      Do have an account? <a [routerLink]="['/login']">Login</a>
+      Ya tienes cuenta? <a [routerLink]="['/login']">Login</a>
     </div>  
     <p class="error"> {{ error }} </p>  
   </div>

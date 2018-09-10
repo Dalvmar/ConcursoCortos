@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { VideoService } from '../../services/video.service';
 import { CommentsService } from '../../services/comments.service';
-import { SessionService } from '../../services/session';
+import { SessionService } from '../../services/session.service';
 import { UserService } from '../../services/user.service';
+import {Videos} from '../../../../server/models/Videos.js';
+
+
 
 @Component({
 	selector: 'app-home',
@@ -10,13 +13,18 @@ import { UserService } from '../../services/user.service';
 	styleUrls: [ './home.component.css' ]
 })
 export class HomeComponent implements OnInit {
-	videoList: Array<any>;
-	video;
+
+	@Input()video;
 	comments;
 	comment;
 	countComments:number=0;
 	user;
 	search:String;
+
+	hidden:boolean=false;
+	status;
+
+
 	constructor(
 		private videoService: VideoService,
 		private commentsService: CommentsService,
@@ -25,46 +33,10 @@ export class HomeComponent implements OnInit {
 	) {}
 
 	ngOnInit() {
-		this.getlistVideo();
-		this.sessionService.isLogged().subscribe(user=>{
-			this.user=user
-		})
+		
 	}
 
-	getlistVideo() {
-		this.videoService.getlistVideos().subscribe((data) => {
-			data.forEach((obj) => {
-				if(obj.video.includes('instagram')){
-				obj.video = obj.video + "embed";
-				}else if(obj.video.includes('youtube'))
-				{
-				obj.video = obj.video.replace('watch?v=', 'embed/');
-				}else if (obj.video.includes('vimeo')){
-				obj.video = obj.video.replace('https://vimeo.com', 'https://player.vimeo.com/video')
-				}
-				
-				console.log(obj)
-			});
-			this.videoList = data;
-			console.log(this.videoList)
-		});
-	}
-	toggleHidden(e,i) {
-		[].slice.call(e.currentTarget.closest('.info').childNodes).forEach(e=>{
-			if(e.classList.contains('comment-input')) e.classList.toggle('active')
-		})
-	}
+			
 
-
-	saveComment(videoId, comment, i) {
-		this.commentsService.saveComment(videoId, comment, this.user._id)
-		.subscribe(video => {
-			this.comment=''
-			this.videoList[i].commment = video.commment;
-		})
-	}
-
-	addAdmin(username: string, name: string, lastname: string, email: string, password: string) {
-		this.userService.signupAdmin(username, name, lastname, email, password).subscribe()
-	}
+	
 }

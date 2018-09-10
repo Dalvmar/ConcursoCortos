@@ -13,10 +13,13 @@ export class UserService {
 constructor( private http:Http ) { }
 
 //list all user when your role admin
-getListUsers(){
+getListUsers(since:number){
   return this.http
-  .get(`${environment.BASEURL}/api/profile`)
-  .pipe(map(res => res.json()));
+  .get(`${environment.BASEURL}/api/profile?desde=` + since)
+  .pipe(map(resp => 
+    resp.json()
+  ));
+   //.pipe(map(res => res.json()));
 }
 //details of user
 getDetailsUsers() {
@@ -42,9 +45,10 @@ editUser(user) {
     .pipe(map(res => {console.log(user)
       return res.json()}))
 }
-signupAdmin(username:string,name:string,lastname:string,email:string, password:string): Observable<object>{
-  return this.http.post(`${environment.BASEURL}/api/profile/newAdmin`,{username,name,lastname,email,password},this.options).pipe(
-    map( (res:Response) => {
+signupAdmin(username:string,name:string,lastname:string,email:string, password:string): Observable<object>
+{
+  return this.http.post(`${environment.BASEURL}/api/profile/newAdmin`,{username,name,lastname,email,password},this.options)
+  .pipe(map( (res:Response) => {
       let data = res.json();
       return data;
     }),
@@ -59,6 +63,13 @@ removeUser(id) {
     .delete(`${environment.BASEURL}/api/profile/delete/${id}`)
     .pipe(map(res => res.json()));
 } 
+
+
+//Search user
+ searchUser( termino: string ) {
+    return this.http.get(`${environment.BASEURL}/api/search/coleccion/users/`+ termino)
+    .pipe(map(res => res.json()));
+  }
 
 }
 

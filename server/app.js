@@ -70,8 +70,6 @@ app.use(session({
 }));
 require('./passport')(app);
 
-
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
@@ -84,6 +82,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 
 
+
 const authRouter = require('./routes/auth');
 app.use('/api/auth', authRouter);
 const userProfile = require('./routes/user');
@@ -92,9 +91,11 @@ const userVideo = require('./routes/video');
 app.use('/api/video/', userVideo);
 const comments = require('./routes/comments');
  app.use('/api/comments', comments);
+ const search = require('./routes/search');
+ app.use('/api/search', search);
 
  app.use(function(req, res) {
-  res.sendfile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/public/index.html');
  });
 
 

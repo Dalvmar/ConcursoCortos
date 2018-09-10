@@ -1,0 +1,24 @@
+
+  <div class="container-fluid" *ngFor="let video of videoList">
+    <div id="movie-card-list card">
+      <div class="movie-card">
+        <div class="color-overlay listRow row">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <img class="img-fluid" [src]="video.cover | safe" >
+          </div>
+  
+          <div class="movie-content col-lg-4 col-sm-6 col-xs-12">
+            <div class="movie-header">
+              <h1 class="movie-title">{{video.creator}}</h1>
+              <h4 class="movie-info">like:{{video.like}}  unlike:{{video.unlike}}</h4>
+            </div>
+            <p class="movie-desc">Descripcion:{{video.description}}</p>
+            <button class="ver" [routerLink]="['/video',video._id]"><i class="fas fa-play-circle"></i></button>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

@@ -27,24 +27,51 @@ getVideo(id){
       .pipe(map(res => res.json()));
   }
 
-  getlistVideos() {
+  //Todos los videos de todos los usuarios
+  getlistVideos(since) {
      return this.http
-      .get(`${environment.BASEURL}/api/video`)
+      .get(`${environment.BASEURL}/api/video?desde=`+ since)
       .pipe(map(res => res.json()));
   }
+
   newVideo(url,userId) {
-    return this.http
+  
+      return this.http
       .post(`${environment.BASEURL}/api/video/new`, { url,userId })
       .pipe(map(res => res.json()));
   }
 
-  //Delete videos when your role is admin
+  //likes y unlikes
+  saveLikes(videoId) {
+    
+    return this.http.post(`${environment.BASEURL}/api/video/${videoId}/like `,{})
+      .pipe(map((res) =>{return res.json()}
+     ));
+    } 
+
+    saveUnLikes(videoId) {
+     
+      return this.http.post(`${environment.BASEURL}/api/video/${videoId}/unlike `,{})
+        .pipe(map((res) => res.json()
+       ));
+      } 
+
+   
+  //Delete 
   remove(id) {
-    console.log(id)
+  
     return this.http
       .delete(`${environment.BASEURL}/api/video/delete/${id}`)
       .pipe(map(res => res.json()));
   } 
 
+  //search videos
+  searchVideos( termino: string ) {
+      return this.http.get(`${environment.BASEURL}/api/search/coleccion/videos/`+ termino)
+        .pipe(map((resp) => 
+          resp.json()
+        ));
+
+  }
  
 }

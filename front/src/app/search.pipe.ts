@@ -4,14 +4,14 @@ import {Pipe, PipeTransform} from '@angular/core';
   name: 'searchFilter'
 })
 export class SearchFilterPipe implements PipeTransform {
-    transform(input:any, search:string): any {
+    transform(input:any, search:string,array:any[]): any {
         if ( !input || !search ) {
             return input;
         }
 
-        return input.filter(cortos =>
+        return input.filter(videos =>
            
-            cortos.creator.toLowerCase().includes(search.toLowerCase())
+            videos.creator.toLowerCase().includes(search.toLowerCase())
         
         );
         }

@@ -25,6 +25,7 @@
 .cf p{
   text-align: center;
   margin-top: 10px;
+  color:white;
   
 }
 .detailsBotons{
@@ -32,12 +33,917 @@
 }
 .fa-trash-alt{
 font-size: 30px;
+color:white;
 }
 .fa-undo{
 font-size: 30px;
-color:black;
+color:white;
 }
 .profileUser{
   margin-left: 50%;
   margin-right: 50%;
+}
+
+ /* Smartphones (portrait and landscape) ----------- */
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .containerVideo {
+    
+    /* border: 1px solid #ccc; */
+    padding: 0 1rem;
+    margin-top: 4rem;
+  }
+  
+  .gallery{
+    margin-top: 30px;
+    margin-left: -39px;
+  }
+  .btnBorrar{
+    padding: 0 1rem;
+    margin: 1rem;
+  }
+  .borraVideo{
+     /* IMPORTANTE */
+     margin-left: 50%;
+    margin-right: 50%;
+}
+.cf p{
+  margin-top: 10px;
+  color: white;
+  margin-left: -64px;
+  margin-right: -64px;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  .iframe{
+    height: 355px;
+    width: 510px;
+    margin-top: -20px;
+    margin-left: -60px;
+    margin-right: 60px;
+  }
+
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  
+  .iframe{
+    height: 244px;
+    max-width: 296px;
+    margin-top: -20px;
+    margin-left: -105px;
+
+  }
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btnBorrar{
+    padding: 0 1rem;
+    margin: 1rem;
+  }
+  .borraVideo{
+     /* IMPORTANTE */
+     margin-left: 50%;
+    margin-right: 50%;
+}
+.cf p{
+  margin-top: 10px;
+  color: white;
+  margin-left: -64px;
+  margin-right: -64px;
+  
+}
+.detailsBotons{
+  margin-left: 22%;
+}
+.fa-trash-alt{
+font-size: 26px;
+color:white;
+}
+.fa-undo{
+font-size: 26px;
+color:white;
+}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+ 
+  .iframe{
+    height: 172px;
+    width: 395px;
+    margin-top: -20px;
+  }
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .iframe{
+    height: 172px;
+    width: 395px;
+    margin-top: -20px;
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+ 
+  .iframe{
+    height: 172px;
+    width: 395px;
+    margin-top: -20px;
+  }
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+
+}
+/**********
+    iPad 3
+    **********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .iframe{
+  
+    height: 283px;
+    width: 475px;
+    margin-top: 10px;
+    margin-left: -57px;
+
+  }
+  .gallery{
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.cf p{
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+}
+.detailsBotons{
+  margin-left: 30%;
+  margin-top: -8px;
+}
+.fa-trash-alt{
+font-size: 26px;
+color:white;
+}
+.fa-undo{
+font-size: 26px;
+color:white;
+}
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .iframe{
+  
+    height: 606px;
+    width: 775px;
+    margin-left: -196px;
+
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 30%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .iframe{
+    height: 506px;
+    width: 1026px;
+    margin-left: -289px;
+    margin-right: 136px;
+
+  }
+  
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cf p{
+  margin-left: -6px;
+  margin-top: 10px;
+  color: white;
+  
+}
+.detailsBotons{
+  margin-left: 30%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  .iframe{
+    margin-left: -59px;
+    margin-right: 59px;
+    height: 500px;
+    width: 400px;
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+
+}
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .iframe{
+    margin-left: -59px;
+    height: 309px;
+    width: 387px;
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .iframe{
+    margin-left: 45px;
+    height: 309px;
+    width: 455px;
+
+  }
+  .containerVideo {
+    margin-top: 62px;
+  }
+  
+  .gallery{
+    margin-top: 30px;
+    margin-left: -36px;
+    margin-right: auto;
+  }
+
+.cf p{
+ 
+  margin-right: -341px;
+  margin-left: 37px;
+  margin-top: 10px;
+  color: white;
+  
+}
+.detailsBotons{
+  margin-left: 156px;
+  margin-right: -140px;
+}
+.fa-trash-alt{
+font-size: 26px;
+color:white;
+}
+.fa-undo{
+font-size: 26px;
+color:white;
+}
+
+}
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .iframe{
+    margin-left: -59px;
+    height: 309px;
+    width: 387px;
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+ 
+  .iframe{
+    margin-left: -59px;
+    height: 309px;
+    width: 387px;
+  }
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .iframe{
+    margin-left: -42px;
+    height: 230px;
+    width: 410px;
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cf p{
+
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 28%;
+}
+.fa-trash-alt{
+font-size: 22px;
+color:white;
+}
+.fa-undo{
+font-size: 22px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  
+  .iframe{
+  
+    height: 330px;
+    width: 456px;
+    margin-left: 28px;
+    margin-right: -8px;
+  }
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 28px;
+    /* width: 400px; */
+    margin-left: -55px;
+  }
+ 
+.cf p{
+  margin-top: 10px;
+  color: white;
+  margin-left: 12px;
+
+  
+}
+.detailsBotons{
+  margin-left: 34%;
+}
+.fa-trash-alt{
+font-size: 26px;
+color:white;
+}
+.fa-undo{
+font-size: 26px;
+color:white;
+}
+
+}
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  iframe{
+
+  height: 200px;
+  width: 200px;
+  margin-left: -36px;
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+
+.detailsBotons{
+  margin-left: 30%;
+}
+.fa-trash-alt{
+font-size: 26px;
+color:white;
+}
+.fa-undo{
+font-size: 26px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  iframe{
+
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+    }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) { 
+  .iframe{
+    height: 300px;
+    width: 300px;
+    margin-left: 10px;
+  }
+
+
+.cf p{
+  text-align: center;
+  margin-top: 4px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 29%;
+}
+.fa-trash-alt{
+font-size: 28px;
+color:white;
+}
+.fa-undo{
+font-size: 28px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  
+  .iframe {
+    height: 293px;
+    width: 380px;
+    margin-left: 82px;
+   
+  }
+  
+  .gallery{
+    margin-top: 30px;
+    margin-left: -34px;
+    margin-right: 34px;
+  }
+
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  margin-left: -13px
+  
+}
+.detailsBotons{
+  margin-left: 46%;
+}
+.fa-trash-alt{
+font-size: 28px;
+color:white;
+}
+.fa-undo{
+font-size: 28px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+}
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+ .iframe{
+   height: 300px;
+   width: 300px;
+   margin-left: 10px;
+ }
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .iframe {
+    height: 218px;
+    width: 381px;
+    margin-top: -38px;
+  }
+  
+  .gallery{
+    
+    /* IMPORTANTE */
+    margin-top: 30px;
+    /* width: 400px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+
+}
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  
+  .iframe{
+    height: 200px;
+    width: 426px;
+    margin-left: -15px;
+    margin-top: -12px;
+  }
+  
+  .gallery{
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-right: 10px;
+
+  }
+
+.cf p{
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  margin-left: 67px;
+  margin-right: -36px;
+  
+}
+.detailsBotons{
+  margin-left: 32%;
+}
+.fa-trash-alt{
+font-size: 23px;
+color:white;
+}
+.fa-undo{
+font-size: 23px;
+color:white;
+}
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .iframe{
+    margin-left: -27px;
+    height: 380px;
+    width: 439px;
+  }
+  .cf p{
+    /* text-align: center; */
+    margin-top: 10px;
+    color: white;
+    margin-left: -90px;
+    font-size: 22px;
+  }
+.detailsBotons{
+  margin-right: -55%;
+  margin-left: 55%;
+}
+.fa-trash-alt{
+font-size: 30px;
+color:white;
+}
+.fa-undo{
+font-size: 30px;
+color:white;
+}
+.profileUser{
+  margin-left: 50%;
+  margin-right: 50%;
+}
 }
