@@ -99,34 +99,24 @@ router.put('/edit/:id', (req, res, next) => {
 	
 // Delete user
 router.delete('/delete/:id', (req, res, next) => {
-	
+    
+    User.findById(req.params.id, function(err, user) {
 
-	User.findByIdAndRemove(req.params.id)
-		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
-		.catch((e) => next(e));
-// 	Comments.findById(req.params.id,function(err,commnts){
-// 		if(err) return next(err);
-// 		Comments.remove();
-// 		req.flash('success', 'Comments deleted');
-		
-// 	})
-// 	.then(()=>{
-// 	Videos.findById(req.params.id,function(err,commnts){
-// 		if(err) return next(err);
-// 		Videos.remove();
-// 		req.flash('success', 'Videos deleted');
-		
-// 	})	
-// })
-// .then(()=>{
-// 	User.findByIdAndRemove(req.params.id)
-// 		.then(() => res.json({ message: `SUCESSFUL DELETE ${req.params.id}` }))
-// 		.catch((e) => next(e));
-// })
-
+        if (err)
+            return next(new restify.InternalError(err));
+        else if (!user)
+            return next(new restify.ResourceNotFoundError('The resource you requested could not be found.'));
+    
+        
+        Comments.find({author: user._id}).remove().exec();
+        Videos.find({author: user._id}).remove().exec();
+        
+        user.remove();
+    
+        res.send({id: req.params.user_id});
+    
+    });
 });
-
-//delete user with video anda comments 
 
 
 // ADD ADMIN
