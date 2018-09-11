@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 .photoCarrusel{
+  font-family: 'Gloria Hallelujah', cursive;
     height: 400px;
     object-fit: cover;
     }
@@ -26,13 +26,13 @@
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -150,7 +150,7 @@ background-repeat: no-repeat;
  font-size: 40px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -256,7 +256,7 @@ background-repeat: no-repeat;
  font-size: 40px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -462,13 +462,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -568,13 +568,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -674,13 +674,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -781,13 +781,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -886,13 +886,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -990,13 +990,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1094,13 +1094,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1199,13 +1199,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1304,13 +1304,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 68px;
          }
     .slide3 h5{
- font-size: 82px;
+ font-size: 60px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 42px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1408,13 +1408,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1511,13 +1511,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1615,13 +1615,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1718,13 +1718,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 68px;
          }
     .slide3 h5{
- font-size: 82px;
+ font-size: 60px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 42px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1822,13 +1822,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -1924,13 +1924,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -2028,13 +2028,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -2131,13 +2131,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 68px;
          }
     .slide3 h5{
- font-size: 82px;
+ font-size: 60px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 42px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -2235,13 +2235,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -2349,13 +2349,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -2451,13 +2451,13 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 90px;
+      font-size: 75px;
          }
     .slide3 h5{
  font-size: 82px;
     }
     .slide2 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
 /********************************/
 /*       Fade Bs-carousel       */
@@ -2554,7 +2554,7 @@ background-repeat: no-repeat;
       opacity: .4;
     }
     .slide1 h5{
-      font-size: 50px;
+      font-size: 46px;
          }
     .slide3 h5{
  font-size: 40px;

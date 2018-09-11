@@ -1,6 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah'); 
   .like{
-    background:rgb(233, 227, 227)
+  background:rgb(233, 227, 227)
+}
+.hide{
+  font-family: 'Gloria Hallelujah', cursive;
+
 }
 .like > div{
  
@@ -19,6 +23,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
+  font-family: 'Gloria Hallelujah', cursive;
+
 }
 .fa-comment:before {
   content: "\f075";
@@ -47,9 +53,9 @@
 
     .comment-input {
      /* display: none ; */
+     font-family: 'Gloria Hallelujah', cursive;
      height: 34px;
-      width: 88%;
-  
+     width: 86%;
     }
     .comments h3 {
         font-size:18px;
@@ -57,9 +63,9 @@
         margin-top:30px;
     }
     .comments p {
-        font-size:14px;
-      
-            color: white;
+      font-size:14px;
+      font-family: 'Gloria Hallelujah', cursive;
+      color: white;
     }
     button {
         float: right;
@@ -85,13 +91,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
   }
   a {
     text-decoration: none;
   }
   h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
     font-weight: 300;
   }
   .row {
@@ -128,7 +134,7 @@
     top: 0;
     font-size: 10px;
     font-weight: 700;
-    font-family: 'Open Sans';
+    font-family: 'Gloria Hallelujah', cursive;
     transform: translate(-50%, 0);
   }
   .card .wrapper {
@@ -201,6 +207,8 @@
     transition: transform 0.3s;
     transform: translateY(0);
     background: silver;
+    font-family: 'Gloria Hallelujah', cursive;
+
   }
   .example-1 .menu-content li {
     width: 33.33333%;
@@ -217,6 +225,7 @@
     font-size: 24px;
   }
   .example-1 .menu-content span {
+    font-family: 'Gloria Hallelujah', cursive;
     top: -3px;
   }
 
@@ -231,7 +240,7 @@
   .comments{
       background:black;
       overflow: scroll;
-      height: 265px;
+      height: 196px;
     overflow: auto;
   }
   .comments ul{

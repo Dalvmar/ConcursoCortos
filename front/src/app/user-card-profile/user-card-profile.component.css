@@ -128,6 +128,7 @@
         padding: 12px 12px;
         margin-left: -56px;
         margin-right: 56px;
+           font-family: 'Gloria Hallelujah', cursive;
     }
 
     .formAdm {
@@ -440,8 +441,11 @@
     }
 
     figure.snip0057 {
-        
-        height: 305px
+        height: 460px;
+    margin-top: 43px;
+    /* width: 891px; */
+    margin-left: 25px;
+    margin-right: 25px;
     }
     figure.snip0057 .image {
         height: 320px;
@@ -612,7 +616,9 @@
         margin-top: 110px;
     }
     .cardProfile {
+       
         margin-top: 56px;
+        width: 800px;
     }
     figure.snip0057 {
         height: 460px;
@@ -926,7 +932,7 @@
         margin-left: 1px;
     }
     .btnselcat .btn {
-     margin-top: 27px;
+        margin-top: -12px;
     }
 }
 /* iPhone 5 ----------- */
@@ -1792,7 +1798,7 @@
 }
 .fa-user-edit:before {
  content: "\f4ff";
- margin-left: -2px;
+ margin-left: 3px;
 }
 .adminItem {
     margin-left: -3px;
@@ -1880,8 +1886,8 @@
     line-height: 0px;
     background: rgb(241, 239, 239) top;
     box-shadow: #000000;
-    margin-left: -124px;
- margin-right: 124px;
+    margin-left: -66px;
+    margin-right: 66px;
 }
 .edit-user-form input,
 label button {
@@ -1905,6 +1911,7 @@ label button {
     background: rgb(241, 239, 239) top;
     padding: 15px;
     padding-top: 10px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 .formAdm input,
 label button {
@@ -1931,6 +1938,7 @@ label button {
 }
 .edit-user-form label {
     font-size: 11px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 .custom-select {
     height: 27px;
@@ -1949,7 +1957,7 @@ label button {
     position: relative;
 }
 figure.snip0057 {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
     position: relative;
     float: left;
     overflow: hidden;
@@ -2016,6 +2024,7 @@ figure.snip0057 .position {
     opacity: 1;
     font-style: italic;
     color: #ffffff;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 figure.snip0057.red .position {
     background: #e65b60;

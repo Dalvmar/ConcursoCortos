@@ -19,7 +19,7 @@ getListUsers(since:number){
   .pipe(map(resp => 
     resp.json()
   ));
-   //.pipe(map(res => res.json()));
+
 }
 //details of user
 getDetailsUsers() {

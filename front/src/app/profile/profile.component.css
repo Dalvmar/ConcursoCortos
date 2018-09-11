@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 .listUsers{
 margin-top: 40px;
@@ -12,7 +12,13 @@ color:#f7655d
     margin-top: 60px;
 	width: 300px;
 	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    font-family: 'Gloria Hallelujah', cursive;
+
+}
+.movie-content{
+    font-family: 'Gloria Hallelujah', cursive;
+
 }
 
 .profile {
@@ -91,7 +97,8 @@ color:#f7655d
 		    margin-top: 60px;
 			width: 535px;
 			margin-left: auto;
-			margin-right: auto;
+            margin-right: auto;
+            font-family: 'Gloria Hallelujah', cursive;
 		}
 		
 		.profile {

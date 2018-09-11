@@ -1,9 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
-
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 body {
     background:#525667;
-    font-family:'Open Sans';
+    font-family: 'Gloria Hallelujah', cursive;
 }
 .home{
   margin:65px 10px;
@@ -94,6 +92,8 @@ a {
   background-color: #343a40;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+
 }
 .fechas h3{
     font-size: 30px; 

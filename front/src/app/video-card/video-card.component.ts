@@ -97,14 +97,12 @@ export class VideoCardComponent implements OnInit {
 	saveComment(videoId, comment, i) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)
 		.subscribe(video => {
-		
-			this.comment=''
+
 			this.videoList[i].commment = video.commment;
+			this.comment.value='';
 		})
 	}
 
-	
-	
 	 like (videoId,i) { 
 		console.log(videoId)
 		
@@ -114,13 +112,10 @@ export class VideoCardComponent implements OnInit {
 			 this.videoList[i].like=video.like +1;
 
 			 swal('LIKE', ':)', 'success');
-		
 			
 		})
-		
 		}
 
-			
 	unlike (videoId ,i) { 
 		console.log(videoId)
 		
