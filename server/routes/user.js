@@ -110,9 +110,7 @@ router.delete('/delete/:id', (req, res, next) => {
         
         Comments.find({author: user._id}).remove().exec();
         Videos.find({author: user._id}).remove().exec();
-        
         user.remove();
-    
         res.send({id: req.params.user_id});
     
     });

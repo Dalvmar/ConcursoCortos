@@ -67,7 +67,7 @@ router.delete('/delete/:id', (req, res, next) => {
 
 // GET User videos
 router.get("/user/:id", (req, res, next) => {
-	console.log(req.params.id)
+
     Video.find({author:req.params.id})
     .then(object => res.json(object))
     .catch(e => next(e));

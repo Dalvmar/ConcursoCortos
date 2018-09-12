@@ -122,13 +122,13 @@
     }
 
     .edit-user-form {
-        bottom: 47px;
+        bottom: 48px;
         width: 280px;
         height: 314px;
         padding: 12px 12px;
-        margin-left: -56px;
-        margin-right: 56px;
-           font-family: 'Gloria Hallelujah', cursive;
+        margin-left: -66px;
+        margin-right: 123px;
+        font-family: 'Gloria Hallelujah', cursive;
     }
 
     .formAdm {
@@ -141,7 +141,7 @@
         margin-left: 1px;
     }
     .btnselcat .btn {
-        margin-top: 27px;
+        margin-top: -12px;
     }
 }
 
@@ -465,10 +465,9 @@
         content: '';
         height: 100%;
         width: 41%;
-        background: rgba(0, 0, 0, 0.2);
         -webkit-transform: skewX(-17deg);
         transform: skewX(-17deg);
-        box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+    
     }
     figure.snip0057 figcaption {
         padding: 0px 2px 4px 0px;
@@ -499,9 +498,8 @@
     }
     .edit-user-form {
         bottom: 47px;
-
-        margin-right: 58px;
-        margin-left: -58px;
+        margin-right: 61px;
+        margin-left: -61px;
     }
 
     .formAdm {
@@ -511,7 +509,7 @@
         margin-top: -288px;
     }
     .btnselcat .btn {
-        margin-top: -16px;
+        margin-top: -13px;
     }
 }
 
@@ -578,13 +576,12 @@
         margin-left: 16px;
     }
     .edit-user-form {
-        bottom: 47px;
+        bottom: 55px;
         width: 308px;
         height: 324px;
-        background: rgb(241, 239, 239) top;
-        box-shadow: #000000;
-        margin-right: 70px;
-        margin-left: -70px;
+        margin-right: 94px;
+        margin-left: -94px;
+    
     }
     .formAdm {
         bottom: -91px;
@@ -606,8 +603,8 @@
     .formAdm .col-lg-6 {
         max-width: 55%;
     }
-    .selectButton {
-        margin-left: 14px;
+    .btnselcat .btn {
+        margin-top: -4x;
     }
 }
 /* Desktops and laptops ----------- */
@@ -674,8 +671,8 @@
         height: 320px;
         background: rgb(241, 239, 239) top;
         box-shadow: #000000;
-        margin-right: 70px;
-        margin-left: -70px;
+        margin-right: 77px;
+        margin-left: -77px;
     }
     .formAdm {
         bottom: 50px;
@@ -701,7 +698,10 @@
         margin-left: 14px;
     }
     .btnselcat .btn {
-     margin-top: 30px;
+     margin-top: -6px;
+    }
+    .fa-user-edit{
+        margin-left: -1px;
     }
 }
 /* Large screens ----------- */
@@ -902,8 +902,7 @@
         width: 100%;
         font-size: 13px;
         margin-left: -70px;
-        text-transform: uppercase;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      
     }
     figure.snip0057 figcaption .name {
         margin-left: -33px;
@@ -919,8 +918,9 @@
         width: 280px;
         height: 314px;
         padding: 12px 12px;
-        margin-left: -56px;
-        margin-right: 56px;
+        margin-left: -59px;
+        margin-right: 59px;
+    
     }
     .formAdm {
         margin-left: -140px;
@@ -932,7 +932,7 @@
         margin-left: 1px;
     }
     .btnselcat .btn {
-        margin-top: -12px;
+        margin-top: -14px;
     }
 }
 /* iPhone 5 ----------- */
@@ -1068,8 +1068,7 @@
         width: 100%;
         font-size: 13px;
         margin-left: -70px;
-        text-transform: uppercase;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
     }
     figure.snip0057 figcaption .name {
         margin-left: -33px;
@@ -1098,8 +1097,8 @@
         width: 276px;
         height: 290x;
         padding: 5px 5px;
-        margin-right: -62px;
-        margin-left: -62px;
+        margin-right: 60px;
+        margin-left: -60px;
         line-height: 4px;
         font-size: 13px;
     }
@@ -1256,12 +1255,10 @@
     .edit-user-form {
         bottom: 48px;
         width: 270px;
-        height: 302px;
-        background: rgb(241, 239, 239) top;
-        box-shadow: #000000;
+        height: 310px;
         padding: 10px 6px;
-        margin-right: 58px;
-        margin-left: -58px;
+        margin-right: 65px;
+        margin-left: -65px;
         line-height: 10px;
     }
     .formAdm {
@@ -1270,7 +1267,7 @@
         margin-top: -296px;
     }
     .btnselcat .btn {
-        margin-top: -20px;
+        margin-top: -15px;
     }
 }
 /* iPhone 6+ ----------- */
@@ -1311,8 +1308,7 @@
         width: 100%;
         font-size: 13px;
         margin-left: -70px;
-        text-transform: uppercase;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+       
     }
     figure.snip0057 figcaption .name {
         margin-left: -33px;
@@ -1332,15 +1328,13 @@
         padding: 5px;
     }
     .edit-user-form {
-        bottom: 48px;
-        width: 270px;
-        height: 280px;
-        background: rgb(241, 239, 239) top;
-        box-shadow: #000000;
-        padding: 10px 6px;
-        margin-right: 58px;
-        margin-left: -58px;
-        line-height: 10px;
+    bottom: 47px;
+    width: 270px;
+    height: 283px;
+    padding: 10px 6px;
+    margin-right: 100px;
+    margin-left: -69px;
+    line-height: 10px;
     }
     .formAdm {
         margin-right: 148px;
@@ -1348,8 +1342,8 @@
         margin-top: -406px;
     }
     .btnselcat .btn {
-        padding: 3px 10px;
-     margin-top: 20px;
+     
+        margin-top: -33px;
     }
     .edit-user-form label {
         margin-bottom: 6px;
@@ -1726,10 +1720,19 @@
         margin: 0 auto;
         margin-top: 2px;
     }
+    .edit-user-form[_ngcontent-c2] {
+        position: absolute;
+        line-height: 0px;
+        margin-left: -62px;
+        margin-right: 62px;
+    }
     .formAdm {
         margin-right: 134px;
         margin-left: -134px;
         margin-top: -288px;
+    }
+    .btnselcat .btn {
+        margin-top: -13px;
     }
 }
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
@@ -1848,7 +1851,7 @@
 }
 .navUser .nav-link {
     color: white;
-    padding: 0px 6px;
+    padding: 0px 3px;
 }
 .navAdmin .nav-link {
     color: white;
@@ -1886,8 +1889,8 @@
     line-height: 0px;
     background: rgb(241, 239, 239) top;
     box-shadow: #000000;
-    margin-left: -66px;
-    margin-right: 66px;
+    /* margin-left: -66px;
+    margin-right: 66px; */
 }
 .edit-user-form input,
 label button {

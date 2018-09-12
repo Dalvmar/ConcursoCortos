@@ -91,7 +91,6 @@ export class SessionService {
 
   errorHandler(e){
     console.log('SessionServiceError')
-    // console.log(e.message);
     console.log(e);
     return e;
   }

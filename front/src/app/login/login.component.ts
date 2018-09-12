@@ -14,9 +14,9 @@ export class LoginComponent implements OnInit {
   }
 
   login(username:string, password:string){
-    // console.log("login....");
+  
     this.sessionService.login(username,password).subscribe( user => {
-      // console.log(user['status'])
+     
       if(user['status']>=500) {
         this.message = 'Campos sin rellenar o campos erroneos'
    } 

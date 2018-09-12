@@ -18,13 +18,13 @@ export class VideoComponent implements OnInit {
   private videoService:VideoService,
   private router: Router,
   private route: ActivatedRoute,
-  // private CommentService:CommentsService
+
   ) {
 
     this.route.params.subscribe(params =>{
       this.videoService.getVideo(params.id).subscribe(video => {
         this.video= video;
-        // console.log(this.video)
+       
         if(this.video.video.includes('instagram')){
           this.replacevideourl=this.video.video + "embed"
         this.video.video=this.replacevideourl
@@ -38,8 +38,7 @@ export class VideoComponent implements OnInit {
           this.video.video=this.replacevideourl
 
         }
-        // this.videoService.getUserVideos()
-         //console.log(this.video.video)
+      
         
       })
     }); 
@@ -52,7 +51,6 @@ export class VideoComponent implements OnInit {
     this.videoService
        .remove(this.video._id)
        .subscribe((params) => {
-      // console.log(params)
          this.router.navigate(["profile"])
       });
        

@@ -16,15 +16,11 @@ export class SignupComponent implements OnInit {
   }
 
   signup(username:string,name:string,lastname:string,email:string,password:string,category:string ){
-    // console.log("signup....");
     this.sessionService.signup(username,name,lastname,password,email,category).subscribe( (user:any) =>{
-      // console.log(user['status'])
       if(user['status']>=500) {
         this.message = 'Campos sin rellenar o campos erroneos'
       }
       else{
-      // console.log(`WELCOME USER ${user.username}, register OK`);
-      // console.log(user);
       this.router.navigate(['/login']);
     }
     });

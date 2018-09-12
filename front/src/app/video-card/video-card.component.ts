@@ -1,5 +1,5 @@
 
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input,ViewChild,ElementRef } from '@angular/core';
 import { VideoService } from '../../services/video.service';
 import { CommentsService } from '../../services/comments.service';
 import { SessionService } from '../../services/session.service';
@@ -13,7 +13,7 @@ import { DomSanitizer} from '@angular/platform-browser';
   styleUrls: ['./video-card.component.css']
 })
 export class VideoCardComponent implements OnInit {
-  
+  @ViewChild('commentvideo') commentvideo;
 	videoList:Videos[]=[];
 	videos: Videos[]=[];
 	@Input()video;
@@ -76,13 +76,10 @@ export class VideoCardComponent implements OnInit {
 				
 				}
 
-				// console.log(obj)
 			});
 			
 			this.totalVideos = data.total;
 			this.videoList = data.videos;
-		
-			// console.log(this.videoList)
 			this.loading=false;
 		});
 	}
@@ -99,16 +96,16 @@ export class VideoCardComponent implements OnInit {
 		.subscribe(video => {
 
 			this.videoList[i].commment = video.commment;
-			this.comment.value='';
+			let elem:Element = document.getElementsByClassName("comment-input fixed ng-valid ng-dirty ng-touched")[0];
+			elem.value='';
 		})
 	}
 
+
 	 like (videoId,i) { 
-		console.log(videoId)
-		
 		this.videoService.saveLikes( videoId)
 		.subscribe(video=>{
-			// console.log(video.like);
+		
 			 this.videoList[i].like=video.like +1;
 
 			 swal('LIKE', ':)', 'success');
