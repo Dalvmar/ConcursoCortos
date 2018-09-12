@@ -97,7 +97,7 @@ export class VideoCardComponent implements OnInit {
 
 			this.videoList[i].commment = video.commment;
 			let elem:Element = document.getElementsByClassName("comment-input fixed ng-valid ng-dirty ng-touched")[0];
-			elem.value='';
+			elem.textContent='';
 		})
 	}
 
