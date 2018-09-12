@@ -31,6 +31,7 @@ export class VideoCardComponent implements OnInit {
 	@Input() unlikes =0;
 	totalvideos:number=0;
 	url;
+	v:String;
 
   
   constructor(
@@ -91,13 +92,11 @@ export class VideoCardComponent implements OnInit {
 	}
 
 
-	saveComment(videoId, comment, i) {
+	saveComment(videoId, comment, i, Value:HTMLInputElement) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)
 		.subscribe(video => {
-
 			this.videoList[i].commment = video.commment;
-			let elem:Element = document.getElementsByClassName("comment-input fixed ng-valid ng-dirty ng-touched")[0];
-			elem.textContent='';
+			Value.value=null;
 		})
 	}
 

@@ -33,10 +33,10 @@
             <div class="text">
               <div class="comments">
                 <div class="info md-5 fixed" *ngIf="hidden">
-                  <button (click)="saveComment(video._id, video.comment, i)" class="hide">OK</button>
+                  <button (click)="saveComment(video._id, video.comment, i,myInput)" class="hide">OK</button>
                   <!-- <button (click)="toggleHidden($event,i)">Comentario</button> -->
 
-                  <input class="comment-input fixed" type="text" (keyup.enter)="saveComment(video._id, video.comment, i)" [(ngModel)]="video.comment" id="commentvideo" #commentvideo name="video-comment" placeholder="Tu comentario...">
+                  <input #myInput class="comment-input fixed" type="text" (keyup.enter)="saveComment(video._id, video.comment, i, $event)" [(ngModel)]="video.comment" id="commentvideo" #commentvideo name="video-comment" placeholder="Tu comentario..."> 
 
                   <!-- <div style="clear: both;"></div> -->
                 </div>
