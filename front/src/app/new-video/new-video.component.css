@@ -158,7 +158,6 @@ color:white;
  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	.movie-card {
 		/* //background-image: $background-image; */
-		
 		width:95%;
 		max-width: 800px;
 		height: 300px;
@@ -181,11 +180,11 @@ color:white;
 	
 	}
 	.movie-title{
-		font-size:25px;
-		margin-top: 8px;
+	font-size:25px;
+	margin-top: 8px;
 	}
 	.movie-desc{
-		font-size: 15px;
+	font-size: 15px;
 	}
 }
 
@@ -207,47 +206,47 @@ color:white;
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	.movie-card{
-		max-width: 800px;
-		height: 300px;
+	max-width: 800px;
+	height: 300px;
 	}
 	.movie-title{
     font-size: 14px;
     margin-top: 32px;
 	}
 	.movie-desc{
-		font-size: 15px;
+	font-size: 15px;
 	}
 	.ver{
-		color:white;
+	color:white;
 	}
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.movie-card{
-		max-width: 800px;
+	max-width: 800px;
     height: 248px;
     margin-left: 78px;
 	}
 	.movie-title{
-		font-size: 14px;
+	font-size: 14px;
     margin-top: 32px;
 	}
 	.movie-desc{
-		font-size: 15px;
+	font-size: 15px;
 	}
 	.ver{
-		color:white;
+	color:white;
 	}
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 .movie-card{
-	max-width: 800px;
-	height: 256px;
-	margin-right: 28px;
-	margin-left: 18px;
+    max-width: 800px;
+    height: 256px;
+    margin-right: -87px;
+    margin-left: 87px;
 }
 .movie-title{
 	font-size: 14px;

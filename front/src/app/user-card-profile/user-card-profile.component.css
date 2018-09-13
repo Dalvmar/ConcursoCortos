@@ -78,11 +78,11 @@
     }
 
     figure.snip0057 {
-        height: 260px;
+        height: 253px;
         margin-top: 10px;
     }
     figure.snip0057 .image {
-        height: 209px;
+        height: 216px;
         width: 41%;
     }
     figure.snip0057 .image img {
@@ -434,18 +434,21 @@
         max-width: 52%;
     }
     .containerCard {
-        margin-top: 95px;
+        margin-left: 101px;
+        margin-right: -61px;
+        /* margin: 10px; */
+        width: 300px;
     }
     .cardProfile {
         margin-top: 56px;
     }
 
     figure.snip0057 {
-        height: 460px;
-    margin-top: 43px;
-    /* width: 891px; */
-    margin-left: 25px;
-    margin-right: 25px;
+        height: 275px;
+        min-width: 740px;
+        margin-top: 43px;
+        margin-left: 43px;
+    
     }
     figure.snip0057 .image {
         height: 320px;
@@ -527,7 +530,7 @@
     }
 
     figure.snip0057 {
-        height: 460px;
+        height: 456px;
         margin-top: 25px;
     }
     figure.snip0057 .image {
@@ -621,8 +624,8 @@
         height: 460px;
     }
     figure.snip0057 .image {
-        height: 412px;
-        width: 32%;
+        height: 416px;
+        width: 34%;
         -webkit-transform: skewX(-15deg);
         transform: skewX(-17deg);
     }
@@ -805,7 +808,7 @@
         height: 260px;
     }
     figure.snip0057 .image {
-        height: 209px;
+        height: 218px;
         width: 41%;
     }
     figure.snip0057 .image img {
@@ -873,7 +876,7 @@
         height: 260px;
     }
     figure.snip0057 .image {
-        height: 209px;
+        height: 217px;
         width: 41%;
     }
     figure.snip0057 .image img {
@@ -1201,7 +1204,7 @@
         margin-top: 56px;
     }
     figure.snip0057 {
-        height: 256px;
+        height: 253px;
     }
     figure.snip0057 .image {
         height: 209px;
@@ -1496,7 +1499,7 @@
         margin-top: 56px;
     }
     figure.snip0057 {
-        height: 256px;
+        height: 253px;
         font-size: 13px;
     }
     figure.snip0057 .image {
@@ -1673,8 +1676,10 @@
         margin-top: 56px;
     }
     figure.snip0057 {
-        height: 256px;
+        height: 249px;
         font-size: 13px;
+         margin-left: -1px; 
+        /* margin-right: 71px; */
     }
     figure.snip0057 .image {
         height: 209px;
@@ -1741,7 +1746,7 @@
         margin-top: 56px;
     }
     figure.snip0057 {
-        height: 256px;
+        height: 253px;
         font-size: 13px;
     }
     figure.snip0057 .image {
@@ -1892,8 +1897,8 @@ label button {
     width: 255px;
     height: 20px;
     margin: 0;
-    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
     box-sizing: border-box;
     line-height: 9px;
     font-size: 13px;
@@ -1917,8 +1922,8 @@ label button {
     width: 255px;
     height: 20px;
     margin: 0;
-    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
     box-sizing: border-box;
     line-height: 9px;
 }
