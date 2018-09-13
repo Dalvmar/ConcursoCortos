@@ -141,7 +141,7 @@
         margin-left: 1px;
     }
     .btnselcat .btn {
-        margin-top: -12px;
+        margin-top: 27px;
     }
 }
 
@@ -498,8 +498,8 @@
     }
     .edit-user-form {
         bottom: 47px;
-        margin-right: 61px;
-        margin-left: -61px;
+        margin-right: 125px;
+        margin-left: -125px;
     }
 
     .formAdm {
@@ -509,7 +509,7 @@
         margin-top: -288px;
     }
     .btnselcat .btn {
-        margin-top: -13px;
+        margin-top: 26px;
     }
 }
 
@@ -580,7 +580,7 @@
         width: 308px;
         height: 324px;
         margin-right: 94px;
-        margin-left: -94px;
+        margin-left: -127px;
     
     }
     .formAdm {
@@ -671,8 +671,8 @@
         height: 320px;
         background: rgb(241, 239, 239) top;
         box-shadow: #000000;
-        margin-right: 77px;
-        margin-left: -77px;
+        margin-right: 138px;
+        margin-left: -138px;
     }
     .formAdm {
         bottom: 50px;
@@ -698,7 +698,7 @@
         margin-left: 14px;
     }
     .btnselcat .btn {
-     margin-top: -9px;
+     margin-top: 32px;
     }
     .fa-user-edit{
         margin-left: -1px;
@@ -916,8 +916,8 @@
         width: 280px;
         height: 314px;
         padding: 12px 12px;
-        margin-left: -59px;
-        margin-right: 59px;
+        margin-left: -127px;
+        margin-right: 127px;
     
     }
     .formAdm {
@@ -930,7 +930,7 @@
         margin-left: 1px;
     }
     .btnselcat .btn {
-        margin-top: -14px;
+        margin-top: 27px;
     }
 }
 /* iPhone 5 ----------- */
@@ -1096,9 +1096,10 @@
         height: 290x;
         padding: 5px 5px;
         margin-right: 60px;
-        margin-left: -60px;
+        margin-left: -121px;
         line-height: 4px;
         font-size: 13px;
+        font:'Open Sans';
     }
     .formAdm {
         margin-left: -140px;
@@ -1255,9 +1256,8 @@
         width: 270px;
         height: 310px;
         padding: 10px 6px;
-        margin-right: 65px;
-        margin-left: -65px;
-        line-height: 10px;
+        margin-right: 119px;
+        margin-left: -119px;
     }
     .formAdm {
         margin-right: 136px;
@@ -1330,9 +1330,8 @@
     width: 270px;
     height: 283px;
     padding: 10px 6px;
-    margin-right: 100px;
-    margin-left: -69px;
-    line-height: 10px;
+    margin-right: 119px;
+    margin-left: -119px;
     }
     .formAdm {
         margin-right: 148px;
@@ -1721,8 +1720,9 @@
     .edit-user-form[_ngcontent-c2] {
         position: absolute;
         line-height: 0px;
-        margin-left: -62px;
+        margin-left: -120px;
         margin-right: 62px;
+        
     }
     .formAdm {
         margin-right: 134px;
@@ -1730,7 +1730,7 @@
         margin-top: -288px;
     }
     .btnselcat .btn {
-        margin-top: -13px;
+        margin-top: 24px;
     }
 }
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
@@ -1885,6 +1885,7 @@
     position: absolute;
     line-height: 0px;
     background: rgb(241, 239, 239) top;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 .edit-user-form input,
 label button {
@@ -1896,6 +1897,7 @@ label button {
     box-sizing: border-box;
     line-height: 9px;
     font-size: 13px;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 .btn {
     padding: 4px 10px;
@@ -1926,7 +1928,8 @@ label button {
     font-size: 12px;
     line-height: 1;
     margin-left: 77px;
- margin-top: 23spx;
+    margin-top: 23px;
+    font-family: 'Roboto', sans-serif;
 }
 .selectButton {
     position: absolute;
