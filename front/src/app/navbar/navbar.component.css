@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 @media (max-width: 480px) {
 	.welcome {
 		top: 50%; /* IMPORTANT */
@@ -6,7 +8,6 @@
 		position: absolute;
 		width: 750px;
 		height: 417px;
-		font-family: 'Gloria Hallelujah', cursive;
 		margin-top: -208.5px; /* HALF OF THE HEIGHT */
 		margin-left: -375px; /* HALF OF THE WIDTH */
 	}
@@ -23,6 +24,6 @@
 	color: #fff;
 }
 .navbar{
-    font-family: 'Gloria Hallelujah', cursive !important;;
+    font-family: 'Open Sans' !important;;
 
 }

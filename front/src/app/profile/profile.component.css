@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 .listUsers{
 margin-top: 40px;
@@ -13,11 +13,11 @@ color:#f7655d
 	width: 300px;
 	margin-left: auto;
     margin-right: auto;
-    font-family: 'Gloria Hallelujah', cursive;
+
 
 }
 .movie-content{
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Open Sans', cursive;
 
 }
 
@@ -98,7 +98,7 @@ color:#f7655d
 			width: 535px;
 			margin-left: auto;
             margin-right: auto;
-            font-family: 'Gloria Hallelujah', cursive;
+            
 		}
 		
 		.profile {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 .fas .fa-trash-alt{
     font-size: 25px;
@@ -11,13 +11,13 @@ table td, .table th {
     padding: 2px;
     border-top: 1px solid #dee2e6;
     font-size: 11px;
-    font-family: 'Gloria Hallelujah', cursive;
+  
     
 }
 .btn{
     padding: 3px 5px;
     font-size: 14px;
-    font-family: 'Gloria Hallelujah', cursive;
+
 }
 .buttonList{
     margin-bottom: 2px;

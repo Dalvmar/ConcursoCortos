@@ -1,7 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 body{
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Open Sans', cursive;
 }
 /*animaciones*/
 .animated {

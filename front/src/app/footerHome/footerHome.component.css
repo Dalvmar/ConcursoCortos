@@ -7,12 +7,14 @@
 	font: bold 16px;
     padding: 30px 30px;
 	margin-top: 10px;
-	font-family: 'Gloria Hallelujah', cursive;
+	font: bold 16px sans-serif;
 
 }
 
 .footerText{
-color:white
+	color: white;
+    font-size: 13px;
+    font-style: italic;
 }
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
@@ -31,7 +33,7 @@ color:white
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font-family: 'Gloria Hallelujah', cursive;
+	font: normal 36px 'Cookie', cursive;
 	margin: 0;
 }
 
@@ -58,7 +60,7 @@ color:white
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
-	margin: 0;
+	margin-bottom: 10px;
 }
 
 /* Footer Center */
@@ -101,7 +103,8 @@ color:white
 
 .footer-distributed .footer-center p a{
 	color:  #5383d3;
-	text-decoration: none;;
+	text-decoration: none;
+	font-style: italic;
 }
 
 
@@ -156,7 +159,7 @@ color:white
 @media (max-width: 880px) {
 
 	.footer-distributed{
-		font-family: 'Gloria Hallelujah', cursive;
+		font: bold 14px sans-serif;
 
 	}
 

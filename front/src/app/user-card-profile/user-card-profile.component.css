@@ -128,7 +128,7 @@
         padding: 12px 12px;
         margin-left: -66px;
         margin-right: 123px;
-        font-family: 'Gloria Hallelujah', cursive;
+        font-family: 'Raleway', Arial, sans-serif;
     }
 
     .formAdm {
@@ -698,7 +698,7 @@
         margin-left: 14px;
     }
     .btnselcat .btn {
-     margin-top: -6px;
+     margin-top: -9px;
     }
     .fa-user-edit{
         margin-left: -1px;
@@ -756,8 +756,6 @@
         font-size: 26px;
     }
     .buttAdmin {
-        /* margin: 0 auto;
- margin-top: 32px; */
         margin: 0 auto;
         margin-top: 2px;
     }
@@ -1528,7 +1526,7 @@
         padding: 5px 0;
         width: 100%;
         font-size: 13px;
-     margin-left: -48px;
+        margin-left: -48px;
     }
     figure.snip0057 figcaption .name {
         margin-left: -33px;
@@ -1741,7 +1739,6 @@
     }
     .cardProfile {
         margin-top: 56px;
-
     }
     figure.snip0057 {
         height: 256px;
@@ -1888,9 +1885,6 @@
     position: absolute;
     line-height: 0px;
     background: rgb(241, 239, 239) top;
-    box-shadow: #000000;
-    /* margin-left: -66px;
-    margin-right: 66px; */
 }
 .edit-user-form input,
 label button {
@@ -1914,7 +1908,7 @@ label button {
     background: rgb(241, 239, 239) top;
     padding: 15px;
     padding-top: 10px;
-    font-family: 'Gloria Hallelujah', cursive;
+    
 }
 .formAdm input,
 label button {
@@ -1941,7 +1935,7 @@ label button {
 }
 .edit-user-form label {
     font-size: 11px;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 .custom-select {
     height: 27px;
@@ -1960,7 +1954,7 @@ label button {
     position: relative;
 }
 figure.snip0057 {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Raleway', Arial, sans-serif;
     position: relative;
     float: left;
     overflow: hidden;
@@ -2027,7 +2021,7 @@ figure.snip0057 .position {
     opacity: 1;
     font-style: italic;
     color: #ffffff;
-    font-family: 'Gloria Hallelujah', cursive;
+   
 }
 figure.snip0057.red .position {
     background: #e65b60;

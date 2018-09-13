@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 html {
 	box-sizing:border-box;
@@ -16,7 +16,7 @@ html,body {
 body {
 	background-color: #dce1e5;
 
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Montserrat', helvetica, arial, sans-serif;
 
 	font-size: 14px;
 	color:#cfd6e1;
@@ -58,7 +58,7 @@ a {
 }
 
 h1,h2,h3 {
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Montserrat', helvetica, arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 1;
@@ -71,7 +71,7 @@ h1,h2,h3 {
 	position:relative;
 	float: right;
 	padding-right: 1em;
-	font-family: 'Gloria Hallelujah', cursive;
+
 }
 
 .movie-content .movie-title {

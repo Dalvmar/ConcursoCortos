@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah'); 
-  .like{
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+ .like{
   background:rgb(233, 227, 227)
 }
 .hide{
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Open Sans', sans-serif;
 
 }
 .like > div{
@@ -23,7 +23,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Open Sans', sans-serif;
 
 }
 .fa-comment:before {
@@ -53,7 +53,7 @@
 
     .comment-input {
      /* display: none ; */
-     font-family: 'Gloria Hallelujah', cursive;
+     font-family: 'Open Sans', sans-serif;
      height: 34px;
      width: 86%;
     }
@@ -64,7 +64,7 @@
     }
     .comments p {
       font-size:14px;
-      font-family: 'Gloria Hallelujah', cursive;
+      font-family: 'Open Sans', sans-serif;
       color: white;
     }
     button {
@@ -91,13 +91,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Open Sans', sans-serif;
   }
   a {
     text-decoration: none;
   }
   h1 {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
   }
   .row {
@@ -134,7 +134,7 @@
     top: 0;
     font-size: 10px;
     font-weight: 700;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Open Sans', cursive;
     transform: translate(-50%, 0);
   }
   .card .wrapper {
@@ -204,7 +204,7 @@
     transition: transform 0.3s;
     transform: translateY(0);
     background: silver;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Open Sans', cursive;
 
   }
   .example-1 .menu-content li {
@@ -222,7 +222,7 @@
     font-size: 24px;
   }
   .example-1 .menu-content span {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Open Sans', cursive;
     top: -3px;
   }
 

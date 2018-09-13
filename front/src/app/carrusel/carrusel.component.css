@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 .photoCarrusel{
-  font-family: 'Gloria Hallelujah', cursive;
+
     height: 400px;
     object-fit: cover;
     }
