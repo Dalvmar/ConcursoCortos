@@ -61,6 +61,7 @@ div.login {
   transform:translateX(-50%);
   width:85%;
   margin-top: 6px;
+  color:silver;
 }
 .login .form .row {
   margin:16px 0px;
@@ -86,7 +87,7 @@ label{
   font-size: 13px;
 }
 .login .form .row button {
-  margin-top:0px;
+  margin-top:8px;
   font-size:13px;
   color:rgb(100,100,100);
   border:none;
@@ -103,7 +104,7 @@ label{
   text-align:center;
   width:100%;
   font-size:13px;
-  bottom: 96px;
+  bottom: 98px;
   color:#333;
 }
 .login .form .signup a {
