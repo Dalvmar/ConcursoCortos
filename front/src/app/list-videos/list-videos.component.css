@@ -41,8 +41,35 @@ table td, .table th {
 }
 @media (min-width: 576px){
 .card {
-    min-width: 840px;
+    min-width: 610px;
 
+}
+.table {
+    width: 95%;
+}
+.card-body{
+    flex: 1 1 auto;
+    padding: 1px;
+    margin-right: -7px;
+    margin-left: 7px;
+}
+.container {
+    padding-left: 0px;
+}
+.table th,
+.table td {
+    font-size: 8px;
+}
+.form-control {
+    height: calc(1.25rem + 2px);
+    font-size: 8px;
+    width: 460px;
+}
+.custom-select {
+    height: calc(1.25rem + 2px);
+    font-size: 8px;
+    padding: 1px;
+    width: 100px;
 }
 }
 
@@ -61,15 +88,41 @@ table td, .table th {
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
-    .card{
-        width: 475px;
+    .card {
+        width: 450px;
+        margin-left: -15px;
+	}
+	.card-body {
+		width: 98%;
+	}
+	.container {
+		padding-left: 0px;
     }
-        .card-body{
-        width: 100%;
+    .table {
+        width: 95%;
     }
-    .container{
-        padding-left: 0px;
-    }
+	.card-body{
+        flex: 1 1 auto;
+        padding: 1px;
+        margin-right: -7px;
+        margin-left: 7px;
+	}
+    .table th,
+	.table td {
+        font-size: 7px;
+        padding: 1px;
+	}
+	.form-control {
+		height: calc(1.25rem + 2px);
+        font-size: 8px;
+        width: 428px;
+	}
+	.custom-select {
+		height: calc(1.25rem + 2px);
+		font-size: 8px;
+		padding: 1px;
+		width: 100px;
+	}
 }
 
 /* Smartphones (portrait) ----------- */
