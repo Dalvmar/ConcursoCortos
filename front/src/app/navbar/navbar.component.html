@@ -9,8 +9,12 @@
           <a class="nav-link" [routerLink]="['/']">Principal <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']">Últimas Noticias</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" [routerLink]="['/about']">Bases</a>
           </li>
+        
         <li class="nav-item" *ngIf="!sessionService.user">
           <a class="nav-link" [routerLink]="['/signup']">Registro</a>
         </li>

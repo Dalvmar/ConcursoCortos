@@ -91,7 +91,6 @@ export class VideoCardComponent implements OnInit {
 		})
 	}
 
-
 	saveComment(videoId, comment, i, Value:HTMLInputElement) {
 		this.commentsService.saveComment(videoId, comment, this.user._id)
 		.subscribe(video => {
@@ -112,14 +111,11 @@ export class VideoCardComponent implements OnInit {
 		})
 		}
 
-	unlike (videoId ,i) { 
-		console.log(videoId)
-		
+	 unlike (videoId ,i) {
 		this.videoService.saveUnLikes(videoId)
 		.subscribe(video=>{
-			// console.log(video);
-			 this.videoList[i].unlike=video.unlike+1;
-			 swal('UNLIKE', ':(', 'error');
+		this.videoList[i].unlike=video.unlike+1;
+		swal('UNLIKE', ':(', 'error');
 			 
 		})
 	

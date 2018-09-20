@@ -20,42 +20,15 @@
       <div class="wrapper" *ngIf="!loading">
         <iframe class="video flex-wrap" [src]="video.video | safe" frameborder="0" allowfullscreen></iframe>
 
-        <div class="data">
-          <div class="content">
-
-            <div class="text">
-              <div class="comments">
-                <div class="info md-5 fixed" *ngIf="hidden">
-                  <button (click)="saveComment(video._id, video.comment, i,myInput)" class="hide">OK</button>
-                
-                  <input #myInput class="comment-input fixed" type="text" (keyup.enter)="saveComment(video._id, video.comment, i, $event)" [(ngModel)]="video.comment" id="commentvideo" #commentvideo name="video-comment" placeholder="Tu comentario..."> 
-                </div>
-
-                <div class="list">
-
-
-                  <div class="comments">
-                    <ul *ngFor="let comment of video.commment">
-                      <p>
-                        <b>{{comment.author.name}}:</b>{{comment.comment}}</p>
-                    </ul>
-                  </div>
-
-
-                </div>
-              </div>
-
-            </div>
-            <div id="show-menu">
-              <ul class="menu-content">
-                <li>
-                  <a (click)="unlike (video._id,i)"><i class="far fa-thumbs-down active"></i><span>{{video.unlike}}</span></a>
-                </li>
-                <li> <a (click)="like (video._id,i)"><i class="far fa-thumbs-up "></i><span>{{video.like}}</span></a></li>
-                <li><a class="far fa-comment"><span class="commentcount"><b>{{video.commment.length}}</b></span></a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="data-like d-flex justify-content-center">
+        
+                <ul class="menu rounded">
+                  <li>
+                    <a class="badge badge-pill badge-dark" (click)="unlike (video._id,i)"><i class="far fa-thumbs-down active"></i><span class="down">{{video.unlike}}</span></a>
+                  </li>
+                  <li> <a class="badge badge-pill badge-dark" (click)="like (video._id,i)"><i class="far fa-thumbs-up active "></i><span class="up">{{video.like}}</span></a></li>
+               </ul>
+          
         </div>
       </div>
     </div>

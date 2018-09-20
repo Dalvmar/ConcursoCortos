@@ -232,7 +232,7 @@ background-repeat: no-repeat;
       object-fit: cover;
     }
     .carousel-item img {
-      height: 400px;
+      height: 295px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -752,8 +752,8 @@ background-repeat: no-repeat;
 
 }
 /**********
-    iPad 3
-    **********/
+    iPad 3
+    **********/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .photoCarrusel{
     height: 400px;
@@ -972,7 +972,7 @@ background-repeat: no-repeat;
       object-fit: cover;
     }
     .carousel-item img {
-      height: 400px;
+      height: 315px;
     }
     .carousel-control-prev {
       position: absolute;
