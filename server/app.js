@@ -78,9 +78,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
-
-
+app.locals.title = 'Concurso "En 2 minutos"';
 
 
 const authRouter = require('./routes/auth');
@@ -93,6 +91,13 @@ const comments = require('./routes/comments');
  app.use('/api/comments', comments);
  const search = require('./routes/search');
  app.use('/api/search', search);
+ const noticia = require('./routes/new');
+ app.use('/api/news', noticia);
+ const upload = require('./routes/upload');
+ app.use('/api/upload', upload);
+ const images = require('./routes/imagenes');
+ app.use('/api/images', images);
+
 
  app.use(function(req, res) {
   res.sendFile(__dirname + '/public/index.html');

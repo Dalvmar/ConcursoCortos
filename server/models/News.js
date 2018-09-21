@@ -2,9 +2,10 @@ const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
 const newsSchema = new Schema({
-  titular: String,
-  description: String,
-  author:{type:Schema.Types.ObjectId, ref:'User'}
+  title: {type: String ,require:true},
+  description:{type: String ,require:true},
+  img: String
+
 }, {
   timestamps: {
     createdAt: 'created_at',
