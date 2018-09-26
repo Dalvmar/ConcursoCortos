@@ -15,7 +15,8 @@ interface UserObject{
   name:string;
   lastname:string;
   email:string;
-  logged:boolean
+  logged:boolean;
+  role:string
 }
 
 
@@ -26,7 +27,7 @@ interface UserObject{
 export class SessionService {
 
   user:UserObject;
-
+role;
   options:object = { withCredentials:true };
 
   constructor(private http:Http ) {
@@ -37,6 +38,8 @@ export class SessionService {
     return this.http.get(`${BASEURL}/api/auth/currentuser`,this.options).pipe(
       map( (res:Response) => {
         this.user = res.json();
+        
+        console.log(this.user)
         console.log(`Automatically login ${this.user.username}`);
         return this.user;
       }),

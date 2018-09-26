@@ -18,6 +18,8 @@ export class ListVideosComponent implements OnInit {
   totalvideos:number=0;
   since: number = 0;
   loading: boolean = true;
+  order = "likes";
+ascending = true;
 
   constructor(private videoService: VideoService, private sessionService: SessionService,
     private route: ActivatedRoute,

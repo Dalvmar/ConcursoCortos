@@ -68,7 +68,7 @@ router.delete('/delete/:id', (req, res, next) => {
 // GET User videos
 router.get("/user/:id", (req, res, next) => {
 
-    Video.find({author:req.params.id})
+		Video.find({author:req.params.id})
     .then(object => res.json(object))
     .catch(e => next(e));
 });
@@ -87,6 +87,7 @@ router.get("/", (req, res, next) => {
 	desde=Number(desde);
 
 	Video.find({})
+
 	.skip(desde)
 	.limit(3)
 	.populate('commment')

@@ -8,8 +8,16 @@
             <app-fechas-pasos class="container-fluid"></app-fechas-pasos>
     </section>
 
-    <section class="videoList container-md-5 ">
-           <app-video-card></app-video-card>   
+    <button *ngIf="role==='admin'" (click)="toggleHidden()" class="btn btn-outline-danger">Habilitar videos</button>
+    <section class="videoList container-md-6 ">
+        <!-- <div *ngIf="user.role==='admin'">
+                <button [routerLink]="['/news/new']"
+                type="submit" class="btn btn-outline-primary">
+             Habilitar Videos
+        </button> -->
+     
+           <app-video-card *ngIf="isVisible"></app-video-card>   
+        <!-- </div> -->
     </section>
 
 

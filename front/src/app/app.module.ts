@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '../../node_modules/@angular/router';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'; 
 
 //Rutas
 import { routes } from './routes';
@@ -35,13 +36,19 @@ import { VideoService } from '../services/video.service';
 import { CommentsService } from '../services/comments.service';
 
 //Pipes
-import { SafePipe } from './safe.pipe';
-import { SearchFilterPipe } from './search.pipe';
+import { PipeModule } from './pipes/pipes.module';
 //Guard
 import { IsLoggedOutGuardService } from './guards/isLoggedOut.guard';
 import { IsLoggedInGuardService } from './guards/isLoggedIn.guard';
 import { VideoCardComponent } from './video-card/video-card.component';
-
+import { NewsComponent } from './news/news.component';
+import { NewComponent } from './new/new.component';
+import { NewService } from '../services/new.service';
+import { UploadComponent } from './upload/upload.component';
+import { ModalUploadComponent } from './modal-upload/modal-upload.component';
+import { ModalUploadService } from './modal-upload/modal-upload.service';
+import { SubirArchivoService } from '../services/subir-archivo.service';
+import { ListNewsComponent } from './list-news/list-news.component';
 
 
 
@@ -55,8 +62,6 @@ import { VideoCardComponent } from './video-card/video-card.component';
       ProfileComponent,
       VideoComponent,
       ListVideosComponent,
-      SafePipe,
-      SearchFilterPipe,
       HomeComponent,
       ListUserComponent,
       AboutComponent,
@@ -69,22 +74,34 @@ import { VideoCardComponent } from './video-card/video-card.component';
       PagenofoundComponent,
       NavbarComponent,
       VideoCardComponent,
-      UserCardProfileComponent
+      UserCardProfileComponent,
+      NewsComponent,
+      NewComponent,
+      UploadComponent,
+      ModalUploadComponent,
+      ListNewsComponent
    ],
    imports: [
       BrowserModule,
       RouterModule.forRoot(routes),
       FormsModule,
-      HttpModule
-  ],
-  providers: [
-    SessionService,
-    IsLoggedInGuardService, 
-    IsLoggedOutGuardService, 
-    UserService,
-    CommentsService,
-    VideoService,
-  ],
-  bootstrap: [AppComponent]
+      HttpModule,
+      HttpClientModule,
+      PipeModule
+   ],
+   providers: [
+      SessionService,
+      IsLoggedInGuardService,
+      IsLoggedOutGuardService,
+      UserService,
+      CommentsService,
+      VideoService,
+      NewService,
+      ModalUploadService,
+      SubirArchivoService
+   ],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }

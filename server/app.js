@@ -42,6 +42,7 @@ var corsOptions = {
 };
 app.use(cors(corsOptions));
 
+
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -94,7 +95,7 @@ const comments = require('./routes/comments');
  const noticia = require('./routes/new');
  app.use('/api/news', noticia);
  const upload = require('./routes/upload');
- app.use('/api/upload', upload);
+ app.use('/api/uploads', upload);
  const images = require('./routes/imagenes');
  app.use('/api/images', images);
 

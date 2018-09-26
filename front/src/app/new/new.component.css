@@ -1,0 +1,33 @@
+.container-fluid{
+    color:white;
+    margin-top: 65px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+table{
+    color:black;
+}
+.card-title{
+color:black;
+}
+h3{
+    text-align: center;
+}
+
+    .col-md-6{
+      
+    }
+    .list{
+        -ms-flex: 0 0 83.333333%;
+        max-width: 97.333333
+    }
+    .col-10{
+        flex: 0 0 98.333333%;
+    max-width: 98.333333%;
+    }
+    .btnRegresar{
+        text-align:center;
+    }
+
+    
+  

@@ -4,36 +4,38 @@ const fileUpload = require('express-fileupload');
 const New =require ('../models/News')
 var fs = require('fs');
 
-
 // default options
 router.use(fileUpload());
 
-router.get('/', (req, res, next) => {
-
-    res.status(400).json({
-        ok: true,
-        mensaje: 'Peticion realizada correctamente',
-    });
-
-});
 
 router.put('/:tipo/:id',(req, res)=> {
   
-    var id = req.params.id;
-var tipo=req.params.tipo
-  if (!req.files){
-     return res.status(400).json({
+var id = req.params.id;
+var tipo=req.params.tipo;
+
+ var tipoValido=['news'];
+
+ if(tipoValido.indexOf(tipo)<0){
+    return res.status(400).json({
         ok: false,
-        mensaje: 'No seleccionó nada',
+        mensaje: 'Tipo no valido',
         errors:{
-            message:'Debe seleccionar una imagen'
-        }
-    });
-  }
+            message:'Tipo no valido'
+        } 
+    } 
+    )}
+
+if (!req.files){
+    return res.status(400).json({
+       ok: false,
+       mensaje: 'No seleccionó nada',
+       errors:{ message:'Debe seleccionar una imagen'
+       }
+   });
+ }
 
   // Obtener nombre del archivo
   var archivo = req.files.img;
-  
   var nombreCortado = archivo.name.split('.');
   var extensionArchivo = nombreCortado[nombreCortado.length - 1];
 
@@ -51,10 +53,11 @@ var tipo=req.params.tipo
 // Nombre de archivo personalizado
 // 12312312312-123.png
 var nombreArchivo = `${ id }-${ new Date().getMilliseconds() }.${ extensionArchivo }`;
-
+console.log(nombreArchivo)
 
 // Mover el archivo del temporal a un path
 var path = `./uploads/${ tipo }/${ nombreArchivo }`;
+console.log(path)
 
 archivo.mv(path, err => {
 
@@ -72,13 +75,11 @@ archivo.mv(path, err => {
 })
 
 
-
 });
-
-
 
 function subirPorTipo(tipo, id, nombreArchivo, res) {
 
+   
 if (tipo === 'news') {
 
     New.findById(id, (err, noticia) => {
@@ -93,17 +94,16 @@ if (tipo === 'news') {
 
 
     var pathViejo = './uploads/news/' + noticia.img;
-
+console.log(pathViejo)
     // Si existe, elimina la imagen anterior
     if (fs.existsSync(pathViejo)) {
+        console.log('ya exite')
         fs.unlink(pathViejo);
     }
 
     noticia.img = nombreArchivo;
 
     noticia.save((err, noticiaActualizada) => {
-
-    
 
         return res.status(200).json({
             ok: true,

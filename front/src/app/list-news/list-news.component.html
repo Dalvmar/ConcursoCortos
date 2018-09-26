@@ -1,0 +1,18 @@
+    <div class="card-columns">
+    
+        <div *ngFor="let new of news">
+      
+            <div class="card animated fadeIn fast" >
+  
+                <img class="card-img-top img-fluid" src={{new.img|imagen}} >
+                <div class="card-body">
+                  <h4 class="card-title">{{new.title}}</h4>
+                  <div class="card-text"> {{new.description}}</div>
+                  <br>
+                  <small class="text-muted"> <i>{{new.created_at |date}}</i></small>
+             
+                </div>
+              </div>
+          </div>
+          
+        </div> 

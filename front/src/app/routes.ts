@@ -11,7 +11,9 @@ import { HomeComponent } from './home/home.component';
 import { UserCardProfileComponent } from './user-card-profile/user-card-profile.component';
 import { AboutComponent } from './about/about.component';
 import { PagenofoundComponent } from './shared/pagenofound/pagenofound.component';
-
+import { NewsComponent } from './news/news.component'
+import { NewComponent } from './new/new.component';
+import { UploadComponent } from './upload/upload.component';
 
 export const routes: Routes = [
   { path:'', component:HomeComponent },
@@ -24,6 +26,9 @@ export const routes: Routes = [
   { path:'profile/details', component:UserCardProfileComponent,canActivate:[IsLoggedInGuardService]},
   { path:'video/:id', component: VideoComponent,canActivate:[IsLoggedInGuardService] },
   { path:'video/delete/:id', component: VideoComponent,canActivate:[IsLoggedInGuardService] },
+  { path:'upload', component: UploadComponent },
+  { path:'news', component: NewsComponent },
+  { path:'news/new', component: NewComponent,canActivate:[IsLoggedInGuardService] },
    //{ path: 'error', component:PagenofoundComponent },
    { path: '**',component:PagenofoundComponent}
  

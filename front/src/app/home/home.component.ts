@@ -15,27 +15,35 @@ import {Videos} from '../../../../server/models/Videos.js';
 export class HomeComponent implements OnInit {
 
 	@Input()video;
-	comments;
-	comment;
-	countComments:number=0;
+	role;
 	user;
 	search:String;
-
 	hidden:boolean=false;
 	status;
-
+	isVisible: Boolean = false;
+	isVisibleAdmin: Boolean = false;
 
 	constructor(
 		private videoService: VideoService,
 		private commentsService: CommentsService,
 		private userService: UserService,
 		private sessionService: SessionService
-	) {}
+	) {
+	this.sessionService.isLogged()
+    .subscribe(user=>{
+	
+		this.user=user;
+		this.role=user.role;
+	})
+	}
 
 	ngOnInit() {
 		
 	}
-
+	toggleHidden(e) {
+		if(this.isVisibleAdmin!=true)
+		this.isVisible = !this.isVisible;
+	}
 			
 
 	

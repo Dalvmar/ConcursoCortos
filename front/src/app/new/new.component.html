@@ -1,0 +1,109 @@
+<div class="container-fluid">
+<h3>NOTICIA  <small> {{title}} </small></h3>
+<div>
+<button [routerLink]="['/news']"
+        class="btn btn-outline-danger ">
+  Regresar
+</button>
+</div>
+<hr>
+
+<div class="row animated fadeIn fast">
+  <div class="col-md-6 offset-md-3">
+
+    <form #forma="ngForm">
+
+      <div class="form-group">
+        <label>Título</label>
+        <input [(ngModel)]="title"
+              name="title"
+              type="text"
+              class="form-control"
+              placeholder="Titulo de la noticia..."
+              required>
+      </div>
+
+      <div class="form-group">
+        <label>Noticia</label>
+        <textarea [(ngModel)]="description"
+                  name="description"
+                  type="text"
+                  class="form-control"
+                  maxlength="500"
+                  rows="4">
+        </textarea>
+      </div>
+
+      <div class="form-group ">
+          <div class="btnRegresar">
+        <button [disabled]="!forma.valid" (click)="crearNoticia(title,description)"
+                type="submit" class="btn btn-outline-primary " >
+         OK
+        </button>
+    </div>
+      </div>
+
+    </form>
+
+   
+  </div>
+  
+  </div>
+
+  
+  <div class="row">
+      <div class="col-10 list">
+          <div class="card">
+              <div class="card-body">
+  
+                  <h3 class="card-title">Noticias registradas </h3>
+  
+                  <table class="table table-hover">
+                      <thead>
+                          <tr>
+                              <th>Foto</th>
+                              <th>Titulo</th>
+                              <th>Descripción</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+  
+                      <tbody>
+                        
+                          <tr *ngFor="let noticia of noticias">
+                            
+                              <td>
+                             
+                                  <img (click)="actualizarImagen( noticia )" src={{noticia.img|imagen}} class="img-50 pointer" alt='Imagen' height=50 width=60>
+                              </td>
+                              <td>
+                                  <input [(ngModel)]="noticia.title" name="title" type="text" class="form-control" placeholder="Titulo de la noticia">
+                              </td>
+                              <td>
+                                  <input [(ngModel)]="noticia.description" name="title" type="text" class="form-control" placeholder="Descripción de la noticia">
+                              </td>
+                              <td>
+                                  <button (click)="guardarNoticia( noticia )" class="btn btn-primary">
+                                    <i class="fa fa-save"></i>
+                                  </button>
+  
+                                  <button (click)="borrarNoticia( noticia )" class="btn btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                  </button>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+  
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+

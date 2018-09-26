@@ -1,0 +1,17 @@
+<div class="container-fluid">
+<div>ÚLTIMAS NOTICIAS <i class="far fa-newspaper"></i></div>
+
+<div *ngIf='role==="admin"'>
+  <div class="form-group">
+    <button [routerLink]="['/news/new']"
+            type="submit" class="btn btn-outline-primary">
+      Crear noticia
+    </button>
+  </div>
+</div>
+
+<div class="list-news">
+ 
+        <app-list-news ></app-list-news>
+</div>
+</div>

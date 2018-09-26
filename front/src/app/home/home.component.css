@@ -46,7 +46,7 @@ section.all {
     font-weight:bold;
 }
 button {
-    float: right;
+    float: left;
     background: #010101;
     border: none;
     padding: 3px;

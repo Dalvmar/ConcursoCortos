@@ -10,13 +10,8 @@ const New = require('../models/News');
 // ==========================================
 router.get('/', (req, res, next) => {
 
-    var desde = req.query.desde || 0;
-    desde = Number(desde);
-
-    New.find({})
-        // .skip(desde)
-        // .limit(5)
-        // .populate('usuario', 'nombre email')
+    New.find({}).sort({updated_at:-1})
+       
         .exec(
             (err,noticias) => {
 
@@ -32,7 +27,7 @@ router.get('/', (req, res, next) => {
 
                     res.status(200).json({
                         ok: true,
-                       noticias:noticias,
+                        noticias: noticias,
                         total: conteo
                     });
                 }) 
@@ -104,7 +99,8 @@ router.post('/', (req, res) => {
 
     var noticia = new New({
         title: body.title,
-        description: body.description
+        description: body.description,
+     
     });
 
     noticia.save((err, noticiaGuardada) => {

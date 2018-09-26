@@ -8,7 +8,7 @@ const userSchema = new Schema({
   lastname: {type: String ,require:true},
   password: {type: String ,require:true},
   email: {type: String ,require:true,unique:true},
-  role: {type: String, enum: ["user", "admin"],default: "user"},
+  role: {type: String},
   category: {type:String ,enum: ["11-15 años Portugal", "16-22 años Portugal", "11-22 años España"], default:"11-22 años España"}
  
 

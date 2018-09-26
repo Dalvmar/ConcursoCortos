@@ -43,7 +43,9 @@ table td,
 }
 @media (min-width: 576px) {
 	.card {
-        min-width: 610px;
+		min-width: 667px;
+	    margin-left: -7px;
+    margin-right: -13px;
     }
     .table {
         width: 95%;
@@ -59,18 +61,18 @@ table td,
     }
     .table th,
 	.table td {
-		font-size: 8px;
+		font-size: 10px;
 	}
 	.form-control {
 		height: calc(1.25rem + 2px);
-        font-size: 8px;
+        font-size: 10px;
         width: 460px;
 	}
 	.custom-select {
 		height: calc(1.25rem + 2px);
-		font-size: 8px;
+		font-size: 10px;
 		padding: 1px;
-		width: 100px;
+		width: 115px;
 	}
 }
 
@@ -78,6 +80,8 @@ table td,
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	.card {
 		width: 475px;
+		margin-left: -10px;
+		margin-right: 10px;
 	}
 	.card-body {
 		width: 100%;
@@ -89,7 +93,7 @@ table td,
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
+/* @media only screen and (min-width: 321px) {
     .card {
         width: 450px;
         margin-left: -15px;
@@ -111,12 +115,12 @@ table td,
 	}
     .table th,
 	.table td {
-        font-size: 7px;
+        font-size: 12px;
         padding: 1px;
 	}
 	.form-control {
-		height: calc(1.25rem + 2px);
-        font-size: 8px;
+		height: calc(1.75rem + 2px);
+        font-size: 12px;
         width: 428px;
 	}
 	.custom-select {
@@ -128,12 +132,14 @@ table td,
     .btn{
         font-size: 10px;
     }
-}
+} */
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
 	.card {
 		width: 475px;
+		margin-left: -10px;
+		margin-right: 10px;
 	}
 	.card-body {
 		width: 100%;
@@ -146,7 +152,7 @@ table td,
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	.card {
-		width: 885px;
+		width: 915px;
 	}
 
 	.container {
@@ -157,7 +163,7 @@ table td,
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.card {
-		width: 978px;
+		width: 940px;
 	}
 
 	.container {
@@ -168,7 +174,7 @@ table td,
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 	.card {
-		width: 978px;
+		width: 940px;
 	}
 	.card-body {
 		width: 100%;
@@ -183,6 +189,8 @@ table td,
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 	.card {
 		width: 978px;
+		margin-left: -12px;
+		margin-right: 12px;
 	}
 	.card-body {
 		width: 100%;
@@ -194,7 +202,7 @@ table td,
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 	.card {
-		width: 978px;
+		width: 880px;
 	}
 	.card-body {
 		width: 100%;
@@ -206,8 +214,9 @@ table td,
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
 	.card {
-		width: 1214px;
-		margin-right: 51px;
+		width: 1080px;
+	    margin-right: 51px;
+    	margin-left: 51px;
 	}
 
 	.container {
@@ -218,6 +227,8 @@ table td,
 @media only screen and (min-width: 1824px) {
 	.card {
 		width: 475px;
+		margin-left: -10px;
+		margin-right: 10px;
 	}
 	.card-body {
 		width: 100%;
@@ -242,7 +253,8 @@ table td,
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 	.card {
         width: 475px;
-        margin-left: -18px;
+		margin-left: -10px;
+		margin-right: 10px;
         
     }
     .table {
@@ -277,6 +289,8 @@ table td,
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
 	.card {
 		width: 475px;
+		margin-left: -10px;
+		margin-right: 10px;
 	}
 	.card-body {
 		width: 100%;
@@ -288,6 +302,8 @@ table td,
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
 	.card {
 		width: 475px;
+		margin-left: -10px;
+		margin-right: 10px;
 	}
 	.card-body {
 		width: 100%;
@@ -300,6 +316,8 @@ table td,
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
 	.card {
 		width: 475px;
+		margin-left: -10px;
+		margin-right: 10px;
 	}
 	.card-body {
 		width: 100%;
@@ -311,7 +329,8 @@ table td,
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
 	.card {
 		width: 475px;
-		margin-left: -18px;
+		margin-left: -11px;
+		margin-right: 11px;
 	}
 	.card-body {
 		width: 100%;
@@ -356,6 +375,8 @@ table td,
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
 	.card {
 		width: 475px;
+		margin-left: -10px;
+		margin-right: 10px;
 	}
 	.card-body {
 		width: 100%;
@@ -425,6 +446,8 @@ table td,
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 	.card {
 		width: 475px;
+		margin-left: -10px;
+		margin-right: 10px;
 	}
 	.card-body {
 		width: 100%;

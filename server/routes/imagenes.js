@@ -8,14 +8,16 @@ router.get('/:tipo/:img', (req, res, next) => {
 
     var tipo = req.params.tipo;
     var img = req.params.img;
-    var pathImg = path.resolve( __dirname, `../uploads/${ tipo }/${ img }`);
 
+    var pathImg = path.resolve( __dirname, `../uploads/${ tipo }/${ img }`);
+    
+    console.log(pathImg)
     if(fs.existsSync(pathImg) ) {
-        res.sendfile(pathImg);
+        res.sendFile(pathImg);
     }
         else {
-            pathNoImage= './assets/no-img.jpg';
-            res.sendfile(pathNoImage);
+           var pathNoImage=path.resolve( __dirname, '../assets/no-img.jpg');
+            res.sendFile(pathNoImage);
         
         }
 
