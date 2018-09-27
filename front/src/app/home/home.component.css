@@ -8,6 +8,13 @@ body {
   margin:65px 10px;
 
 }
+.textVideoInvisible{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    margin-top: 20px
+}
+
 .search{
 margin-top: 20px;
 }

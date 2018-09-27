@@ -27,7 +27,7 @@ interface UserObject{
 export class SessionService {
 
   user:UserObject;
-role;
+  role;
   options:object = { withCredentials:true };
 
   constructor(private http:Http ) {

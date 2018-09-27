@@ -5,6 +5,7 @@ import { CommentsService } from '../../services/comments.service';
 import { SessionService } from '../../services/session.service';
 import {Videos} from '../../../../server/models/Videos.js';
 import { DomSanitizer} from '@angular/platform-browser';
+import { environment } from '../../environments/environment';
 
 
 @Component({
@@ -31,7 +32,6 @@ export class VideoCardComponent implements OnInit {
 	@Input() unlikes =0;
 	totalvideos:number=0;
 	url;
-	v:String;
 
   
   constructor(
@@ -59,8 +59,8 @@ export class VideoCardComponent implements OnInit {
   }
 
   getlistVideo() {	
-	this.loading=true;
-	
+
+			this.loading=true;
 		this.videoService.getlistVideos(this.since).subscribe((data) => {
 			data.videos.forEach((obj) => {
 				if (obj.video.includes('instagram')) {
@@ -83,6 +83,7 @@ export class VideoCardComponent implements OnInit {
 			this.videoList = data.videos;
 			this.loading=false;
 		});
+	
 	}
 	
 	toggleHidden(e,i) {

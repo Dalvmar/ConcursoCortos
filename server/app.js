@@ -98,6 +98,8 @@ const comments = require('./routes/comments');
  app.use('/api/uploads', upload);
  const images = require('./routes/imagenes');
  app.use('/api/images', images);
+ const config = require('./routes/config');
+ app.use('/api/config', config);
 
 
  app.use(function(req, res) {

@@ -3,7 +3,7 @@
   margin:0px;
   padding:0px;
   box-sizing:border-box;
-  font-family:"Raleway";
+  /* font-family:"Raleway"; */
 }
 body {
   background:linear-gradient(rgba(200,200,200,0.7),rgba(200,200,200,0.75)),url("https://goo.gl/XNvLVi") center no-repeat;

@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Http} from "@angular/http";
 import {map} from 'rxjs/operators';
-import {environment} from '../environments/environment'
-
+import {environment} from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +10,7 @@ export class VideoService {
 
  
 constructor( private http:Http) { }
+
 
 getVideo(id){
     return this.http
@@ -29,9 +29,10 @@ getVideo(id){
 
   //Todos los videos de todos los usuarios
   getlistVideos(since) {
-     return this.http
+      return this.http
       .get(`${environment.BASEURL}/api/video?desde=`+ since)
       .pipe(map(res => res.json()));
+    
   }
 
   newVideo(url,userId) {
@@ -73,5 +74,5 @@ getVideo(id){
         ));
 
   }
- 
+  
 }

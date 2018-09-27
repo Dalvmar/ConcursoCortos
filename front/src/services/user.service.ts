@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Http } from "@angular/http"
+import { Http, Response } from "@angular/http";
 import { map } from "rxjs/operators";
 import { Observable } from "../../node_modules/rxjs";
-import {environment} from '../environments/environment'
+import {environment} from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'

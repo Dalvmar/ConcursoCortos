@@ -8,15 +8,17 @@
             <app-fechas-pasos class="container-fluid"></app-fechas-pasos>
     </section>
 
-    <button *ngIf="role==='admin'" (click)="toggleHidden()" class="btn btn-outline-danger">Habilitar videos</button>
+    <button *ngIf="role==='admin' && visible===true" (click)="toggleHidden()" class="btn btn-outline-danger">Deshabilitar videos</button>
+    <button *ngIf="role==='admin' && visible===false" (click)="toggleHidden()" class="btn btn-outline-danger">Habilitar videos</button>
+    
     <section class="videoList container-md-6 ">
         <!-- <div *ngIf="user.role==='admin'">
                 <button [routerLink]="['/news/new']"
                 type="submit" class="btn btn-outline-primary">
              Habilitar Videos
         </button> -->
-     
-           <app-video-card *ngIf="isVisible"></app-video-card>   
+     <div *ngIf='visible===false' class='textVideoInvisible'>Cuando cerremos las inscripciones se podran ver y votar los videos :)</div>
+           <app-video-card *ngIf="visible===true"></app-video-card>   
         <!-- </div> -->
     </section>
 
