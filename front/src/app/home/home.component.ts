@@ -1,6 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { VideoService } from '../../services/video.service';
-import { CommentsService } from '../../services/comments.service';
 import { SessionService } from '../../services/session.service';
 import { UserService } from '../../services/user.service';
 import { ConfigService } from '../../services/config.service';

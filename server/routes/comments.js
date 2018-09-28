@@ -12,34 +12,34 @@ const Videos = require('../models/Videos')
    
 // })
 
-router.get('/:id',(req,res)=>{
-    Comment.findById(videoId)
-    .then(comment=>{
+// router.get('/:id',(req,res)=>{
+//     Comment.findById(videoId)
+//     .then(comment=>{
      
-     Videos.populate(comment,{ path:'commment', populate: { path: 'author' }} )
-     .then(list=>
-     res.json(list))
- }) 
+//      Videos.populate(comment,{ path:'commment', populate: { path: 'author' }} )
+//      .then(list=>
+//      res.json(list))
+//  }) 
     
- })
+//  })
 
-router.post('/',(req,res,next)=>{
-    const{videoId,comment,author}=req.body;
-    Comment.create({videoId,comment,author})
-    .then(comment =>{
-        Videos.findByIdAndUpdate(videoId, {$push: { commment :  comment._id}}, {new: true})
-        .then(corto => {
-            Videos.populate(corto, { path:'commment', populate: { path: 'author' }})
-            .then(cortoObj=>{
-                return res.status(200).json(cortoObj)
-            })
-        })
-    })
+// router.post('/',(req,res,next)=>{
+//     const{videoId,comment,author}=req.body;
+//     Comment.create({videoId,comment,author})
+//     .then(comment =>{
+//         Videos.findByIdAndUpdate(videoId, {$push: { commment :  comment._id}}, {new: true})
+//         .then(corto => {
+//             Videos.populate(corto, { path:'commment', populate: { path: 'author' }})
+//             .then(cortoObj=>{
+//                 return res.status(200).json(cortoObj)
+//             })
+//         })
+//     })
 
-    .catch(err =>{
-        console.log(err)
-        next(err)
-    });
-})
+//     .catch(err =>{
+//         console.log(err)
+//         next(err)
+//     });
+// })
 
 module.exports= router;

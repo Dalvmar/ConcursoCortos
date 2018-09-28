@@ -1,26 +1,21 @@
 
 import { Component, OnInit,Input,ViewChild,ElementRef } from '@angular/core';
 import { VideoService } from '../../services/video.service';
-import { CommentsService } from '../../services/comments.service';
 import { SessionService } from '../../services/session.service';
 import {Videos} from '../../../../server/models/Videos.js';
 import { DomSanitizer} from '@angular/platform-browser';
 import { environment } from '../../environments/environment';
-
-
 @Component({
   selector: 'app-video-card',
   templateUrl: './video-card.component.html',
   styleUrls: ['./video-card.component.css']
 })
+
 export class VideoCardComponent implements OnInit {
-  @ViewChild('commentvideo') commentvideo;
+ 
 	videoList:Videos[]=[];
 	videos: Videos[]=[];
 	@Input()video;
-	comments;
-	comment;
-	countComments:number=0;
 	user;
 	search:String;
 	since: number = 0;
@@ -33,10 +28,10 @@ export class VideoCardComponent implements OnInit {
 	totalvideos:number=0;
 	url;
 
+
   
   constructor(
     private videoService: VideoService,
-		private commentsService: CommentsService,
 		private sessionService: SessionService,private sanitizer: DomSanitizer
   ) { }
 
@@ -86,19 +81,12 @@ export class VideoCardComponent implements OnInit {
 	
 	}
 	
-	toggleHidden(e,i) {
-		[].slice.call(e.currentTarget.closest('.info').childNodes).forEach(e=>{
-			if(e.classList.contains('comment-input')) e.classList.toggle('active')
-		})
-	}
+	// toggleHidden(e,i) {
+	// 	[].slice.call(e.currentTarget.closest('.info').childNodes).forEach(e=>{
+	// 		if(e.classList.contains('comment-input')) e.classList.toggle('active')
+	// 	})
+	// }
 
-	saveComment(videoId, comment, i, Value:HTMLInputElement) {
-		this.commentsService.saveComment(videoId, comment, this.user._id)
-		.subscribe(video => {
-			this.videoList[i].commment = video.commment;
-			Value.value=null;
-		})
-	}
 
 
 	 like (videoId,i) { 
@@ -108,16 +96,18 @@ export class VideoCardComponent implements OnInit {
 			 this.videoList[i].like=video.like +1;
 
 			 swal('LIKE', ':)', 'success');
-			
+		
+	
 		})
 		}
+
 
 	 unlike (videoId ,i) {
 		this.videoService.saveUnLikes(videoId)
 		.subscribe(video=>{
 		this.videoList[i].unlike=video.unlike+1;
 		swal('UNLIKE', ':(', 'error');
-			 
+	
 		})
 	
 		}

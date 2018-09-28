@@ -13,15 +13,15 @@ export class CommentsService {
 
   constructor(private http: Http) {}
 
-  getComments(id) {
-    return this.http.get(`${environment.BASEURL}/api/comments/video/${id}`)
-      .pipe(map((res) => res.json()));
-  }
+  // getComments(id) {
+  //   return this.http.get(`${environment.BASEURL}/api/comments/video/${id}`)
+  //     .pipe(map((res) => res.json()));
+  // }
 
-  saveComment(videoId,comment,author) {
-    return this.http.post(`${environment.BASEURL}/api/comments`,{ videoId, comment, author})
-      .pipe(map((res) => {
-        return res.json()
-      }));
-  }
+  // saveComment(videoId,comment,author) {
+  //   return this.http.post(`${environment.BASEURL}/api/comments`,{ videoId, comment, author})
+  //     .pipe(map((res) => {
+  //       return res.json()
+  //     }));
+  // }
 }

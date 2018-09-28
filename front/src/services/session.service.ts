@@ -38,7 +38,6 @@ export class SessionService {
     return this.http.get(`${BASEURL}/api/auth/currentuser`,this.options).pipe(
       map( (res:Response) => {
         this.user = res.json();
-        
         console.log(this.user)
         console.log(`Automatically login ${this.user.username}`);
         return this.user;

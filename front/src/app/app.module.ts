@@ -33,7 +33,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SessionService } from '../services/session.service';
 import { UserService } from '../services/user.service';
 import { VideoService } from '../services/video.service';
-import { CommentsService } from '../services/comments.service';
 
 //Pipes
 import { PipeModule } from './pipes/pipes.module';
@@ -94,7 +93,6 @@ import { ListNewsComponent } from './list-news/list-news.component';
       IsLoggedInGuardService,
       IsLoggedOutGuardService,
       UserService,
-      CommentsService,
       VideoService,
       NewService,
       ModalUploadService,

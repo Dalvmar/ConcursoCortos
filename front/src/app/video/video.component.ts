@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoService } from '../../services/video.service';
-// import { CommentService, CommentsService } from '../../services/comments.service';
-
 import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
 
 @Component({

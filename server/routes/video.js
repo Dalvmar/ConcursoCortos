@@ -87,12 +87,12 @@ router.get("/", (req, res, next) => {
 	desde=Number(desde);
 
 	Video.find({})
-
+	.sort({like:1})
 	.skip(desde)
 	.limit(3)
-	.populate('commment')
+	// .populate('commment')
 	.populate('author')
-	.populate({ path:'commment', populate: { path: 'author' }})
+	// .populate({ path:'commment', populate: { path: 'author' }})
 	.exec((err,videos) => {
 		if(err){
 			return res.status(500).json({
@@ -112,7 +112,6 @@ router.get("/", (req, res, next) => {
 	});
 
   });
-
 
 
 //LIKES

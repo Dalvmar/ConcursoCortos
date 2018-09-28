@@ -34,7 +34,7 @@ getVideo(id){
       .pipe(map(res => res.json()));
     
   }
-
+  
   newVideo(url,userId) {
   
       return this.http

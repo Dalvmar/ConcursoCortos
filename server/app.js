@@ -87,9 +87,7 @@ app.use('/api/auth', authRouter);
 const userProfile = require('./routes/user');
 app.use('/api/profile', userProfile);
 const userVideo = require('./routes/video');
-app.use('/api/video/', userVideo);
-const comments = require('./routes/comments');
- app.use('/api/comments', comments);
+app.use('/api/video/', userVideo)
  const search = require('./routes/search');
  app.use('/api/search', search);
  const noticia = require('./routes/new');

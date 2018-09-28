@@ -30,7 +30,7 @@
 }
 .roules{
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     line-height: 20px;
 }
@@ -48,4 +48,5 @@
 }
 .bases >li{
     line-height: 32px;
+    font-size: 20px;
 }

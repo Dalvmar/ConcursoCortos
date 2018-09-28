@@ -24,9 +24,11 @@
         
                 <ul class="menu rounded">
                   <li>
-                    <a class="badge badge-pill badge-dark" (click)="unlike (video._id,i)"><i class="far fa-thumbs-down active"></i><span class="down">{{video.unlike}}</span></a>
+                   <div><a class="badge badge-pill badge-dark" (click)="unlike (video._id,i)"><i class="far fa-thumbs-down active"></i><span class="down">{{video.unlike}}</span></a></div> 
+                   </li>
+                  <li> 
+                     <a class="badge badge-pill badge-dark"  (click)="like (video._id,i)"><i class="far fa-thumbs-up active "></i><span class="up">{{video.like}}</span></a>
                   </li>
-                  <li> <a class="badge badge-pill badge-dark" (click)="like (video._id,i)"><i class="far fa-thumbs-up active "></i><span class="up">{{video.like}}</span></a></li>
                </ul>
           
         </div>

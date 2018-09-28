@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoService } from '../../services/video.service';
 import { SessionService } from '../../services/session.service';
-import { CommentsService } from '../../services/comments.service';
 import { DomSanitizer } from '../../../node_modules/@angular/platform-browser';
 import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
 import {Videos} from '../../../../server/models/Videos.js';
@@ -20,15 +19,17 @@ export class ListVideosComponent implements OnInit {
   loading: boolean = true;
   order = "likes";
 ascending = true;
+videosOrder;
 
   constructor(private videoService: VideoService, private sessionService: SessionService,
     private route: ActivatedRoute,
-    private router: Router,
-    private commentsService: CommentsService
+    private router: Router
   ) {}
   
   ngOnInit() {
-    this.getVideos()
+    this.getVideos();
+ 
+
   }
   getVideos(){
     this.loading=true;
@@ -37,16 +38,12 @@ ascending = true;
       .subscribe((data)=>{
     
       this.totalvideos=data.total;
-      this.videos=data.videos
+      this.videos=data.videos;
       this.loading=false;
     })
-  //  })
+  
   }
-  getComments(idvideo){
-    this.commentsService.getComments(idvideo).subscribe((data)=>{
-    
-    })
-  }
+
 
   deleteVideo(id) {
     this.videoService
@@ -82,8 +79,8 @@ ascending = true;
         return;
       }
   
-      this.loading = true;
-      this.videoService.searchVideos(termino).subscribe((resp)=>{
+        this.loading = true;
+        this.videoService.searchVideos(termino).subscribe((resp)=>{
         this.videos = resp.videos;
         this.totalvideos= resp.videos.length;
         this.loading = false;
