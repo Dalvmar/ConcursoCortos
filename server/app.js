@@ -24,6 +24,21 @@ mongoose
     console.error('Error connecting to mongo', err)
   });
 
+const User = mongoose.model('User', {  username:String ,
+name:String,
+lastname:String,
+password:String,
+email:String});
+
+const Admin= new User({ username: 'Admin',name:'Admin',lastname:'Admin',password:'1234',email:'prueba@email.com' });
+Admin.save().then(() => console.log('creado'));
+
+const Data = mongoose.model('Config', {  enableVideos:Boolean });
+  
+const Config= new Data({ enableVideos:true });
+Config.save().then(() => console.log('creado'));
+  
+
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
