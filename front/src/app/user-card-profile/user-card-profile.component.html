@@ -127,11 +127,11 @@
                                   <input type="text" class="form-control" [(ngModel)]="lastnameAdmin" name="lastnameAdmin" required id="lastnameAdmin">
                               </div>
                           </div>
-                          <div class="col-lg-6 ">
+                           <div class="col-lg-6 ">
                               <div class="form-group">
                                   <label for="emailAdmin">Email</label>
                                   <input type="email" class="form-control" [(ngModel)]="emailAdmin" name="emailAdmin" required id="emailAdmin">
-                              </div>
+                              </div> 
                           </div>
   
                       </div>
@@ -169,7 +169,7 @@
             <li class="nav-item userItem">
               <div class="nav-link footerMovil edit-user" (click)="toggleHidden()" ><i class="fas fa-user-edit"></i></div>
              <div class="containerForm">
-              <form *ngIf="isVisible" class="edit-user-form">
+              <form *ngIf="isVisible" #personForm="ngForm" class="edit-user-form">
               
                       <div class="row">
                           <div class="col-lg-6">
@@ -192,25 +192,25 @@
                                   <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastname" required id="lastname">
                               </div>
                           </div>
-                          <div class="col-lg-6">
+                          <!-- <div class="col-lg-6">
                               <div class="form-group">
                                   <label for="emailUser">Email</label>
                                   <input type="email" class="form-control" [(ngModel)]="user.email" name="emailuser" #emailuser="ngModel" required id="emailuser" [ngModelOptions]="{standalone:true}">
                               </div>
-                          </div>
+                          </div> -->
                       </div>
           
                       <div class="row">
                           <div class="col-lg-6">
                               <div class="form-group">
-                                  <label for="oldpasswordUser">Password antigua</label>
-                                  <input type="password" class="form-control" name="oldpassword" />
+                                  <label for="oldPassword">Password antigua</label>
+                                  <input type="password" class="form-control" name="oldPassword" id="oldPassword" />
                               </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="form-group">
-                                  <label for="newpasswordUser">Password nueva</label>
-                                  <input type="text" class="form-control" name="newpassword" />
+                                  <label for="newPassword">Password nueva</label>
+                                  <input type="password" class="form-control" name="newPassword" id="newPassword" />
                               </div>
                           </div>
                          
@@ -231,7 +231,7 @@
                       </div>
                       <div class="col-md-2">
                             <div class="form-group btnselcat">
-                                <button type="submit" class="btn btn-danger" (click)="edit(user._id)">Editar</button>
+                                <button type="submit" class="btn btn-danger" (click)="edit(personForm.value)">Editar</button>
                             </div>
                         </div>
                   </form>

@@ -44,52 +44,67 @@ router.get('/:id', (req, res, next) => {
 });
 
 // Edit User
-router.put('/edit/:id', (req, res, next) => {
+router.put('/edit/:id', (req, res, oldP, newP) => {
+	var userDbPassword;
 	User.findById(req.params.id).then(user => {
-		const { username, name, lastname, email, oldpassword, newpassword, category } = req.body;
+		userDbPassword=user.password;
+		const { username, name, lastname, category,oldPassword, newPassword } = req.body;
 
 		const changeFields = new Promise((resolve, reject) => {
-			if (!username || !email || !name || !lastname || !category) {
-				console.log("aqui")
-				reject(new Error("Username ,name ,lastname and email are required."));
+			if (!username || !name || !lastname || !category) {
+				reject(new Error("Username ,name ,lastname ,category and email are required."));
 			} else {
 				resolve();
 			}
 		});
+		
+const changePassword = new Promise((resolve, reject) => {
+console.log(oldP);
+console.log(newP);
+	
+	if ((req.body.oldPassword !== "" && req.body.newPassword === "") || (req.body.oldPassword === "" && req.body.newPassword !== "")) 
+	{
+       reject(new Error("If you want to change your password, you should fill both password fields."));
+	} 
+	else if(req.body.oldPassword && req.body.newPassword && !bcrypt.compareSync(req.body.oldPassword,userDbPassword))
+	{
+		reject(new Error("Incorrect old password."));	
+	}
+	else
+	{
+		resolve();
+	}
+		
+  });
 
-		const changePassword = new Promise((resolve, reject) => {
-			if ((oldpassword !== "" && newpassword === "") || (oldpassword === "" && newpaswword !== "")) {
-				reject(new Error("You should fill both password fields"));
-			} else if (oldpassword && newpassword && !bcrypt.compareSync(oldpassword, req.user.paswword)) {
-				reject(new Error("Password incorrect"));
-			} else {
-				resolve();
-			}
-		});
 
 		changeFields.then(() => {
+			console.log("changePASS")
 			return changePassword;
 		})
 			.then(() => {
 				return User.findOne({ username, _id: { $ne: req.params.id } });
 			})
 			.then(user => { // Change password
-				if (oldpassword && newpassword) {
+				console.log(oldPassword)
+				console.log(newPassword)
+				if (newPassword && oldPassword) {
+					console.log(oldPassword)
 					const salt = bcrypt.genSaltSync(bcryptSalt);
-					const hashPass = bcrypt.hashSync(newpassword, salt);
+					const hashPass = bcrypt.hashSync(newPassword, salt);
 					return User.findByIdAndUpdate(req.params.id, { password: hashPass });
 				}
 			})
 			.then(user => {
-				if (user) {
-					throw new Error('ohh username exists');
-				}
+				// if (user) {
+				// 	throw new Error('ohh username exists');
+				// }
 				return User.findByIdAndUpdate(req.params.id, {
 					username,
 					name,
 					lastname,
 					category,
-					email
+					
 				}, {new:true});
 			})
 			.then(user => res.json(user))

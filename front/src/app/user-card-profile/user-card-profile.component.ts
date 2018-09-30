@@ -13,6 +13,7 @@ import { VideoService } from '../../services/video.service';
 export class UserCardProfileComponent implements OnInit {
 
   user;
+  pass;
 	videoUrl: String;
 	isVisible: Boolean = false;
 	isVisibleAdmin: Boolean = false;
@@ -61,6 +62,7 @@ export class UserCardProfileComponent implements OnInit {
   }
   
 	edit(user) {
+
 		this.userService.editUser(this.user).subscribe((user) => {
       this.user = user;
       this.toggleHidden(this)

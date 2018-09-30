@@ -20,4 +20,12 @@ const userSchema = new Schema({
 });
 
 const User = mongoose.model('User', userSchema);
+
+
+  
+  const Admin= new User({ username:"Admin",name:"Admin",lastname:"Admin",password:"$2b$10$db8eY/bLiedAuN.xzPLxkuzFCFCx3Udfy8uKXd59rDP/ZDytOykVC",email:"prueba@email.com",role:"admin"});
+  Admin.save().then(() => console.log('creado'));
+  
+
+    
 module.exports = User;

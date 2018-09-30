@@ -13,4 +13,7 @@ const configSchema = new Schema({
 });
 
 const Config = mongoose.model('Config', configSchema);
+
+const ConfigNew= new Config({ enableVideos:true });
+ConfigNew.save().then(() => console.log('creado'));
 module.exports = Config;

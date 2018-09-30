@@ -8,6 +8,7 @@ import {environment} from '../environments/environment';
   providedIn: 'root'
 })
 export class UserService {
+  pass;
   options:object = {withCredentials:true};
  
 constructor( private http:Http ) { }
@@ -42,9 +43,12 @@ getUserNewDetails(userId) {
 editUser(user) {
   return this.http
     .put(`${environment.BASEURL}/api/profile/edit/${user._id}`, user)
-    .pipe(map(res => {console.log(user)
+    .pipe(map(res => {
+      swal('Usuario actualizado', user.email, 'success' );
+      console.log(user)
       return res.json()}))
 }
+
 signupAdmin(username:string,name:string,lastname:string,email:string, password:string): Observable<object>
 {
   return this.http.post(`${environment.BASEURL}/api/profile/newAdmin`,{username,name,lastname,email,password},this.options)
