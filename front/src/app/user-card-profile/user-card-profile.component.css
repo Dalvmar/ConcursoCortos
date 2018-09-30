@@ -57,9 +57,7 @@
         margin-left: 53px;
         margin-top: -286px;
     }
-    .btnselcat .btn {
-     margin-top: 27px;
-    }
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -126,7 +124,7 @@
         width: 280px;
         height: 314px;
         padding: 12px 12px;
-        margin-left: -135px;
+        margin-left: -58px;
         /* margin-right: 123px; */
         font-family: 'Raleway', Arial, sans-serif;
     }
@@ -140,9 +138,7 @@
     .selectButton {
         margin-left: 1px;
     }
-    .btnselcat .btn {
-        margin-top: 27px;
-    }
+ 
 }
 
 /* Smartphones (portrait) ----------- */
@@ -214,9 +210,7 @@
         margin-left: -100px;
         margin-right: 56px;
     }
-    .btnselcat .btn {
-        margin-top: -12px;
-    }
+  
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -511,9 +505,7 @@
         /* margin-bottom: 142px; */
         margin-top: -288px;
     }
-    .btnselcat .btn {
-        margin-top: 26px;
-    }
+
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -583,7 +575,7 @@
         width: 308px;
         height: 324px;
         /* margin-right: 94px; */
-        margin-left: -130px;
+        margin-left: -78px;
     
     }
     .formAdm {
@@ -606,9 +598,7 @@
     .formAdm .col-lg-6 {
         max-width: 55%;
     }
-    .btnselcat .btn {
-        margin-top: -4x;
-    }
+ 
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
@@ -700,9 +690,7 @@
     .selectButton {
         margin-left: 14px;
     }
-    .btnselcat .btn {
-     margin-top: 32px;
-    }
+
     .fa-user-edit{
         margin-left: -1px;
     }
@@ -932,9 +920,7 @@
     .selectButton {
         margin-left: 1px;
     }
-    .btnselcat .btn {
-        margin-top: 27px;
-    }
+ 
 }
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
@@ -1090,7 +1076,7 @@
     }
     .fa-user-edit {
      margin-left: 1px;
- margin-top: -3px;
+     margin-top: -3px;
     }
     .edit-user-form {
         position: absolute;
@@ -1099,7 +1085,7 @@
         height: 290x;
         padding: 5px 5px;
         /* margin-right: 60px; */
-        margin-left: -121px;
+        margin-left: -60px;
         line-height: 4px;
         font-size: 13px;
         font:'Open Sans';
@@ -1184,16 +1170,13 @@
         box-shadow: #000000;
         padding: 10px 6px;
         /* margin-right: 58px; */
-        margin-left: -121px;
+        /* margin-left: -121px; */
         line-height: 10px;
     }
     .formAdm {
         margin-right: 136px;
         margin-left: -136px;
         margin-top: -284px;
-    }
-  .btnselcat .btn {
-       /* margin-top: -20px; */
     }
 }
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
@@ -1267,9 +1250,7 @@
         margin-left: -136px;
         margin-top: -296px;
     }
-    .btnselcat .btn {
-        /* margin-top: -15px; */
-    }
+  
 }
 /* iPhone 6+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
@@ -1341,12 +1322,12 @@
         margin-left: -134px;
         margin-top: -406px;
     }
-    .btnselcat .btn {
-     
-        /* margin-top: -33px; */
-    }
+ 
     .edit-user-form label {
         margin-bottom: 6px;
+    }
+    .btnselcat .btn{
+        margin-top: -24px;
     }
 }
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
@@ -1422,9 +1403,7 @@
         margin-left: -134px;
         margin-top: -406px;
     }
-    .btnselcat .btn {
-        margin-top: -13px;
-    }
+  
 }
 /* Samsung Galaxy S3 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
@@ -1734,9 +1713,7 @@
         margin-left: -134px;
         margin-top: -288px;
     }
-    .btnselcat .btn {
-        margin-top: 24px;
-    }
+
 }
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
     .containerCard {
