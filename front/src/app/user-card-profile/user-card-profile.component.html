@@ -65,13 +65,13 @@
                           <div class="col-lg-6">
                               <div class="form-group">
                                   <label for="oldpassworAdminEdit">Contraseña antigua</label>
-                                  <input type="password" class="form-control" name="oldpassworAdminEdit" />
+                                  <input type="password" class="form-control" name="oldPassword" (ngModel)]="oldPassword"/>
                               </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="form-group">
                                   <label for="newpasswordAdminEdit">Contraseña nueva</label>
-                                  <input type="text" class="form-control" name="newpasswordAdminEdit" />
+                                  <input type="text" class="form-control" name="newPassword" [(ngModel)]="newPassword" />
                               </div>
                           </div>
   
@@ -82,7 +82,7 @@
                               <div class="input-group-prepend">
                                   <label class="input-group-text selCat" for="categoriaAdminEdit">Categoria</label>
                               </div>
-                              <select class="custom-select selectEdit" [(ngModel)]="user.category" id="categoriaUsuarioprofile">
+                              <select class="custom-select selectEdit" [(ngModel)]="user.category" id="categoriaUsuarioprofile" [ngModelOptions]="{standalone: true}">
                                  
                                   <option value="11-15 años Portugal">11-15 años Portugal</option>
                                   <option value="16-22 años Portugal">16-22 años Portugal</option>
@@ -91,7 +91,7 @@
                           </div>
                           <div class="col-md-2">
                               <div class="form-group btnselcat">
-                                  <button type="submit" *ngIf="isVisible" class="btn btn-danger" (click)="edit(user._id)">Editar</button>
+                                  <button type="submit" *ngIf="isVisible" class="btn btn-danger" (click)="edit(user,newPassword,oldPassword)">Editar</button>
                               </div>
                           </div>
                       </div>
@@ -175,13 +175,13 @@
                           <div class="col-lg-6">
                               <div class="form-group">
                                   <label for="usernameUser">Username</label>
-                                  <input type="text" class="form-control" [(ngModel)]="user.username" name="username" required id="username">
+                                  <input type="text" class="form-control" [(ngModel)]="user.username" name="username" required id="usernameu">
                               </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="form-group">
                                   <label for="nameUser">Nombre</label>
-                                  <input type="text" class="form-control" [(ngModel)]="user.name" name="name" required id="name">
+                                  <input type="text" class="form-control" [(ngModel)]="user.name" name="name" required id="nameu">
                               </div>
                           </div>
                       </div>
@@ -189,7 +189,7 @@
                           <div class="col-lg-6">
                               <div class="form-group">
                                   <label for="lastnameUser">Apellidos</label>
-                                  <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastname" required id="lastname">
+                                  <input type="text" class="form-control" [(ngModel)]="user.lastname" name="lastname" required id="lastnameu" [ngModelOptions]="{standalone: true}">
                               </div>
                           </div>
                           <!-- <div class="col-lg-6">
@@ -204,13 +204,13 @@
                           <div class="col-lg-6">
                               <div class="form-group">
                                   <label for="oldPassword">Password antigua</label>
-                                  <input type="password" class="form-control" name="oldPassword" id="oldPassword" />
+                                  <input type="password" class="form-control" name="oldPassword" [(ngModel)]="oldPassword" />
                               </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="form-group">
                                   <label for="newPassword">Password nueva</label>
-                                  <input type="password" class="form-control" name="newPassword" id="newPassword" />
+                                  <input type="password" class="form-control" name="newPassword" [(ngModel)]="newPassword" />
                               </div>
                           </div>
                          
@@ -221,7 +221,7 @@
                                   <div class="input-group-prepend">
                                     <label class="input-group-text selCat" for="categoriaUser">Categoria</label>
                                   </div>
-                                  <select class="custom-select selectEdit" [(ngModel)]="user.category">
+                                  <select class="custom-select selectEdit" [(ngModel)]="user.category" id="categoriaUsuariopro" [ngModelOptions]="{standalone: true}">
                                       <option value="11-15 años Portugal">11-15 años Portugal</option>
                                       <option value="16-22 años Portugal">16-22 años Portugal</option>
                                       <option value="11-22 años España">11-22 años España</option>
@@ -231,7 +231,7 @@
                       </div>
                       <div class="col-md-2">
                             <div class="form-group btnselcat">
-                                <button type="submit" class="btn btn-danger" (click)="edit(personForm.value)">Editar</button>
+                                <button type="submit" class="btn btn-danger" (click)="edit(user,newPassword,oldPassword)">Editar</button>
                             </div>
                         </div>
                   </form>

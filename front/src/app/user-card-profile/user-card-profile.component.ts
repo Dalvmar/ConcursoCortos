@@ -4,6 +4,7 @@ import { SessionService } from '../../services/session.service';
 import { ActivatedRoute, Router } from '../../../node_modules/@angular/router';
 import { UserService } from '../../services/user.service';
 import { VideoService } from '../../services/video.service';
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-user-card-profile',
@@ -19,9 +20,11 @@ export class UserCardProfileComponent implements OnInit {
 	isVisibleAdmin: Boolean = false;
   videoList;
   since: number= 0;
+  addForm: FormGroup;
   constructor(private sessionService: SessionService,
 		private route: ActivatedRoute,
-		private router: Router,
+    private router: Router,
+    private formBuilder: FormBuilder,
 		private userService: UserService,
 		private videoService: VideoService) { }
     
@@ -61,9 +64,14 @@ export class UserCardProfileComponent implements OnInit {
 		this.isVisibleAdmin = !this.isVisibleAdmin;
   }
   
-	edit(user) {
+	edit(user,newpass,oldpass) {
+ const userEdit={
+   oldpass,
+   newpass,
+   user
+ }
 
-		this.userService.editUser(this.user).subscribe((user) => {
+		this.userService.editUser(userEdit).subscribe((user) => {
       this.user = user;
       this.toggleHidden(this)
 	

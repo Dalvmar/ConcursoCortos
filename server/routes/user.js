@@ -44,34 +44,40 @@ router.get('/:id', (req, res, next) => {
 });
 
 // Edit User
-router.put('/edit/:id', (req, res, oldP, newP) => {
-	var userDbPassword;
+router.put('/edit/:id', (req, res, next) => {
+	username=req.body.user.username;
+	name=req.body.user.name
+	lastname=req.body.user.lastname
+	category=req.body.user.category
+	console.log('entra')
+	console.log(req.body.oldpass)
 	User.findById(req.params.id).then(user => {
 		userDbPassword=user.password;
-		const { username, name, lastname, category,oldPassword, newPassword } = req.body;
+		
 
 		const changeFields = new Promise((resolve, reject) => {
-			if (!username || !name || !lastname || !category) {
+			if (!req.body.user.username || !req.body.user.name || !req.body.user.lastname || !req.body.user.category) {
 				reject(new Error("Username ,name ,lastname ,category and email are required."));
 			} else {
 				resolve();
+
 			}
 		});
 		
 const changePassword = new Promise((resolve, reject) => {
-console.log(oldP);
-console.log(newP);
+
 	
-	if ((req.body.oldPassword !== "" && req.body.newPassword === "") || (req.body.oldPassword === "" && req.body.newPassword !== "")) 
+	if ((req.body.oldpass !== "" && req.body.newpass === "") || (req.body.oldpass === "" && req.body.newpass !== "")) 
 	{
        reject(new Error("If you want to change your password, you should fill both password fields."));
 	} 
-	else if(req.body.oldPassword && req.body.newPassword && !bcrypt.compareSync(req.body.oldPassword,userDbPassword))
+	else if(req.body.oldpass && req.body.newpass && !bcrypt.compareSync(req.body.oldpass,userDbPassword))
 	{
 		reject(new Error("Incorrect old password."));	
 	}
 	else
 	{
+		console.log('AQUI')
 		resolve();
 	}
 		
@@ -80,18 +86,18 @@ console.log(newP);
 
 		changeFields.then(() => {
 			console.log("changePASS")
+			console.log(changePassword)
 			return changePassword;
 		})
 			.then(() => {
+			
 				return User.findOne({ username, _id: { $ne: req.params.id } });
 			})
 			.then(user => { // Change password
-				console.log(oldPassword)
-				console.log(newPassword)
-				if (newPassword && oldPassword) {
-					console.log(oldPassword)
+				console.log("pasa2")
+				if (req.body.newpass && req.body.oldpass) {
 					const salt = bcrypt.genSaltSync(bcryptSalt);
-					const hashPass = bcrypt.hashSync(newPassword, salt);
+					const hashPass = bcrypt.hashSync(req.body.newpass, salt);
 					return User.findByIdAndUpdate(req.params.id, { password: hashPass });
 				}
 			})
@@ -99,6 +105,7 @@ console.log(newP);
 				// if (user) {
 				// 	throw new Error('ohh username exists');
 				// }
+				console.log("tal vez aqui")
 				return User.findByIdAndUpdate(req.params.id, {
 					username,
 					name,

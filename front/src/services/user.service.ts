@@ -42,9 +42,9 @@ getUserNewDetails(userId) {
 // Edit user
 editUser(user) {
   return this.http
-    .put(`${environment.BASEURL}/api/profile/edit/${user._id}`, user)
+    .put(`${environment.BASEURL}/api/profile/edit/${user.user._id}`, user)
     .pipe(map(res => {
-      swal('Usuario actualizado', user.email, 'success' );
+      swal('Usuario actualizado', user.user.username, 'success' );
       console.log(user)
       return res.json()}))
 }

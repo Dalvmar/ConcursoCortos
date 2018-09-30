@@ -4,7 +4,7 @@ import { RouterModule } from '../../node_modules/@angular/router';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
-
+import {ReactiveFormsModule} from "@angular/forms";
 //Rutas
 import { routes } from './routes';
 //Components
@@ -86,7 +86,9 @@ import { ListNewsComponent } from './list-news/list-news.component';
       FormsModule,
       HttpModule,
       HttpClientModule,
-      PipeModule
+      PipeModule,
+      ReactiveFormsModule
+
    ],
    providers: [
       SessionService,
