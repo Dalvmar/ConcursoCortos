@@ -33,9 +33,6 @@ router.get('/', (req, res, next) => {
 	
 	});
  
-	// router.get('/', (req, res, next) => {
-	// 	User.find().then((objects) => res.json(objects)).catch((e) => next(e));
-	
 });
 
 // Details users
@@ -49,8 +46,7 @@ router.put('/edit/:id', (req, res, next) => {
 	name=req.body.user.name
 	lastname=req.body.user.lastname
 	category=req.body.user.category
-	console.log('entra')
-	console.log(req.body.oldpass)
+
 	User.findById(req.params.id).then(user => {
 		userDbPassword=user.password;
 		
@@ -94,7 +90,7 @@ const changePassword = new Promise((resolve, reject) => {
 				return User.findOne({ username, _id: { $ne: req.params.id } });
 			})
 			.then(user => { // Change password
-				console.log("pasa2")
+			
 				if (req.body.newpass && req.body.oldpass) {
 					const salt = bcrypt.genSaltSync(bcryptSalt);
 					const hashPass = bcrypt.hashSync(req.body.newpass, salt);
@@ -102,10 +98,9 @@ const changePassword = new Promise((resolve, reject) => {
 				}
 			})
 			.then(user => {
-				// if (user) {
-				// 	throw new Error('ohh username exists');
-				// }
-				console.log("tal vez aqui")
+				if (user) {
+					throw new Error('ohh username exists');
+				}
 				return User.findByIdAndUpdate(req.params.id, {
 					username,
 					name,
