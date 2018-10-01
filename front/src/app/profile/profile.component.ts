@@ -74,11 +74,12 @@ export class ProfileComponent implements OnInit {
 		if(res['status']>=500) {
 			this.message = 'Introduce una url'
 			swal("No has introducido URL",this.message,'error')
-		  }
+		  }else{
 		  swal("Video guardado",':)','success')
 		  
 			  this.videoUrl = '';
 			  this.NewVideoChild.ngOnInit();
+		  }
 		});
 	}
 
