@@ -17,7 +17,6 @@ export class NewsComponent implements OnInit {
   constructor( private sessionService:SessionService, private newService:NewService) { 
     this.sessionService.isLogged()
     .subscribe(user=>{
-      console.log(user)
       this.role=user.role;
       this.user=user;
   

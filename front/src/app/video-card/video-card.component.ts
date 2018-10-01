@@ -138,7 +138,6 @@ export class VideoCardComponent implements OnInit {
   
       	this.loading = true;
       	this.videoService.searchVideos(termino).subscribe((resp)=>{
-        // console.log(resp)
         this.videoList = resp.videos;
          this.totalvideos= resp.videos.length;
         this.loading = false;

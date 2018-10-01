@@ -11,8 +11,8 @@ export class NavbarComponent  {
   title = 'Concurso de Cortos';
   
   constructor(private sessionService:SessionService) { 
-  this.sessionService.isLogged()
-  .subscribe(user=>this.user=user)
+  // this.sessionService.isLogged()
+  // .subscribe(user=>this.user=user)
 
 };
 

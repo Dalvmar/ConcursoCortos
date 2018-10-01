@@ -120,11 +120,11 @@
     }
 
     .edit-user-form {
-        bottom: 48px;
+        bottom: 40px;
         width: 280px;
         height: 314px;
         padding: 12px 12px;
-        margin-left: -58px;
+        margin-left: -120px;
         /* margin-right: 123px; */
         font-family: 'Raleway', Arial, sans-serif;
     }
@@ -208,7 +208,7 @@
         height: 314px;
         padding: 12px 12px;
         margin-left: -100px;
-        margin-right: 56px;
+   
     }
   
 }
@@ -403,7 +403,7 @@
         padding: 5px;
     }
     .edit-user-form {
-        bottom: 47px;
+        bottom: 40px;
         width: 293px;
         height: 324px;
         background: rgb(241, 239, 239) top;
@@ -494,7 +494,7 @@
         padding: 5px;
     }
     .edit-user-form {
-        bottom: 47px;
+        bottom: 40px;
         /* margin-right: 125px;
         margin-left: -125px; */
     }
@@ -571,11 +571,11 @@
         margin-left: 16px;
     }
     .edit-user-form {
-        bottom: 55px;
+        bottom: 40px;
         width: 308px;
         height: 324px;
         /* margin-right: 94px; */
-        margin-left: -78px;
+        margin-left: -138px;
     
     }
     .formAdm {
@@ -659,11 +659,12 @@
         margin-left: 16px;
     }
     .edit-user-form {
-        bottom: 47px;
+        bottom: 40px;
         width: 308px;
         height: 320px;
         background: rgb(241, 239, 239) top;
         box-shadow: #000000;
+        margin-left: -136px;
         /* margin-right: 138px;
         margin-left: -138px; */
     }
@@ -751,7 +752,7 @@
         margin-top: 2px;
     }
     .edit-user-form {
-        bottom: 47px;
+        bottom: 40px;
         width: 308px;
         height: 320px;
         background: rgb(241, 239, 239) top;
@@ -835,7 +836,7 @@
         margin-top: 10px;
     }
     .edit-user-form {
-        bottom: 47px;
+        bottom: 40px;
         width: 280px;
         height: 314px;
         padding: 12px 12px;
@@ -903,7 +904,7 @@
         margin-top: 10px;
     }
     .edit-user-form {
-        bottom: 47px;
+        bottom: 40px;
         width: 280px;
         height: 314px;
         padding: 12px 12px;
@@ -988,14 +989,14 @@
     }
     .edit-user-form {
         position: absolute;
-        bottom: 47px;
+        bottom: 40px;
         width: 276px;
         height: 290x;
         background: rgb(241, 239, 239) top;
         box-shadow: #000000;
         padding: 5px 5px;
         /* margin-right: -62px; */
-        margin-left: -62px;
+        margin-left: -120px;
         line-height: 4px;
         font-size: 13px;
     }
@@ -1080,12 +1081,12 @@
     }
     .edit-user-form {
         position: absolute;
-        bottom: 47px;
+        bottom: 40px;
         width: 276px;
         height: 290x;
         padding: 5px 5px;
         /* margin-right: 60px; */
-        margin-left: -60px;
+        margin-left: -124px;
         line-height: 4px;
         font-size: 13px;
         font:'Open Sans';
@@ -1163,7 +1164,7 @@
         padding: 5px;
     }
     .edit-user-form {
-        bottom: 48px;
+        bottom: 40px;
         width: 270px;
         height: 302px;
         background: rgb(241, 239, 239) top;
@@ -1238,7 +1239,7 @@
         padding: 5px;
     }
     .edit-user-form {
-        bottom: 48px;
+        bottom: 40px;
         width: 270px;
         height: 310px;
         padding: 10px 6px;
@@ -1310,7 +1311,7 @@
         padding: 5px;
     }
     .edit-user-form {
-    bottom: 41px;
+    bottom: 40px;
     width: 270px;
     height: 283px;
     padding: 10px 6px;
@@ -1388,7 +1389,7 @@
         padding: 5px;
     }
     .edit-user-form {
-        bottom: 48px;
+        bottom: 40px;
         width: 270px;
         height: 302px;
         background: rgb(241, 239, 239) top;
@@ -1910,7 +1911,7 @@ label button {
     font-size: 12px;
     line-height: 1;
     margin-left: 77px;
-    /* margin-top: -21px; */
+    margin-top: 25px;
     font-family: 'Roboto', sans-serif;
 }
 .selectButton {

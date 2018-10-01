@@ -38,7 +38,6 @@ export class SessionService {
     return this.http.get(`${BASEURL}/api/auth/currentuser`,this.options).pipe(
       map( (res:Response) => {
         this.user = res.json();
-        console.log(this.user)
         console.log(`Automatically login ${this.user.username}`);
         return this.user;
       }),
@@ -75,7 +74,6 @@ export class SessionService {
         let status=res.json().status
         this.user = data.user;
         swal('Usuario creado', this.user.email,'success');
-        // console.log(this.user)
         return this.user;
       }),
       catchError( e => of(this.errorHandler(e)))

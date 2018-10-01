@@ -46,6 +46,7 @@ router.put('/edit/:id', (req, res, next) => {
 	name=req.body.user.name
 	lastname=req.body.user.lastname
 	category=req.body.user.category
+	email=req.body.user.email
 
 	User.findById(req.params.id).then(user => {
 		userDbPassword=user.password;
@@ -106,6 +107,7 @@ const changePassword = new Promise((resolve, reject) => {
 					name,
 					lastname,
 					category,
+					email
 					
 				}, {new:true});
 			})

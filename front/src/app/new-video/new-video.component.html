@@ -1,10 +1,10 @@
-
+<div class="container-fluid">
   <div class="container-fluid" *ngFor="let video of videoList">
-    <div id="movie-card-list card">
+    <div id="movie-card-list card" class="movie-card-list">
       <div class="movie-card">
         <div class="color-overlay listRow row">
           <div class="col-lg-6 col-sm-6 col-xs-12">
-            <img class="img-fluid" [src]="video.cover | safe"  height="300px">
+            <img class="img-fluid" [src]="video.cover | safe" >
           </div>
   
           <div class="movie-content col-lg-6 col-sm-6 col-xs-12">
@@ -12,13 +12,16 @@
               <h1 class="movie-title">{{video.creator}}</h1>
               <h4 class="movie-info">like:{{video.like}}  unlike:{{video.unlike}}</h4>
             </div>
-            <p class="movie-desc">Descripcion:{{video.description}}</p>
-            <button class="ver" [routerLink]="['/video',video._id]"><i class="fas fa-play-circle"></i></button>
+            <div class="btnVer">
+                <button class="ver btn-group-justified" [routerLink]="['/video',video._id]"><i class="fas fa-play-circle"></i></button>
+            </div>
+          
   
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
   
   

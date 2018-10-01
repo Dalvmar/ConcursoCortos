@@ -62,7 +62,6 @@ signupAdmin(username:string,name:string,lastname:string,email:string, password:s
 
 //Delete user when your role is admin
 removeUser(id) {
-  //console.log(id)
   return this.http
     .delete(`${environment.BASEURL}/api/profile/delete/${id}`)
     .pipe(map(res => res.json()));

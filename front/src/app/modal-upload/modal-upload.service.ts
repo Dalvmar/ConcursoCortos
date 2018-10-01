@@ -13,7 +13,7 @@ public oculto: string = 'oculto';
 public notificacion = new EventEmitter<any>();
 
 constructor() { 
-  console.log('upload service listo')
+
 }
 
 ocultarModal() {
