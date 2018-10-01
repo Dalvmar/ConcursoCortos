@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-// const Comments = require('./Comments')
-// const User = require('./User')
+
 
 const VideoSchema = new Schema({
   video: { type: String },

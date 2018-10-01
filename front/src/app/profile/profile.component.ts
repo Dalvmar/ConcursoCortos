@@ -18,6 +18,7 @@ export class ProfileComponent implements OnInit {
 	isVisibleAdmin: Boolean = false;
   	videoList;
 	loading:boolean;
+	message;
 	  since: number = 0;
 	  
 	constructor(
@@ -66,11 +67,18 @@ export class ProfileComponent implements OnInit {
 	}
 	
 	saveVideo() {
+	
 		this.videoService.newVideo(this.videoUrl,this.user._id).subscribe((res) => {
+		console.log(res)
 		
-			this.videoUrl = '';
-			this.NewVideoChild.ngOnInit();
-		
+		if(res['status']>=500) {
+			this.message = 'Introduce una url'
+			swal("No has introducido URL",this.message,'error')
+		  }
+		  swal("Video guardado",':)','success')
+		  
+			  this.videoUrl = '';
+			  this.NewVideoChild.ngOnInit();
 		});
 	}
 

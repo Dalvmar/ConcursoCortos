@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Video = require('../models/Videos');
-const Comment = require('../models/Comments');
+
 const axios = require('axios');
 const apiUrl = 'https://api.microlink.io?url=';
 
@@ -9,9 +9,9 @@ const apiUrl = 'https://api.microlink.io?url=';
 router.post('/new', (req, res, next) => {
 	const { url,userId } = req.body;
 
-	console.log(req.body.url);
 
-	if (!url) {
+
+	if (!url||url===null) {
 		throw new Error('You must enter a URL');
 
 };

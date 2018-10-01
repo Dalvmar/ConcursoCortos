@@ -3,12 +3,18 @@ import {Http} from "@angular/http";
 import {map} from 'rxjs/operators';
 import {environment} from '../environments/environment';
 
+import {catchError} from 'rxjs/operators';
+
+import { of } from 'rxjs';
+import swal from 'sweetalert';
+
 @Injectable({
   providedIn: 'root'
 })
 export class VideoService {
 
- 
+
+ video;
 constructor( private http:Http) { }
 
 
@@ -36,10 +42,25 @@ getVideo(id){
   }
   
   newVideo(url,userId) {
-  
+
       return this.http
       .post(`${environment.BASEURL}/api/video/new`, { url,userId })
-      .pipe(map(res => res.json()));
+      .pipe(map((res) => {
+        let data = res.json();
+        let status=res.json().status;
+        this.video=data.video
+        swal('Video Insertado', this.video,'success');
+        return this.video;
+      }),
+      catchError( e => of(this.errorHandler(e)))
+      )
+  
+
+  }
+  errorHandler(e){
+    console.log('VideoServiceError')
+    console.log(e);
+    return e;
   }
 
   //likes y unlikes

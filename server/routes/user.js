@@ -4,7 +4,7 @@ const User = require('../models/User');
 const bcryptSalt = 10;
 const bcrypt = require("bcrypt");
 const Videos =require('../models/Videos')
-const Comments =require('../models/Comments')
+
 
 // All Users
 router.get('/', (req, res, next) => {
