@@ -136,3 +136,10 @@ label{
   margin-top: 2px;
 
 }
+.input{
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+border-radius: 9px;
+
+}
