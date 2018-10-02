@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
 const configSchema = new Schema({
-  enableVideos: {type:Boolean ,default:true}
+  enableVideos: {type:Boolean ,default:false,unique:true }
 
 
 }, {
@@ -15,5 +15,6 @@ const configSchema = new Schema({
 const Config = mongoose.model('Config', configSchema);
 
 const ConfigNew= new Config({ enableVideos:false });
+
 ConfigNew.save().then(() => console.log('creado'));
 module.exports = Config;

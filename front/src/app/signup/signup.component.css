@@ -56,15 +56,24 @@ div.login {
   font-size: 13px;
 }
 .login .form .wrapper {
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  width:85%;
-  margin-top: 6px;
-  color:silver;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 85%;
+  margin-top: 28px;
+  color: silver;
 }
 .login .form .row {
-  margin:16px 0px;
+  margin-top: 2px;
+  font-size: 13px;
+  color: rgb(70,70,70);
+  border: none;
+ 
+  outline: none;
+  height: 35px;
+  background: transparent;
+  width: 100%;
 }
 .login .form .row .label {
   font-size:10px;
@@ -76,7 +85,7 @@ div.login {
   font-size:13px;
   color:rgb(70,70,70);
   border:none;
-  border-bottom:1px solid rgba(100,100,100,0.6);
+
   outline:none;
   height:25px;
   background:transparent;
@@ -104,8 +113,11 @@ label{
   text-align:center;
   width:100%;
   font-size:13px;
-  bottom: 104px;
+  bottom: 45px;
   color:#333;
+}
+.input-group-text{
+  height: 35px;
 }
 .login .form .signup a {
   color:rgba(255, 60, 65, 0.84);
