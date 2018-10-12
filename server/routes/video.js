@@ -54,9 +54,7 @@ router.delete('/delete/:id', (req, res, next) => {
     else if (!video)
       return next(new restify.ResourceNotFoundError('The resource you requested could not be found.'));
   
-    
-    Comment.find({VideoId: video._id}).remove().exec();
-    
+    // Comment.find({VideoId: video._id}).remove().exec();
     
     video.remove();
   

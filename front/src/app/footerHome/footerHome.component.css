@@ -26,7 +26,7 @@
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 60%;
 }
 
 /* The company logo */
@@ -63,13 +63,13 @@
 	margin-bottom: 10px;
 }
 
-/* Footer Center */
+/* Footer right */
 
-.footer-distributed .footer-center{
-	width: 35%;
+.footer-distributed .footer-right{
+	width: 30%;
 }
 
-.footer-distributed .footer-center i{
+.footer-distributed .footer-right i{
 	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 15px;
@@ -82,26 +82,26 @@
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-distributed .footer-right i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
+.footer-distributed .footer-right p{
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
 	margin:0;
 }
 
-.footer-distributed .footer-center p span{
+.footer-distributed .footer-right p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
 
-.footer-distributed .footer-center p a{
+.footer-distributed .footer-right p a{
 	color:  #5383d3;
 	text-decoration: none;
 	font-style: italic;
@@ -110,51 +110,26 @@
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
-	width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
+.footer-distributed .footer-center{
+	width: 100%;
 	text-align: center;
-	line-height: 35px;
-	margin-right: 3px;
-	margin-bottom: 5px;
+}
+.footer-icons{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+	max-height: 100vh;
+	margin: 10px 110px;
 }
 .footer-icons img{
-	vertical-align: middle;
-    border-style: none;
-    margin-left: 3px;
-    margin-top: 3px;
+	margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
 }
+
+
 @media (max-width: 880px) {
 
 	.footer-distributed{

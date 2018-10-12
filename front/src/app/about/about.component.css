@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 .about{
-    color:white;
+    color:silver;
 }
 .intro{
     width: 89%;
@@ -10,8 +10,12 @@
     margin-left: auto;
 
 }
+b{
+    font-size: 25px;
+    color: grey;
+}
 .about p{
-    color: white;
+    color:silver;
     font-size: 20px;
     margin-top: 8px;
     margin-left: 10px;

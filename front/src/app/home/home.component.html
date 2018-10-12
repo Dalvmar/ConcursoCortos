@@ -7,9 +7,11 @@
 
             <app-fechas-pasos class="container-fluid"></app-fechas-pasos>
     </section>
-
-    <button *ngIf="role==='admin' && visible===true" (click)="toggleHidden()" class="btn btn-outline-danger">Deshabilitar videos</button>
-    <button *ngIf="role==='admin' && visible===false" (click)="toggleHidden()" class="btn btn-outline-danger">Habilitar videos</button>
+<div class="btnVisible">
+        <button *ngIf="role==='admin' && visible===true" (click)="toggleHidden()" class="btn btn-outline-danger">Deshabilitar videos</button>
+        <button *ngIf="role==='admin' && visible===false" (click)="toggleHidden()" class="btn btn-outline-danger">Habilitar videos</button>
+        
+</div>
     
     <section class="videoList container-md-6 ">
         <!-- <div *ngIf="user.role==='admin'">
