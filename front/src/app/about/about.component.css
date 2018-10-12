@@ -11,8 +11,10 @@
 
 }
 b{
-    font-size: 25px;
-    color: grey;
+    color: white;
+}
+.categoria li{
+    color:white;
 }
 .about p{
     color:silver;
@@ -39,7 +41,7 @@ b{
     line-height: 20px;
 }
  .container{
-    width: 68%;
+    width: 75%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;

@@ -63,15 +63,16 @@ export class VideoCardComponent implements OnInit {
 					
 				} else if (obj.video.includes('youtube')) {
 					obj.video = obj.video.replace('watch?v=', 'embed/');
-
-			
-					console.log(obj.video + 'hola')
 					
 				} else if (obj.video.includes('vimeo')) {
 					obj.video = obj.video.replace('https://vimeo.com', 'https://player.vimeo.com/video')
 				
 				}
-
+				else if (obj.video.includes('daily')) {
+					obj.video = obj.video.replace('video','embed/video')
+					
+				}
+				https://dai.ly/x6vba8i
 			});
 			
 			this.totalVideos = data.total;

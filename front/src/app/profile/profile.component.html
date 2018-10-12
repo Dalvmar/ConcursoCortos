@@ -15,7 +15,7 @@
             <div class="col-md-12">
     
                 <div class="input-group mb-3 inputVideo" *ngIf="user.role==='user'">
-                        <input type="text" class="form-control" (keyup.enter)="saveVideo()" placeholder="Introduce tu video (URL Vimeo,Instagram o Youtube) " [(ngModel)]="videoUrl"
+                        <input type="text" class="form-control" (keyup.enter)="saveVideo()" placeholder="Introduce tu video(URL Vimeo,Instagram,Youtube o Dailymotion) " [(ngModel)]="videoUrl"
                         name="url" required minlength="3" aria-describedby="button-addon2">
                       <div class="input-group-append">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="saveVideo()" (on)="saveVideo()">OK</button>
