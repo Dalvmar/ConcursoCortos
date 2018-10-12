@@ -72,7 +72,7 @@ export class VideoCardComponent implements OnInit {
 					obj.video = obj.video.replace('video','embed/video')
 					
 				}
-				https://dai.ly/x6vba8i
+		
 			});
 			
 			this.totalVideos = data.total;
