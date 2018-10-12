@@ -95,7 +95,7 @@ app.use('/api/video/', userVideo)
  app.use('/api/news', noticia);
  const upload = require('./routes/upload');
  app.use('/api/uploads', upload);
- const images = require('./routes/imagenes');
+ const images = require('./routes/images');
  app.use('/api/images', images);
  const config = require('./routes/config');
  app.use('/api/config', config);
