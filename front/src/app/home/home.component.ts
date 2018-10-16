@@ -32,12 +32,12 @@ export class HomeComponent implements OnInit {
 		private configService:ConfigService
 
 	) {
-	// this.sessionService.isLogged()
-    // .subscribe(user=>{
+	this.sessionService.isLogged()
+    .subscribe(user=>{
 	
-	// 	this.user=user;
-	// 	this.role=user.role;
-	// })
+		this.user=user;
+		this.role=user.role;
+	})
 	
 	this.configService.getConfig().subscribe(config=>{
 		this.visible=config.config[0].enableVideos;
