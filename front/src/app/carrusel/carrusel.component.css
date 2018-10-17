@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 .photoCarrusel{
 
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 400px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -27,9 +27,9 @@
     }
     .slide1 h5{
       font-size: 75px;
-         }
+     }
     .slide3 h5{
- font-size: 82px;
+      font-size: 82px;
     }
     .slide2 h5{
       font-size: 46px;
@@ -39,7 +39,7 @@
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -106,7 +106,7 @@
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -119,14 +119,14 @@ background-repeat: no-repeat;
  /* Smartphones (portrait and landscape) ----------- */
  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -157,7 +157,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -214,7 +214,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -225,14 +225,14 @@ background-repeat: no-repeat;
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 295px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -263,7 +263,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -320,7 +320,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -331,7 +331,7 @@ background-repeat: no-repeat;
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
@@ -369,7 +369,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -426,7 +426,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -437,14 +437,14 @@ background-repeat: no-repeat;
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -475,7 +475,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -532,7 +532,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -543,14 +543,14 @@ background-repeat: no-repeat;
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -581,7 +581,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -638,7 +638,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -649,14 +649,14 @@ background-repeat: no-repeat;
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -687,7 +687,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -744,7 +744,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -756,14 +756,14 @@ background-repeat: no-repeat;
     **********/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -794,7 +794,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -851,7 +851,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -861,14 +861,14 @@ background-repeat: no-repeat;
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -899,7 +899,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -955,7 +955,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -965,14 +965,14 @@ background-repeat: no-repeat;
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1003,7 +1003,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1059,7 +1059,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1069,14 +1069,14 @@ background-repeat: no-repeat;
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 400px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1107,7 +1107,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1164,7 +1164,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1174,14 +1174,14 @@ background-repeat: no-repeat;
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1212,7 +1212,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1260,16 +1260,13 @@ background-repeat: no-repeat;
           transition: 2s all ease-in-out .1s;    
 }
 
-
-
-
 /********************************/
 /*       Slides backgrounds     */
 /********************************/
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1279,14 +1276,14 @@ background-repeat: no-repeat;
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1317,7 +1314,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1373,7 +1370,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1383,14 +1380,14 @@ background-repeat: no-repeat;
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1421,7 +1418,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1477,7 +1474,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1486,14 +1483,14 @@ background-repeat: no-repeat;
 }
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1524,7 +1521,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1580,7 +1577,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1590,14 +1587,14 @@ background-repeat: no-repeat;
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1628,7 +1625,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1684,7 +1681,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1693,14 +1690,14 @@ background-repeat: no-repeat;
 }
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1731,7 +1728,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1787,7 +1784,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1797,14 +1794,14 @@ background-repeat: no-repeat;
 /* iPhone 6+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1835,7 +1832,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1890,7 +1887,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1899,14 +1896,14 @@ background-repeat: no-repeat;
 }
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -1937,7 +1934,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -1993,7 +1990,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -2003,14 +2000,14 @@ background-repeat: no-repeat;
 /* Samsung Galaxy S3 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -2041,7 +2038,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -2097,7 +2094,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -2106,14 +2103,14 @@ background-repeat: no-repeat;
 }
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -2200,7 +2197,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -2210,14 +2207,14 @@ background-repeat: no-repeat;
 /* Samsung Galaxy S4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -2248,7 +2245,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -2315,7 +2312,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -2324,14 +2321,14 @@ background-repeat: no-repeat;
 }
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -2362,7 +2359,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -2416,7 +2413,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -2426,14 +2423,14 @@ background-repeat: no-repeat;
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 300px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -2464,7 +2461,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -2520,7 +2517,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -2529,7 +2526,7 @@ background-repeat: no-repeat;
 }
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   .photoCarrusel{
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     }
     .photoCarrusel img{
@@ -2567,7 +2564,7 @@ background-repeat: no-repeat;
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -2622,7 +2619,7 @@ background-repeat: no-repeat;
 .fade-carousel .slide-1, 
 .fade-carousel .slide-2,
 .fade-carousel .slide-3 {
-height: 400px;
+height: 300px;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
