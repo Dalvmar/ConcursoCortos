@@ -338,7 +338,7 @@ background-repeat: no-repeat;
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 310px;
     }
     .carousel-control-prev {
       position: absolute;
@@ -2533,7 +2533,7 @@ background-repeat: no-repeat;
       object-fit: cover;
     }
     .carousel-item img {
-      height: 370px;
+      height: 310px;
     }
     .carousel-control-prev {
       position: absolute;
