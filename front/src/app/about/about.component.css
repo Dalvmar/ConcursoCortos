@@ -2,6 +2,7 @@
 .about{
     color:silver;
 }
+
 .intro{
     width: 89%;
     padding-right: 15px;
@@ -23,6 +24,7 @@ b{
     margin-left: 10px;
     margin-right: 10px;
     font-family:'Raleway', Arial, sans-serif;
+    
 }
 
 .about h3{
